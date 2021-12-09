@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import { TextField, InputAdornment, IconButton } from "@mui/material/";
 import { Visibility, VisibilityOff } from "@mui/icons-material/";
 
-export default function PasswordInput() {
+export default function PasswordInput(props) {
   const [values, setValues] = useState({
-    password: "",
     showPassword: false,
   });
 
@@ -20,9 +19,7 @@ export default function PasswordInput() {
     event.preventDefault();
   };
 
-  const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
-  };
+ 
   return (
     <TextField
       color="secondary"
@@ -32,7 +29,7 @@ export default function PasswordInput() {
       variant="outlined"
       type={values.showPassword ? "text" : "password"}
       value={values.password}
-      onChange={handleChange("password")}
+      onChange={(newValue) => props.childToParent(newValue)}
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">

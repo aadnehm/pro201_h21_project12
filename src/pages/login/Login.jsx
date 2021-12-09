@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //CSS
 import "./login.css";
 //Components
@@ -8,11 +8,27 @@ import BlankInput from "../../components/input-fields/BlankInput";
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 
 export default function Login() {
+  const [dataUsername, setDataUsername] = useState();
+  const [dataPassword, setDataPassword] = useState();
 
-  function handleLogin(){
-    alert("welcome")
+  function childToParentUsername(e) {
+    const newData = e.target.value;
+    setDataUsername(newData);
   }
-  
+
+  function childToParentPassword(e) {
+    const newData = e.target.value;
+    setDataPassword(newData);
+  }
+
+  function handleLogin() {
+    if (dataUsername === "123" && dataPassword === "123") {
+      alert("welcome");
+    } else {
+      alert("wrong log in. Right log in is: username:123, Pass: 123");
+    }
+  }
+
   return (
     <div className="container-login">
       <div className="container-left">
@@ -33,8 +49,13 @@ export default function Login() {
             <a href=""> Sign up</a>
           </div>
           <div className="right-content-login">
-            <BlankInput label="E-mail"></BlankInput>
-            <PasswordInput></PasswordInput>
+            <BlankInput
+              childToParent={childToParentUsername}
+              label="E-mail"
+            ></BlankInput>
+            <PasswordInput
+              childToParent={childToParentPassword}
+            ></PasswordInput>
             <FormControlLabel
               control={<Checkbox color="secondary"></Checkbox>}
               label="Remember me"
@@ -42,7 +63,12 @@ export default function Login() {
           </div>
           <div className="right-content-button">
             <a href="">Forgot your password?</a>
-            <Button onClick={handleLogin} size="large" color="secondary" variant="contained">
+            <Button
+              onClick={handleLogin}
+              size="large"
+              color="secondary"
+              variant="contained"
+            >
               Log in
             </Button>
           </div>
