@@ -1,0 +1,41 @@
+.container-login{
+    display:flex;
+    height: 100vh;
+}
+
+
+
+.container-left{
+    background-color: black;
+    width: 50%;
+    color:white;
+}
+.container-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-login{
+    position: absolute;
+    left:0;
+    width:15%;
+    height: 15%;
+}
+
+.right-content{
+    height: 100vh;
+    background-color: lightblue;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-content-header{
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+
