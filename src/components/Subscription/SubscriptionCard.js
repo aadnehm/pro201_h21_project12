@@ -15,13 +15,13 @@ import {
 export default function SubscriptionCard() {
   return (
     <>
-      <Container className="subscription-model-grid" maxWidth="md">
+      <Container className="subscription-model-grid" fixed>
         <h2 className="heading">
           The payment from subscription goes to Meliora Impact, so we can help
           you get great digital content and strategies to grow your business
         </h2>
 
-        <Grid container spacing={20}>
+        <Grid container spacing={17}>
           {subscriptionModelData.map((model) => (
             <Grid item key={model.id} xs={12} sm={6} md={4}>
               {model.Popular && (

@@ -4,9 +4,10 @@ import "./subscriptionPage.css";
 
 const SubscriptionPage = () => {
   return (
-    <Container className="container">
+    <div className="container">
+      <div className="blue-line"></div>
       <SubscriptionCard />
-    </Container>
+    </div>
   );
 };
 

@@ -18,6 +18,13 @@ h2,
 h4 {
   font-weight: 600;
 }
+
+@media (max-width: 400px) {
+  .subscription-model-grid .sub-card {
+    width: 500px;
+  }
+}
+
 .subscription-model-grid .sub-card {
   border: 2.5px solid black;
   padding: 0 5px;
@@ -67,7 +74,7 @@ h4 {
   height: 40px;
   width: 150px;
   background-color: var(--green-color);
-  margin: auto;
+  margin: auto 15px;
 }
 .subscription-model-grid .popular-box p {
   text-align: center;
