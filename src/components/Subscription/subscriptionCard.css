@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+:root {
+  --grey-color: lightgray;
+  --blue-color: #5c7b89;
+}
+
+.subscription-model-grid .heading {
+  margin: 80px 0;
+  font-size: 25px;
+}
+.subscription-model-grid {
+  font-family: "Raleway", sans-serif;
+}
+.subscription-model-grid h1,
+h2,
+h4 {
+  font-weight: 600;
+}
+.subscription-model-grid .sub-card {
+  border: 2.5px solid black;
+  padding: 0 5px;
+  width: 270px;
+}
+.subscription-model-grid .text-margin {
+  margin-bottom: 35px;
+  font-weight: 800;
+}
+.subscription-model-grid .grey-font {
+  color: var(--grey-color);
+  opacity: 80%;
+  font-size: medium;
+}
+.subscription-model-grid .large-font {
+  font-size: 38px;
+}
+
+.subscription-model-grid .border-bottom {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey-color);
+}
+.subscription-model-grid .span-p {
+  font-weight: 800;
+}
+/* button */
+.subscription-model-grid .button {
+  text-align: center;
+  margin: 10px auto 0;
+  font-weight: 800;
+  background-color: var(--blue-color);
+  width: 170px;
+}
+.subscription-model-grid .button:hover {
+  background-color: var(--blue-color);
+  opacity: 70%;
+}
