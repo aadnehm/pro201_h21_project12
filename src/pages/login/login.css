@@ -3,13 +3,22 @@
     height: 100vh;
 }
 
-
+/* Left container */
 
 .container-left{
     background-color: black;
     width: 50%;
     color:white;
 }
+
+.header-left{
+    width: 70%;
+    font-size: 5vw;
+    margin:auto;
+    margin-top: 35%;
+}
+
+/* Right container */
 .container-right{
     width: 50%;
     display: flex;
@@ -56,12 +65,6 @@
     justify-content: space-between;
 }
 
-
-.checkbox-remember-me{
-margin-top:-8%;
-}
-
-
 .right-content-button{
     text-align: center; 
     display: flex;
@@ -77,5 +80,11 @@ margin-top:-8%;
 
 
 @media screen and (max-width: 800px) {
+    .container-left{
+        display: none;
+    }
 
+    .container-right{
+        width: 100%;
+    }
   } 

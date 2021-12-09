@@ -3,14 +3,22 @@ import React from "react";
 import "./login.css";
 //Components
 import PasswordInput from "../../components/input-fields/PasswordInput";
+import BlankInput from "../../components/input-fields/BlankInput";
 //MUI
-import { TextField, Button, Checkbox, FormControlLabel } from "@mui/material/";
+import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 
 export default function Login() {
+
+  function handleLogin(){
+    alert("welcome")
+  }
+  
   return (
     <div className="container-login">
       <div className="container-left">
-        40 curated non-profits, to give you a competetive edge
+        <h1 className="header-left">
+          40 curated non-profits, to give you a competetive edge
+        </h1>
       </div>
       <div className="container-right">
         <img
@@ -21,27 +29,20 @@ export default function Login() {
         <div className="right-content">
           <div className="right-content-header">
             <h1>Log in to Meliora Impact</h1>
-            <p className="header-p-inline">Dont have account?</p>{" "}
+            <p className="header-p-inline">Dont have account?</p>
             <a href=""> Sign up</a>
           </div>
           <div className="right-content-login">
-            <TextField
-              color="secondary"
-              fullWidth
-              required
-              label="E-post"
-              variant="outlined"
-            />
+            <BlankInput label="E-mail"></BlankInput>
             <PasswordInput></PasswordInput>
             <FormControlLabel
-              className="checkbox-remember-me"
               control={<Checkbox color="secondary"></Checkbox>}
               label="Remember me"
             ></FormControlLabel>
           </div>
           <div className="right-content-button">
             <a href="">Forgot your password?</a>
-            <Button size="large" color="secondary" variant="contained">
+            <Button onClick={handleLogin} size="large" color="secondary" variant="contained">
               Log in
             </Button>
           </div>
