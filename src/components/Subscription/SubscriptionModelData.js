@@ -12,6 +12,7 @@ export const subscriptionModelData = [
     AccountsNumber: "50 accounts",
     Price: "300",
     Features: ["Insight data", "Inside Stories", "Social media content"],
+    Popular: true,
   },
   {
     id: 3,

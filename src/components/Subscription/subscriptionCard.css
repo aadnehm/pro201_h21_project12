@@ -3,6 +3,7 @@
 :root {
   --grey-color: lightgray;
   --blue-color: #5c7b89;
+  --green-color: #4ca771;
 }
 
 .subscription-model-grid .heading {
@@ -21,6 +22,11 @@ h4 {
   border: 2.5px solid black;
   padding: 0 5px;
   width: 270px;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.subscription-model-grid .sub-card:hover {
+  transform: translateY(-20px);
 }
 .subscription-model-grid .text-margin {
   margin-bottom: 35px;
@@ -32,7 +38,7 @@ h4 {
   font-size: medium;
 }
 .subscription-model-grid .large-font {
-  font-size: 38px;
+  font-size: 34px;
 }
 
 .subscription-model-grid .border-bottom {
@@ -45,12 +51,33 @@ h4 {
 /* button */
 .subscription-model-grid .button {
   text-align: center;
-  margin: 10px auto 0;
+  margin: 10px auto;
   font-weight: 800;
+  font-size: 18px;
   background-color: var(--blue-color);
   width: 170px;
+  text-transform: capitalize;
 }
 .subscription-model-grid .button:hover {
   background-color: var(--blue-color);
   opacity: 70%;
+}
+
+.subscription-model-grid .popular-box {
+  height: 40px;
+  width: 150px;
+  background-color: var(--green-color);
+  margin: auto;
+}
+.subscription-model-grid .popular-box p {
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  font-size: 18px;
+}
+
+.subscription-model-grid .ghost-box {
+  height: 40px;
+  width: 10px;
+  background-color: #fff;
 }
