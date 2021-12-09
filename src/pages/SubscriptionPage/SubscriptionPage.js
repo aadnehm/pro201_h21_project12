@@ -5,7 +5,15 @@ import "./subscriptionPage.css";
 const SubscriptionPage = () => {
   return (
     <div className="container">
-      <div className="blue-line"></div>
+      <section className="line">
+        <div className="blue-line">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
       <SubscriptionCard />
     </div>
   );

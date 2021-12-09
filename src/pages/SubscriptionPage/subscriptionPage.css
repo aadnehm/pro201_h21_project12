@@ -2,3 +2,10 @@
   background-color: #fff;
   padding: 15px 0;
 }
+/* Creating  line */
+.blue-line {
+  border-bottom: 5px solid var(--blue-color);
+  max-width: 40vw;
+  margin: 100px auto;
+  display: block;
+}
