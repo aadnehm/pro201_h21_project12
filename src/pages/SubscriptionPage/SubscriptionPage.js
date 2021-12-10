@@ -1,4 +1,6 @@
+/* components */
 import SubscriptionCard from "../../components/Subscription/SubscriptionCard";
+/* css */
 import "./subscriptionPage.css";
 
 const SubscriptionPage = () => {

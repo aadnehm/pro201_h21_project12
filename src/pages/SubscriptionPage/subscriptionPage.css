@@ -9,8 +9,8 @@
   height: 5em;
 }
 .heading {
-  margin: 4em auto;
+  margin: 1em auto;
   padding: 1em 2.1em;
-  font-size: 22px;
-  max-width: 51em;
+  font-size: 1em;
+  max-width: 55em;
 }

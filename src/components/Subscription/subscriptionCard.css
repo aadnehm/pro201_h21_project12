@@ -6,33 +6,45 @@
   --green-color: #4ca771;
 }
 
-.subscription-model-grid .heading {
-  margin: 2em auto;
-  text-align: center;
-  font-size: 25px;
-  max-width: 40em;
-}
 .subscription-model-grid {
   font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
+
+.subscription-model-grid .grid-container {
+  box-sizing: border-box;
+}
+
 .subscription-model-grid h1,
 h2,
 h4 {
-  font-weight: 600;
+  font-weight: 800;
+}
+.subscription-model-grid h1 {
+  font-size: 25px;
+}
+.subscription-model-grid h2 {
+  font-size: 20px;
+}
+.subscription-model-grid h4 {
+  font-size: 15px;
 }
 
 .subscription-model-grid .sub-card {
+  position: relative;
   border: 2.5px solid black;
   transition: 300ms;
   transition-timing-function: ease-in-out;
+  height: 30em;
 }
 .subscription-model-grid .sub-card:hover {
   transform: translateY(-1.8em);
 }
 
 .subscription-model-grid .text-margin {
-  margin-bottom: 2.5em;
-  font-weight: 800;
+  margin-bottom: 1.5em;
 }
 .subscription-model-grid .grey-font {
   color: var(--grey-color);
@@ -40,7 +52,7 @@ h4 {
   font-size: medium;
 }
 .subscription-model-grid .large-font {
-  font-size: 34px;
+  font-size: 30px;
 }
 
 .subscription-model-grid .border-bottom {
@@ -52,6 +64,10 @@ h4 {
 }
 /* button */
 .subscription-model-grid .button {
+  position: absolute;
+  top: 22em;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   margin: 10px auto;
   font-weight: 800;
@@ -78,6 +94,7 @@ h4 {
   padding: 0.5em;
   color: #fff;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .subscription-model-grid .ghost-box {
@@ -87,12 +104,15 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
+  .subscription-model-grid {
+    height: auto;
+  }
   .subscription-model-grid .sub-card {
-    margin: 0.5em auto;
-    width: 80vw;
+    margin: -2em auto;
+    width: 78vw;
   }
   .subscription-model-grid .popular-box {
-    margin: 4em 3.5em -0.5em;
+    margin: 4em 3.5em 2em;
   }
   .subscription-model-grid .ghost-box {
     margin: 4em 3.5em -0.5em;
