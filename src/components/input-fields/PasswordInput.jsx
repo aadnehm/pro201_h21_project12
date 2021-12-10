@@ -19,7 +19,6 @@ export default function PasswordInput(props) {
     event.preventDefault();
   };
 
- 
   return (
     <TextField
       color="secondary"
@@ -29,6 +28,7 @@ export default function PasswordInput(props) {
       variant="outlined"
       type={values.showPassword ? "text" : "password"}
       value={values.password}
+      error={props.error}
       onChange={(newValue) => props.childToParent(newValue)}
       InputProps={{
         endAdornment: (

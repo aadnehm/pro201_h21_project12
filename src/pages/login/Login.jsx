@@ -8,24 +8,47 @@ import BlankInput from "../../components/input-fields/BlankInput";
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 
 export default function Login() {
-  const [dataUsername, setDataUsername] = useState();
+  /* Values Epost & Password */
+  const [dataEpost, setDataEpost] = useState();
   const [dataPassword, setDataPassword] = useState();
 
-  function childToParentUsername(e) {
-    const newData = e.target.value;
-    setDataUsername(newData);
-  }
+  /* State for input validation */
+  const [epostError, setEpostError] = useState(false);
+  const [passwordError, setPasswordError] = useState(false);
 
+  /* Henter data fra child components BlankInput & PasswordInput */
+  function childToParentEpost(e) {
+    const newData = e.target.value;
+    setDataEpost(newData);
+  }
   function childToParentPassword(e) {
     const newData = e.target.value;
     setDataPassword(newData);
   }
 
+  /* Input validation function */
+  function validateInputs() {
+    if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
+      setEpostError(true);
+    } else if (dataEpost.includes("@" && ".") && dataEpost.length >= 8) {
+      setEpostError(false);
+    }
+
+    if (typeof dataPassword === "undefined" || dataPassword.length === 0) {
+      setPasswordError(true);
+    } else{
+      setPasswordError(false);
+    }
+  }
+
+  /* HandleLogin function */
   function handleLogin() {
-    if (dataUsername === "123" && dataPassword === "123") {
-      alert("welcome");
+ 
+    if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
+      alert("Veljkomen");
     } else {
-      alert("wrong log in. Right log in is: username:123, Pass: 123");
+      validateInputs();
+      alert("Wrong login");
     }
   }
 
@@ -48,13 +71,16 @@ export default function Login() {
             <p className="header-p-inline">Dont have account?</p>
             <a href=""> Sign up</a>
           </div>
+
           <div className="right-content-login">
             <BlankInput
-              childToParent={childToParentUsername}
+              childToParent={childToParentEpost}
               label="E-mail"
+              error={epostError}
             ></BlankInput>
             <PasswordInput
               childToParent={childToParentPassword}
+              error={passwordError}
             ></PasswordInput>
             <FormControlLabel
               control={<Checkbox color="secondary"></Checkbox>}
@@ -64,10 +90,10 @@ export default function Login() {
           <div className="right-content-button">
             <a href="">Forgot your password?</a>
             <Button
-              onClick={handleLogin}
               size="large"
               color="secondary"
               variant="contained"
+              onClick={handleLogin}
             >
               Log in
             </Button>
