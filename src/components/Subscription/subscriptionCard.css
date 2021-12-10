@@ -56,7 +56,7 @@ h4 {
   font-weight: 800;
   font-size: 18px;
   background-color: var(--blue-color);
-
+  width: 10em;
   text-transform: capitalize;
 }
 .subscription-model-grid .button:hover {
