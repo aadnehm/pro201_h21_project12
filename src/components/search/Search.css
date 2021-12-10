@@ -58,7 +58,7 @@ body {
   .image {
     width: 120%;
     height: 120%;
-    border-radius: 10%;
+    border-radius: 2%; 
   }
   
   .search-bar {
@@ -67,6 +67,7 @@ body {
     font-size: 1.5rem; 
     box-sizing: border-box;
     border: none;
+    color: black; 
     border-bottom: 2px solid #8D8D8D;
     outline: none;
   }

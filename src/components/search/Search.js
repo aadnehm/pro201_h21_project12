@@ -9,7 +9,6 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => (
             onInput={e => setSearchQuery(e.target.value)}
             type="text"
             placeholder="🔎 Find a non-profit"
-            name="s" 
         />
     </form>
 );
