@@ -4,9 +4,6 @@ import nonProfitsPosts from './NonProfitsData';
 import React, {  useState } from "react";
 
 
-const { search } = window.location;
-const query = new URLSearchParams(search).get('s');
-
 const filterPosts = (nonProfitsPosts, query) => {
   if (!query) {
       return nonProfitsPosts;
@@ -19,9 +16,7 @@ const filterPosts = (nonProfitsPosts, query) => {
 };
 
 const SearchNonProfits = () => {
-  const { search } = window.location;
-  const query = new URLSearchParams(search).get('s');
-  const [searchQuery, setSearchQuery] = useState(query || '');
+  const [searchQuery, setSearchQuery] = useState('');
   const filteredPosts = filterPosts(nonProfitsPosts, searchQuery);
 
 
