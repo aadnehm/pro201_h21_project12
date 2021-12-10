@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 //CSS
 import "./login.css";
 //Components
@@ -8,6 +9,10 @@ import BlankInput from "../../components/input-fields/BlankInput";
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 
 export default function Login() {
+
+  //Navigation
+  const navigate = useNavigate();
+
   /* Values Epost & Password */
   const [dataEpost, setDataEpost] = useState();
   const [dataPassword, setDataPassword] = useState();
@@ -45,7 +50,8 @@ export default function Login() {
   function handleLogin() {
  
     if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
-      alert("Veljkomen");
+      //alert("Veljkomen");
+      navigate("/nonprofits")
     } else {
       validateInputs();
       alert("Wrong login");
