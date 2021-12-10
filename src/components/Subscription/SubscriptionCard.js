@@ -2,15 +2,7 @@ import { subscriptionModelData } from "./SubscriptionModelData";
 import "./subscriptionCard.css";
 
 // material ui components:
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Grid,
-  Container,
-  Typography,
-} from "@mui/material";
+import { Button, Card, CardActions, CardContent, Grid } from "@mui/material";
 
 export default function SubscriptionCard() {
   return (
