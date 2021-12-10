@@ -27,8 +27,9 @@ h4 {
   transition-timing-function: ease-in-out;
 }
 .subscription-model-grid .sub-card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-1.8em);
 }
+
 .subscription-model-grid .text-margin {
   margin-bottom: 2.5em;
   font-weight: 800;
@@ -70,9 +71,11 @@ h4 {
   background-color: var(--green-color);
   margin: auto 15px;
 }
+
 .subscription-model-grid .popular-box p {
   text-align: center;
   margin: auto;
+  padding: 0.5em;
   color: #fff;
   font-size: 18px;
 }
