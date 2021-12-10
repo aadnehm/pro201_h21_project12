@@ -15,15 +15,15 @@ import {
 export default function SubscriptionCard() {
   return (
     <>
-      <Container className="subscription-model-grid" fixed>
+      <div className="subscription-model-grid" fixed>
         <h2 className="heading">
           The payment from subscription goes to Meliora Impact, so we can help
           you get great digital content and strategies to grow your business
         </h2>
 
-        <Grid container spacing={17}>
+        <Grid container justifyContent="space-evenly">
           {subscriptionModelData.map((model) => (
-            <Grid item key={model.id} xs={12} sm={6} md={4}>
+            <Grid item key={model.id} xs={12} sm={5} md={3}>
               {model.Popular && (
                 <div className="popular-box">
                   <p>Most popular</p>
@@ -57,7 +57,7 @@ export default function SubscriptionCard() {
             </Grid>
           ))}
         </Grid>
-      </Container>
+      </div>
     </>
   );
 }

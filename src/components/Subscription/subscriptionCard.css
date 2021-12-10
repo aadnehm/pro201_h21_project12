@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
-@media (max-width: 400px) {
-  .subscription-model-grid .sub-card {
-    width: 380px;
-  }
-}
 
 :root {
   --grey-color: lightgray;
@@ -12,8 +7,10 @@
 }
 
 .subscription-model-grid .heading {
-  margin: 80px 0;
+  margin: 2em auto;
+  text-align: center;
   font-size: 25px;
+  max-width: 40em;
 }
 .subscription-model-grid {
   font-family: "Raleway", sans-serif;
@@ -26,8 +23,6 @@ h4 {
 
 .subscription-model-grid .sub-card {
   border: 2.5px solid black;
-  padding: 0 5px;
-  width: 270px;
   transition: 300ms;
   transition-timing-function: ease-in-out;
 }
@@ -35,7 +30,7 @@ h4 {
   transform: translateY(-20px);
 }
 .subscription-model-grid .text-margin {
-  margin-bottom: 35px;
+  margin-bottom: 2.5em;
   font-weight: 800;
 }
 .subscription-model-grid .grey-font {
@@ -48,7 +43,7 @@ h4 {
 }
 
 .subscription-model-grid .border-bottom {
-  padding-bottom: 10px;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid var(--grey-color);
 }
 .subscription-model-grid .span-p {
@@ -61,7 +56,7 @@ h4 {
   font-weight: 800;
   font-size: 18px;
   background-color: var(--blue-color);
-  width: 170px;
+
   text-transform: capitalize;
 }
 .subscription-model-grid .button:hover {
@@ -70,8 +65,8 @@ h4 {
 }
 
 .subscription-model-grid .popular-box {
-  height: 40px;
-  width: 150px;
+  height: 2.5em;
+  width: 10em;
   background-color: var(--green-color);
   margin: auto 15px;
 }
@@ -83,7 +78,17 @@ h4 {
 }
 
 .subscription-model-grid .ghost-box {
-  height: 40px;
-  width: 10px;
+  height: 2.5em;
+  width: 10em;
   background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .subscription-model-grid .sub-card {
+    margin: 0.5em auto;
+    width: 80vw;
+  }
+  .subscription-model-grid .popular-box {
+    margin: 4em 3.5em -0.5em;
+  }
 }
