@@ -4,7 +4,7 @@
 /* Creating  line */
 .blue-line {
   border-bottom: 5px solid var(--blue-color);
-  max-width: 40vw;
-  margin: 0 auto;
-  display: block;
+  max-width: 35vw;
+  margin: 5em auto;
+  height: 5em;
 }
