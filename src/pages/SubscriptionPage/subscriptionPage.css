@@ -1,11 +1,10 @@
 .container {
   background-color: #fff;
-  height: 100vh;
 }
 /* Creating  line */
 .blue-line {
   border-bottom: 5px solid var(--blue-color);
   max-width: 40vw;
-  margin: 100px auto;
+  margin: 0 auto;
   display: block;
 }

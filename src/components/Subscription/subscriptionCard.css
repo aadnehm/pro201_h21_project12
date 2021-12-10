@@ -91,4 +91,7 @@ h4 {
   .subscription-model-grid .popular-box {
     margin: 4em 3.5em -0.5em;
   }
+  .subscription-model-grid .ghost-box {
+    margin: 4em 3.5em -0.5em;
+  }
 }
