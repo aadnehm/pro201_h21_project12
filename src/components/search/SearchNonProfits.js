@@ -28,7 +28,6 @@ const SearchNonProfits = () => {
 
   return (
       <div>
-          <h1 className="headline">Our non-profits</h1>
             <Search 
               searchQuery={searchQuery}
               setSearchQuery={setSearchQuery}
