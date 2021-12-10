@@ -1,16 +1,15 @@
-const SearchBar = () => (
-    <form style={{marginLeft: '37vw', marginTop: '20vh'}}action="/" method="get">
+const SearchBar = ({ searchQuery, setSearchQuery }) => (    
+    <form style={{ marginTop: '4vh', textAlign: 'center'}}action="/" method="get">
         <label htmlFor="header-search">
-            <span className="visually-hidden">Search non-profits</span>
+            <span className="visually-hidden">Find a non-profit</span>
         </label>
         <input 
-            style={{width: '18vw', height: '5vh', fontSize: '2.5rem'}}
+            className="search-bar"
+            value={searchQuery}
+            onInput={e => setSearchQuery(e.target.value)}
             type="text"
-            id="header-search"
-            placeholder="Search non-profits"
-            name="s" 
+            placeholder="🔎 Find a non-profit"
         />
-        <button style={{height: '5.5vh', fontSize: '2.5rem', marginLeft: '1vw'}}type="submit">Search</button>
     </form>
 );
 
