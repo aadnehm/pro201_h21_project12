@@ -1,10 +1,16 @@
-.container {
+.sub-page-container {
   background-color: #fff;
 }
 /* Creating  line */
 .blue-line {
   border-bottom: 5px solid var(--blue-color);
-  max-width: 35vw;
-  margin: 5em auto;
+  max-width: 30vw;
+  margin: 0em auto;
   height: 5em;
+}
+.heading {
+  margin: 4em auto;
+  padding: 1em 2.1em;
+  font-size: 22px;
+  max-width: 51em;
 }
