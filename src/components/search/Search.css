@@ -1,81 +1,80 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    align-items: center;
-  }
-  
-  .headline {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .cards {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 1rem;
-  }
-  
-  @media (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
-  }
-  
-  @media (min-width: 900px) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
-  }
-  
-  .card {
-    height: 70%;
-    width: 70%;
-    border-radius: 2%; 
-    align-items: center;
-    margin-left: 5vw;
-    margin-top: 2vh;
-  }
-  
-  .cardName {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    margin-top: -5vh;
-    z-index: 4;
-    position: absolute;
-    color: white; 
-    margin-left: 1vw;
-  }
-  
-  .image {
-    width: 120%;
-    height: 120%;
-    border-radius: 2%; 
-  }
-  
-  .search-bar {
-    width: 27%; 
-    height: 5vh; 
-    font-size: 1.5rem; 
-    box-sizing: border-box;
-    border: none;
-    color: black; 
-    border-bottom: 2px solid #8D8D8D;
-    outline: none;
-  }
+/* Search Non-profits */
+.search-posts {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  @media (max-width: 600px) {
-    .search-bar 
-    {  
-      width: 60%;
-      font-size: 1rem; 
-    }
+.search-posts .headline {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.search-posts .cards {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .search-posts .cards {
+    margin-left: 4vw;
   }
+}
+
+@media (min-width: 600px) {
+  .search-posts .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .search-posts .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.search-posts .card {
+  height: 80%;
+  width: 80%;
+  border-radius: 2%;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.search-posts .card-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: -5vh;
+  z-index: 4;
+  position: absolute;
+  color: white;
+  margin-left: 1vw;
+}
+
+.search-posts .image {
+  width: 120%;
+  height: 120%;
+  border-radius: 2%;
+}
+
+/* Search Bar */
+.search-bar .search {
+  margin-top: 4vh;
+  text-align: left;
+  margin-left: 13vw;
+  margin-bottom: 4vh;
+}
+
+.search-bar .visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  align-items: center;
+}
