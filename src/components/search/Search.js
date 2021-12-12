@@ -1,8 +1,10 @@
 import React from "react";
 // MUI
 import SearchIcon from "@mui/icons-material/Search";
+import FilterListIcon from "@mui/icons-material/FilterList";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
+import Button from "@mui/material/Button";
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => (
   <header className="search-bar">
@@ -25,6 +27,15 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => (
         placeholder="Find a non-profit"
         size="large"
       />
+    </div>
+    <div className="filter">
+      <Button
+        variant="contained"
+        color="secondary"
+        endIcon={<FilterListIcon />}
+      >
+        Filter
+      </Button>
     </div>
   </header>
 );

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./Search.css";
 //Components
 import Search from "./Search";
+import { Grid } from "@mui/material";
 
 //Function that filters out posts depending on the search
 const filterPosts = (nonProfitsPosts, query) => {

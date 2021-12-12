@@ -61,11 +61,22 @@
 }
 
 /* Search Bar */
+
+.search-bar {
+  white-space: nowrap;
+}
+
 .search-bar .search {
+  display: inline-block;
   margin-top: 4vh;
   text-align: left;
   margin-left: 13vw;
   margin-bottom: 4vh;
+}
+
+.search-bar .filter {
+  display: inline-block;
+  margin-left: 55%;
 }
 
 .search-bar .visually-hidden {
