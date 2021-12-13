@@ -21,6 +21,13 @@ export default function SubscriptionCard() {
           spacing={2}
           className="grid-container"
         >
+          <div className="heading">
+            <h1>
+              The payment from subscription goes to Meliora Impact, so we can
+              help you get great digital content and strategies to grow your
+              business
+            </h1>
+          </div>
           {subscriptionModelData.map((model) => (
             <Grid item key={model.id} xs={12} sm={5} md={3.5}>
               {model.Popular && (

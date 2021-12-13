@@ -5,7 +5,14 @@
   --blue-color: #5c7b89;
   --green-color: #4ca771;
 }
-
+.subscription-model-grid .heading {
+  margin: 1em auto 0;
+  padding: 1em 2.1em;
+  max-width: 62em;
+}
+.subscription-model-grid .heading h1 {
+  font-size: 1.8em;
+}
 .subscription-model-grid {
   font-family: "Raleway", sans-serif;
   margin: 0;
