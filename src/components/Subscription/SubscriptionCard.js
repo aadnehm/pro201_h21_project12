@@ -50,12 +50,7 @@ export default function SubscriptionCard() {
                   <p>{model.Features[2]}</p>
                 </CardContent>
                 <CardActions>
-                  <Button
-                    className="button"
-                    variant="contained"
-                    size="large"
-                    color="primary"
-                  >
+                  <Button className="button" variant="contained" size="large">
                     Subscribe
                   </Button>
                 </CardActions>

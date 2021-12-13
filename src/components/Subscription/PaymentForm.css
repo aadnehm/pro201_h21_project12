@@ -1,12 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 .payment-container {
+  max-width: 60em;
+  margin: 4em auto;
   background-color: #eee;
 }
-.payment-container .form {
-  padding: "30px";
-  width: 50%;
-  margin: auto;
+.form-grid-container {
+  display: flex;
+  max-width: 30em;
+  margin: 4em auto;
+  padding: 1em;
+  font-family: "Raleway", sans-serif;
+}
+.label img {
+  margin: 0 0.2em;
 }
 
-.pngIcon {
-  height: "60px";
+/* or pay with card  */
+.form-grid-container .heading-with-lines {
+  margin-bottom: 1em;
+}
+.lines {
+  width: 100%;
+  height: 0.6em;
+  border-bottom: 1px solid #c4c4c4;
+  text-align: center;
+  margin: 1em 0;
+}
+.line-text {
+  font-size: 1em;
+  background-color: #eee;
+  padding: 0 10px;
+}
+
+/* buttons */
+.form-grid-container .vipps-button {
+  background-color: #ff5b24;
+  margin: 2em 0;
+}
+.form-grid-container .vipps-button:hover {
+  background-color: #ff5b24;
+  opacity: 0.8;
+}
+.form-grid-container .confirm-button {
+  background-color: #8792a2;
+  margin: 2em 0;
+}
+.form-grid-container .confirm-button:hover {
+  background-color: #8792a2;
+  opacity: 0.8;
 }
