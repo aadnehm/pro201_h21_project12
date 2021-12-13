@@ -1,0 +1,12 @@
+.payment-container {
+  background-color: #eee;
+}
+.payment-container .form {
+  padding: "30px";
+  width: 50%;
+  margin: auto;
+}
+
+.pngIcon {
+  height: "60px";
+}
