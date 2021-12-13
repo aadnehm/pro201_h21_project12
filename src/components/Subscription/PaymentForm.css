@@ -11,8 +11,12 @@
   padding: 1em;
   font-family: "Raleway", sans-serif;
 }
-.label img {
+
+.form-grid-container .label img {
   margin: 0 0.2em;
+}
+.form-grid-container .label {
+  margin-top: 1em;
 }
 
 /* or pay with card  */

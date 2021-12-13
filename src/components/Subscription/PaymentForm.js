@@ -33,6 +33,7 @@ export default function PaymentForm() {
         <Form>
           <div className="form-grid-container">
             <Grid container>
+              {/* vipps button */}
               <Grid item xs={12}>
                 <Button
                   className="vipps-button"
@@ -44,11 +45,13 @@ export default function PaymentForm() {
                   <img src={vippsImg} style={{ height: "2em" }} alt="" />
                 </Button>
               </Grid>
+              {/* line and text */}
               <Grid className="heading-with-lines" item xs={12}>
                 <div className="lines">
                   <span className="line-text">Or pay with card </span>
                 </div>
               </Grid>
+              {/* select subscription */}
               <Grid item xs={12}>
                 <TextField
                   select
@@ -72,6 +75,21 @@ export default function PaymentForm() {
                   </MenuItem>
                 </TextField>
               </Grid>
+              {/* email */}
+              <Grid item xs={12}>
+                <TextField
+                  style={{
+                    margin: ".5em 0",
+                    width: "100%",
+                    backgroundColor: "#fff",
+                  }}
+                  id="outlined-basic"
+                  label="Email"
+                  variant="outlined"
+                  size="small"
+                />
+              </Grid>
+              {/* label for card information */}
               <div className="label">
                 <label>Card information</label>
 
@@ -88,7 +106,7 @@ export default function PaymentForm() {
                   alt=""
                 />
               </div>
-
+              {/* card input fields */}
               <Grid item xs={12}>
                 <TextField
                   style={{
@@ -141,14 +159,58 @@ export default function PaymentForm() {
                   size="small"
                 />
               </Grid>
+              {/* save card information*/}
               <Grid item xs={12}>
                 <FormControlLabel
-                  value="hente"
+                  value="save-card"
                   control={<Radio />}
                   label="Save card information"
                   name="save-card"
                 />
               </Grid>
+              {/* label for card information */}
+              <div className="label">
+                <label>Country or region</label>
+              </div>
+              {/* select country or region */}
+              <Grid item xs={12}>
+                <TextField
+                  select
+                  variant="outlined"
+                  size="small"
+                  label="Norway"
+                  style={{
+                    margin: ".5em 0",
+                    width: "100%",
+                    backgroundColor: "#fff",
+                  }}
+                >
+                  <MenuItem key="1" value="small">
+                    Small business
+                  </MenuItem>
+                  <MenuItem key="2" value="medium">
+                    Medium business
+                  </MenuItem>
+                  <MenuItem key="3" value="medium+">
+                    Medium+ business
+                  </MenuItem>
+                </TextField>
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  style={{
+                    margin: ".5em 0",
+                    width: "100%",
+                    backgroundColor: "#fff",
+                  }}
+                  id="outlined-basic"
+                  label="ZIP"
+                  variant="outlined"
+                  size="small"
+                />
+              </Grid>
+
+              {/* Confirm button */}
               <Grid item xs={12}>
                 <Button
                   className="confirm-button"
