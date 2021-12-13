@@ -38,13 +38,14 @@ h4 {
   transition: 300ms;
   transition-timing-function: ease-in-out;
   height: 30em;
+  max-width: 20em;
 }
 .subscription-model-grid .sub-card:hover {
   transform: translateY(-1.8em);
 }
 
 .subscription-model-grid .text-margin {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 .subscription-model-grid .grey-font {
   color: var(--grey-color);
@@ -65,15 +66,15 @@ h4 {
 /* button */
 .subscription-model-grid .button {
   position: absolute;
-  top: 22em;
+  top: 18.5em;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  margin: 10px auto;
-  font-weight: 800;
-  font-size: 18px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 22px;
   background-color: var(--blue-color);
-  width: 10em;
+  width: 70%;
   text-transform: capitalize;
 }
 .subscription-model-grid .button:hover {
@@ -85,7 +86,7 @@ h4 {
   height: 2.5em;
   width: 10em;
   background-color: var(--green-color);
-  margin: auto 15px;
+  margin: auto 1em;
 }
 
 .subscription-model-grid .popular-box p {
@@ -108,13 +109,14 @@ h4 {
     height: auto;
   }
   .subscription-model-grid .sub-card {
-    margin: -2em auto;
+    margin: 0em auto;
     width: 78vw;
+    max-width: 30em;
   }
   .subscription-model-grid .popular-box {
-    margin: 4em 3.5em 2em;
+    margin: 2em 3.5em 0em;
   }
   .subscription-model-grid .ghost-box {
-    margin: 4em 3.5em -0.5em;
+    margin: 0em 3.5em 0em;
   }
 }
