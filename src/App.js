@@ -1,58 +1,57 @@
 //Componentes
-import SearchNonProfits from './components/search/SearchNonProfits';
-import Login from './pages/login/Login';
+import SearchNonProfits from "./components/search/SearchNonProfits";
+import Login from "./pages/login/Login";
 //Global CSS
-import './App.css';
+import "./App.css";
 //MUI
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 //React
-import { Routes, Route } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 //Firebase
-import db from './lib/firebase';
+import db from "./lib/firebase";
+//Signup
+import Signup from "./pages/Signup";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
-	palette : {
-		secondary : {
-			main : '#5C7B89'
-		}
-	}
+  palette: {
+    secondary: {
+      main: "#5C7B89",
+    },
+  },
 });
 
 function App() {
-	//Pulling non-profits from cloud database and storing it in state that gets passed
-	//to SearchNonProfits-page
-	const fetchOrgs = async () => {
-		const response = db.collection('nonprofits');
-		const data = await response.get();
-		data.forEach((element) => {
-			setOrgs((prevValue) => [
-				...prevValue,
-				element.data()
-			]);
-		});
-	};
-	const [
-		orgs,
-		setOrgs
-	] = useState([]);
+  //Pulling non-profits from cloud database and storing it in state that gets passed
+  //to SearchNonProfits-page
+  const fetchOrgs = async () => {
+    const response = db.collection("nonprofits");
+    const data = await response.get();
+    data.forEach((element) => {
+      setOrgs((prevValue) => [...prevValue, element.data()]);
+    });
+  };
+  const [orgs, setOrgs] = useState([]);
 
-	useEffect(() => {
-		fetchOrgs();
-	}, []);
+  useEffect(() => {
+    fetchOrgs();
+  }, []);
 
-	return (
-		<ThemeProvider theme={mainColor}>
-			<div className="App">
-				<Routes>
-					<Route path="/" element={<Login />} />
-					<Route path="/nonprofits" element={<SearchNonProfits orgs={orgs} />} />
-					<Signup />
-				</Routes>
-			</div>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={mainColor}>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route
+            path="/nonprofits"
+            element={<SearchNonProfits orgs={orgs} />}
+          />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </div>
+    </ThemeProvider>
+  );
 }
 
 export default App;
