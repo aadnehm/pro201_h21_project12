@@ -48,6 +48,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Login />} />
 					<Route path="/nonprofits" element={<SearchNonProfits orgs={orgs} />} />
+					<Signup />
 				</Routes>
 			</div>
 		</ThemeProvider>
