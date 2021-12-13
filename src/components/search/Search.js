@@ -1,13 +1,14 @@
 import React from "react";
+import Filter from "./Filter";
 // MUI
 import SearchIcon from "@mui/icons-material/Search";
-import FilterListIcon from "@mui/icons-material/FilterList";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
-import Button from "@mui/material/Button";
+import NavbarComponent from "../navbar/Navbar";
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => (
   <header className="search-bar">
+    <NavbarComponent />
     <div className="search">
       <label htmlFor="header-search">
         <span className="visually-hidden">Find a non-profit</span>
@@ -29,13 +30,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => (
       />
     </div>
     <div className="filter">
-      <Button
-        variant="contained"
-        color="secondary"
-        endIcon={<FilterListIcon />}
-      >
-        Filter
-      </Button>
+      <Filter />
     </div>
   </header>
 );

@@ -1,1 +1,9 @@
+.navbar {
+  background-color: #5c7b89;
+  z-index: 1;
+  height: 10vh;
+}
 
+.nav-link {
+  background-color: #5c7b89;
+}
