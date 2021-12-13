@@ -59,7 +59,7 @@ export default function PaymentForm() {
                   size="small"
                   label="Medium+ Subscription"
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -79,7 +79,7 @@ export default function PaymentForm() {
               <Grid item xs={12}>
                 <TextField
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -110,7 +110,7 @@ export default function PaymentForm() {
               <Grid item xs={12}>
                 <TextField
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -120,10 +120,11 @@ export default function PaymentForm() {
                   size="small"
                 />
               </Grid>
+              {/* mm/yy */}
               <Grid item xs={6}>
                 <TextField
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -133,10 +134,11 @@ export default function PaymentForm() {
                   size="small"
                 />
               </Grid>
+              {/* cvc */}
               <Grid item xs={6}>
                 <TextField
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -146,10 +148,11 @@ export default function PaymentForm() {
                   size="small"
                 />
               </Grid>
+              {/* name on card */}
               <Grid item xs={12}>
                 <TextField
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -159,13 +162,14 @@ export default function PaymentForm() {
                   size="small"
                 />
               </Grid>
-              {/* save card information*/}
+              {/* radio save card information*/}
               <Grid item xs={12}>
                 <FormControlLabel
                   value="save-card"
                   control={<Radio />}
                   label="Save card information"
                   name="save-card"
+                  size="small"
                 />
               </Grid>
               {/* label for card information */}
@@ -180,7 +184,7 @@ export default function PaymentForm() {
                   size="small"
                   label="Norway"
                   style={{
-                    margin: ".5em 0",
+                    margin: ".4em 0",
                     width: "100%",
                     backgroundColor: "#fff",
                   }}
@@ -196,17 +200,19 @@ export default function PaymentForm() {
                   </MenuItem>
                 </TextField>
               </Grid>
+              {/* Zip */}
               <Grid item xs={12}>
                 <TextField
-                  style={{
-                    margin: ".5em 0",
-                    width: "100%",
-                    backgroundColor: "#fff",
-                  }}
+                  InputLabelProps={{ className: "textField" }}
                   id="outlined-basic"
                   label="ZIP"
                   variant="outlined"
                   size="small"
+                  style={{
+                    margin: ".4em 0",
+                    width: "100%",
+                    backgroundColor: "#fff",
+                  }}
                 />
               </Grid>
 

@@ -12,7 +12,7 @@ const SubscriptionPage = () => {
       </div> */}
       <div className="blue-line"></div>
 
-      {/*   <SubscriptionCard /> */}
+      <SubscriptionCard />
       <PaymentForm />
     </div>
   );
