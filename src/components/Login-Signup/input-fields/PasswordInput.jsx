@@ -21,10 +21,11 @@ export default function PasswordInput(props) {
 
   return (
     <TextField
+      helperText={props.helperText}
       color="secondary"
       fullWidth
       required
-      label="Password"
+      label={props.label}
       variant="outlined"
       type={values.showPassword ? "text" : "password"}
       value={values.password}

@@ -1,6 +1,7 @@
 //Componentes
 import SearchNonProfits from './components/search/SearchNonProfits';
 import Login from './pages/login/Login';
+import SigninEmployee from './pages/signin-employee/SigninEmployee';
 //Global CSS
 import './App.css';
 //MUI
@@ -10,6 +11,7 @@ import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 //Firebase
 import db from './lib/firebase';
+
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -48,6 +50,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Login />} />
 					<Route path="/nonprofits" element={<SearchNonProfits orgs={orgs} />} />
+					<Route path="/signin-employee" element={<SigninEmployee/>} />
 				</Routes>
 			</div>
 		</ThemeProvider>

@@ -6,6 +6,7 @@ export default function BlankInput(props) {
 
   return (
     <TextField
+      helperText={props.helperText}
       color="secondary"
       fullWidth
       required

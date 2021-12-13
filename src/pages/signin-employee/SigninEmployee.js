@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 //CSS
-import "./login.css";
+import "./signinEmployee.css";
 //Components
 import PasswordInput from "../../components/Login-Signup/input-fields/PasswordInput";
 import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 
-export default function Login() {
+export default function SigninEmployee() {
   //Navigation
   const navigate = useNavigate();
 
@@ -20,10 +20,6 @@ export default function Login() {
   /* State for input validation */
   const [epostError, setEpostError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
-
-  /* State for helperText */
-  const [epostHelperText, setEpostHelperText] = useState("");
-  const [passwordHelperText, setPasswordHelperText] = useState("");
 
   /* Henter data fra child components BlankInput & PasswordInput */
   function childToParentEpost(e) {
@@ -39,27 +35,25 @@ export default function Login() {
   function validateInputs() {
     if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
       setEpostError(true);
-      setEpostHelperText("Please use valid e-mail")
     } else if (dataEpost.includes("@" && ".") && dataEpost.length >= 8) {
       setEpostError(false);
-      setEpostHelperText("")
     }
 
     if (typeof dataPassword === "undefined" || dataPassword.length === 0) {
       setPasswordError(true);
-      setPasswordHelperText("Wrong password")
     } else {
       setPasswordError(false);
-      setPasswordHelperText("")
     }
   }
 
   /* HandleLogin function */
   function handleLogin() {
     if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
+      //alert("Veljkomen");
       navigate("/nonprofits");
     } else {
       validateInputs();
+      alert("Wrong login");
     }
   }
 
@@ -78,38 +72,41 @@ export default function Login() {
         />
         <div className="right-content">
           <div className="right-content-header">
-            <h1>Log in to Meliora Impact</h1>
-            <p className="header-p-inline">Dont have account?</p>
-            <Link to="/signin-employee"> Sign up</Link>
+            <h1>Sign up to Meliora Impact</h1>
+            <p className="header-p-inline">Already got account?</p>
+            <Link to="/"> Log in</Link>
           </div>
 
           <div className="right-content-login">
             <BlankInput
               childToParent={childToParentEpost}
+              label="Navn"
+              error={epostError}
+            ></BlankInput>
+            <BlankInput
+              childToParent={childToParentEpost}
               label="E-mail"
               error={epostError}
-              helperText={epostHelperText}
             ></BlankInput>
             <PasswordInput
-              label="Password"
+              label="Create password"
               childToParent={childToParentPassword}
               error={passwordError}
-              helperText={passwordHelperText}
             ></PasswordInput>
-            <FormControlLabel
-              control={<Checkbox color="secondary"></Checkbox>}
-              label="Remember me"
-            ></FormControlLabel>
+            <PasswordInput
+              label="Confirm password"
+              childToParent={childToParentPassword}
+              error={passwordError}
+            ></PasswordInput>
           </div>
           <div className="right-content-button">
-            <a href="">Forgot your password?</a>
             <Button
               size="large"
               color="secondary"
               variant="contained"
               onClick={handleLogin}
             >
-              Log in
+              Create account
             </Button>
           </div>
         </div>
