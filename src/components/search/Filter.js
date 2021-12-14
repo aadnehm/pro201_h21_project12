@@ -10,8 +10,14 @@ import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 import CloseIcon from "@mui/icons-material/Close";
 import { Grid } from "@mui/material";
+import ClearIcon from "@mui/icons-material/Clear";
 
-export default function Filter() {
+export default function Filter({
+  continentQuery,
+  setContinentQuery,
+  categoryQuery,
+  setCateoryQuery,
+}) {
   // Open/close popover to show filter options
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -26,56 +32,50 @@ export default function Filter() {
   const open = Boolean(anchorEl);
   const id = open ? "popover" : undefined;
 
-  //Use state to keep track of checkboxes under UN-category
-
-  const [goals, setGoals] = React.useState({
-    knowledge: false,
-    water: false,
-  });
-
-  const handleChange = (event) => {
-    setGoals(
-      {
-        ...goals,
-        [event.target.name]: event.target.checked,
-      },
-      console.log(event.target.name)
-    );
-  };
-
-  const { knowledge, water } = goals;
-
-  //Use state to keep track of checkboxes under continents-category
-  const [continents, setContinents] = React.useState({
-    africa: false,
-    asia: false,
-    europe: false,
-    northAmerica: false,
-    southAmerica: false,
-    australia: false,
-  });
-
-  const handleChecked = (event) => {
-    setContinents(
-      {
-        ...goals,
-        [event.target.name]: event.target.checked,
-      },
-      console.log(event.target.name)
-    );
-  };
-
-  const { africa, asia, europe, northAmerica, southAmerica, australia } =
-    continents;
-
   return (
     <div>
+      {continentQuery.map((continent) => (
+        <Button
+          variant="contained"
+          color="secondary"
+          style={{ marginLeft: "0.5vw", marginRight: "0.5vw" }}
+          endIcon={<ClearIcon />}
+          value={continent}
+          onClick={(e) =>
+            handleChange(
+              setContinentQuery,
+              continentQuery,
+              false,
+              e.target.value
+            )
+          }
+        >
+          {continent}
+        </Button>
+      ))}
+
+      {categoryQuery.map((category) => (
+        <Button
+          variant="contained"
+          color="secondary"
+          style={{ marginLeft: "0.5vw", marginRight: "0.5vw" }}
+          endIcon={<ClearIcon />}
+          value={category}
+          onClick={(e) =>
+            handleChange(setCateoryQuery, categoryQuery, false, e.target.value)
+          }
+        >
+          {category}
+        </Button>
+      ))}
+
       <Button
         aria-describedby={id}
         variant="contained"
         endIcon={<FilterListIcon />}
         onClick={handleClick}
         color="secondary"
+        style={{ marginLeft: "1vw" }}
       >
         Filter
       </Button>
@@ -120,14 +120,22 @@ export default function Filter() {
                   UN Sustainable Goals
                 </FormLabel>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={8}>
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={knowledge}
-                      onChange={handleChange}
+                      value="Knowledge"
+                      onChange={(e) =>
+                        handleChange(
+                          setCateoryQuery,
+                          categoryQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="knowledge"
                       color="secondary"
+                      checked={categoryQuery.includes("Knowledge")}
                     />
                   }
                   label="Knowledge"
@@ -137,10 +145,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={water}
-                      onChange={handleChange}
+                      value="Water"
+                      onChange={(e) =>
+                        handleChange(
+                          setCateoryQuery,
+                          categoryQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="water"
                       color="secondary"
+                      checked={categoryQuery.includes("Water")}
                     />
                   }
                   label="Water"
@@ -160,10 +176,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={africa}
-                      onChange={handleChecked}
+                      value="Africa"
+                      onChange={(e) =>
+                        handleChange(
+                          setContinentQuery,
+                          continentQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="africa"
                       color="secondary"
+                      checked={continentQuery.includes("Africa")}
                     />
                   }
                   label="Africa"
@@ -173,10 +197,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={asia}
-                      onChange={handleChecked}
+                      value="Asia"
+                      onChange={(e) =>
+                        handleChange(
+                          setContinentQuery,
+                          continentQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="asia"
                       color="secondary"
+                      checked={continentQuery.includes("Asia")}
                     />
                   }
                   label="Asia"
@@ -186,10 +218,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={europe}
-                      onChange={handleChecked}
+                      value="Europe"
+                      onChange={(e) =>
+                        handleChange(
+                          setContinentQuery,
+                          continentQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="europe"
                       color="secondary"
+                      checked={continentQuery.includes("Europe")}
                     />
                   }
                   label="Europe"
@@ -199,10 +239,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={northAmerica}
-                      onChange={handleChecked}
+                      value="North-America"
+                      onChange={(e) =>
+                        handleChange(
+                          setContinentQuery,
+                          continentQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="northAmerica"
                       color="secondary"
+                      checked={continentQuery.includes("North-America")}
                     />
                   }
                   label="North America"
@@ -212,10 +260,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={southAmerica}
-                      onChange={handleChecked}
+                      value="South-America"
+                      onChange={(e) =>
+                        handleChange(
+                          setContinentQuery,
+                          continentQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="southAmerica"
                       color="secondary"
+                      checked={continentQuery.includes("South-America")}
                     />
                   }
                   label="South America"
@@ -225,10 +281,18 @@ export default function Filter() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={australia}
-                      onChange={handleChecked}
+                      value="Australia"
+                      onChange={(e) =>
+                        handleChange(
+                          setContinentQuery,
+                          continentQuery,
+                          e.target.checked,
+                          e.target.value
+                        )
+                      }
                       name="Australia"
                       color="secondary"
+                      checked={continentQuery.includes("Australia")}
                     />
                   }
                   label="Australia"
@@ -248,4 +312,14 @@ export default function Filter() {
       </Popover>
     </div>
   );
+}
+
+function handleChange(setState, state, checked, value) {
+  if (checked === false) {
+    const temp = state.filter((element) => element !== value);
+    setState([...temp]);
+  }
+  if (checked === true) {
+    setState([...state, value]);
+  }
 }

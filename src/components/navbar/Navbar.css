@@ -2,8 +2,23 @@
   background-color: #5c7b89;
   z-index: 1;
   height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.nav-link {
+.navbar .nav-link {
   background-color: #5c7b89;
+}
+
+@media (min-width: 900px) {
+  .mr-auto {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .navbar .logo {
+    margin-left: 300%;
+  }
 }

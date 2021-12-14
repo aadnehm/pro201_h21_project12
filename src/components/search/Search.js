@@ -1,5 +1,4 @@
 import React from "react";
-import Filter from "./Filter";
 // MUI
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
@@ -28,9 +27,6 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => (
         placeholder="Find a non-profit"
         size="large"
       />
-    </div>
-    <div className="filter">
-      <Filter />
     </div>
   </header>
 );
