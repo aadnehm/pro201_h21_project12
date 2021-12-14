@@ -36,6 +36,11 @@ export default function SigninEmployee() {
 
 
   /* Henter data fra child components BlankInput & PasswordInput */
+  function childToParentName(e) {
+    const newData = e.target.value;
+    setName(newData);
+  }
+
   function childToParentEpost(e) {
     const newData = e.target.value;
     setDataEpost(newData);
@@ -49,20 +54,20 @@ export default function SigninEmployee() {
     setDataPassword1(newData);
   }
 
-  function childToParentName(e) {
-    const newData = e.target.value;
-    setName(newData);
-  }
+    /* HandleOrgCode function */
+    function handleOrgCode(e){
+        const value = e.target.value;
+        setCode(value);
+      }
 
   /* Input validation function */
   function validateInputs() {
-
     if (code) {
       setCodeError(false);
       setCodeHelperText(" ");
     } else {
       setCodeError(true);
-      setCodeHelperText("Enter org code");
+      setCodeHelperText("Enter org. code");
     }
     if (name) {
       setNameError(false);
@@ -71,7 +76,6 @@ export default function SigninEmployee() {
       setNameError(true);
       setNameHelperText("Please enter your name");
     }
-
     if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
       setEpostError(true);
       setEpostHelperText("Please use valid e-mail");
@@ -95,22 +99,20 @@ export default function SigninEmployee() {
         setPasswordError1(false);
         setPasswordHelperText1(" ");
       }
+
+      if (codeError ===false && epostError === false && nameError === false && passwordError === false && passwordError1===false){
+      handleLogin()
+    }
   }
 
   /* HandleLogin function */
   function handleLogin() {
-    if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
-      alert("Created");
-    } else {
-      validateInputs();
-    }
+    alert("done")
+    
+    
   }
 
-  /* HandleOrgCode function */
-  function handleOrgCode(e){
-    const value = e.target.value;
-    setCode(value);
-  }
+
 
 
   return (
@@ -162,7 +164,7 @@ export default function SigninEmployee() {
 
             <BlankInput
               childToParent={childToParentEpost}
-              label="Navn"
+              label="Name"
               error={nameError}
               helperText={nameHelperText}
               childToParent={childToParentName}
