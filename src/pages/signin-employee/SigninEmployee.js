@@ -17,11 +17,15 @@ export default function SigninEmployee() {
 	//Navigation
 	const navigate = useNavigate();
 
-	//Firebase-error state
+	//Firebase state
 	const [
 		error,
 		setError
 	] = useState('');
+	const [
+		companies,
+		setCompanies
+	] = useState([]);
 
 	/* Values Epost & Password & Name */
 	const [
@@ -154,28 +158,54 @@ export default function SigninEmployee() {
 			setPasswordHelperText1(' ');
 		}
 	}
+	//Fetching companies
+	const fetchCompanies = async () => {
+		const response = db.collection('companies');
+		const data = await response.get();
+		data.forEach((element) => {
+			console.log(element.data());
+			setCompanies([
+				...companies,
+				element.data()
+			]);
+		});
+	};
 
 	/* HandleLogin function */
 
 	const handleLogin = async () => {
+		fetchCompanies();
 		const auth = getAuth();
 		await createUserWithEmailAndPassword(auth, dataEpost, dataPassword, code)
 			.then((userCredential) => {
-				// Signed in
 				const user = userCredential.user;
 				alert(user.email + 'created');
 				const docRef = addDoc(collection(db, 'users'), {
 					navn      : `${name}`,
 					epost     : `${dataEpost}`,
-					firmakode : `${code}`
+					firmakode : `${code}`,
+					admin     : `${false}`,
+					aktiv     : `${true}`
 				});
+				console.log(companies[0] + ' firmaer');
+				const temp = companies.filter((element) => element.firmakode === code);
+				console.log(code + ' kode');
+				console.log(temp.length + 'størrelse');
+				console.log(companies[0].firmakode + 'firmakode 0 ');
+				console.log(companies[1].firmakode + 'firmakode 1 ');
+
+				if (temp.length > 0) {
+					console.log('hurra');
+				}
+				else {
+					console.log('dette funket ikke');
+				}
 
 				navigate('/nonprofits');
 			})
 			.catch((error) => {
 				setError(error.message);
 				alert(error);
-				// ..
 			});
 	};
 
