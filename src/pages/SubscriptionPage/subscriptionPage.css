@@ -1,5 +1,6 @@
 .sub-page-container {
   background-color: #fff;
+  overflow: hidden;
 }
 /* Creating  line */
 .sub-page-container .blue-line {
@@ -9,16 +10,56 @@
   height: 5em;
 }
 
-/* .sub-page-container .circle {
+/* cirles in container */
+.sub-page-container .circle {
   position: relative;
 }
 .sub-page-container .circle .circle-top-right {
   position: absolute;
-  top: -5em;
-  right: -3em;
-  width: 12em;
-  height: 12em;
+  top: -8vh;
+  right: -3vw;
+  width: 18em;
+  height: 18em;
   border-radius: 50%;
   background: #3361bb;
 }
- */
+.sub-page-container .circle .circle-bottom-left {
+  position: absolute;
+  top: 80vh;
+  left: -4vw;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  background: #5c7b89;
+}
+.sub-page-container .circle .circle-bottom-right {
+  position: absolute;
+  top: 90vh;
+  left: 35vw;
+  width: 60em;
+  height: 60em;
+  border-radius: 50%;
+  background: #f2ac20;
+}
+
+@media screen and (max-width: 900px) {
+  .sub-page-container .circle {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .sub-page-container .circle .circle-top-right {
+    width: 11em;
+    height: 11em;
+  }
+  .sub-page-container .circle .circle-bottom-left {
+    width: 15em;
+    height: 15em;
+    top: 85vh;
+  }
+  .sub-page-container .circle .circle-bottom-right {
+    top: 95vh;
+    width: 40em;
+    height: 40em;
+  }
+}

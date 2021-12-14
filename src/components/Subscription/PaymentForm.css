@@ -3,6 +3,7 @@
   max-width: 60em;
   margin: 4em auto;
   background-color: #eee;
+  height: 100vh;
 }
 .form-grid-container {
   display: flex;
