@@ -6,11 +6,16 @@
 /* Creating  line */
 .sub-page-container .blue-line {
   border-bottom: 5px solid var(--blue-color);
-  max-width: 30vw;
+  max-width: 45vw;
   margin: 0em auto;
   height: 5em;
 }
-
+.sub-page-container .dummy-stepper {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin: 1em auto;
+}
 /* cirles in container */
 .sub-page-container .circle {
   display: flex;
@@ -47,6 +52,14 @@
 @media screen and (max-width: 900px) {
   .sub-page-container .circle {
     display: none;
+  }
+  .sub-page-container .dummy-stepper {
+    width: 85vw;
+    font-size: 0.9em;
+  }
+  .sub-page-container .blue-line {
+    border-bottom: 5px solid var(--blue-color);
+    max-width: 72vw;
   }
 }
 @media screen and (max-width: 1400px) {

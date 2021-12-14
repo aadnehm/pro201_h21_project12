@@ -1,6 +1,8 @@
+import React from "react";
+/* data */
 import { subscriptionModelData } from "./SubscriptionModelData";
+/* css */
 import "./subscriptionCard.css";
-
 // material ui components:
 import {
   Button,
@@ -12,6 +14,14 @@ import {
 } from "@mui/material";
 
 export default function SubscriptionCard() {
+  /* state */
+  const [subscription, setSubscription] = React.useState("");
+  const handleSubcriptionChoice = (event) => {
+    setSubscription(event.target.value);
+  };
+
+  console.log(subscription);
+
   return (
     <>
       <Container className="subscription-model-grid" size="md">
@@ -50,7 +60,13 @@ export default function SubscriptionCard() {
                   <p>{model.Features[2]}</p>
                 </CardContent>
                 <CardActions>
-                  <Button className="button" variant="contained" size="large">
+                  <Button
+                    value={model.Name}
+                    onClick={handleSubcriptionChoice}
+                    className="button"
+                    variant="contained"
+                    size="large"
+                  >
                     Subscribe
                   </Button>
                 </CardActions>
