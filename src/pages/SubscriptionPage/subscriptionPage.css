@@ -36,7 +36,7 @@
 }
 .sub-page-container .circle .circle-bottom-right {
   position: absolute;
-  top: 92vh;
+  top: 95vh;
   left: 35vw;
   width: 60em;
   height: 60em;
@@ -49,21 +49,21 @@
     display: none;
   }
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1400px) {
   .sub-page-container {
     height: auto;
   }
   .sub-page-container .circle .circle-top-right {
-    width: 12em;
-    height: 12em;
+    width: 13em;
+    height: 13em;
   }
   .sub-page-container .circle .circle-bottom-left {
-    width: 14em;
-    height: 14em;
+    width: 10em;
+    height: 10em;
     top: 87vh;
   }
   .sub-page-container .circle .circle-bottom-right {
-    top: 93vh;
+    top: 95vh;
     width: 45em;
     height: 45em;
   }

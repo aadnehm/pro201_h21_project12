@@ -57,3 +57,14 @@
   background-color: #8792a2;
   opacity: 0.8;
 }
+
+@media screen and (max-width: 1200px) {
+  .payment-container {
+    max-width: 80vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .payment-container {
+    max-width: 90vw;
+  }
+}
