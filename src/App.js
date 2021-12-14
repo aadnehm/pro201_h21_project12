@@ -1,6 +1,12 @@
 //Componentes
+<<<<<<< HEAD
 import SearchNonProfits from "./components/search/SearchNonProfits";
 import Login from "./pages/login/Login";
+=======
+import SearchNonProfits from './components/search/SearchNonProfits';
+import Login from './pages/login/Login';
+import SigninEmployee from './pages/signin-employee/SigninEmployee';
+>>>>>>> origin/signinEmploy/page
 //Global CSS
 import "./App.css";
 //MUI
@@ -12,6 +18,7 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 //Signup
 import SignupLogic from "./pages/SignupLogic";
+
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -38,20 +45,17 @@ function App() {
     fetchOrgs();
   }, []);
 
-  return (
-    <ThemeProvider theme={mainColor}>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route
-            path="/nonprofits"
-            element={<SearchNonProfits orgs={orgs} />}
-          />
-          <Route path="/signup" element={<SignupLogic />} />
-        </Routes>
-      </div>
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider theme={mainColor}>
+			<div className="App">
+				<Routes>
+					<Route path="/" element={<Login />} />
+					<Route path="/nonprofits" element={<SearchNonProfits orgs={orgs} />} />
+					<Route path="/signin-employee" element={<SigninEmployee/>} />
+				</Routes>
+			</div>
+		</ThemeProvider>
+	);
 }
 
 export default App;
