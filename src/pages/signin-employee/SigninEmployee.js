@@ -10,6 +10,8 @@ import BlankInput from '../../components/Login-Signup/input-fields/BlankInput';
 import { Button, TextField, Box } from '@mui/material/';
 //Firebase
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import db from '../../lib/firebase';
+import { addDoc, collection } from 'firebase/firestore';
 
 export default function SigninEmployee() {
 	//Navigation
@@ -157,15 +159,22 @@ export default function SigninEmployee() {
 
 	const handleLogin = async () => {
 		const auth = getAuth();
-		await createUserWithEmailAndPassword(auth, dataEpost, dataPassword)
+		await createUserWithEmailAndPassword(auth, dataEpost, dataPassword, code)
 			.then((userCredential) => {
 				// Signed in
 				const user = userCredential.user;
-				alert(user + 'created');
-				// ...
+				alert(user.email + 'created');
+				const docRef = addDoc(collection(db, 'users'), {
+					navn      : `${name}`,
+					epost     : `${dataEpost}`,
+					firmakode : `${code}`
+				});
+
+				navigate('/nonprofits');
 			})
 			.catch((error) => {
 				setError(error.message);
+				alert(error);
 				// ..
 			});
 	};
