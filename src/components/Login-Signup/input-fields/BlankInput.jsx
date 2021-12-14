@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { TextField } from "@mui/material/";
 
 export default function BlankInput(props) {
-  const [data, setData] = useState();
 
   return (
     <TextField

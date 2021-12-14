@@ -7,19 +7,33 @@ import "./signinEmployee.css";
 import PasswordInput from "../../components/Login-Signup/input-fields/PasswordInput";
 import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
 //MUI
-import { Button, Checkbox, FormControlLabel } from "@mui/material/";
+import { Button, TextField, Box } from "@mui/material/";
 
 export default function SigninEmployee() {
   //Navigation
   const navigate = useNavigate();
 
-  /* Values Epost & Password */
+  /* Values Epost & Password & Name */
+  const [code, setCode] = useState();
+  const [name, setName] = useState();
   const [dataEpost, setDataEpost] = useState();
   const [dataPassword, setDataPassword] = useState();
+  const [dataPassword1, setDataPassword1] = useState();
 
   /* State for input validation */
+  const [codeError, setCodeError] = useState(false);
+  const [nameError, setNameError] = useState(false);
   const [epostError, setEpostError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+  const [passwordError1, setPasswordError1] = useState(false);
+
+  /* State for helperText */
+  const [codeHelperText, setCodeHelperText] = useState(" ");
+  const [nameHelperText, setNameHelperText] = useState(" ");
+  const [epostHelperText, setEpostHelperText] = useState(" ");
+  const [passwordHelperText, setPasswordHelperText] = useState(" ");
+  const [passwordHelperText1, setPasswordHelperText1] = useState(" ");
+
 
   /* Henter data fra child components BlankInput & PasswordInput */
   function childToParentEpost(e) {
@@ -30,32 +44,74 @@ export default function SigninEmployee() {
     const newData = e.target.value;
     setDataPassword(newData);
   }
+  function childToParentPassword1(e) {
+    const newData = e.target.value;
+    setDataPassword1(newData);
+  }
+
+  function childToParentName(e) {
+    const newData = e.target.value;
+    setName(newData);
+  }
 
   /* Input validation function */
   function validateInputs() {
-    if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
-      setEpostError(true);
-    } else if (dataEpost.includes("@" && ".") && dataEpost.length >= 8) {
-      setEpostError(false);
+
+    if (code) {
+      setCodeError(false);
+      setCodeHelperText(" ");
+    } else {
+      setCodeError(true);
+      setCodeHelperText("Enter org code");
+    }
+    if (name) {
+      setNameError(false);
+      setNameHelperText(" ");
+    } else {
+      setNameError(true);
+      setNameHelperText("Please enter your name");
     }
 
-    if (typeof dataPassword === "undefined" || dataPassword.length === 0) {
+    if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
+      setEpostError(true);
+      setEpostHelperText("Please use valid e-mail");
+    } else if (dataEpost.includes("@" && ".") && dataEpost.length >= 8) {
+      setEpostError(false);
+      setEpostHelperText(" ");
+    }
+
+    if (typeof dataPassword === "undefined" || dataPassword.length < 6) {
       setPasswordError(true);
+      setPasswordHelperText("6 characters or more");
     } else {
       setPasswordError(false);
+      setPasswordHelperText(" ");
     }
+
+    if (typeof dataPassword1 === "undefined" || dataPassword1 !== dataPassword) {
+        setPasswordError1(true);
+        setPasswordHelperText1("Passwords dont match");
+      } else {
+        setPasswordError1(false);
+        setPasswordHelperText1(" ");
+      }
   }
 
   /* HandleLogin function */
   function handleLogin() {
     if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
-      //alert("Veljkomen");
-      navigate("/nonprofits");
+      alert("Created");
     } else {
       validateInputs();
-      alert("Wrong login");
     }
   }
+
+  /* HandleOrgCode function */
+  function handleOrgCode(e){
+    const value = e.target.value;
+    setCode(value);
+  }
+
 
   return (
     <div className="container-login">
@@ -73,30 +129,61 @@ export default function SigninEmployee() {
         <div className="right-content">
           <div className="right-content-header">
             <h1>Sign up to Meliora Impact</h1>
-            <p className="header-p-inline">Already got account?</p>
+            <p className="header-p-inline">Already got a account?</p>
             <Link to="/"> Log in</Link>
           </div>
 
-          <div className="right-content-login">
+          <div className="right-content-signin">
+            <h3>Enter Organization code</h3>
+            <div className="org-number">
+              <TextField
+                className="org-number-item"
+                variant="standard"
+                error={codeError}
+                helperText={codeHelperText}
+                onChange={handleOrgCode}
+              ></TextField>
+              <TextField
+                className="org-number-item"
+                variant="standard"
+                error={codeError}
+              ></TextField>
+              <TextField
+                className="org-number-item"
+                variant="standard"
+                error={codeError}
+              ></TextField>
+              <TextField
+                className="org-number-item"
+                variant="standard"
+                error={codeError}
+              ></TextField>
+            </div>
+
             <BlankInput
               childToParent={childToParentEpost}
               label="Navn"
-              error={epostError}
+              error={nameError}
+              helperText={nameHelperText}
+              childToParent={childToParentName}
             ></BlankInput>
             <BlankInput
               childToParent={childToParentEpost}
               label="E-mail"
               error={epostError}
+              helperText={epostHelperText}
             ></BlankInput>
             <PasswordInput
               label="Create password"
               childToParent={childToParentPassword}
               error={passwordError}
+              helperText={passwordHelperText}
             ></PasswordInput>
             <PasswordInput
               label="Confirm password"
-              childToParent={childToParentPassword}
-              error={passwordError}
+              childToParent={childToParentPassword1}
+              error={passwordError1}
+              helperText={passwordHelperText1}
             ></PasswordInput>
           </div>
           <div className="right-content-button">
