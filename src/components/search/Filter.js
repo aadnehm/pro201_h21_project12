@@ -239,6 +239,7 @@ export default function Filter() {
               style={{ marginTop: "2%" }}
               variant="contained"
               color="secondary"
+              onClick={handleClose}
             >
               See non-profits
             </Button>
