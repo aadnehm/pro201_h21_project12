@@ -1,7 +1,10 @@
 import React from "react";
-/* import { Formik, Form } from "formik"; */
-import * as Yup from "yup";
+/* data */
+import { CountryData } from "./CountryData";
+import { subscriptionModelData } from "./SubscriptionModelData";
+/* css */
 import "./PaymentForm.css";
+/* MUI */
 import {
   Grid,
   Button,
@@ -10,14 +13,55 @@ import {
   Radio,
   MenuItem,
 } from "@mui/material";
+/* img */
 import visaImg from "./img/visa.png";
 import masterCardImg from "./img/MasterCard.png";
 import vippsImg from "./img/vipps.png";
 
 export default function PaymentForm() {
+  /* state */
+  const [subscription, setSubscription] = React.useState("");
+  const handleChangePlan = (event) => {
+    setSubscription(event.target.value);
+  };
+  const [country, setCountry] = React.useState("");
+  const handleChangeCountry = (event) => {
+    setCountry(event.target.value);
+  };
+
+  const [email, setEmail] = React.useState("");
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+  const [card, setCard] = React.useState("");
+  const handleCardChange = (event) => {
+    setCard(event.target.value);
+  };
+  const [mmyy, setMmyy] = React.useState("");
+  const handleMmyy = (event) => {
+    setMmyy(event.target.value);
+  };
+  const [cvc, setCvc] = React.useState("");
+  const handleCvc = (event) => {
+    setCvc(event.target.value);
+  };
+  const [cardName, setCardName] = React.useState("");
+  const handleCardName = (event) => {
+    setCardName(event.target.value);
+  };
+  const [zip, setZip] = React.useState("");
+  const handleZip = (event) => {
+    setZip(event.target.value);
+  };
+
+  const data = [subscription, email, card, mmyy, cvc, cardName, country, zip];
+  const handleConfirmClick = () => {
+    alert(data);
+  };
+
   return (
     <div className="payment-container">
-      <form>
+      <form autoComplete="off">
         <div className="form-grid-container">
           <Grid container>
             {/* vipps button */}
@@ -43,22 +87,20 @@ export default function PaymentForm() {
                 select
                 variant="outlined"
                 size="small"
-                label="Medium+ Subscription"
+                label="Subscription"
+                value={subscription}
+                onChange={handleChangePlan}
                 style={{
                   margin: ".4em 0",
                   width: "100%",
                   backgroundColor: "#fff",
                 }}
               >
-                <MenuItem key="1" value="small">
-                  Small business
-                </MenuItem>
-                <MenuItem key="2" value="medium">
-                  Medium business
-                </MenuItem>
-                <MenuItem key="3" value="medium+">
-                  Medium+ business
-                </MenuItem>
+                {subscriptionModelData.map((model) => (
+                  <MenuItem key={model.id} value={model.Name}>
+                    {model.Name}
+                  </MenuItem>
+                ))}
               </TextField>
             </Grid>
             {/* email */}
@@ -69,6 +111,8 @@ export default function PaymentForm() {
                   width: "100%",
                   backgroundColor: "#fff",
                 }}
+                value={email}
+                onChange={handleEmailChange}
                 id="outlined-basic"
                 label="Email"
                 variant="outlined"
@@ -101,9 +145,12 @@ export default function PaymentForm() {
                   backgroundColor: "#fff",
                 }}
                 id="outlined-basic"
-                label="1234 1234 1234 1234"
+                placeholder="1234 1234 1234 1234"
                 variant="outlined"
                 size="small"
+                InputLabelProps={{ shrink: false }}
+                value={card}
+                onChange={handleCardChange}
               />
             </Grid>
             {/* mm/yy */}
@@ -118,6 +165,8 @@ export default function PaymentForm() {
                 label="mm/yy"
                 variant="outlined"
                 size="small"
+                value={mmyy}
+                onChange={handleMmyy}
               />
             </Grid>
             {/* cvc */}
@@ -132,6 +181,8 @@ export default function PaymentForm() {
                 label="cvc"
                 variant="outlined"
                 size="small"
+                value={cvc}
+                onChange={handleCvc}
               />
             </Grid>
             {/* name on card */}
@@ -146,6 +197,8 @@ export default function PaymentForm() {
                 label="Name on card"
                 variant="outlined"
                 size="small"
+                value={cardName}
+                onChange={handleCardName}
               />
             </Grid>
             {/* radio save card information*/}
@@ -174,22 +227,21 @@ export default function PaymentForm() {
                 select
                 variant="outlined"
                 size="small"
-                label="Norway"
+                /* label={country === " " ? country : ""} */
+                value={country}
+                onChange={handleChangeCountry}
+                InputLabelProps={{ shrink: false }}
                 style={{
                   margin: ".4em 0",
                   width: "100%",
                   backgroundColor: "#fff",
                 }}
               >
-                <MenuItem key="1" value="small">
-                  Small business
-                </MenuItem>
-                <MenuItem key="2" value="medium">
-                  Medium business
-                </MenuItem>
-                <MenuItem key="3" value="medium+">
-                  Medium+ business
-                </MenuItem>
+                {CountryData.map((country) => (
+                  <MenuItem key={country.name} value={country.name}>
+                    {country.name}
+                  </MenuItem>
+                ))}
               </TextField>
             </Grid>
             {/* Zip */}
@@ -215,6 +267,7 @@ export default function PaymentForm() {
                 variant="contained"
                 size="large"
                 fullWidth
+                onClick={handleConfirmClick}
               >
                 <div>Confirm Payment</div>
               </Button>

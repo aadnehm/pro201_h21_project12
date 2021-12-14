@@ -20,17 +20,17 @@
   position: absolute;
   top: -8vh;
   right: -3vw;
-  width: 18rem;
-  height: 18rem;
+  width: 17rem;
+  height: 17rem;
   border-radius: 50%;
   background: #3361bb;
 }
 .sub-page-container .circle .circle-bottom-left {
   position: absolute;
   top: 80vh;
-  left: -5vw;
-  width: 20em;
-  height: 20em;
+  left: -7vw;
+  width: 17em;
+  height: 17em;
   border-radius: 50%;
   background: #5c7b89;
 }
@@ -54,8 +54,8 @@
     height: auto;
   }
   .sub-page-container .circle .circle-top-right {
-    width: 13em;
-    height: 13em;
+    width: 11em;
+    height: 11em;
   }
   .sub-page-container .circle .circle-bottom-left {
     width: 10em;
