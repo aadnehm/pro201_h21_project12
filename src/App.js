@@ -11,7 +11,7 @@ import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
 //Signup
-import Signup from "./pages/Signup";
+import SignupLogic from "./pages/SignupLogic";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -47,7 +47,7 @@ function App() {
             path="/nonprofits"
             element={<SearchNonProfits orgs={orgs} />}
           />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signup" element={<SignupLogic />} />
         </Routes>
       </div>
     </ThemeProvider>

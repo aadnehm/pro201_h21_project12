@@ -7,11 +7,15 @@ import PasswordInput from "../../components/input-fields/PasswordInput";
 import BlankInput from "../../components/input-fields/BlankInput";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
+//Firebase
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Login() {
-
   //Navigation
   const navigate = useNavigate();
+
+  //Error handling
+  const [error, setError] = useState("");
 
   /* Values Epost & Password */
   const [dataEpost, setDataEpost] = useState();
@@ -31,6 +35,20 @@ export default function Login() {
     setDataPassword(newData);
   }
 
+  const auth = getAuth();
+  const handleLogin = async () => {
+    await signInWithEmailAndPassword(auth, dataEpost, dataPassword)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        navigate("/nonprofits");
+        // ...
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
   /* Input validation function */
   function validateInputs() {
     if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
@@ -41,20 +59,8 @@ export default function Login() {
 
     if (typeof dataPassword === "undefined" || dataPassword.length === 0) {
       setPasswordError(true);
-    } else{
-      setPasswordError(false);
-    }
-  }
-
-  /* HandleLogin function */
-  function handleLogin() {
- 
-    if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
-      //alert("Veljkomen");
-      navigate("/nonprofits")
     } else {
-      validateInputs();
-      alert("Wrong login");
+      setPasswordError(false);
     }
   }
 
@@ -88,6 +94,7 @@ export default function Login() {
               childToParent={childToParentPassword}
               error={passwordError}
             ></PasswordInput>
+            {error && <p>{error}</p>}
             <FormControlLabel
               control={<Checkbox color="secondary"></Checkbox>}
               label="Remember me"
