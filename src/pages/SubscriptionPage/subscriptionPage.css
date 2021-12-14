@@ -1,6 +1,7 @@
 .sub-page-container {
   background-color: #fff;
   overflow: hidden;
+  height: 100vh;
 }
 /* Creating  line */
 .sub-page-container .blue-line {
@@ -12,21 +13,22 @@
 
 /* cirles in container */
 .sub-page-container .circle {
+  display: flex;
   position: relative;
 }
 .sub-page-container .circle .circle-top-right {
   position: absolute;
   top: -8vh;
   right: -3vw;
-  width: 18em;
-  height: 18em;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   background: #3361bb;
 }
 .sub-page-container .circle .circle-bottom-left {
   position: absolute;
   top: 80vh;
-  left: -4vw;
+  left: -5vw;
   width: 20em;
   height: 20em;
   border-radius: 50%;
@@ -34,7 +36,7 @@
 }
 .sub-page-container .circle .circle-bottom-right {
   position: absolute;
-  top: 90vh;
+  top: 92vh;
   left: 35vw;
   width: 60em;
   height: 60em;
@@ -47,19 +49,22 @@
     display: none;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1380px) {
+  .sub-page-container {
+    height: auto;
+  }
   .sub-page-container .circle .circle-top-right {
-    width: 11em;
-    height: 11em;
+    width: 12em;
+    height: 12em;
   }
   .sub-page-container .circle .circle-bottom-left {
-    width: 15em;
-    height: 15em;
-    top: 85vh;
+    width: 14em;
+    height: 14em;
+    top: 87vh;
   }
   .sub-page-container .circle .circle-bottom-right {
-    top: 95vh;
-    width: 40em;
-    height: 40em;
+    top: 93vh;
+    width: 45em;
+    height: 45em;
   }
 }

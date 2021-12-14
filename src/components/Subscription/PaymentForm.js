@@ -14,6 +14,7 @@ import {
 import visaImg from "./img/visa.png";
 import masterCardImg from "./img/MasterCard.png";
 import vippsImg from "./img/vipps.png";
+import { height } from "@mui/system";
 
 const INITIAL_FORM_STATE = {};
 const FORM_VALIDATION = Yup.object().shape({});
@@ -164,13 +165,19 @@ export default function PaymentForm() {
               </Grid>
               {/* radio save card information*/}
               <Grid item xs={12}>
-                <FormControlLabel
-                  value="save-card"
-                  control={<Radio />}
-                  label="Save card information"
-                  name="save-card"
-                  size="small"
-                />
+                <div className="radio-button">
+                  <FormControlLabel
+                    style={{
+                      margin: "0",
+                      height: "0.2em",
+                    }}
+                    value="save-card"
+                    control={<Radio />}
+                    label="Save card information"
+                    name="save-card"
+                    size="small"
+                  />
+                </div>
               </Grid>
               {/* label for card information */}
               <div className="label">

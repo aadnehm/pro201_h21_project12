@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 .payment-container {
   max-width: 60em;
-  margin: 4em auto;
+  margin: 3em auto;
   background-color: #eee;
-  height: 100vh;
 }
 .form-grid-container {
   display: flex;
@@ -17,7 +16,7 @@
   margin: 0 0.2em;
 }
 .form-grid-container .label {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 /* or pay with card  */
@@ -40,7 +39,8 @@
 /* buttons */
 .form-grid-container .vipps-button {
   background-color: #ff5b24;
-  margin: 2em 0;
+  margin: 0.5em 0;
+  text-transform: capitalize;
 }
 .form-grid-container .vipps-button:hover {
   background-color: #ff5b24;
@@ -48,7 +48,10 @@
 }
 .form-grid-container .confirm-button {
   background-color: #8792a2;
-  margin: 1em 0;
+  margin: 1em 0 0em;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
 }
 .form-grid-container .confirm-button:hover {
   background-color: #8792a2;
