@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 /* css */
 import "./CreateAccount.css";
 /* MUI */
@@ -47,45 +48,37 @@ export default function CreateAccount() {
   };
 
   const [password, setPassword] = React.useState();
-  const handleClickShowPassword = (event) => {
-    setPassword(event.target.value);
-  };
+  const [passwordConfirmed, setPasswordConfirmed] = React.useState();
 
-  const data = [orgNumber, companyName, adresse, postBox];
-  const handleCreateClick = () => {
-    alert(data);
-  };
-
-  /*********  Kode hentet fra login.jsx ***********/
+  /*********  Kode for å sende state til password, og confirmed password ***********/
   function childToParentPassword(e) {
     const newData = e.target.value;
     setPassword(newData);
   }
-
-  /* State for helperText */
-  const [epostHelperText, setEpostHelperText] = React.useState("");
-  const [passwordHelperText, setPasswordHelperText] = React.useState("");
-  /* State for input validation */
-  const [epostError, setEpostError] = React.useState(false);
-  const [passwordError, setPasswordError] = React.useState(false);
-  /* Input validation function */
-  function validateInputs() {
-    if (typeof email === "undefined" || !email.includes("@" && ".")) {
-      setEpostError(true);
-      setEpostHelperText("Please use valid e-mail");
-    } else if (email.includes("@" && ".") && email.length >= 8) {
-      setEpostError(false);
-      setEpostHelperText("");
-    }
-
-    if (typeof password === "undefined" || password.length === 0) {
-      setPasswordError(true);
-      setPasswordHelperText("Wrong password");
-    } else {
-      setPasswordError(false);
-      setPasswordHelperText("");
-    }
+  function childToParentConfirmedPassword(e) {
+    const newData = e.target.value;
+    setPasswordConfirmed(newData);
   }
+
+  let shouldDisplayForm = false;
+  const handleEnterButtonClick = () => {
+    shouldDisplayForm = true;
+  };
+  /* state variabler for debugging */
+  const data = [
+    orgNumber,
+    companyName,
+    adresse,
+    postBox,
+    firstName,
+    lastName,
+    email,
+    role,
+    phone,
+    password,
+    passwordConfirmed,
+  ];
+
   /* JSX */
   return (
     <div className="account-container">
@@ -124,6 +117,7 @@ export default function CreateAccount() {
                 Enter
               </Button>
             </Grid>
+
             {/* company name */}
             <Grid item xs={12}>
               <TextField
@@ -221,8 +215,6 @@ export default function CreateAccount() {
                 required
                 value={email}
                 onChange={handleEmail}
-                error={epostError}
-                helperText={epostHelperText}
                 id="outlined-basic"
                 label="Email"
                 variant="outlined"
@@ -266,27 +258,18 @@ export default function CreateAccount() {
             {/* password */}
             <Grid item xs={12}>
               <PasswordInputWhite
-                label="Password"
                 childToParent={childToParentPassword}
-                error={passwordError}
-                helperText={passwordHelperText}
+                label="Password"
               ></PasswordInputWhite>
             </Grid>
             {/* confirm password */}
             <Grid item xs={12}>
-              <TextField
-                style={{
-                  margin: ".6em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-                required
-                id="outlined-basic"
+              <PasswordInputWhite
+                childToParent={childToParentConfirmedPassword}
                 label="Confirm password"
-                variant="outlined"
-                size="small"
-              />
+              ></PasswordInputWhite>
             </Grid>
+
             {/* Confirm button */}
             <Grid item xs={12}>
               <Button
@@ -294,7 +277,8 @@ export default function CreateAccount() {
                 variant="contained"
                 size="large"
                 fullWidth
-                onClick={handleCreateClick}
+                component={Link}
+                to="/payment"
               >
                 <div>Create Account</div>
               </Button>

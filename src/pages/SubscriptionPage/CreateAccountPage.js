@@ -1,10 +1,10 @@
 /* components */
-import SubscriptionCard from "../../components/Subscription/SubscriptionCard";
 
+import CreateAccount from "../../components/Subscription/CreateAccount";
 /* css */
 import "./subscriptionPage.css";
 
-const SubscriptionPage = () => {
+const CreateAccountPage = () => {
   return (
     <div className="sub-page-container">
       <div className="circle">
@@ -19,9 +19,9 @@ const SubscriptionPage = () => {
         <div>Create Account</div>
       </div>
 
-      <SubscriptionCard />
+      <CreateAccount />
     </div>
   );
 };
 
-export default SubscriptionPage;
+export default CreateAccountPage;

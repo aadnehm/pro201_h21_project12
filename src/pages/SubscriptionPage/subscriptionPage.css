@@ -1,3 +1,13 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/* farger som brukes på alle deler/component i subscriptions */
+:root {
+  --grey-color: lightgray;
+  --blue-color: #5c7b89;
+  --green-color: #4ca771;
+  --blue-grey-color: #8792a2;
+  --container-color: #5c7b890f;
+}
 .sub-page-container {
   background-color: #fff;
   overflow: hidden;

@@ -3,6 +3,8 @@ import SearchNonProfits from "./components/search/SearchNonProfits";
 import Login from "./pages/login/Login";
 import SigninEmployee from "./pages/signin-employee/SigninEmployee";
 import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
+import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
+import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 //Global CSS
 import "./App.css";
 //MUI
@@ -50,7 +52,9 @@ function App() {
             element={<SearchNonProfits orgs={orgs} />}
           />
           <Route path="/signin-employee" element={<SigninEmployee />} />
-          <Route path="/subscription-page" element={<SubscriptionPage />} />
+          <Route path="/choose-subscription" element={<SubscriptionPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />
         </Routes>
       </div>
     </ThemeProvider>

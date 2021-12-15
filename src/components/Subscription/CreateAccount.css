@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 .account-container {
-  max-width: 50em;
+  max-width: 60em;
   margin: 3em auto;
-  background-color: #eee; /* må finne riktig farge */
+  background-color: var(--container-color);
 }
 .form-grid-container {
   display: flex;
-  max-width: 30em;
-  margin: 4em auto;
-  padding: 2em;
+  max-width: 35em;
   font-family: "Raleway", sans-serif;
 }
 

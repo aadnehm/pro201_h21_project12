@@ -54,9 +54,12 @@ export default function PaymentForm() {
     setZip(event.target.value);
   };
 
+  /* state-variabler for å sjekke at form virker */
   const data = [subscription, email, card, mmyy, cvc, cardName, country, zip];
+  console.log(data);
+
   const handleConfirmClick = () => {
-    alert(data);
+    alert("amazing modal window popup. thank you.....");
   };
 
   return (

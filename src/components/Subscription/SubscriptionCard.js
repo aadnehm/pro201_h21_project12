@@ -68,7 +68,7 @@ export default function SubscriptionCard() {
                     variant="contained"
                     size="large"
                     component={Link}
-                    to="/subscription-paymentForm"
+                    to="/create-account"
                   >
                     Subscribe
                   </Button>
