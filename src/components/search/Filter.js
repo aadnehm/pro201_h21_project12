@@ -51,7 +51,7 @@ export default function Filter({
         anchorEl={anchorEl}
         onClose={handleClose}
         style={{ backdropFilter: "blur(2px)" }}
-        anchorPosition={{ top: 200, left: 1400 }}
+        anchorPosition={{ top: 200, left: 1000 }}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",
@@ -87,8 +87,10 @@ export default function Filter({
               container
               spacing={0}
               style={{
-                marginBottom: "4%",
+                marginBottom: "2%",
                 borderBottom: "1px solid grey",
+                marginLeft: "0.1%",
+                marginRight: "0.1%",
               }}
             >
               <Grid item xs={12}>
@@ -142,14 +144,7 @@ export default function Filter({
                 />
               </Grid>
             </Grid>
-            <Grid
-              container
-              spacing={0}
-              style={{
-                marginBottom: "4%",
-                borderBottom: "1px solid grey",
-              }}
-            >
+            <Grid container spacing={3}>
               <Grid item xs={12}>
                 <FormLabel
                   component="legend"
