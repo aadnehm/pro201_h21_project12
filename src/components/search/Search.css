@@ -106,8 +106,9 @@
 }
 
 .search-posts .filter {
-  margin-left: 77vw;
+  margin-left: 77.3vw;
   margin-top: -7vh;
+  margin-bottom: 1vh;
 }
 
 @media (max-width: 600px) {
@@ -135,7 +136,7 @@
   padding-top: 3vh;
   margin-top: 15vh;
   text-align: left;
-  margin-left: 13.4vw;
+  margin-left: 13.7vw;
   margin-bottom: 4vh;
 }
 
