@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 /* data */
 import { subscriptionModelData } from "./SubscriptionModelData";
 /* css */
@@ -66,6 +67,8 @@ export default function SubscriptionCard() {
                     className="button"
                     variant="contained"
                     size="large"
+                    component={Link}
+                    to="/subscription-paymentForm"
                   >
                     Subscribe
                   </Button>
