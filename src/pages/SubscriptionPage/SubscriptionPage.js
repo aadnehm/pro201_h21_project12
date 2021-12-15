@@ -19,8 +19,8 @@ const SubscriptionPage = () => {
         <div>Create Account</div>
       </div>
 
-      {/*    <SubscriptionCard /> */}
-      <PaymentForm />
+      <SubscriptionCard />
+      {/*     <PaymentForm /> */}
     </div>
   );
 };
