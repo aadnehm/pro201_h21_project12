@@ -2,6 +2,8 @@
 import SearchNonProfits from './components/search/SearchNonProfits';
 import Login from './pages/login/Login';
 import SigninEmployee from './pages/signin-employee/SigninEmployee';
+import NonProfit from './pages/non-profit/NonProfitMain';
+import NonProfitProject from './pages/non-profit/NonprofitProject';
 //Global CSS
 import './App.css';
 //MUI
@@ -51,6 +53,8 @@ function App() {
 					<Route path="/" element={<Login />} />
 					<Route path="/nonprofits" element={<SearchNonProfits orgs={orgs} />} />
 					<Route path="/signin-employee" element={<SigninEmployee/>} />
+					<Route path="/non-profit" element={<NonProfit/>} />
+					<Route path="/non-project" element={<NonProfitProject/>} />
 				</Routes>
 			</div>
 		</ThemeProvider>

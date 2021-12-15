@@ -1,0 +1,103 @@
+
+.non-profit-container{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+position: relative;
+box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+}
+
+
+.non-profit-container .header-div{
+background-color:darkred;
+width: 20%;
+height: 10%;
+position: absolute;
+top: 10%;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+
+.non-profit-container .header-div h1{
+display:flex;
+justify-content: center;
+align-items: center;
+color:white;
+}
+
+.non-profit-container .header-text{
+    position: absolute;
+    top:20%;
+    left: 3%;
+    color:white;
+    font-size:30px;
+    width: 30%;
+}
+
+/* Cards */
+
+.non-profit-container .our-projects-div{
+    color:white;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.non-profit-container .cards-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.non-profit-container .card{
+   width: 20%;
+   height: 200px;
+   position: relative;
+}
+
+
+
+.non-profit-container .card-content{
+padding:0;  
+height: 200px;
+background-size:cover;
+background-position: center;
+-webkit-transition: all .5s;
+-moz-transition: all .5s;
+-o-transition: all .5s;
+transition: all .5s;
+}
+
+.card:hover .card-content,
+.card:focus .card-content {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    background-color: rgba(52,73,94,0.75);
+    filter: brightness(40%);
+    cursor:pointer;
+}
+
+
+
+
+.non-profit-container .project-div{
+position: absolute;
+bottom: 0;
+height: 50px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+color:white;
+display: flex;
+align-items: center;
+}
+
+.non-profit-container .project-div h3{
+color:white; 
+margin:0 0 0 10px;
+}
