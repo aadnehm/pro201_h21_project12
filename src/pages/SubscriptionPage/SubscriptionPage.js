@@ -12,7 +12,7 @@ const SubscriptionPage = () => {
         <span className="circle-bottom-left"></span>
         <span className="circle-bottom-right"></span>
       </div>
-      <div className="new-blue-line"></div>
+      <div className="blue-line"></div>
       <div className="dummy-stepper">
         <div>Choose subscription</div>
         <div>Create Account</div>

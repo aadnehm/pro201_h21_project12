@@ -13,34 +13,18 @@
   overflow: hidden;
 }
 
-/* Stepper */
-.stepper {
-  width: 50%;
-  margin: 1em auto;
-}
 /* Creating  line */
-.sub-page-container .new-blue-line {
+.sub-page-container .blue-line {
+  border-bottom: 5px solid var(--blue-color);
+  max-width: 45vw;
+  margin: 0em auto;
+  height: 5em;
+}
+.sub-page-container .dummy-stepper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 80%;
-  height: 0.6em;
-  border-bottom: 1em solid #c4c4c4;
-  text-align: center;
+  width: 50vw;
   margin: 1em auto;
-}
-.dot-1 {
-  font-size: 1em;
-  background-color: #fff;
-}
-.dot-2 {
-  font-size: 1em;
-  background-color: #fff;
-}
-.dot-3 {
-  font-size: 1em;
-  background-color: #fff;
 }
 
 .sub-page-container .dummy-stepper {

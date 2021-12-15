@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 /* data */
 import { subscriptionModelData } from "./data/SubscriptionModelData";
 /* css */
-import "./SubscriptionCard.css";
+import "./subscriptionCard.css";
 // material ui components:
 import {
   Button,
