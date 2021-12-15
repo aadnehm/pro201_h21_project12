@@ -11,7 +11,6 @@
 .sub-page-container {
   background-color: #fff;
   overflow: hidden;
-  height: 100vh;
 }
 
 /* Stepper */
@@ -97,9 +96,6 @@
   }
 }
 @media screen and (max-width: 1400px) {
-  .sub-page-container {
-    height: auto;
-  }
   .sub-page-container .circle .circle-top-right {
     width: 11em;
     height: 11em;

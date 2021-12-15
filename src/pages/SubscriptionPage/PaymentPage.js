@@ -3,7 +3,7 @@
 import PaymentForm from "../../components/Subscription/PaymentForm";
 
 /* css */
-import "./PaymentPage.css";
+import "./subscriptionPage.css";
 
 const PaymentPage = () => {
   return (
@@ -16,8 +16,8 @@ const PaymentPage = () => {
       <div className="blue-line"></div>
       <div className="dummy-stepper">
         <div>Choose subscription</div>
-        <div>Payment</div>
         <div>Create Account</div>
+        <div>Payment</div>
       </div>
 
       <PaymentForm />

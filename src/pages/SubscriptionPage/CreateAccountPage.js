@@ -2,7 +2,7 @@
 
 import CreateAccount from "../../components/Subscription/CreateAccount";
 /* css */
-import "./CreateAccountPage.css";
+import "./subscriptionPage.css";
 
 const CreateAccountPage = () => {
   return (
@@ -15,8 +15,8 @@ const CreateAccountPage = () => {
       <div className="blue-line"></div>
       <div className="dummy-stepper">
         <div>Choose subscription</div>
-        <div>Payment</div>
         <div>Create Account</div>
+        <div>Payment</div>
       </div>
 
       <CreateAccount />
