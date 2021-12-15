@@ -12,7 +12,14 @@ const SubscriptionPage = () => {
         <span className="circle-bottom-left"></span>
         <span className="circle-bottom-right"></span>
       </div>
-      <div className="blue-line"></div>
+      <div className="stepper">
+        <div className="new-blue-line">
+          <span className="dot-1">CIRCLE </span>
+          <span className="dot-2">CIRCLE </span>
+          <span className="dot-3">CIRCLE </span>
+        </div>
+      </div>
+
       <div className="dummy-stepper">
         <div>Choose subscription</div>
         <div>Payment</div>

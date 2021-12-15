@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 /* data */
-import { subscriptionModelData } from "./SubscriptionModelData";
+import { subscriptionModelData } from "./data/SubscriptionModelData";
 /* css */
-import "./subscriptionCard.css";
+import "./SubscriptionCard.css";
 // material ui components:
 import {
   Button,

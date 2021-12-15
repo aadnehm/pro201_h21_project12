@@ -3,7 +3,7 @@
 import PaymentForm from "../../components/Subscription/PaymentForm";
 
 /* css */
-import "./subscriptionPage.css";
+import "./PaymentPage.css";
 
 const PaymentPage = () => {
   return (

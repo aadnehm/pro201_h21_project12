@@ -2,7 +2,7 @@
 
 import CreateAccount from "../../components/Subscription/CreateAccount";
 /* css */
-import "./subscriptionPage.css";
+import "./CreateAccountPage.css";
 
 const CreateAccountPage = () => {
   return (

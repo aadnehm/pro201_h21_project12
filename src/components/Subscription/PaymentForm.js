@@ -1,7 +1,7 @@
 import React from "react";
 /* data */
-import { CountryData } from "./CountryData";
-import { subscriptionModelData } from "./SubscriptionModelData";
+import { CountryData } from "./data/CountryData";
+import { subscriptionModelData } from "./data/SubscriptionModelData";
 /* css */
 import "./PaymentForm.css";
 /* MUI */
