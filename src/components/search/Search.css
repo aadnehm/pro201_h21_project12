@@ -41,6 +41,10 @@
   }
 }
 
+.search-post .card-logos {
+  margin-left: 10%;
+}
+
 .search-posts .card {
   height: 90%;
   width: 90%;

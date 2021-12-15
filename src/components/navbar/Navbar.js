@@ -27,6 +27,11 @@ class NavbarComponent extends React.Component {
             </Nav.Link>
             <Nav.Link href="/nonprofits">Overview</Nav.Link>
           </Nav>
+          <Nav className="ml-auto">
+            <Nav.Link className="account-link" href="/">
+              My account
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     );

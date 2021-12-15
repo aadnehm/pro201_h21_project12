@@ -34,65 +34,37 @@ export default function Filter({
 
   return (
     <div>
-      {continentQuery.map((continent) => (
-        <Button
-          variant="contained"
-          color="secondary"
-          style={{ marginLeft: "0.5vw", marginRight: "0.5vw" }}
-          endIcon={<ClearIcon />}
-          value={continent}
-          onClick={(e) =>
-            handleChange(
-              setContinentQuery,
-              continentQuery,
-              false,
-              e.target.value
-            )
-          }
-        >
-          {continent}
-        </Button>
-      ))}
-
-      {categoryQuery.map((category) => (
-        <Button
-          variant="contained"
-          color="secondary"
-          style={{ marginLeft: "0.5vw", marginRight: "0.5vw" }}
-          endIcon={<ClearIcon />}
-          value={category}
-          onClick={(e) =>
-            handleChange(setCateoryQuery, categoryQuery, false, e.target.value)
-          }
-        >
-          {category}
-        </Button>
-      ))}
-
       <Button
         aria-describedby={id}
         variant="contained"
         endIcon={<FilterListIcon />}
         onClick={handleClick}
         color="secondary"
+        size="small"
         style={{ marginLeft: "1vw" }}
       >
-        Filter
+        Filter ({continentQuery.length + categoryQuery.length})
       </Button>
       <Popover
         id={id}
         open={open}
         anchorEl={anchorEl}
         onClose={handleClose}
+        style={{ backdropFilter: "blur(2px)" }}
+        anchorPosition={{ top: 200, left: 1400 }}
         anchorOrigin={{
           vertical: "bottom",
+          horizontal: "left",
+        }}
+        transformOrigin={{
+          vertical: "top",
           horizontal: "right",
         }}
       >
-        <Box sx={{ display: "flex", borderRadius: "20%" }}>
+        <Box sx={{ display: "flex", borderRadius: "50%" }}>
           <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
             <Grid container spacing={1}>
-              <Grid item xs={11}>
+              <Grid item xs={10} lg={11}>
                 <FormLabel
                   component="legend"
                   style={{
@@ -111,7 +83,14 @@ export default function Filter({
                 </Button>
               </Grid>
             </Grid>
-            <Grid container spacing={3}>
+            <Grid
+              container
+              spacing={0}
+              style={{
+                marginBottom: "4%",
+                borderBottom: "1px solid grey",
+              }}
+            >
               <Grid item xs={12}>
                 <FormLabel
                   component="legend"
@@ -163,7 +142,14 @@ export default function Filter({
                 />
               </Grid>
             </Grid>
-            <Grid container spacing={3}>
+            <Grid
+              container
+              spacing={0}
+              style={{
+                marginBottom: "4%",
+                borderBottom: "1px solid grey",
+              }}
+            >
               <Grid item xs={12}>
                 <FormLabel
                   component="legend"

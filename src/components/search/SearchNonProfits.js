@@ -4,8 +4,9 @@ import "./Search.css";
 //Components
 import Search from "./Search";
 import Filter from "./Filter";
+import { Button, Grid } from "@mui/material";
 
-//Function that filters out posts depending on the search
+//Function that filters out posts depending on the search or filter
 const filterPosts = (orgs, searchQuery, continentQuery, categoryQuery) => {
   if (
     !searchQuery &&
@@ -18,6 +19,7 @@ const filterPosts = (orgs, searchQuery, continentQuery, categoryQuery) => {
   var filteredByNames = orgs.filter((post) => {
     return post.name.toLowerCase().includes(searchQuery) || !searchQuery;
   });
+
   var filteredByContinents = filteredByNames.filter((post) => {
     return (
       post.continents.some((r) => continentQuery.indexOf(r) >= 0) ||
@@ -57,7 +59,6 @@ const SearchNonProfits = ({ orgs }) => {
           setCateoryQuery={setCategoryQuery}
         />
       </div>
-
       <div className="cards">
         {filteredPosts.map((orgs) => (
           <div className="card">
