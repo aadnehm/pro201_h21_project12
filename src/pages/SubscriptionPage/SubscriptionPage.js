@@ -1,6 +1,7 @@
 /* components */
 import SubscriptionCard from "../../components/Subscription/SubscriptionCard";
 import PaymentForm from "../../components/Subscription/PaymentForm";
+import CreateAccount from "../../components/Subscription/CreateAccount";
 /* css */
 import "./subscriptionPage.css";
 
@@ -19,7 +20,8 @@ const SubscriptionPage = () => {
         <div>Create Account</div>
       </div>
 
-      <SubscriptionCard />
+      {/* <SubscriptionCard /> */}
+      <CreateAccount />
       {/*     <PaymentForm /> */}
     </div>
   );

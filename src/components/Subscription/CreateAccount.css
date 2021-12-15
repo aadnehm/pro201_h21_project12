@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+.account-container {
+  max-width: 50em;
+  margin: 3em auto;
+  background-color: #eee; /* må finne riktig farge */
+}
+.form-grid-container {
+  display: flex;
+  max-width: 30em;
+  margin: 4em auto;
+  padding: 2em;
+  font-family: "Raleway", sans-serif;
+}
+
+/* buttons */
+.form-grid-container .org-button {
+  margin-top: 0.2em;
+  text-transform: capitalize;
+  color: #111;
+  border: 1px solid var(--blue-grey-color);
+}
+.form-grid-container .org-button:hover {
+  opacity: 0.8;
+}
+.form-grid-container .create-button {
+  background-color: var(--blue-color);
+  margin: 1em 0 0em;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+}
+.form-grid-container .create-button:hover {
+  background-color: var(--blue-color);
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px) {
+  .payment-container {
+    max-width: 80vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .payment-container {
+    max-width: 90vw;
+  }
+}
