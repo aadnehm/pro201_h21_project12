@@ -1,13 +1,14 @@
 /* components */
 
 import PaymentForm from "../../components/Subscription/PaymentForm";
-
+import BackButton from "../../components/Subscription/backButton";
 /* css */
 import "./subscriptionPage.css";
 
 const PaymentPage = () => {
   return (
     <div className="sub-page-container">
+      <BackButton></BackButton>
       <div className="circle">
         <span className="circle-top-right"></span>
         <span className="circle-bottom-left"></span>

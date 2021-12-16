@@ -14,6 +14,25 @@
   height: 100vh;
   font-family: "Raleway", sans-serif;
 }
+/* back-button */
+.back-button-container {
+  position: relative;
+}
+.back-button {
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  height: 1.2em;
+  border-radius: 50%;
+  border: 1px solid var(--blue-color);
+  padding: 0.5em;
+  display: inline;
+  filter: invert(48%) sepia(20%) saturate(467%) hue-rotate(154deg)
+    brightness(92%) contrast(98%);
+}
+.back-button:hover {
+  height: 1.4em;
+}
 
 /* css stepper, sigmund custom.Enkel, men funker */
 
@@ -113,6 +132,9 @@
   .sub-page-container .line-stepper {
     width: 85vw;
     font-size: 0.9em;
+  }
+  .back-button {
+    display: none;
   }
 }
 @media screen and (max-width: 1400px) {

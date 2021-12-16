@@ -1,12 +1,14 @@
 /* components */
 
 import CreateAccount from "../../components/Subscription/CreateAccount";
+import BackButton from "../../components/Subscription/backButton";
 /* css */
 import "./subscriptionPage.css";
 
 const CreateAccountPage = () => {
   return (
     <div className="sub-page-container">
+      <BackButton />
       <div className="circle">
         <span className="circle-top-right"></span>
         <span className="circle-bottom-left"></span>
