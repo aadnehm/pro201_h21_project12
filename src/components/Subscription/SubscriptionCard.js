@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 /* data */
-import { subscriptionModelData } from "./SubscriptionModelData";
+import { subscriptionModelData } from "./data/SubscriptionModelData";
 /* css */
 import "./subscriptionCard.css";
 // material ui components:
@@ -68,7 +68,7 @@ export default function SubscriptionCard() {
                     variant="contained"
                     size="large"
                     component={Link}
-                    to="/subscription-paymentForm"
+                    to="/create-account"
                   >
                     Subscribe
                   </Button>

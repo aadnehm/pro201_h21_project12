@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
 .payment-container {
   max-width: 60em;
   margin: 3em auto;
-  background-color: #eee;
+  background-color: #f3f5f6;
 }
 .form-grid-container {
   display: flex;
-  max-width: 30em;
-  margin: 4em auto;
+  max-width: 35em;
+  margin: 3em auto;
   padding: 1em;
   font-family: "Raleway", sans-serif;
 }
@@ -16,12 +17,12 @@
   margin: 0 0.2em;
 }
 .form-grid-container .label {
-  margin-top: 1.5em;
+  margin-top: 1.2em;
 }
 
 /* or pay with card  */
 .form-grid-container .heading-with-lines {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .lines {
   width: 100%;
@@ -32,14 +33,14 @@
 }
 .line-text {
   font-size: 1em;
-  background-color: #eee;
+  background-color: #f3f5f6;
   padding: 0 10px;
+  margin-top: 3em;
 }
 
 /* buttons */
 .form-grid-container .vipps-button {
   background-color: #ff5b24;
-  margin: 0.5em 0;
   text-transform: capitalize;
 }
 .form-grid-container .vipps-button:hover {

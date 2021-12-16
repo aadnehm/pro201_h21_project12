@@ -1,8 +1,19 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/* farger som brukes på alle deler/component i subscriptions */
+:root {
+  --grey-color: lightgray;
+  --blue-color: #5c7b89;
+  --green-color: #4ca771;
+  --blue-grey-color: #8792a2;
+  --container-color: #5c7b890f;
+}
 .sub-page-container {
   background-color: #fff;
   overflow: hidden;
   height: 100vh;
 }
+
 /* Creating  line */
 .sub-page-container .blue-line {
   border-bottom: 5px solid var(--blue-color);
@@ -10,6 +21,13 @@
   margin: 0em auto;
   height: 5em;
 }
+.sub-page-container .dummy-stepper {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin: 1em auto;
+}
+
 .sub-page-container .dummy-stepper {
   display: flex;
   justify-content: space-between;
@@ -32,24 +50,27 @@
 }
 .sub-page-container .circle .circle-bottom-left {
   position: absolute;
-  top: 80vh;
-  left: -7vw;
-  width: 17em;
-  height: 17em;
+  top: 85vh;
+  left: -10vw;
+  width: 19em;
+  height: 19em;
   border-radius: 50%;
   background: #5c7b89;
 }
 .sub-page-container .circle .circle-bottom-right {
   position: absolute;
-  top: 95vh;
-  left: 35vw;
-  width: 60em;
+  top: 92vh;
+  left: 25vw;
+  width: 70em;
   height: 60em;
   border-radius: 50%;
   background: #f2ac20;
 }
 
 @media screen and (max-width: 900px) {
+  .sub-page-container {
+    height: auto;
+  }
   .sub-page-container .circle {
     display: none;
   }
@@ -63,21 +84,19 @@
   }
 }
 @media screen and (max-width: 1400px) {
-  .sub-page-container {
-    height: auto;
-  }
   .sub-page-container .circle .circle-top-right {
-    width: 11em;
-    height: 11em;
+    width: 12em;
+    height: 12em;
   }
   .sub-page-container .circle .circle-bottom-left {
     width: 10em;
     height: 10em;
-    top: 87vh;
+    top: 90vh;
+    left: -5em;
   }
   .sub-page-container .circle .circle-bottom-right {
-    top: 95vh;
-    width: 45em;
+    top: 94vh;
+    width: 55em;
     height: 45em;
   }
 }
