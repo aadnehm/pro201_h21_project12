@@ -40,8 +40,10 @@ export default function Login() {
     setDataPassword(newData);
   }
 
+
   const auth = getAuth();
   const handleLogin = async () => {
+    if(validateInputs()){
     await signInWithEmailAndPassword(auth, dataEpost, dataPassword)
       .then((userCredential) => {
         // Signed in
@@ -50,15 +52,20 @@ export default function Login() {
         // ...
       })
       .catch((error) => {
-        setError(error.message);
-      });
+        setPasswordHelperText("The username or password you entered is incorrect")
+        setEpostHelperText(" ")
+        setEpostError(true);
+        setPasswordError(true)
+      })};
   };
 
   /* Input validation function */
   function validateInputs() {
+    let needMore = true;
     if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
       setEpostError(true);
       setEpostHelperText("Please use valid e-mail")
+      needMore = false;
     } else if (dataEpost.includes("@" && ".") && dataEpost.length >= 8) {
       setEpostError(false);
       setEpostHelperText("")
@@ -67,10 +74,12 @@ export default function Login() {
     if (typeof dataPassword === "undefined" || dataPassword.length === 0) {
       setPasswordError(true);
       setPasswordHelperText("Wrong password")
+      needMore = false;
     } else {
       setPasswordError(false);
       setPasswordHelperText("")
     }
+    return needMore;
   }
 
   /* HandleLogin function 
