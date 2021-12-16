@@ -8,20 +8,16 @@ import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
-export default function NonProfit() {
-  const headerText =
-    "Redd Barna kjemper for barns rettigheter, og for at alle barn skal leve et verdig liv – uansett hvem de er og hvor de bor. Redd Barna jobber i 122 land over hele verden, også i Norge!";
+export default function NonProfit({ selectedOrg }) {
+  const headerText = selectedOrg.description;
   const navigate = useNavigate();
-
+  const img = "url(./img/" + selectedOrg.img + ")";
   function Navigate() {
     navigate("/non-project");
   }
   return (
-    <div
-      style={{ backgroundImage: "url(./img/non-profit/red-barna.jpg)" }}
-      className="non-profit-container"
-    >
-      <HeaderNonProfit text={headerText}></HeaderNonProfit>
+    <div style={{ backgroundImage: img }} className="non-profit-container">
+      <HeaderNonProfit text={headerText} org={selectedOrg}></HeaderNonProfit>
       <div className="our-projects-div">
         <h2>Our projects</h2>
 
