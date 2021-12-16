@@ -4,9 +4,10 @@ import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
 import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfitHome from "./pages/nonProfitHome/NonProfitHome";
-import SigninEmployee from "./pages/signin-employee/SigninEmployee";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
+import SearchNonProfits from "./components/search/SearchNonProfits";
+import Login from "./pages/login/Login";
 //Global CSS
 import "./App.css";
 //MUI
@@ -16,7 +17,6 @@ import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
-import { red } from "@mui/material/colors";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
