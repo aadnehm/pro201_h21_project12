@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { Link } from "react-router-dom";
 
 /* CSS */
 import "./nonProfit.css";
@@ -22,7 +21,10 @@ export default function NonProfit() {
     navigate("/non-project");
   }
   return (
-    <div className="non-profit-container" style={{backgroundImage:"./img/non-profit/lines.png"}}>
+    <div
+      className="non-profit-container"
+      style={{ backgroundImage: "url(./img/non-profit/lines.png)" }}
+    >
       <div className="non-profit-hero">
         <div className="header-div">
           <h1>REDD</h1>
@@ -50,12 +52,17 @@ export default function NonProfit() {
           indicatorColor="primary"
           centered
         >
-          <Tab className="tab" label="About" />
-          <Tab className="tab" label="Our projects" />
-          <Tab className="tab" label="The people" />
+          <Tab label="About" />
+          <Tab label="Our projects" />
+          <Tab label="The people" />
         </Tabs>
-        s
+
         <div className="cards-div">
+          <img
+            className="arrow-logo"
+            src="./img/non-profit/arrow1.png"
+            alt="arrow"
+          />
           <Card onClick={Navigate} className="card-non-profit">
             <CardContent
               style={{ backgroundImage: "url(./img/non-profit/card-img.png)" }}
@@ -162,19 +169,15 @@ export default function NonProfit() {
               </div>
             </div>
           </Card>
+          <img
+            className="arrow-logo"
+            src="./img/non-profit/arrow.png"
+            alt="arrow"
+          />
         </div>
       </div>
     </div>
   );
 }
 
-{
-  /*       <Button
-          className="header-text-button"
-          variant="contained"
-          component={Link}
-          to="/choose-subscription"
-        >
-          Donate
-        </Button> */
-}
+

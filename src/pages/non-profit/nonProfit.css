@@ -1,5 +1,6 @@
 /* Header */
 .non-profit-container {
+  background-size: cover;
   height: 100vh;
   position: relative;
   background-color: #E5E5E5;
@@ -12,13 +13,25 @@ position: absolute;
 top:10%;
 left:50%;
 transform: translateX(-50%);
+}
 
+.non-profit-hero .right-header-flag{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color:#BB334D;
+  color:#E5E5E5;
+  
+}
+
+.non-profit-hero .right-header-flag h3{
+  padding: 5px 25px 5px 25px;
 }
 
 /* Header */
 
 .non-profit-container .header-div {
-  width: 100%;
+
 }
 
 .non-profit-container .header-div h1 {
@@ -57,6 +70,7 @@ margin:2% auto;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 
@@ -123,12 +137,13 @@ font-size:1vw;
     margin:3%;
 }
 
-/* Tabs */
-.non-profit-container .tabs-div {
-width: 100%;
+.arrow-logo{
+  width:2%;
+  height: 2%;
 }
 
-.non-profit-project-container .tab {
-  color: white;
-  
+/* Tabs */
+.non-profit-container .tabs-div {
+margin-bottom: 1%;
 }
+
