@@ -1,27 +1,60 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+
 /* CSS */
 import "./nonProfit.css";
-/* Components */
-import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
 /* MUI */
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import { Card, CardContent, Button } from "@mui/material/";
+import { Tabs, Tab } from "@mui/material";
 
 export default function NonProfit() {
-  const selectedOrg = JSON.parse(localStorage.getItem("org"));
-  const headerText = selectedOrg.description;
+  /* Tabs */
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  /* Navigation */
   const navigate = useNavigate();
-  const img = "url(./img/" + selectedOrg.img + ")";
   function Navigate() {
     navigate("/non-project");
   }
   return (
-    <div style={{ backgroundImage: img }} className="non-profit-container">
-      <HeaderNonProfit text={headerText} org={selectedOrg}></HeaderNonProfit>
-      <div className="our-projects-div">
-        <h2>Our projects</h2>
+    <div className="non-profit-container" style={{backgroundImage:"./img/non-profit/lines.png"}}>
+      <div className="non-profit-hero">
+        <div className="header-div">
+          <h1>REDD</h1>
+          <h1>BARNA</h1>
+        </div>
+        <div className="header-text">
+          <p>
+            Redd Barna kjemper for{" "}
+            <span style={{ fontWeight: "bold" }}>barns rettigheter</span>, og
+            for at alle barn skal leve et
+            <span style={{ fontWeight: "bold" }}> verdig liv</span> – uansett
+            hvem de er og hvor de bor. Redd Barna jobber i{" "}
+            <span style={{ fontWeight: "bold" }}>122</span> land over hele
+            verden, også i Norge!
+          </p>
+        </div>
+      </div>
 
+      <div className="our-projects-div">
+        <Tabs
+          className="tabs-div"
+          value={value}
+          onChange={handleChange}
+          textColor="primary"
+          indicatorColor="primary"
+          centered
+        >
+          <Tab className="tab" label="About" />
+          <Tab className="tab" label="Our projects" />
+          <Tab className="tab" label="The people" />
+        </Tabs>
+        s
         <div className="cards-div">
           <Card onClick={Navigate} className="card-non-profit">
             <CardContent
@@ -133,4 +166,15 @@ export default function NonProfit() {
       </div>
     </div>
   );
+}
+
+{
+  /*       <Button
+          className="header-text-button"
+          variant="contained"
+          component={Link}
+          to="/choose-subscription"
+        >
+          Donate
+        </Button> */
 }
