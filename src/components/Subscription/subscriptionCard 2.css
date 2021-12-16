@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+:root {
+  --grey-color: lightgray;
+  --blue-color: #5c7b89;
+  --green-color: #4ca771;
+}
+.subscription-model-grid .heading {
+  margin: 1em auto 0;
+  padding: 1em 2.1em;
+  max-width: 62em;
+  z-index: 1;
+}
+.subscription-model-grid .heading h1 {
+  font-size: 1.8em;
+}
+.subscription-model-grid {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.subscription-model-grid .grid-container {
+  box-sizing: border-box;
+}
+
+.subscription-model-grid h1,
+h2,
+h4 {
+  font-weight: 800;
+}
+.subscription-model-grid h1 {
+  font-size: 25px;
+}
+.subscription-model-grid h2 {
+  font-size: 20px;
+}
+.subscription-model-grid h4 {
+  font-size: 15px;
+}
+
+.subscription-model-grid .sub-card {
+  position: relative;
+  border: 2.5px solid black;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+  height: 30em;
+  max-width: 20em;
+}
+.subscription-model-grid .sub-card:hover {
+  transform: translateY(-1.8em);
+}
+
+.subscription-model-grid .text-margin {
+  margin-bottom: 2em;
+}
+.subscription-model-grid .grey-font {
+  color: var(--grey-color);
+  opacity: 80%;
+  font-size: medium;
+}
+.subscription-model-grid .large-font {
+  font-size: 30px;
+}
+
+.subscription-model-grid .border-bottom {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--grey-color);
+}
+.subscription-model-grid .span-p {
+  font-weight: 800;
+}
+/* button */
+.subscription-model-grid .button {
+  position: absolute;
+  top: 18.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: var(--blue-color);
+  width: 70%;
+  text-transform: capitalize;
+}
+.subscription-model-grid .button:hover {
+  background-color: var(--blue-color);
+  opacity: 70%;
+}
+
+.subscription-model-grid .popular-box {
+  height: 2.5em;
+  width: 10em;
+  background-color: var(--green-color);
+  margin: auto 1em;
+}
+
+.subscription-model-grid .popular-box p {
+  text-align: center;
+  margin: auto;
+  padding: 0.5em;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subscription-model-grid .ghost-box {
+  height: 2.5em;
+  width: 10em;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .subscription-model-grid {
+    height: auto;
+  }
+  .subscription-model-grid .sub-card {
+    margin: 0em auto;
+    width: 78vw;
+    max-width: 30em;
+  }
+  .subscription-model-grid .popular-box {
+    margin: 2em 3.5em 0em;
+  }
+  .subscription-model-grid .ghost-box {
+    margin: 0em 3.5em 0em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .subscription-model-grid {
+    height: auto;
+  }
+}

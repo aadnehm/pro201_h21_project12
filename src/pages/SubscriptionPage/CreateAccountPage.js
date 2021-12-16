@@ -2,11 +2,11 @@
 
 import CreateAccount from "../../components/Subscription/CreateAccount";
 /* css */
-import "./subscriptionPage.css";
+import "./CreateAccountPage.css";
 
 const CreateAccountPage = () => {
   return (
-    <div className="sub-page-container">
+    <div className="account-page-container">
       <div className="circle">
         <span className="circle-top-right"></span>
         <span className="circle-bottom-left"></span>
