@@ -114,6 +114,7 @@ export default function SigninEmployee() {
 
 	/* Input validation function */
 	function validateInputs() {
+		let needsMoreValidation = true;
 		if (code) {
 			setCodeError(false);
 			setCodeHelperText(' ');
@@ -121,6 +122,7 @@ export default function SigninEmployee() {
 		else {
 			setCodeError(true);
 			setCodeHelperText('Enter org code');
+			needsMoreValidation = false;
 		}
 		if (name) {
 			setNameError(false);
@@ -129,11 +131,13 @@ export default function SigninEmployee() {
 		else {
 			setNameError(true);
 			setNameHelperText('Please enter your name');
+			needsMoreValidation = false;
 		}
 
 		if (typeof dataEpost === 'undefined' || !dataEpost.includes('@' && '.')) {
 			setEpostError(true);
 			setEpostHelperText('Please use valid e-mail');
+			needsMoreValidation = false;
 		}
 		else if (dataEpost.includes('@' && '.') && dataEpost.length >= 8) {
 			setEpostError(false);
@@ -143,6 +147,7 @@ export default function SigninEmployee() {
 		if (typeof dataPassword === 'undefined' || dataPassword.length < 6) {
 			setPasswordError(true);
 			setPasswordHelperText('6 characters or more');
+			needsMoreValidation = false;
 		}
 		else {
 			setPasswordError(false);
@@ -152,11 +157,13 @@ export default function SigninEmployee() {
 		if (typeof dataPassword1 === 'undefined' || dataPassword1 !== dataPassword) {
 			setPasswordError1(true);
 			setPasswordHelperText1('Passwords dont match');
+			needsMoreValidation = false;
 		}
 		else {
 			setPasswordError1(false);
 			setPasswordHelperText1(' ');
 		}
+		return needsMoreValidation;
 	}
 	//Fetching companies
 	const fetchCompanies = async () => {
@@ -175,30 +182,31 @@ export default function SigninEmployee() {
 	const handleLogin = async () => {
 		const auth = getAuth();
 		const temp = companies.filter((element) => element.firmakode === code);
-		if (temp.length == 1) {
-			await createUserWithEmailAndPassword(auth, dataEpost, dataPassword, code)
-				.then((userCredential) => {
-					const user = userCredential.user;
+		if (validateInputs()) {
+			if (temp.length == 1) {
+				await createUserWithEmailAndPassword(auth, dataEpost, dataPassword, code)
+					.then((userCredential) => {
+						const user = userCredential.user;
 
-					alert(user.email + ' created');
-					const docRef = addDoc(collection(db, 'users'), {
-						navn      : `${name}`,
-						epost     : `${dataEpost}`,
-						firmakode : `${code}`,
-						admin     : `${false}`,
-						aktiv     : `${true}`
+						alert(user.email + ' created');
+						const docRef = addDoc(collection(db, 'users'), {
+							navn      : `${name}`,
+							epost     : `${dataEpost}`,
+							firmakode : `${code}`,
+							admin     : `${false}`,
+							aktiv     : `${true}`
+						});
+						setCompanies([]);
+						navigate('/nonprofits');
+					})
+					.catch((error) => {
+						setError(error.message);
 					});
-					setCompanies([]);
-					navigate('/nonprofits');
-				})
-				.catch((error) => {
-					setError(error.message);
-					alert(error);
-				});
-		}
-		else {
-			setError('Finner ikke registrert firma med denne firmakoden. Kontakt ansvarlig i firmaet ditt');
-			alert('Finner ikke registrert firma med denne firmakoden. Kontakt ansvarlig i firmaet ditt');
+			}
+			else {
+				setError('Finner ikke registrert firma med denne firmakoden. Kontakt ansvarlig i firmaet ditt');
+				alert('Finner ikke registrert firma med denne firmakoden. Kontakt ansvarlig i firmaet ditt');
+			}
 		}
 	};
 
