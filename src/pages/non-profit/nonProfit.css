@@ -1,64 +1,72 @@
-
+/* Header */
 .non-profit-container{
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 height: 100vh;
 position: relative;
-box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+/* box-shadow: inset 0 0 0 1000px rgba(36, 27, 27, 0.6); */
+}
+
+.non-profit-hero{
+    position: absolute;
+    top: 12%;
 }
 
 
 .non-profit-container .header-div{
-background-color:darkred;
+background-color:#BB334D;
 width: 20%;
-height: 10%;
-position: absolute;
-top: 10%;
+height: 10vh;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
+display:flex;
+justify-content: center;
+align-items: center;
 }
 
 
 .non-profit-container .header-div h1{
-display:flex;
-justify-content: center;
-align-items: center;
 color:white;
+font-weight: 700;
 }
 
 .non-profit-container .header-text{
-    position: absolute;
-    top:20%;
-    left: 3%;
-    color:white;
-    font-size:30px;
-    width: 30%;
+color:white;
+font-size:30px;
+width: 38%;
+margin-left: 3%;
+display: flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.non-profit-container .header-text-button{
+    width: 13%;
+    margin-left: 3%;
 }
 
 /* Cards */
-
+.non-profit-container .our-projects-div h2{
+    text-align: center;
+}
 .non-profit-container .our-projects-div{
     color:white;
     position: absolute;
     bottom: 5%;
-    width: 100%;
-    text-align: center;
+    width: 100%;  
 }
 
 .non-profit-container .cards-div{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-
 }
 .non-profit-container .card{
    width: 20%;
    height: 200px;
    position: relative;
 }
-
-
 
 .non-profit-container .card-content{
 padding:0;  
@@ -79,13 +87,13 @@ transition: all .5s;
     -o-transform: scale(1.2);
     transform: scale(1.2);
     background-color: rgba(52,73,94,0.75);
-    filter: brightness(40%);
+    filter: brightness(65%);
     cursor:pointer;
 }
 
 
 
-
+/* Card content */
 .non-profit-container .project-div{
 position: absolute;
 bottom: 0;
@@ -95,9 +103,22 @@ background-color: rgba(0, 0, 0, 0.6);
 color:white;
 display: flex;
 align-items: center;
+font-size: 14px;
 }
 
 .non-profit-container .project-div h3{
 color:white; 
 margin:0 0 0 10px;
+}
+
+/* Tabs */
+.non-profit-project-container .tabs-div{
+position:absolute;
+bottom: 10%;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.non-profit-project-container .tab{
+    color:white; 
 }

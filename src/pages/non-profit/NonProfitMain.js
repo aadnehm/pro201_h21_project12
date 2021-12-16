@@ -1,8 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router";
+/* CSS */
 import "./nonProfit.css";
+/* Components */
 import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
-
+/* MUI */
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 

@@ -13,6 +13,7 @@ import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 //Firebase
 import db from './lib/firebase';
+import { red } from '@mui/material/colors';
 
 
 /* Changing default value for secondary color */
@@ -20,8 +21,19 @@ const mainColor = createTheme({
 	palette : {
 		secondary : {
 			main : '#5C7B89'
+		},
+		primary : {
+			main : "#BB334D"
 		}
-	}
+	},
+
+	typography: {
+		"fontFamily": `"Raleway", "Helvetica", "Arial", sans-serif`,
+		"fontSize": 16,
+		"fontWeightLight": 300,
+		"fontWeightRegular": 400,
+		"fontWeightMedium": 600
+	   }
 });
 
 function App() {
