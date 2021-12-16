@@ -1,1 +1,42 @@
+.navbar {
+  background-color: #5c7b89;
+  z-index: 1;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.navbar .nav-link {
+  background-color: #5c7b89;
+}
+
+@media (min-width: 900px) {
+  .mr-auto {
+    margin-left: 10%;
+    font-size: 2.4vh;
+  }
+}
+
+.mr-auto:active {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .navbar .logo {
+    margin-left: 300%;
+  }
+}
+
+@media (min-width: 900px) {
+  .account-link {
+    margin-left: 775%;
+    font-size: 2.4vh;
+  }
+}
+
+.account-link:active {
+  text-decoration: underline;
+  color: white;
+}

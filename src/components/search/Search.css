@@ -1,6 +1,7 @@
 /* Search Non-profits */
 .search-posts {
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20vh;
 }
 
 .search-posts .headline {
@@ -17,9 +18,19 @@
   grid-gap: 2rem;
 }
 
+.search-posts .cards:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .search-posts .cards {
-    margin-left: 4vw;
+    margin-left: 10vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-posts .cards {
+    width: 83%;
   }
 }
 
@@ -35,37 +46,119 @@
   }
 }
 
+.search-post .card-logos {
+  margin-left: 10%;
+}
+
 .search-posts .card {
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 90%;
   border-radius: 2%;
-  align-items: center;
+  align-items: left;
+  border: none;
   margin-top: 2vh;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ); /* FF3.6+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 .search-posts .card-name {
   font-size: 1.5rem;
-  font-weight: bold;
   margin-bottom: 1rem;
-  margin-top: -5vh;
+  margin-top: 25vh;
   z-index: 4;
   position: absolute;
+  align-items: left;
   color: white;
   margin-left: 1vw;
 }
 
+@media (max-width: 600px) {
+  .search-posts .card-name {
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-posts .card-name {
+    margin-top: 19vh;
+  }
+}
+
 .search-posts .image {
-  width: 120%;
-  height: 120%;
-  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.search-posts .image:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.search-posts .filter {
+  margin-left: 77vw;
+  margin-top: -7vh;
+  margin-bottom: 1vh;
+}
+
+@media (max-width: 600px) {
+  .search-posts .filter {
+    margin-left: 65vw;
+    margin-top: -11.5vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-posts .filter {
+    margin-left: 65vw;
+    margin-top: -8.5vh;
+  }
 }
 
 /* Search Bar */
+
+.search-bar {
+  white-space: nowrap;
+}
+
 .search-bar .search {
-  margin-top: 4vh;
+  display: inline-block;
+  padding-top: 3vh;
+  margin-top: 15vh;
   text-align: left;
-  margin-left: 13vw;
+  margin-left: 13.4vw;
   margin-bottom: 4vh;
+}
+
+@media (max-width: 600px) {
+  .search-bar .search {
+    margin-left: 2vw;
+    margin-top: 12vh;
+  }
 }
 
 .search-bar .visually-hidden {

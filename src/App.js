@@ -5,6 +5,7 @@ import SigninEmployee from "./pages/signin-employee/SigninEmployee";
 import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
 import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
+import NonProfitHome from "./pages/nonProfitHome/NonProfitHome";
 //Global CSS
 import "./App.css";
 //MUI
@@ -37,6 +38,7 @@ function App() {
     });
   };
   const [orgs, setOrgs] = useState([]);
+  const [selectedOrg, setSelectedOrg] = useState();
 
   useEffect(() => {
     fetchOrgs();
@@ -49,12 +51,19 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route
             path="/nonprofits"
-            element={<SearchNonProfits orgs={orgs} />}
+            element={
+              <SearchNonProfits orgs={orgs} setSelectedOrg={setSelectedOrg} />
+            }
           />
           <Route path="/signin-employee" element={<SigninEmployee />} />
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />
+
+          <Route
+            path="/nonprofithome"
+            element={<NonProfitHome selectedOrg={selectedOrg} />}
+          />
         </Routes>
       </div>
     </ThemeProvider>

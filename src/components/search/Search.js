@@ -3,9 +3,11 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
+import NavbarComponent from "../navbar/Navbar";
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => (
   <header className="search-bar">
+    <NavbarComponent />
     <div className="search">
       <label htmlFor="header-search">
         <span className="visually-hidden">Find a non-profit</span>
