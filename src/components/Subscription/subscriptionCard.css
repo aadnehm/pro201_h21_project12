@@ -82,6 +82,7 @@ h4 {
 }
 .subscription-model-grid .button:hover {
   background-color: var(--blue-color);
+  color: #fff;
   opacity: 70%;
 }
 
