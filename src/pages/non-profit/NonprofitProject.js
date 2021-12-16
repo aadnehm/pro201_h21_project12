@@ -33,7 +33,7 @@ export default function NonprofitProject() {
         textColor="primary"
         indicatorColor="primary"
       >
-        <Tab className="tab" label="Inside storyes" />
+        <Tab className="tab" label="Inside stories" />
         <Tab className="tab" label="About" />
         <Tab className="tab" label="Impact" />
       </Tabs>
