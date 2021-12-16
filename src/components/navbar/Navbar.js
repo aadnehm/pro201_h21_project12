@@ -26,6 +26,7 @@ class NavbarComponent extends React.Component {
               Home
             </Nav.Link>
             <Nav.Link href="/nonprofits">Overview</Nav.Link>
+            <Nav.Link href="/choose-subscription">Subscribe</Nav.Link>
           </Nav>
           <Nav className="ml-auto">
             <Nav.Link className="account-link" href="/">
