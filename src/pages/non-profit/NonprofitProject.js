@@ -6,7 +6,9 @@ import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
 /* MUI */
 import { Tabs, Tab } from "@mui/material";
 
-export default function NonprofitProject({ selectedOrg }) {
+export default function NonprofitProject() {
+  const selectedOrg = JSON.parse(localStorage.getItem("org"));
+
   const [value, setValue] = React.useState(0);
   const img = "url(./img/" + selectedOrg.img + ")";
 

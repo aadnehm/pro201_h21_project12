@@ -8,7 +8,8 @@ import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
-export default function NonProfit({ selectedOrg }) {
+export default function NonProfit() {
+  const selectedOrg = JSON.parse(localStorage.getItem("org"));
   const headerText = selectedOrg.description;
   const navigate = useNavigate();
   const img = "url(./img/" + selectedOrg.img + ")";
@@ -108,7 +109,7 @@ export default function NonProfit({ selectedOrg }) {
               }}
             ></CardContent>
             <div className="project-div-non-profit">
-                <h3>Trygt tilbake til skolen</h3>
+              <h3>Trygt tilbake til skolen</h3>
               <div className="logo-firma-non-profit-img-wrap">
                 <img
                   class="logo-firma-non-profit-img"
