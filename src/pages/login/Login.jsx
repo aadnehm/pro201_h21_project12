@@ -9,7 +9,7 @@ import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 
 export default function Login() {
   //Navigation
@@ -91,6 +91,16 @@ export default function Login() {
     }
   } */
 
+  //reset password
+  const handleResetPassword =  async(e) => {
+    e.preventDefault();
+    await sendPasswordResetEmail(auth, prompt("Enter email")).then(function(){
+      alert("email sent")
+    }).catch(function(error) {
+      alert(error.message)
+    })
+  }
+
   return (
     <div className="container-login">
       <div className="container-left">
@@ -131,7 +141,7 @@ export default function Login() {
             ></FormControlLabel>
           </div>
           <div className="right-content-button">
-            <a href="">Forgot your password?</a>
+            <a onClick={handleResetPassword} href="">Forgot your password?</a>
             <Button
               size="large"
               color="secondary"
