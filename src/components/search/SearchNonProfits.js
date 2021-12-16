@@ -4,7 +4,15 @@ import "./Search.css";
 //Components
 import Search from "./Search";
 import Filter from "./Filter";
-import { Button, Grid } from "@mui/material";
+import {
+  Button,
+  Card,
+  Grid,
+  CardActionArea,
+  CardMedia,
+  CardContent,
+  Typography,
+} from "@mui/material";
 
 import { useNavigate } from "react-router";
 
@@ -69,16 +77,27 @@ const SearchNonProfits = ({ orgs, setSelectedOrg }) => {
       </div>
       <div className="cards">
         {filteredPosts.map((orgs) => (
-          <div
-            className="card"
-            onClick={() => selectNonProfit(orgs, setSelectedOrg)}
-          >
-            <img className="image" src={`./img/${orgs.img}`} alt={orgs.name} />
-            <div className="card-name" key={orgs.key}>
-              {orgs.name}
-              <br />
-            </div>
-          </div>
+          <Card style={{ backgroundColor: "black" }}>
+            <CardActionArea>
+              <div onClick={() => selectNonProfit(orgs, setSelectedOrg)}>
+                <CardMedia
+                  component="img"
+                  height="100%"
+                  image={`./img/${orgs.img}`}
+                  alt="Bilde av organiasasjonen"
+                />
+                <CardContent>
+                  <Typography
+                    variant="h6"
+                    style={{ color: "white" }}
+                    component="div"
+                  >
+                    {orgs.name}
+                  </Typography>
+                </CardContent>
+              </div>
+            </CardActionArea>
+          </Card>
         ))}
       </div>
     </main>
