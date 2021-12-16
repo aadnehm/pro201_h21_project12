@@ -38,7 +38,6 @@ width: 38%;
 margin-left: 3%;
 display: flex;
 flex-direction: column;
-background-color: rgba(0, 0, 0, 0.6);
 }
 
 .non-profit-container .header-text-button{
@@ -46,7 +45,7 @@ background-color: rgba(0, 0, 0, 0.6);
     margin-left: 3%;
 }
 
-/* Cards */
+/* Cards container */
 .non-profit-container .our-projects-div h2{
     text-align: center;
 }
@@ -62,7 +61,10 @@ background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: space-evenly;
 }
-.non-profit-container .card{
+
+
+/* Cards */
+.non-profit-container .card-non-profit{
    width: 20%;
    height: 200px;
    position: relative;
@@ -79,8 +81,8 @@ background-position: center;
 transition: all .5s;
 }
 
-.card:hover .card-content,
-.card:focus .card-content {
+.card-non-profit:hover .card-content,
+.card-non-profit:focus .card-content {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -92,9 +94,7 @@ transition: all .5s;
 }
 
 
-
-/* Card content */
-.non-profit-container .project-div{
+.non-profit-container .project-div-non-profit{
 position: absolute;
 bottom: 0;
 height: 50px;
@@ -106,9 +106,24 @@ align-items: center;
 font-size: 14px;
 }
 
-.non-profit-container .project-div h3{
+
+.non-profit-container .project-div-non-profit h3{
 color:white; 
 margin:0 0 0 10px;
+font-size:1vw;
+}
+
+
+.logo-firma-non-profit-img-wrap{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.logo-firma-non-profit-img{
+    width: 20px;
+    border-radius: 50px;
+    margin:3%;
 }
 
 /* Tabs */
