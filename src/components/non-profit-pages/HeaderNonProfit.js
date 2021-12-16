@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 /* MUI */
 import { Button } from "@mui/material";
 
@@ -31,6 +32,8 @@ export default function HeaderNonProfit(props) {
         className="header-text-button"
         variant="contained"
         style={{ backgroundColor: color, color: textColor }}
+        component={Link}
+        to="/choose-subscription"
       >
         Donate
       </Button>
