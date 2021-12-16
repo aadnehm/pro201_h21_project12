@@ -1,11 +1,12 @@
 //Componentes
-import SearchNonProfits from "./components/search/SearchNonProfits";
-import Login from "./pages/login/Login";
 import SigninEmployee from "./pages/signin-employee/SigninEmployee";
 import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
 import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfitHome from "./pages/nonProfitHome/NonProfitHome";
+import SigninEmployee from "./pages/signin-employee/SigninEmployee";
+import NonProfit from "./pages/non-profit/NonProfitMain";
+import NonProfitProject from "./pages/non-profit/NonprofitProject";
 //Global CSS
 import "./App.css";
 //MUI
@@ -15,8 +16,7 @@ import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
-//Signup
-import SignupLogic from "./pages/SignupLogic";
+import { red } from "@mui/material/colors";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -24,6 +24,17 @@ const mainColor = createTheme({
     secondary: {
       main: "#5C7B89",
     },
+    primary: {
+      main: "#BB334D",
+    },
+  },
+
+  typography: {
+    fontFamily: `"Raleway", "Helvetica", "Arial", sans-serif`,
+    fontSize: 16,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 600,
   },
 });
 
@@ -59,7 +70,8 @@ function App() {
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />
-
+          <Route path="/non-profit" element={<NonProfit />} />
+          <Route path="/non-project" element={<NonProfitProject />} />
           <Route
             path="/nonprofithome"
             element={<NonProfitHome selectedOrg={selectedOrg} />}
