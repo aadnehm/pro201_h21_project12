@@ -6,6 +6,8 @@ import Search from "./Search";
 import Filter from "./Filter";
 import { Button, Grid } from "@mui/material";
 
+import { useNavigate } from "react-router";
+
 //Function that filters out posts depending on the search or filter
 const filterPosts = (orgs, searchQuery, continentQuery, categoryQuery) => {
   if (
@@ -36,7 +38,8 @@ const filterPosts = (orgs, searchQuery, continentQuery, categoryQuery) => {
 };
 
 //Pulling non-profits from cloud database and storing it in state
-const SearchNonProfits = ({ orgs }) => {
+const SearchNonProfits = ({ orgs, setSelectedOrg }) => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [continentQuery, setContinentQuery] = useState([]);
   const [categoryQuery, setCategoryQuery] = useState([]);
@@ -47,6 +50,11 @@ const SearchNonProfits = ({ orgs }) => {
     continentQuery,
     categoryQuery
   );
+
+  function selectNonProfit(orgs, setSelectedOrg) {
+    setSelectedOrg(orgs);
+    navigate("/nonprofithome");
+  }
 
   return (
     <main className="search-posts">
@@ -61,7 +69,10 @@ const SearchNonProfits = ({ orgs }) => {
       </div>
       <div className="cards">
         {filteredPosts.map((orgs) => (
-          <div className="card">
+          <div
+            className="card"
+            onClick={() => selectNonProfit(orgs, setSelectedOrg)}
+          >
             <img className="image" src={`./img/${orgs.img}`} alt={orgs.name} />
             <div className="card-name" key={orgs.key}>
               {orgs.name}
