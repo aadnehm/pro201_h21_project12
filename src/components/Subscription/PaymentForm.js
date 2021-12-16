@@ -49,13 +49,27 @@ export default function PaymentForm() {
   const handleCardName = (event) => {
     setCardName(event.target.value);
   };
+  const [saveCard, setSaveCard] = React.useState("");
+  const handleSaveCard = (event) => {
+    setSaveCard(event.target.value);
+  };
   const [zip, setZip] = React.useState("");
   const handleZip = (event) => {
     setZip(event.target.value);
   };
 
   /* state-variabler for å sjekke at form virker */
-  const data = [subscription, email, card, mmyy, cvc, cardName, country, zip];
+  const data = [
+    subscription,
+    email,
+    card,
+    mmyy,
+    cvc,
+    cardName,
+    country,
+    zip,
+    saveCard,
+  ];
   console.log(data);
 
   const handleConfirmClick = () => {
@@ -212,8 +226,9 @@ export default function PaymentForm() {
                     margin: "0",
                     height: "0.2em",
                   }}
-                  value="save-card"
+                  value="true"
                   control={<Radio />}
+                  onChange={handleSaveCard}
                   label="Save card information"
                   name="save-card"
                   size="small"
@@ -255,6 +270,8 @@ export default function PaymentForm() {
                 label="ZIP"
                 variant="outlined"
                 size="small"
+                value={zip}
+                onChange={handleZip}
                 style={{
                   margin: ".4em 0",
                   width: "100%",

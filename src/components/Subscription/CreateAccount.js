@@ -60,10 +60,6 @@ export default function CreateAccount() {
     setPasswordConfirmed(newData);
   }
 
-  let shouldDisplayForm = false;
-  const handleEnterButtonClick = () => {
-    shouldDisplayForm = true;
-  };
   /* state variabler for debugging */
   const data = [
     orgNumber,
