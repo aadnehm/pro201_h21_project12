@@ -161,8 +161,7 @@ export default function SigninEmployee() {
   /* HandleOrgCode function */
   function handleOrgCode(e) {
     const value = e.target.value;
-    setCode(code + value);
-    console.log(code);
+    setCode(value);
   }
 
   useEffect(() => {
