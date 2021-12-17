@@ -23,9 +23,6 @@ export default function SigninEmployee() {
 
   /* Values Epost & Password & Name */
   const [code, setCode] = useState();
-  const [code1, setCode1] = useState();
-  const [code2, setCode2] = useState();
-  const [code3, setCode3] = useState();
   const [name, setName] = useState();
   const [dataEpost, setDataEpost] = useState();
   const [dataPassword, setDataPassword] = useState();
@@ -144,7 +141,7 @@ export default function SigninEmployee() {
             const docRef = addDoc(collection(db, "users"), {
               navn: `${name}`,
               epost: `${dataEpost}`,
-              firmakode: `${code + code1 + code2 + code3}`,
+              firmakode: `${code}`,
               admin: `${false}`,
               aktiv: `${true}`,
             });
@@ -164,22 +161,8 @@ export default function SigninEmployee() {
   /* HandleOrgCode function */
   function handleOrgCode(e) {
     const value = e.target.value;
-    setCode(value);
-  }
-
-  function handleOrgCode1(e) {
-    const value = e.target.value;
-    setCode1(value);
-  }
-
-  function handleOrgCode2(e) {
-    const value = e.target.value;
-    setCode2(value);
-  }
-
-  function handleOrgCode3(e) {
-    const value = e.target.value;
-    setCode3(value);
+    setCode(code + value);
+    console.log(code);
   }
 
   useEffect(() => {
@@ -214,6 +197,18 @@ export default function SigninEmployee() {
                 variant="standard"
                 error={codeError}
                 helperText={codeHelperText}
+                onChange={handleOrgCode}
+              />
+              <TextField
+                className="org-number-item"
+                variant="standard"
+                error={codeError}
+                onChange={handleOrgCode}
+              />
+              <TextField
+                className="org-number-item"
+                variant="standard"
+                error={codeError}
                 onChange={handleOrgCode}
               />
               <TextField
