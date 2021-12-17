@@ -6,7 +6,9 @@ import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
 /* MUI */
 import { Tabs, Tab } from "@mui/material";
 
-export default function NonprofitProject({ selectedOrg }) {
+export default function NonprofitProject() {
+  const selectedOrg = JSON.parse(localStorage.getItem("org"));
+
   const [value, setValue] = React.useState(0);
   const img = "url(./img/" + selectedOrg.img + ")";
 
@@ -31,7 +33,7 @@ export default function NonprofitProject({ selectedOrg }) {
         textColor="primary"
         indicatorColor="primary"
       >
-        <Tab className="tab" label="Inside storyes" />
+        <Tab className="tab" label="Inside stories" />
         <Tab className="tab" label="About" />
         <Tab className="tab" label="Impact" />
       </Tabs>

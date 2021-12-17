@@ -50,12 +50,12 @@ const SearchNonProfits = ({ orgs, setSelectedOrg }) => {
     continentQuery,
     categoryQuery
   );
-
   function selectNonProfit(orgs, setSelectedOrg) {
     setSelectedOrg(orgs);
     localStorage.setItem("org", JSON.stringify(orgs));
     navigate("/non-profit");
   }
+
   return (
     <main className="search-posts">
       <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
