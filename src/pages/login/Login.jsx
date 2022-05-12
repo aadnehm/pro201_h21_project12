@@ -9,7 +9,11 @@ import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
-import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+} from "firebase/auth";
 
 export default function Login() {
   //Navigation
@@ -40,23 +44,25 @@ export default function Login() {
     setDataPassword(newData);
   }
 
-
   const auth = getAuth();
   const handleLogin = async () => {
-    if(validateInputs()){
-    await signInWithEmailAndPassword(auth, dataEpost, dataPassword)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        navigate("/nonprofits");
-        // ...
-      })
-      .catch((error) => {
-        setPasswordHelperText("The username or password you entered is incorrect")
-        setEpostHelperText(" ")
-        setEpostError(true);
-        setPasswordError(true)
-      })};
+    if (validateInputs()) {
+      await signInWithEmailAndPassword(auth, dataEpost, dataPassword)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          navigate("/nonprofits");
+          // ...
+        })
+        .catch((error) => {
+          setPasswordHelperText(
+            "The username or password you entered is incorrect"
+          );
+          setEpostHelperText(" ");
+          setEpostError(true);
+          setPasswordError(true);
+        });
+    }
   };
 
   /* Input validation function */
@@ -64,20 +70,20 @@ export default function Login() {
     let needMore = true;
     if (typeof dataEpost === "undefined" || !dataEpost.includes("@" && ".")) {
       setEpostError(true);
-      setEpostHelperText("Please use valid e-mail")
+      setEpostHelperText("Please use valid e-mail");
       needMore = false;
     } else if (dataEpost.includes("@" && ".") && dataEpost.length >= 8) {
       setEpostError(false);
-      setEpostHelperText("")
+      setEpostHelperText("");
     }
 
     if (typeof dataPassword === "undefined" || dataPassword.length === 0) {
       setPasswordError(true);
-      setPasswordHelperText("Wrong password")
+      setPasswordHelperText("Wrong password");
       needMore = false;
     } else {
       setPasswordError(false);
-      setPasswordHelperText("")
+      setPasswordHelperText("");
     }
     return needMore;
   }
@@ -92,14 +98,16 @@ export default function Login() {
   } */
 
   //reset password
-  const handleResetPassword =  async(e) => {
+  const handleResetPassword = async (e) => {
     e.preventDefault();
-    await sendPasswordResetEmail(auth, prompt("Enter email")).then(function(){
-      alert("email sent")
-    }).catch(function(error) {
-      alert(error.message)
-    })
-  }
+    await sendPasswordResetEmail(auth, prompt("Enter email"))
+      .then(function () {
+        alert("email sent");
+      })
+      .catch(function (error) {
+        alert(error.message);
+      });
+  };
 
   return (
     <div className="container-login">
@@ -141,7 +149,9 @@ export default function Login() {
             ></FormControlLabel>
           </div>
           <div className="right-content-button">
-            <a onClick={handleResetPassword} href="">Forgot your password?</a>
+            <a onClick={handleResetPassword} href="">
+              Forgot your password?
+            </a>
             <Button
               size="large"
               color="secondary"
