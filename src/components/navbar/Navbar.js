@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navbar.css";
+import Menu from "./Menu.js";
 
 class NavbarComponent extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class NavbarComponent extends React.Component {
         expand="lg"
         variant="dark"
       >
+        <Menu />
         <Navbar.Brand href="/">
           <img
             className="logo"

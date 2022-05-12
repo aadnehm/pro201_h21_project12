@@ -1,0 +1,67 @@
+/* sidebar Nav */
+
+.menu {
+  position: relative;
+}
+
+.menu button {
+  background: transparent;
+  border: none;
+  position: fixed;
+  left: 10px;
+  top: 100px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menuNav {
+  padding-left: 0;
+  list-style: none;
+  background: #eaeaea;
+  position: fixed;
+  top: 150px;
+  left: 20px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  max-width: 250px;
+  z-index: 9;
+  border-radius: 10px;
+}
+
+.menuNav span {
+  margin-right: 10px;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+  height: 60vh;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  margin: 0 2rem 0 2rem;
+}
+
+.menuNav li {
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.menuNav li:hover {
+  background-color: #fff;
+}
+
+.menuNav a:first-child {
+  margin-top: 1rem;
+}
+
+.solid {
+  border-top: 2px solid #000;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30%;
+}

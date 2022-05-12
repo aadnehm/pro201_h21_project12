@@ -3,10 +3,12 @@ import SubscriptionCard from "../../components/Subscription/SubscriptionCard";
 import BackButton from "../../components/Subscription/backButton";
 /* css */
 import "./subscriptionPage.css";
+import Menu from "../../components/navbar/Menu.js";
 
 const SubscriptionPage = () => {
   return (
     <div className="sub-page-container">
+      <Menu />
       <div className="circle">
         <span className="circle-top-right"></span>
         <span className="circle-bottom-left"></span>
