@@ -1,0 +1,51 @@
+.np-cards-container {
+  margin: 0 auto;
+  max-width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  font-family: sans-serif;
+}
+
+.np-card {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+/* sentrerer bilde */
+.np-card img {
+  display: block;
+  width: 100%;
+}
+
+.np-card-content {
+  line-height: 2.5;
+  font-size: 1em;
+  padding: 15px;
+}
+
+.np-card-content > span {
+  margin: 0;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 0.8em;
+}
+
+.np-card-content > p:first-of-type {
+  margin: 0;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.np-card-content > h3 {
+  margin-top: 0;
+}
+
+/* kan ha flex og justify content spacebetween om det er flere ting */
+.np-card-footer {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0 0 15px 15px;
+  margin-top: 30px;
+}
