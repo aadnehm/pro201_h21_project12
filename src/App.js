@@ -7,6 +7,8 @@ import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
 import SearchNonProfits from "./components/search/SearchNonProfits";
 import Login from "./pages/login/Login";
+import { NpCardGrid } from "./components/card-grid-np/NpCardGrid";
+
 //Global CSS
 import "./App.css";
 //MUI
@@ -77,6 +79,7 @@ function App() {
             path="/non-project"
             element={<NonProfitProject selectedOrg={selectedOrg} />}
           />
+          <Route path="/grid" element={<NpCardGrid />} />
           {/* <Route
             path="/nonprofithome"
             element={<NonProfitHome selectedOrg={selectedOrg} />}
