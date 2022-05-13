@@ -6,7 +6,6 @@ import "./login.css";
 //Components
 import PasswordInput from "../../components/Login-Signup/input-fields/PasswordInput";
 import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
-import Menu from "../../components/navbar/Menu.js";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
@@ -112,7 +111,6 @@ export default function Login() {
 
   return (
     <div className="container-login">
-      <Menu />
       <div className="container-left">
         <h1 className="header-left">
           40 curated non-profits, to give you a competetive edge
