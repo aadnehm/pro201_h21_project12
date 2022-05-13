@@ -38,7 +38,7 @@ const filterPosts = (orgs, searchQuery, continentQuery, categoryQuery) => {
 };
 
 //Pulling non-profits from cloud database and storing it in state
-const SearchNonProfits = ({ orgs, setSelectedOrg }) => {
+const SearchNonProfits = ({ orgs }) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [continentQuery, setContinentQuery] = useState([]);
@@ -50,10 +50,8 @@ const SearchNonProfits = ({ orgs, setSelectedOrg }) => {
     continentQuery,
     categoryQuery
   );
-  function selectNonProfit(orgs, setSelectedOrg) {
-    setSelectedOrg(orgs);
-    localStorage.setItem("org", JSON.stringify(orgs));
-    navigate("/non-profit");
+  function selectNonProfit(orgs) {
+    navigate("/non-profit/" + orgs);
   }
 
   return (
@@ -71,7 +69,7 @@ const SearchNonProfits = ({ orgs, setSelectedOrg }) => {
         {filteredPosts.map((orgs) => (
           <div
             className="card"
-            onClick={() => selectNonProfit(orgs, setSelectedOrg)}
+            onClick={() => selectNonProfit(orgs)}
           >
             <img className="image" src={`./img/${orgs.img}`} alt={orgs.name} />
             <div className="card-name" key={orgs.key}>

@@ -17,6 +17,8 @@ import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
 
+
+
 /* Changing default value for secondary color */
 const mainColor = createTheme({
   palette: {
@@ -73,6 +75,11 @@ function App() {
             path="/non-profit"
             element={<NonProfit selectedOrg={selectedOrg} />}
           />
+          <Route
+              path="/non-profit/:nonprofit"
+              element={<NonProfit/>}
+          />
+
           <Route
             path="/non-project"
             element={<NonProfitProject selectedOrg={selectedOrg} />}

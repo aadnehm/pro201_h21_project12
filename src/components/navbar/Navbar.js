@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navbar.css";
+import {NavbarSearch} from "../search/navbarSearch/NavbarSearch";
 
 class NavbarComponent extends React.Component {
   render() {
@@ -25,6 +26,8 @@ class NavbarComponent extends React.Component {
             <Nav.Link classname="home-link" href="/">
               Home
             </Nav.Link>
+            <NavbarSearch/>
+
             <Nav.Link href="/nonprofits">Overview</Nav.Link>
             <Nav.Link href="/choose-subscription">Subscribe</Nav.Link>
           </Nav>
