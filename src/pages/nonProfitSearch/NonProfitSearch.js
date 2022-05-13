@@ -1,4 +1,6 @@
 import React from "react";
+import Menu from "../../components/navbar/Menu.js";
+
 /* CSS */
 import "./nonProfitSearch.css";
 /* MUI */
@@ -87,6 +89,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function ButtonAppBar() {
   return (
     <AppBar style={{ backgroundColor: "transparent" }} position="static">
+      <Menu />
       <Toolbar className="nonProfit-search-navbar">
         <IconButton
           size="large"
@@ -94,10 +97,7 @@ function ButtonAppBar() {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
-        >
-          <MenuIcon />
-          <PersonIcon />
-        </IconButton>
+        ></IconButton>
 
         <Search>
           <SearchIconWrapper>
