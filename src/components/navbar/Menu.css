@@ -1,0 +1,93 @@
+/* sidebar Nav */
+
+.menu {
+  position: relative;
+}
+
+.menu button {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fefefe;
+  position: fixed;
+  border: none;
+  border-radius: 30px;
+  left: 10px;
+  top: 1rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menuNav {
+  display: block;
+  padding-left: 0;
+  list-style: none;
+  background: #fff;
+  position: fixed;
+  top: 5rem;
+  left: 10px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  max-width: 250px;
+  z-index: 9;
+  border-radius: 10px;
+}
+
+.menuNav.showMenu {
+  transition: width 1000ms ease-out, height 1000ms ease-out;
+  width: 100%;
+  height: fit-content;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin: 0 2rem 0 2rem;
+}
+
+.menuNav li {
+  border-radius: 7px;
+  padding: 10px 10px 10px 10px;
+}
+
+.menuNav li:hover {
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+.menuNav a:hover {
+  color: #555;
+}
+
+.menuNav a:first-child {
+  margin-top: 1rem;
+}
+
+.menuNav a:last-child {
+  margin-bottom: 1rem;
+}
+
+.solid {
+  border-top: 1px solid #000;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3rem;
+}
+
+.buttonSymbol {
+  float: left;
+  margin: auto;
+  color: #333;
+}
+
+.personIcon {
+  margin-left: 5px;
+  top: 50%;
+  -ms-transform: translateY(35%);
+  transform: translateY(35%);
+}
+
+.logoutBtn {
+  margin-right: 10px;
+}

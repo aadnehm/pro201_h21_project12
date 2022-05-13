@@ -5,6 +5,7 @@ import "./Search.css";
 import Search from "./Search";
 import Filter from "./Filter";
 import { Button, Grid } from "@mui/material";
+import Menu from "../navbar/Menu.js";
 
 import { useNavigate } from "react-router";
 

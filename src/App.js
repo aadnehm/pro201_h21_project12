@@ -5,8 +5,9 @@ import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import SearchNonProfits from "./components/search/SearchNonProfits";
+import NonProfitSearch from "./pages/nonProfitSearch/NonProfitSearch";
 import Login from "./pages/login/Login";
+import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
 //Global CSS
 import "./App.css";
 //MUI
@@ -16,6 +17,7 @@ import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
+import FooterTest from "./components/FooterTest/FooterTest";
 
 
 
@@ -64,7 +66,7 @@ function App() {
           <Route
             path="/nonprofits"
             element={
-              <SearchNonProfits orgs={orgs} setSelectedOrg={setSelectedOrg} />
+              <NonProfitSearch  />
             }
           />
           <Route path="/signin-employee" element={<SigninEmployee />} />
@@ -88,6 +90,8 @@ function App() {
             path="/nonprofithome"
             element={<NonProfitHome selectedOrg={selectedOrg} />}
           /> */}
+          <Route path="/footerTest" element={<FooterTest />} />
+          <Route path="/grid" element={<NpCardGrid />} />
         </Routes>
       </div>
     </ThemeProvider>
