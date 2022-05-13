@@ -87,7 +87,9 @@
 }
 
 .menu a {
+  font-size: medium;
   display: block;
+  text-align: left;
   text-decoration: none;
   color: #000;
   margin: 0 2rem 0 2rem;
@@ -123,9 +125,8 @@
 
 .personIcon {
   margin-left: 5px;
-  top: 50%;
-  -ms-transform: translateY(35%);
-  transform: translateY(35%);
+  -ms-transform: translateY(-5%);
+  transform: translateY(-5%);
 }
 
 .logoutBtn {
