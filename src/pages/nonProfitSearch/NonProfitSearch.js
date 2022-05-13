@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import React from "react";
-import Menu from "../../components/navbar/Menu.js";
-
-=======
 import React from 'react';
->>>>>>> FooterTestv1
+import Menu from '../../components/navbar/Menu.js';
 /* CSS */
 import './nonProfitSearch.css';
 /* MUI */
@@ -93,19 +88,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function ButtonAppBar() {
-<<<<<<< HEAD
-  return (
-    <AppBar style={{ backgroundColor: "transparent" }} position="static">
-      <Menu />
-      <Toolbar className="nonProfit-search-navbar">
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
-        ></IconButton>
-=======
 	return (
 		<AppBar style={{ backgroundColor: 'transparent' }} position="static">
 			<Toolbar className="nonProfit-search-navbar">
@@ -113,7 +95,6 @@ function ButtonAppBar() {
 					<MenuIcon />
 					<PersonIcon />
 				</IconButton>
->>>>>>> FooterTestv1
 
 				<Search>
 					<SearchIconWrapper>
