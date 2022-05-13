@@ -12,6 +12,7 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import FooterTest from "../../components/FooterTest/FooterTest";
+import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 
 export default function NonProfitSearch() {
   const img = "url(./img/non-profit/nonProfitHero.png)";
@@ -38,6 +39,7 @@ export default function NonProfitSearch() {
       </header>
       <main className="nonProfit-search-categories">
         <h3>Categories of Non-profits</h3>
+        <NavTabs />
       </main>
       <FooterTest />
     </div>

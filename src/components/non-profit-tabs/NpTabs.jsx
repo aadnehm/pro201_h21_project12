@@ -63,9 +63,6 @@ export default function NavTabs() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <h3 style={{ textAlign: "center", fontFamily: "sans-serif" }}>
-        Categories of Non-profits
-      </h3>
       <Tabs
         value={value}
         onChange={handleChange}
