@@ -1,8 +1,5 @@
 
 .footer-wrapper{
-position: fixed;
-border: 1px solid black;
-bottom: 0%;
 height: 400px;
 width: 100%;
 box-shadow: 0 -7px 15px #33333320;
@@ -11,14 +8,25 @@ box-shadow: 0 -7px 15px #33333320;
 display: flex;
 justify-content: space-around;
 height: 100%;
+color: #333333;
 }
-.footer b{
-    font-size: larger;
+.header-text{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub-text{
+    font-size: 14px;
 }
 .footer a{
     cursor: pointer;
     text-decoration: none;
     color: #333333;
+}
+.link-wrapper{
+    transition: transform 0.1s ease-in-out;
+}
+.link-wrapper:hover{
+    transform: scale(1.05);
 }
 .footer-left{
     margin-top: 2rem;
@@ -62,6 +70,7 @@ height: 100%;
 .input-wrapper{
     display: flex;
     justify-content: space-between;
+    height: 3rem;
 }
 .input-wrapper input{
     width: 70%;
@@ -82,4 +91,38 @@ cursor: pointer;
 }
 .sm-icon img{
     height: 100%;
+}
+
+/* @media screen and (max-width: 1250px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer-left{
+        width: 100%;
+    }.footer-right{
+        width: 100%;
+    }.footer-middle-left{
+        width: 100%;
+    }
+    .footer-middle-left .list-wrapper{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }.footer-middle-right .list-wrapper{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-middle-right{
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 1250px) {
+    .footer{
+        visibility: hidden;
+    }
+    .footer-wrapper{
+        height: 100px;
+    }
 }
