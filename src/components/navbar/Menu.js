@@ -1,17 +1,9 @@
 import React, { useState } from "react";
 import "./Menu.css";
-import { MdClose } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";
 
 //Icons
-import HomeIcon from "@mui/icons-material/Home";
-import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
-import ShareIcon from "@mui/icons-material/Share";
-import InfoIcon from "@mui/icons-material/Info";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import SecurityIcon from "@mui/icons-material/Security";
-import EmailIcon from "@mui/icons-material/Email";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import Hamburger from "hamburger-react";
 import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Menu() {
@@ -29,86 +21,48 @@ export default function Menu() {
       <nav className="menu">
         <div>
           <button onClick={handleToggle}>
-            {navbarOpen ? (
-              <MdClose
-                style={{ color: "#000", width: "40px", height: "40px" }}
+            <div className="buttonSymbol">
+              <Hamburger
+                direction="right"
+                toggled={navbarOpen}
+                toggle={setNavbarOpen}
+                size={25}
               />
-            ) : (
-              <FiMenu
-                style={{ color: "#000", width: "40px", height: "40px" }}
-              />
-            )}
+            </div>
+            <div className="personIcon buttonSymbol">
+              <PersonOutlineIcon />
+            </div>
           </button>
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
             <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <HomeIcon />
-                </span>
-                My page
-              </li>
+              <li>My page</li>
             </a>
             <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <VolunteerActivismIcon />
-                </span>
-                Donations
-              </li>
+              <li>Donations</li>
             </a>
             <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <ShareIcon />
-                </span>
-                Social media
-              </li>
+              <li>Social media</li>
             </a>
             <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <InfoIcon />
-                </span>
-                Insights
-              </li>
+              <li>Insights</li>
             </a>
             <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <FavoriteIcon />
-                </span>
-                Favorites
-              </li>
+              <li>Favorites</li>
             </a>
             <hr className="solid"></hr>
             <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <SecurityIcon />
-                </span>
-                Privacy
-              </li>
+              <li>Privacy</li>
+            </a>
+            <a href="/" onClick={() => closeMenu()}>
+              <li>Contact us</li>
+            </a>
+            <a href="/" onClick={() => closeMenu()}>
+              <li>Notifications</li>
             </a>
             <a href="/" onClick={() => closeMenu()}>
               <li>
                 <span>
-                  <EmailIcon />
-                </span>
-                Contact us
-              </li>
-            </a>
-            <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <NotificationsIcon />
-                </span>
-                Notifications
-              </li>
-            </a>
-            <a href="/" onClick={() => closeMenu()}>
-              <li>
-                <span>
-                  <LogoutIcon />
+                  <LogoutIcon className="logoutBtn" fontSize="small" />
                 </span>
                 Sign out
               </li>
