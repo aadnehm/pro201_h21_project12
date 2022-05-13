@@ -5,7 +5,7 @@ import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import SearchNonProfits from "./components/search/SearchNonProfits";
+import NonProfitSearch from "./pages/nonProfitSearch/NonProfitSearch";
 import Login from "./pages/login/Login";
 //Global CSS
 import "./App.css";
@@ -62,7 +62,7 @@ function App() {
           <Route
             path="/nonprofits"
             element={
-              <SearchNonProfits orgs={orgs} setSelectedOrg={setSelectedOrg} />
+              <NonProfitSearch  />
             }
           />
           <Route path="/signin-employee" element={<SigninEmployee />} />
