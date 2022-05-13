@@ -100,8 +100,7 @@ function ButtonAppBar() {
           aria-label="menu"
           sx={{ mr: 2 }}
         >
-          <MenuIcon />
-          <PersonIcon />
+          <Menu />
         </IconButton>
 
         <Search>
