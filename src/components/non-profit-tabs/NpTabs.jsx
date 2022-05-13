@@ -1,4 +1,4 @@
-import * as React from "react";
+import { React, useState } from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -10,6 +10,7 @@ import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivism
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import NonProfitsData from "../search/NonProfitsData";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,7 +46,16 @@ function a11yProps(index) {
 }
 
 export default function NavTabs() {
-  const [value, setValue] = React.useState(0);
+  const data = NonProfitsData;
+  const [chosenCat, setChosenCat] = useState("");
+  const [value, setValue] = useState(0);
+
+  const handleCatBtn = (e) => {
+    setChosenCat(e);
+  };
+  const filteredData = data.filter((post) => {
+    return post.categories.includes(chosenCat);
+  });
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -68,48 +78,52 @@ export default function NavTabs() {
           icon={<ThumbUpOffAltOutlinedIcon />}
           iconPosition="start"
           label="Our recommendations"
+          onClick={() => handleCatBtn("")}
           {...a11yProps(0)}
         />
         <Tab
           icon={<VolunteerActivismOutlinedIcon />}
           iconPosition="start"
           label="Humanitarian"
+          onClick={() => handleCatBtn("humanitarian")}
           {...a11yProps(1)}
         />
         <Tab
           icon={<SchoolOutlinedIcon />}
           iconPosition="start"
           label="Education"
+          onClick={() => handleCatBtn("education")}
           {...a11yProps(2)}
         />
         <Tab
           icon={<LanguageOutlinedIcon />}
           iconPosition="start"
           label="Enviromental"
+          onClick={() => handleCatBtn("environment")}
           {...a11yProps(3)}
         />
         <Tab
           icon={<FavoriteBorderOutlinedIcon />}
           iconPosition="start"
           label="Equality"
+          onClick={() => handleCatBtn("equality")}
           {...a11yProps(4)}
         />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <NpCardGrid />
+        <NpCardGrid data={filteredData} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Humanitarian
-        <NpCardGrid />
+        <NpCardGrid data={filteredData} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Education
+        <NpCardGrid data={filteredData} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Enviromental
+        <NpCardGrid data={filteredData} />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Equality
+        <NpCardGrid data={filteredData} />
       </TabPanel>
     </Box>
   );
