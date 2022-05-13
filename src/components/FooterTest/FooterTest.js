@@ -10,60 +10,54 @@ const FooterTest = () => {
 						<div className="footer-icon-wrapper">
 							<img src="./img/MI-logo-black1.png" alt="logo" />
 						</div>
-						<div className="footer-icon-text">Medivora Impact</div>
+						<div className="footer-icon-text header-text">Medivora Impact</div>
 					</div>
 					<div className="footer-middle-left">
 						<div className="list-wrapper">
-							<div>
-								<b>Businesses</b>
+							<div className="link-wrapper header-text">Businesses</div>
+							<div className="link-wrapper">
+								<a href="/signup">Sign up</a>
 							</div>
-							<div>
-								<a href="/signup">Signup</a>
-							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">Subscription</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">My Page</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">Donating</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">Privacy</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">FAQ</a>
 							</div>
 						</div>
 					</div>
 					<div className="footer-middle-right">
 						<div className="list-wrapper">
-							<div>
-								<b>Non Profits</b>
-							</div>
-							<div>
+							<div className="link-wrapper header-text">Non Profits</div>
+							<div className="link-wrapper">
 								<a href="/signup">Sign up</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">Donations</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">My Page</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">FAQ</a>
 							</div>
-							<div>
+							<div className="link-wrapper">
 								<a href="/signup">Privacy</a>
 							</div>
 						</div>
 					</div>
 					<div className="footer-right">
 						<div className="list-wrapper">
-							<div>
-								<b>Stay in touch with us</b>
-							</div>
+							<div className="header-text">Stay in touch with us</div>
 							<div className="sm-wrapper">
 								<div className="sm-icon">
 									<img
@@ -84,20 +78,19 @@ const FooterTest = () => {
 									/>
 								</div>
 							</div>
-							<div>
-								<b>Be part of the action</b>
-							</div>
+							<div className="header-text">Be part of the action</div>
 							<div className="newsletter-text">
 								Sign up to our newsletter, to recieve updates on the latest news,nonprofits and much
 								more. We respect your privacy, your information is safe with us
 							</div>
 							<div className="input-wrapper">
-								<input type="text" placeholder="Enter your email" />
+								<input type="email" placeholder="Enter your email" />
 								<button>Subscribe</button>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div className="footer-small" />
 			</footer>
 		</div>
 	);
