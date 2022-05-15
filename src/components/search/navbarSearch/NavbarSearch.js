@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react"
 import NonProfitsData from "../NonProfitsData";
 import {Link} from "react-router-dom";
-import "./navbarSearch.css"
+import "./navbarSearch.css";
+
 export function NavbarSearch(){
     const [search, setSearch] = useState("")
     const [results, setResults] = useState([])

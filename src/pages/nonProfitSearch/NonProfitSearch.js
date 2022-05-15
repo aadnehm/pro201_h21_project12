@@ -12,6 +12,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
+import {NavbarSearch} from "../../components/search/navbarSearch/NavbarSearch";
 
 export default function NonProfitSearch() {
   const img = "url(./img/non-profit/nonProfitHero.png)";
@@ -43,48 +44,6 @@ export default function NonProfitSearch() {
   );
 }
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: 50,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "50%",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    /*
-    //Animation on search input 
-    [theme.breakpoints.up('sm')]: {
-      width: '12ch',
-      '&:focus': {
-        width: '20ch',
-      },
-    },
-    */
-  },
-}));
 
 function ButtonAppBar() {
   return (
@@ -92,22 +51,14 @@ function ButtonAppBar() {
       <Menu />
       <Toolbar className="nonProfit-search-navbar">
         <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
-        ></IconButton>
+    size="large"
+    edge="start"
+    color="inherit"
+    aria-label="menu"
+    sx={{mr: 2}}
+    />
 
-        <Search>
-          <SearchIconWrapper>
-            <SearchIcon />
-          </SearchIconWrapper>
-          <StyledInputBase
-            placeholder="Search…"
-            inputProps={{ "aria-label": "search" }}
-          />
-        </Search>
+        <NavbarSearch/>
 
         <IconButton
           size="large"
