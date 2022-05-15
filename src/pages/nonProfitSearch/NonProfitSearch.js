@@ -61,7 +61,6 @@ function ButtonAppBar() {
     aria-label="menu"
     sx={{mr: 2}}
     />
-
         <NavbarSearch/>
 
         <IconButton
