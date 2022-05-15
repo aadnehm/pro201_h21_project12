@@ -47,7 +47,7 @@ function a11yProps(index) {
 
 export default function NavTabs() {
   const data = NonProfitsData;
-  const [chosenCat, setChosenCat] = useState("");
+  const [chosenCat, setChosenCat] = useState("recommended");
   const [value, setValue] = useState(0);
 
   const handleCatBtn = (e) => {
@@ -75,7 +75,7 @@ export default function NavTabs() {
           icon={<ThumbUpOffAltOutlinedIcon />}
           iconPosition="start"
           label="Our recommendations"
-          onClick={() => handleCatBtn("")}
+          onClick={() => handleCatBtn("recommended")}
           {...a11yProps(0)}
         />
         <Tab
