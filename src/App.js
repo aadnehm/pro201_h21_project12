@@ -18,6 +18,7 @@ import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
+import NavTabs from "./components/non-profit-tabs/NpTabs";
 
 
 
@@ -25,7 +26,7 @@ import FooterTest from "./components/FooterTest/FooterTest";
 const mainColor = createTheme({
   palette: {
     secondary: {
-      main: "#5C7B89",
+      main: "#333",
     },
     primary: {
       main: "#BB334D",
@@ -92,6 +93,7 @@ function App() {
           /> */}
           <Route path="/footerTest" element={<FooterTest />} />
           <Route path="/grid" element={<NpCardGrid />} />
+          <Route path="/tabsTest" element={<NavTabs />} />
         </Routes>
       </div>
     </ThemeProvider>

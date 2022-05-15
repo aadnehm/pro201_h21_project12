@@ -5,7 +5,7 @@ const nonProfitsPosts = [
     name: "Redd barna",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova ipsum",
-    categories: "education",
+    categories: ["humanitarian", "recommended"],
   },
   {
     id: "2",
@@ -13,15 +13,15 @@ const nonProfitsPosts = [
     name: "Charity:Water",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova lorem ",
-    categories: "environment",
+    categories: ["environment", "recommended"],
   },
   {
     id: "3",
-    img: "./img/eksempelbilde3.png",
-    name: "Kreftforeningen",
+    img: "./img/eksempelbilde10.png",
+    name: "Leger uten grenser",
     averageDonated: 150,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "poverty",
+    categories: ["humanitarian", ""],
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ const nonProfitsPosts = [
     name: "Occean Conservacy",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "education",
+    categories: ["environment", "recommended"],
   },
   {
     id: "5",
@@ -37,7 +37,7 @@ const nonProfitsPosts = [
     name: "Amnesty",
     averageDonated: 350,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "poverty",
+    categories: ["equality", ""],
   },
   {
     id: "6",
@@ -45,7 +45,7 @@ const nonProfitsPosts = [
     name: "Education Trust",
     averageDonated: 400,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "humanitarian",
+    categories: ["education", "recommended"],
   },
   {
     id: "7",
@@ -53,7 +53,7 @@ const nonProfitsPosts = [
     name: "The tomorrow school",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "poverty",
+    categories: ["education", ""],
   },
   {
     id: "8",
@@ -61,7 +61,7 @@ const nonProfitsPosts = [
     name: "Care Norge",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "education",
+    categories: ["humanitarian", "recommended"],
   },
   {
     id: "9",
@@ -69,7 +69,31 @@ const nonProfitsPosts = [
     name: "Forum 18",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
-    categories: "poverty",
+    categories: ["environment", ""],
+  },
+  {
+    id: "10",
+    img: "./img/eksempelbilde11.png",
+    name: "African Education Foundation",
+    averageDonated: 300,
+    aboutText: "lorem ipsum cadeva ivo fiva pova",
+    categories: ["education", ""],
+  },
+  {
+    id: "11",
+    img: "./img/eksempelbilde12.png",
+    name: "Earth Justice",
+    averageDonated: 200,
+    aboutText: "lorem ipsum cadeva ivo fiva pova",
+    categories: ["equality", ""],
+  },
+  {
+    id: "12",
+    img: "./img/eksempelbilde13.png",
+    name: "United way",
+    averageDonated: 300,
+    aboutText: "lorem ipsum cadeva ivo fiva pova",
+    categories: ["equality", "recommended"],
   },
 ];
 

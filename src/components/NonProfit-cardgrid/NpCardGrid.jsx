@@ -1,8 +1,6 @@
 import "./NpCardGrid.css";
-import nonProfitsPosts from "../search/NonProfitsData";
 
-export function NpCardGrid() {
-  const data = nonProfitsPosts;
+export function NpCardGrid({ data }) {
   return (
     <div className="np-cards-container">
       {data.map((post, index) => (
@@ -17,7 +15,7 @@ function Card({ post }) {
     <div className="np-card">
       <img src={post.img} alt="non profit image" />
       <div className="np-card-content">
-        <span>{post.categories}</span>
+        <span>{post.categories[0]}</span>
         <h4>{post.name}</h4>
         <p>{post.aboutText}</p>
       </div>
