@@ -129,8 +129,8 @@
 
 .personIcon {
   margin-left: 0.5vw;
-  -ms-transform: translateY(-5%);
-  transform: translateY(-5%);
+  -ms-transform: translateY(38%);
+  transform: translateY(38%);
 }
 
 .logoutBtn {
