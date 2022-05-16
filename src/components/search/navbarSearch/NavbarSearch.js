@@ -6,7 +6,11 @@ import "./navbarSearch.css";
 function useOutsideAlerter(ref) {
   useEffect(() => {
     function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
+      console.log();
+      if (
+        (ref.current && !ref.current.contains(event.target)) ||
+        ref.current.firstChild.value === ""
+      ) {
         ref.current.lastChild.style.display = "none";
       } else {
         ref.current.lastChild.style.display = "block";
@@ -38,13 +42,13 @@ function SearchResults(props) {
     );
   } else {
     return (
-      <div className={"results-search"}>
+      <div className={"results-search"} style={{ display: "block" }}>
         {results.length === 0 && <p>No results...</p>}
         {results.length !== 0 && (
           <ul className={"search-results"}>
             {results.map((nonprofit) => (
               <li
-                style={{ textStyle: "none " }}
+                style={{ textStyle: "none" }}
                 onClick={() => {
                   redirectNonprofit(nonprofit.name);
                 }}
@@ -69,10 +73,10 @@ function uppercaseFirstLetter(string) {
 }
 
 export function NavbarSearch() {
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
 
   function handleSearch(value) {
     setSearch(value);

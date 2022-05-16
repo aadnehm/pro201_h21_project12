@@ -1,7 +1,7 @@
 .search-navbar{
     border-radius: 20px;
     top: 25px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     width: 40vw;
     transform: translate(-50%, 0);
