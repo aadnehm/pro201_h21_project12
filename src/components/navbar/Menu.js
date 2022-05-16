@@ -21,16 +21,18 @@ export default function Menu() {
       <nav className="menu">
         <div>
           <button onClick={handleToggle}>
-            <div className="buttonSymbol">
-              <Hamburger
-                direction="right"
-                toggled={navbarOpen}
-                toggle={setNavbarOpen}
-                size={25}
-              />
-            </div>
-            <div className="personIcon buttonSymbol">
-              <PersonOutlineIcon />
+            <div>
+              <div className="buttonSymbol">
+                <Hamburger
+                  direction="right"
+                  toggled={navbarOpen}
+                  toggle={setNavbarOpen}
+                  size={25}
+                />
+              </div>
+              <div className="personIcon buttonSymbol">
+                <PersonOutlineIcon />
+              </div>
             </div>
           </button>
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
