@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Menu.css";
 
 //Icons
@@ -7,6 +7,9 @@ import Hamburger from "hamburger-react";
 import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Menu() {
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -16,10 +19,28 @@ export default function Menu() {
     setNavbarOpen(false);
   };
 
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        console.log();
+        if (ref.current && !ref.current.contains(event.target)) {
+          ref.current.lastChild.style.visibility = "hidden";
+          closeMenu();
+        } else {
+          ref.current.lastChild.style.visibility = "visible";
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
   return (
     <div>
       <nav className="menu">
-        <div>
+        <div ref={wrapperRef}>
           <button onClick={handleToggle}>
             <div>
               <div className="buttonSymbol">

@@ -2,6 +2,7 @@
 
 @media screen and (min-height: 574px) {
   .menuNav {
+    visibility: hidden;
     display: block;
     padding-left: 0;
     list-style: none;
@@ -27,6 +28,7 @@
   }
 
   .menuNav.showMenu {
+    visibility: visible;
     transition: width 0ms ease-out, height 300ms ease-out;
     width: 100%;
     height: 100%;
@@ -36,6 +38,7 @@
 
 @media screen and (max-height: 574px) {
   .menuNav {
+    visibility: hidden;
     justify-content: space-around;
     display: block;
     padding-left: 0;
@@ -66,6 +69,7 @@
   }
 
   .menuNav.showMenu {
+    visibility: visible;
     transition: width 300ms ease-out, height 300ms ease-out;
     width: 100%;
     height: 100%;
@@ -82,7 +86,7 @@
   padding-right: 1%;
   background-color: #fefefe;
   position: fixed;
-  border: none;
+  border: 1px solid #333;
   border-radius: 30px;
   left: 10px;
   top: 1rem;
