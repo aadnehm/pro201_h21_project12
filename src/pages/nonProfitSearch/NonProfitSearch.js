@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "../../components/navbar/Menu.js";
 
 /* CSS */
@@ -49,8 +49,29 @@ export default function NonProfitSearch() {
 }
 
 function ButtonAppBar() {
+  const appbar = document.querySelector(".appbar");
+  /* logikk for scroll på navbar */
+  window.onscroll = function () {
+    if (appbar && window.pageYOffset > 310) {
+      setTimeout(function () {
+        appbar.style.opacity = "0.88";
+        appbar.style.backgroundColor = "#333";
+      }, 100);
+    }
+    if (appbar && window.pageYOffset < 310) {
+      setTimeout(function () {
+        appbar.style.backgroundColor = "transparent";
+      }, 100);
+    }
+  };
   return (
-    <AppBar style={{ backgroundColor: "transparent" }} position="fixed">
+    <AppBar
+      className="appbar"
+      color="secondary"
+      style={{
+        transition: "0.5s ease-in",
+      }}
+    >
       <Menu />
       <Toolbar className="nonProfit-search-navbar">
         <IconButton
@@ -60,7 +81,7 @@ function ButtonAppBar() {
           aria-label="menu"
           sx={{ mr: 2 }}
         />
-        <NavbarSearch />
+        <NavbarSearch style={{ opacity: "1", zIndex: "2" }} />
 
         <IconButton
           size="large"
