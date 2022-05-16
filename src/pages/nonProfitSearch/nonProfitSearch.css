@@ -13,11 +13,14 @@
   margin-right: 20%;
 }
 
-.nonprofit-firma-name h5:first-child{
+.nonprofit-firma-name h5:first-child {
   margin-bottom: 5px;
 }
-.nonprofit-firma-name h5{
+.nonprofit-firma-name h5 {
   margin-bottom: 0;
+}
+.appbar.on-top {
+  background: transparent;
 }
 
 /* Hero */

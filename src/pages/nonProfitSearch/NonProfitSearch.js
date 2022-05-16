@@ -49,27 +49,25 @@ export default function NonProfitSearch() {
 }
 
 function ButtonAppBar() {
-  const appbar = document.querySelector(".appbar");
-  /* logikk for scroll på navbar */
-  window.onscroll = function () {
-    if (appbar && window.pageYOffset > 310) {
-      setTimeout(function () {
-        appbar.style.opacity = "0.88";
-        appbar.style.backgroundColor = "#333";
-      }, 100);
-    }
-    if (appbar && window.pageYOffset < 310) {
-      setTimeout(function () {
-        appbar.style.backgroundColor = "transparent";
-      }, 100);
+  const [appbarTop, setAppbarTop] = useState(true);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setAppbarTop(false);
+    } else {
+      setAppbarTop(true);
     }
   };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <AppBar
-      className="appbar"
+      className={appbarTop ? "appbar on-top" : ""}
       color="secondary"
       style={{
         transition: "0.5s ease-in",
+        opacity: "0.9",
       }}
     >
       <Menu />
