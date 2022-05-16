@@ -48,6 +48,7 @@ function SearchResults(props) {
           <ul className={"search-results"}>
             {results.map((nonprofit) => (
               <li
+                tabindex="0"
                 style={{ textStyle: "none" }}
                 onClick={() => {
                   redirectNonprofit(nonprofit.name);
@@ -103,13 +104,7 @@ export function NavbarSearch() {
           backgroundImage: img,
         }}
       />
-      <SearchResults
-        result={results}
-        search={search}
-        ref={(node) => {
-          this.heading = node;
-        }}
-      />
+      <SearchResults result={results} search={search} />
     </div>
   );
 }

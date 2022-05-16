@@ -13,9 +13,16 @@
   margin-right: 20%;
 }
 
+.nonprofit-firma-name h5:first-child{
+  margin-bottom: 5px;
+}
+.nonprofit-firma-name h5{
+  margin-bottom: 0;
+}
+
 /* Hero */
 .nonProfit-search-hero {
-  height: 80vh;
+  height: 60vh;
   color: #eaeaea;
   position: relative;
 }
