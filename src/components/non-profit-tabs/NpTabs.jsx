@@ -11,6 +11,7 @@ import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import NonProfitsData from "../search/NonProfitsData";
+import { withStyles } from "@material-ui/core";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -60,6 +61,11 @@ export default function NavTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const CustomTab = withStyles({
+    root: {
+      textTransform: "none",
+    },
+  })(Tab);
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -71,35 +77,35 @@ export default function NavTabs() {
         textColor="secondary"
         indicatorColor="secondary"
       >
-        <Tab
+        <CustomTab
           icon={<ThumbUpOffAltOutlinedIcon />}
           iconPosition="start"
           label="Our recommendations"
           onClick={() => handleCatBtn("recommended")}
           {...a11yProps(0)}
         />
-        <Tab
+        <CustomTab
           icon={<VolunteerActivismOutlinedIcon />}
           iconPosition="start"
           label="Humanitarian"
           onClick={() => handleCatBtn("humanitarian")}
           {...a11yProps(1)}
         />
-        <Tab
+        <CustomTab
           icon={<SchoolOutlinedIcon />}
           iconPosition="start"
           label="Education"
           onClick={() => handleCatBtn("education")}
           {...a11yProps(2)}
         />
-        <Tab
+        <CustomTab
           icon={<LanguageOutlinedIcon />}
           iconPosition="start"
           label="Enviromental"
           onClick={() => handleCatBtn("environment")}
           {...a11yProps(3)}
         />
-        <Tab
+        <CustomTab
           icon={<FavoriteBorderOutlinedIcon />}
           iconPosition="start"
           label="Equality"
