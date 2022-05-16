@@ -20,6 +20,8 @@ import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 
+
+
 /* Changing default value for secondary color */
 const mainColor = createTheme({
   palette: {
@@ -76,6 +78,11 @@ function App() {
             path="/non-profit"
             element={<NonProfit selectedOrg={selectedOrg} />}
           />
+          <Route
+              path="/non-profit/:nonprofit"
+              element={<NonProfit/>}
+          />
+
           <Route
             path="/non-project"
             element={<NonProfitProject selectedOrg={selectedOrg} />}
