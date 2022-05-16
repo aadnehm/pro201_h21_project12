@@ -12,7 +12,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import {NavbarSearch} from "../../components/search/navbarSearch/NavbarSearch";
+import { NavbarSearch } from "../../components/search/navbarSearch/NavbarSearch";
 import FooterTest from "../../components/FooterTest/FooterTest";
 import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 
@@ -48,20 +48,19 @@ export default function NonProfitSearch() {
   );
 }
 
-
 function ButtonAppBar() {
   return (
-    <AppBar style={{ backgroundColor: "transparent" }} position="static">
+    <AppBar style={{ backgroundColor: "transparent" }} position="fixed">
       <Menu />
       <Toolbar className="nonProfit-search-navbar">
         <IconButton
-    size="large"
-    edge="start"
-    color="inherit"
-    aria-label="menu"
-    sx={{mr: 2}}
-    />
-        <NavbarSearch/>
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          sx={{ mr: 2 }}
+        />
+        <NavbarSearch />
 
         <IconButton
           size="large"
