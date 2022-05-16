@@ -4,7 +4,7 @@
   max-width: 70vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 40px;
+  gap: 100px;
   font-family: sans-serif;
 }
 
@@ -39,8 +39,9 @@
   line-height: 1.5;
 }
 
-.np-card-content > h3 {
+.np-card-content > h4 {
   margin-top: 0;
+  font-weight: bold;
 }
 
 /* kan ha flex og justify content spacebetween om det er flere ting */
