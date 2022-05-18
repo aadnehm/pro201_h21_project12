@@ -1,0 +1,129 @@
+.about-wrapper{
+
+}
+.about-text{
+    width: 100%;
+    line-height: 2.5;
+}
+.about-text-wrapper{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin-bottom: 5rem;
+}
+.about-text-left{
+    width: 50%;
+    padding-top: 3rem;
+}
+.about-text-image{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.about-text-image-wrapper{
+    max-height: 80%;
+    width: 80%;
+}
+.about-text-image img {
+    height:100%;
+    width: 100%;
+}
+.about-values-wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.about-values-list{
+    width: 50%;
+    padding: 5rem;
+}
+.people-cards-wrapper{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.people-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.people-card-wrapper div{
+    margin: 1rem;
+}
+
+.people-card-image{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.people-card-image img{
+    height: 100%;
+    width: 100%;
+}
+.people-card-name{
+    font-size: 24px;
+}
+.people-card-title{
+    font-size: 16px;
+}
+.about-contact-wrapper{
+    width: 100%;
+
+}
+.about-people-wrapper{
+}
+.contact-footer{
+    display: flex;
+    padding: 5rem;
+    width: 100%;
+}
+.about-location-wrapper{
+    width: 30%;
+}
+.about-location-wrapper div{
+    padding-bottom: 1rem;
+}
+.about-contactinfo-wrapper div{
+    padding-bottom: 1rem;
+}
+.about-header{
+    font-weight: bold;
+    font-size: 24px;
+}
+.about-values-image img{
+    height: 100%;
+    width: 100%;
+}
+.about-values-image{
+    width: 50%;
+    padding: 0rem;
+}
+.about-values-image-container {
+    height: 80%;
+    width: 100%;
+}
+.values-list-item-icon{
+    height: 50px;
+    margin-right: 10px;
+}
+.values-list-item-icon img{
+    height: 100%;
+}
+.values-list-item{
+    display: flex;
+    padding-bottom: 3rem;
+
+}
+.about-values-items-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.our-values{
+    margin-bottom: 35px;
+}
+
+
+

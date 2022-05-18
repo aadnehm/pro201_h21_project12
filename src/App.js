@@ -19,6 +19,8 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
+
+import AboutUs from "./components/AboutUs/AboutUs";
 import {
   ButtonAppBar,
   NonProfitSearch,
@@ -72,6 +74,12 @@ function App() {
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />
+
+          <Route
+            path="/non-profit"
+            element={<NonProfit selectedOrg={selectedOrg} />}
+          />
+
           <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
 
           <Route
@@ -82,7 +90,8 @@ function App() {
             path="/nonprofithome"
             element={<NonProfitHome selectedOrg={selectedOrg} />}
           /> */}
-          <Route path="/footerTest" element={<FooterTest />} />
+          {/*Terje's test-route */}
+          <Route path="/aboutTest" element={<AboutUs />} />
           <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
