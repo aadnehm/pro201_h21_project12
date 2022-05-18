@@ -3,7 +3,9 @@ import React from "react";
 
 export function ProjectCardGrid({ data }) {
   return (
-    <div>
+    <div className="project-page-container">
+      <div className="top-line"></div>
+      <h1>Our Projects</h1>
       {data.map((project, index) => (
         <Pcard key={index} project={project} />
       ))}
@@ -21,25 +23,15 @@ function Pcard({ project }) {
       </div>
 
       <div className="project-card-content">
-        <h2>{project.name}</h2>
-        <p className="project-start">PROJECT START {project.established}</p>
+        <h3>{project.name}</h3>
+        <p className="project-start-p">PROJECT START {project.established}</p>
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            doloremque enim, possimus laboriosam ea, nemo non aperiam, maiores
-            officiis beatae doloribus explicabo obcaecati. Praesentium, eum
-            reiciendis? Reiciendis in dignissimos praesentium?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            doloremque enim, possimus laboriosam ea, nemo non aperiam, maiores
-            officiis beatae doloribus explicabo obcaecati. Praesentium, eum
-            reiciendis? Reiciendis in dignissimos praesentium?
-          </p>
+          <p>{project.info1}</p>
+          <p>{project.info2}</p>
         </div>
-
         <button>Go to project</button>
       </div>
+      <div className="split-line"></div>
     </div>
   );
 }

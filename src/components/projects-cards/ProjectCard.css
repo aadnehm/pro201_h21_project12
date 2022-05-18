@@ -1,13 +1,31 @@
 /* splitter skjermen mellom tekst og img gallery */
-.project-cards-container {
-  margin: 12vh auto;
-  margin-top: 2rem;
+
+.top-line {
+  margin-bottom: 5vh;
+  border-bottom: 1px solid #c4c4c4;
+  width: 100%;
+}
+.project-page-container {
   max-width: 90vw;
+  margin: 12vh auto;
+}
+.project-page-container h1 {
+  margin-bottom: 3em;
+}
+.project-cards-container {
+  margin-top: 5em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 8vw;
   font-family: sans-serif;
 }
+
+.project-cards-container > .split-line {
+  border-bottom: 1px solid #c4c4c4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 /* img container */
 .project-img-gallery {
   display: grid;
@@ -34,13 +52,13 @@
   font-size: 1em;
 }
 
-.project-card-content .project-start {
+.project-card-content .project-start-p {
   margin-top: 30px;
   font-weight: bold;
 }
 .project-card-content button {
   color: #fff;
-  background-color: #000;
+  background-color: #f69f37;
   width: 12vw;
   padding: 10px;
   border-radius: 5px;
