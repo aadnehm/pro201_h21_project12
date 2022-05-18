@@ -3,7 +3,7 @@ import "./FooterTest.css";
 
 const FooterTest = () => {
   return (
-    <div className="wrapper" style={{ position: "absolute" }}>
+    <div className="wrapper">
       <footer className="footer-wrapper">
         <div className="footer">
           <div className="footer-left">
