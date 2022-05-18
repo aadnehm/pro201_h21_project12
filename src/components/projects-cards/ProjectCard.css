@@ -1,0 +1,47 @@
+/* splitter skjermen mellom tekst og img gallery */
+.project-cards-container {
+  margin: 12vh auto;
+  margin-top: 2rem;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  font-family: sans-serif;
+}
+/* img container */
+.project-img-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 15px;
+  row-gap: 25px;
+}
+/* styler bildene  */
+.project-img-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.big-img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+/* tekst container */
+.project-card-content {
+  line-height: 1.8;
+  font-size: 1em;
+}
+
+.project-card-content .project-start {
+  margin-top: 30px;
+  font-weight: bold;
+}
+.project-card-content button {
+  color: #fff;
+  background-color: #000;
+  width: 12vw;
+  padding: 10px;
+  border-radius: 5px;
+}

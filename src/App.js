@@ -8,6 +8,7 @@ import NonProfitProject from "./pages/non-profit/NonprofitProject";
 import NonProfitSearch from "./pages/nonProfitSearch/NonProfitSearch";
 import Login from "./pages/login/Login";
 import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
+import { ProjectCardGrid } from "./components/projects-cards/ProjectCard";
 //Global CSS
 import "./App.css";
 //MUI
@@ -19,8 +20,8 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
-
-
+// dummy data for developing
+import projectsData from "./components/projects-cards/ProjectsData";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -64,12 +65,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route
-            path="/nonprofits"
-            element={
-              <NonProfitSearch  />
-            }
-          />
+          <Route path="/nonprofits" element={<NonProfitSearch />} />
           <Route path="/signin-employee" element={<SigninEmployee />} />
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
@@ -78,10 +74,7 @@ function App() {
             path="/non-profit"
             element={<NonProfit selectedOrg={selectedOrg} />}
           />
-          <Route
-              path="/non-profit/:nonprofit"
-              element={<NonProfit/>}
-          />
+          <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
 
           <Route
             path="/non-project"
@@ -94,6 +87,10 @@ function App() {
           <Route path="/footerTest" element={<FooterTest />} />
           <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
+          <Route
+            path="/pcards"
+            element={<ProjectCardGrid data={projectsData} />}
+          />
         </Routes>
       </div>
     </ThemeProvider>
