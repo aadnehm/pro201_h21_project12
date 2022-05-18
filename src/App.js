@@ -7,6 +7,7 @@ import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
 import Login from "./pages/login/Login";
 import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
+import InsideStories from "./components/non-profit-pages/InsideStories";
 //Global CSS
 import "./App.css";
 //MUI
@@ -80,6 +81,7 @@ function App() {
           <Route path="/footerTest" element={<FooterTest />} />
           <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
+          <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
       </div>
     </ThemeProvider>
