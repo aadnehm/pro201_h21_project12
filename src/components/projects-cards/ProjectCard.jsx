@@ -3,11 +3,12 @@ import React from "react";
 import { useNavigate } from "react-router";
 
 export function ProjectCardGrid({ data }) {
+  const reddBarnaProjects = data[0].projects;
   return (
     <div className="project-page-container">
       <div className="top-line"></div>
       <h1>Our Projects</h1>
-      {data.map((project, index) => (
+      {reddBarnaProjects.map((project, index) => (
         <Pcard key={index} project={project} />
       ))}
     </div>

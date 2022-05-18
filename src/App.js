@@ -21,7 +21,7 @@ import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 // dummy data for developing
-import projectsData from "./components/projects-cards/ProjectsData";
+import nonProfitsPosts from "./components/search/NonProfitsData";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -89,7 +89,7 @@ function App() {
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route
             path="/pcards"
-            element={<ProjectCardGrid data={projectsData} />}
+            element={<ProjectCardGrid data={nonProfitsPosts} />}
           />
         </Routes>
       </div>
