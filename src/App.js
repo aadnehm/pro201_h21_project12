@@ -19,8 +19,7 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
-
-
+import AboutUs from "./components/AboutUs/AboutUs";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -64,12 +63,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route
-            path="/nonprofits"
-            element={
-              <NonProfitSearch  />
-            }
-          />
+          <Route path="/nonprofits" element={<NonProfitSearch />} />
           <Route path="/signin-employee" element={<SigninEmployee />} />
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
@@ -78,10 +72,7 @@ function App() {
             path="/non-profit"
             element={<NonProfit selectedOrg={selectedOrg} />}
           />
-          <Route
-              path="/non-profit/:nonprofit"
-              element={<NonProfit/>}
-          />
+          <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
 
           <Route
             path="/non-project"
@@ -91,7 +82,8 @@ function App() {
             path="/nonprofithome"
             element={<NonProfitHome selectedOrg={selectedOrg} />}
           /> */}
-          <Route path="/footerTest" element={<FooterTest />} />
+          {/*Terje's test-route */}
+          <Route path="/aboutTest" element={<AboutUs />} />
           <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
         </Routes>
