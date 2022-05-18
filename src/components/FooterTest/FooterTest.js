@@ -8,7 +8,10 @@ const FooterTest = () => {
         <div className="footer">
           <div className="footer-left">
             <div className="footer-icon-wrapper">
-              <img src="./img/MI-logo-black1.png" alt="logo" />
+              <img
+                src={process.env.PUBLIC_URL + "/img/MI-logo-black1.png"}
+                alt="logo"
+              />
             </div>
             <div className="footer-icon-text header-text">Meliora Impact</div>
           </div>
