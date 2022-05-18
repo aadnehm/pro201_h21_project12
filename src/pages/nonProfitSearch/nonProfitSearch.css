@@ -32,7 +32,7 @@
 
 .nonProfit-search-hero-text {
   position: absolute;
-  top: 50%;
+  bottom: 10vh;
   left: 15%;
 }
 
@@ -46,8 +46,8 @@
   font-weight: bold;
 }
 
-.nonProfit-search-hero-text :nth-child(2) {
-  margin-bottom: 15%;
+.nonProfit-search-hero-text h1:last-of-type {
+  margin-bottom: 10%;
 }
 
 /* Categories */

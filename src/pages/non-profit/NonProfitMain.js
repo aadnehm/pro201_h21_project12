@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ButtonAppBar } from "../nonProfitSearch/NonProfitSearch";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
@@ -9,6 +9,7 @@ import Tabs from "@mui/material/Tabs";
 import FooterTest from "../../components/FooterTest/FooterTest";
 import "./nonProfitMain.css";
 import InsideStories from "../../components/non-profit-pages/InsideStories";
+import { useLocation } from "react-router";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,6 +44,8 @@ function a11yProps(index) {
   };
 }
 export default function NonProfits() {
+  let location = useLocation();
+  useEffect(() => {}, [location]);
   let selectedNonProfit = {};
   const query = window.location.pathname.split("/").slice(-1)[0].toLowerCase();
   const data = NonProfitsData;
@@ -53,8 +56,6 @@ export default function NonProfits() {
       break;
     }
   }
-
-  console.log(selectedNonProfit);
 
   const img = "url(" + process.env.PUBLIC_URL + selectedNonProfit.img;
 
@@ -71,7 +72,6 @@ export default function NonProfits() {
         }}
         className="nonProfit-search-hero"
       >
-        <ButtonAppBar />
         <div className="nonProfit-search-hero-text">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
@@ -80,19 +80,12 @@ export default function NonProfits() {
       </header>
       <NavTabs data={selectedNonProfit} />
       <div className={"grey-line"} />
-
-      <FooterTest />
     </div>
   );
 }
 
 function NavTabs(props) {
-  const [chosenNonProfit, setChosenNonProfit] = useState("recommended");
   const [value, setValue] = useState(0);
-
-  const handleCatBtn = (e) => {
-    setChosenNonProfit(e);
-  };
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -119,41 +112,28 @@ function NavTabs(props) {
         textColor="secondary"
         indicatorColor="secondary"
       >
-        <CustomTab
-          iconPosition="start"
-          label="About"
-          onClick={() => handleCatBtn("recommended")}
-          {...a11yProps(0)}
-        />
-        <CustomTab
-          iconPosition="start"
-          label="Projects"
-          onClick={() => handleCatBtn("humanitarian")}
-          {...a11yProps(1)}
-        />
+        <CustomTab iconPosition="start" label="About" {...a11yProps(0)} />
+        <CustomTab iconPosition="start" label="Projects" {...a11yProps(1)} />
         <CustomTab
           iconPosition="start"
           label="Inside stories"
-          onClick={() => handleCatBtn("education")}
           {...a11yProps(2)}
         />
         <CustomTab
           iconPosition="start"
           label="What you get"
-          onClick={() => handleCatBtn("environment")}
           {...a11yProps(3)}
         />
         <CustomTab
           iconPosition="start"
           label="Our donators"
-          onClick={() => handleCatBtn("equality")}
           {...a11yProps(4)}
         />
       </Tabs>
       <TabPanel value={value} index={0}></TabPanel>
       <TabPanel value={value} index={1}></TabPanel>
       <TabPanel value={value} index={2}>
-        <InsideStories />
+        <InsideStories selectedNonProfit={props.data} />
       </TabPanel>
       <TabPanel value={value} index={3}></TabPanel>
       <TabPanel value={value} index={4}></TabPanel>

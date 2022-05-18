@@ -23,13 +23,22 @@ function useOutsideAlerter(ref) {
   }, [ref]);
 }
 
+export const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 function SearchResults(props) {
   const results = props.result;
   let navigate = useNavigate();
 
   function redirectNonprofit(name) {
     const path = "/non-profit/" + name.replace(/ /g, "");
+    props.setSearch("");
     navigate(path);
+    goToTop();
   }
 
   if (props.search === "") {
@@ -108,7 +117,7 @@ export function NavbarSearch() {
           backgroundImage: img,
         }}
       />
-      <SearchResults result={results} search={search} />
+      <SearchResults result={results} search={search} setSearch={setSearch} />
     </div>
   );
 }

@@ -15,6 +15,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { NavbarSearch } from "../../components/search/navbarSearch/NavbarSearch";
 import FooterTest from "../../components/FooterTest/FooterTest";
 import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
+import { useNavigate } from "react-router";
 
 export function NonProfitSearch() {
   const img = "url(./img/non-profit/nonProfitHero.png)";
@@ -31,7 +32,6 @@ export function NonProfitSearch() {
         }}
         className="nonProfit-search-hero"
       >
-        <ButtonAppBar />
         <div className="nonProfit-search-hero-text">
           <h1>Carefully curated</h1>
           <h1>Non-profits</h1>
@@ -43,14 +43,13 @@ export function NonProfitSearch() {
         <h3>Categories of Non-profits</h3>
         <NavTabs />
       </main>
-      <FooterTest />
     </div>
   );
 }
 
 export function ButtonAppBar() {
   const [appbarTop, setAppbarTop] = useState(true);
-
+  const navigate = useNavigate();
   const changeBackground = () => {
     if (window.scrollY >= 100) {
       setAppbarTop(false);
@@ -87,6 +86,9 @@ export function ButtonAppBar() {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
+          onClick={() => {
+            navigate("/nonprofits");
+          }}
         >
           <div className="nonprofit-firma-name">
             <h5>Meliora</h5>

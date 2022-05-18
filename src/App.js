@@ -19,7 +19,10 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
-import { NonProfitSearch } from "./pages/nonProfitSearch/NonProfitSearch";
+import {
+  ButtonAppBar,
+  NonProfitSearch,
+} from "./pages/nonProfitSearch/NonProfitSearch";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -61,6 +64,7 @@ function App() {
   return (
     <ThemeProvider theme={mainColor}>
       <div className="App">
+        <ButtonAppBar />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/nonprofits" element={<NonProfitSearch />} />
@@ -83,6 +87,7 @@ function App() {
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
+        <FooterTest />
       </div>
     </ThemeProvider>
   );

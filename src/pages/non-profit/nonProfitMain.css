@@ -5,18 +5,25 @@
     margin: 30px auto auto auto;
 }
 .donate-button{
-    background: #EAEAEA;
+    background: #F69F37;
+    color: #FAFAFA;
     border: none;
     border-radius: 5px;
     font-size: 20px;
     padding: 5px 30px 5px 30px;
     font-weight: 500;
+    transition: transform .2s; /* Animation */
+
+}
+
+.donate-button:hover{
+    transform: scale(1.1);
 }
 .nonprofit-content{
     font-family: "DM Sans", sans-serif;
-    background: #EAEAEA;
+    background: #FAFAFA;
 }
 
 .nonprofit-content header{
-    color: #EAEAEA;
+    color: #FAFAFA;
 }
