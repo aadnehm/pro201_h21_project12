@@ -103,12 +103,18 @@ function NavTabs(props) {
   })(Tab);
 
   return (
-    <Box sx={{ width: "100%", marginTop: "100px" }}>
+    <Box
+      sx={{
+        width: "70vw",
+        marginTop: "100px",
+        marginRight: "auto",
+        marginLeft: "auto",
+      }}
+    >
       <Tabs
         value={value}
         onChange={handleChange}
         aria-label="tabs"
-        centered
         textColor="secondary"
         indicatorColor="secondary"
       >
