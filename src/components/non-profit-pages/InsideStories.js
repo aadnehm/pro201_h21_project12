@@ -2,11 +2,15 @@ import React from "react";
 import "./InsideStories.css";
 
 export default function InsideStories() {
+  function handleToggle() {
+    alert("toggled");
+  }
+
   return (
     <div className="inside-stories">
       <hr className="horizontal-lines" />
       <h2>Inside stories</h2>
-      <div className="iframes-div">
+      <div className="iframes-div" onClick={handleToggle}>
         <div className="story-div">
           <iframe
             width="270"
