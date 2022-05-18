@@ -60,7 +60,8 @@ export default function NonProfits() {
     <div className={"nonprofit-content"}>
       <header
         style={{
-          backgroundImage: img,
+          backgroundImage:
+            "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))," + img,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
