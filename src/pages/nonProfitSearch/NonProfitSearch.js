@@ -16,7 +16,7 @@ import { NavbarSearch } from "../../components/search/navbarSearch/NavbarSearch"
 import FooterTest from "../../components/FooterTest/FooterTest";
 import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 
-export default function NonProfitSearch() {
+export function NonProfitSearch() {
   const img = "url(./img/non-profit/nonProfitHero.png)";
 
   return (
@@ -48,7 +48,7 @@ export default function NonProfitSearch() {
   );
 }
 
-function ButtonAppBar() {
+export function ButtonAppBar() {
   const [appbarTop, setAppbarTop] = useState(true);
 
   const changeBackground = () => {
@@ -92,7 +92,10 @@ function ButtonAppBar() {
             <h5>Meliora</h5>
             <h5>Impact</h5>
           </div>
-          <img src="./img/MI-logo-white.png" alt="logo-pic-login" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/MI-logo-white.png"}
+            alt="logo-pic-login"
+          />
         </IconButton>
       </Toolbar>
     </AppBar>

@@ -54,7 +54,11 @@ function SearchResults(props) {
                   redirectNonprofit(nonprofit.name);
                 }}
               >
-                <img className={"search-icon"} src={nonprofit.img} alt="icon" />
+                <img
+                  className={"search-icon"}
+                  src={process.env.PUBLIC_URL + nonprofit.img}
+                  alt="icon"
+                />
                 <p className={"search-results-name"}>{nonprofit.name}</p>
                 <p className={"search-results-category"}>
                   {uppercaseFirstLetter(nonprofit.categories[0])}
@@ -92,7 +96,7 @@ export function NavbarSearch() {
       }
     });
   }, [search]);
-  const img = "url(./img/searchicon.png)";
+  const img = "url(" + process.env.PUBLIC_URL + "/img/searchicon.png)";
 
   return (
     <div className={"search-navbar"} ref={wrapperRef}>
