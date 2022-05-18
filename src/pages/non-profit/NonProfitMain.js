@@ -10,6 +10,7 @@ import FooterTest from "../../components/FooterTest/FooterTest";
 import "./nonProfitMain.css";
 import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation } from "react-router";
+import AboutUs from "../../components/AboutUs/AboutUs";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -130,7 +131,9 @@ function NavTabs(props) {
           {...a11yProps(4)}
         />
       </Tabs>
-      <TabPanel value={value} index={0}></TabPanel>
+      <TabPanel value={value} index={0}>
+        <AboutUs />
+      </TabPanel>
       <TabPanel value={value} index={1}></TabPanel>
       <TabPanel value={value} index={2}>
         <InsideStories selectedNonProfit={props.data} />
