@@ -1,5 +1,6 @@
 import "./ProjectCard.css";
 import React from "react";
+import { useNavigate } from "react-router";
 
 export function ProjectCardGrid({ data }) {
   return (
@@ -14,6 +15,11 @@ export function ProjectCardGrid({ data }) {
 }
 
 function Pcard({ project }) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(project.link);
+  };
+
   return (
     <div className="project-cards-container">
       <div className="project-img-gallery">
@@ -22,16 +28,16 @@ function Pcard({ project }) {
         <img src={project.img} alt="non profit image" />
       </div>
 
-      <div className="project-card-content">
+      <div className="project-text-content">
         <h3>{project.name}</h3>
         <p className="project-start-p">PROJECT START {project.established}</p>
         <div>
           <p>{project.info1}</p>
           <p>{project.info2}</p>
         </div>
-        <button>Go to project</button>
+        <button onClick={handleClick}>Go to project</button>
       </div>
-      <div className="split-line"></div>
+      <span className="split-line"></span>
     </div>
   );
 }
