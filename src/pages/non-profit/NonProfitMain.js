@@ -8,6 +8,8 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import FooterTest from "../../components/FooterTest/FooterTest";
 import "./nonProfitMain.css";
+import InsideStories from "../../components/non-profit-pages/InsideStories";
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -150,7 +152,9 @@ function NavTabs(props) {
       </Tabs>
       <TabPanel value={value} index={0}></TabPanel>
       <TabPanel value={value} index={1}></TabPanel>
-      <TabPanel value={value} index={2}></TabPanel>
+      <TabPanel value={value} index={2}>
+        <InsideStories />
+      </TabPanel>
       <TabPanel value={value} index={3}></TabPanel>
       <TabPanel value={value} index={4}></TabPanel>
     </Box>
