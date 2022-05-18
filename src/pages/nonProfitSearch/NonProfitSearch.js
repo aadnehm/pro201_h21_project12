@@ -67,7 +67,7 @@ function ButtonAppBar() {
       color="secondary"
       style={{
         transition: "0.5s ease-in",
-        opacity: "0.9",
+        opacity: "1",
       }}
     >
       <Menu />
