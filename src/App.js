@@ -5,9 +5,9 @@ import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import NonProfitSearch from "./pages/nonProfitSearch/NonProfitSearch";
 import Login from "./pages/login/Login";
 import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
+import InsideStories from "./components/non-profit-pages/InsideStories";
 //Global CSS
 import "./App.css";
 //MUI
@@ -19,7 +19,12 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
+
 import AboutUs from "./components/AboutUs/AboutUs";
+import {
+  ButtonAppBar,
+  NonProfitSearch,
+} from "./pages/nonProfitSearch/NonProfitSearch";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -61,6 +66,7 @@ function App() {
   return (
     <ThemeProvider theme={mainColor}>
       <div className="App">
+        <ButtonAppBar />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/nonprofits" element={<NonProfitSearch />} />
@@ -68,10 +74,12 @@ function App() {
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />
+
           <Route
             path="/non-profit"
             element={<NonProfit selectedOrg={selectedOrg} />}
           />
+
           <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
 
           <Route
@@ -86,7 +94,9 @@ function App() {
           <Route path="/aboutTest" element={<AboutUs />} />
           <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
+          <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
+        <FooterTest />
       </div>
     </ThemeProvider>
   );

@@ -23,13 +23,22 @@ function useOutsideAlerter(ref) {
   }, [ref]);
 }
 
+export const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 function SearchResults(props) {
   const results = props.result;
   let navigate = useNavigate();
 
   function redirectNonprofit(name) {
     const path = "/non-profit/" + name.replace(/ /g, "");
+    props.setSearch("");
     navigate(path);
+    goToTop();
   }
 
   if (props.search === "") {
@@ -54,7 +63,11 @@ function SearchResults(props) {
                   redirectNonprofit(nonprofit.name);
                 }}
               >
-                <img className={"search-icon"} src={nonprofit.img} alt="icon" />
+                <img
+                  className={"search-icon"}
+                  src={process.env.PUBLIC_URL + nonprofit.img}
+                  alt="icon"
+                />
                 <p className={"search-results-name"}>{nonprofit.name}</p>
                 <p className={"search-results-category"}>
                   {uppercaseFirstLetter(nonprofit.categories[0])}
@@ -92,7 +105,7 @@ export function NavbarSearch() {
       }
     });
   }, [search]);
-  const img = "url(./img/searchicon.png)";
+  const img = "url(" + process.env.PUBLIC_URL + "/img/searchicon.png)";
 
   return (
     <div className={"search-navbar"} ref={wrapperRef}>
@@ -104,7 +117,7 @@ export function NavbarSearch() {
           backgroundImage: img,
         }}
       />
-      <SearchResults result={results} search={search} />
+      <SearchResults result={results} search={search} setSearch={setSearch} />
     </div>
   );
 }
