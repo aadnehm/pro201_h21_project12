@@ -5,7 +5,6 @@ import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import NonProfitSearch from "./pages/nonProfitSearch/NonProfitSearch";
 import Login from "./pages/login/Login";
 import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
 //Global CSS
@@ -19,8 +18,7 @@ import React, { useState, useEffect } from "react";
 import db from "./lib/firebase";
 import FooterTest from "./components/FooterTest/FooterTest";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
-
-
+import { NonProfitSearch } from "./pages/nonProfitSearch/NonProfitSearch";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -64,24 +62,12 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route
-            path="/nonprofits"
-            element={
-              <NonProfitSearch  />
-            }
-          />
+          <Route path="/nonprofits" element={<NonProfitSearch />} />
           <Route path="/signin-employee" element={<SigninEmployee />} />
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />
-          <Route
-            path="/non-profit"
-            element={<NonProfit selectedOrg={selectedOrg} />}
-          />
-          <Route
-              path="/non-profit/:nonprofit"
-              element={<NonProfit/>}
-          />
+          <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
 
           <Route
             path="/non-project"

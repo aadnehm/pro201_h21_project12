@@ -1,136 +1,151 @@
-import React from "react";
-import { useNavigate } from "react-router";
-/* CSS */
-import "./nonProfit.css";
-/* Components */
-import HeaderNonProfit from "../../components/non-profit-pages/HeaderNonProfit";
-/* MUI */
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import React, { useState } from "react";
+import { ButtonAppBar } from "../nonProfitSearch/NonProfitSearch";
+import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
+import NonProfitsData from "../../components/search/NonProfitsData";
+import { Button, withStyles } from "@material-ui/core";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import FooterTest from "../../components/FooterTest/FooterTest";
+import "./nonProfitMain.css";
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
-export default function NonProfit() {
-  const selectedOrg = JSON.parse(localStorage.getItem("org"));
-  const headerText = selectedOrg.description;
-  const navigate = useNavigate();
-  const img = "url(./img/" + selectedOrg.img + ")";
-  function Navigate() {
-    navigate("/non-project");
-  }
   return (
-    <div style={{ backgroundImage: img }} className="non-profit-container">
-      <HeaderNonProfit text={headerText} org={selectedOrg}></HeaderNonProfit>
-      <div className="our-projects-div">
-        <h2>Our projects</h2>
-
-        <div className="cards-div">
-          <Card onClick={Navigate} className="card-non-profit">
-            <CardContent
-              style={{ backgroundImage: "url(./img/non-profit/card-img.png)" }}
-              className="card-content"
-            ></CardContent>
-            <div className="project-div-non-profit">
-              <h3>Uganda</h3>
-              <div className="logo-firma-non-profit-img-wrap">
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo1.png"
-                  alt="logo-firma1"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo2.png"
-                  alt="logo-firma2"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo3.png"
-                  alt="logo-firma3"
-                />
-              </div>
-            </div>
-          </Card>
-          <Card onClick={Navigate} className="card-non-profit">
-            <CardContent
-              className="card-content"
-              style={{ backgroundImage: "url(./img/non-profit/card-img1.png)" }}
-            ></CardContent>
-            <div className="project-div-non-profit">
-              <h3>Nepal</h3>
-              <div className="logo-firma-non-profit-img-wrap">
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo1.png"
-                  alt="logo-firma1"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo2.png"
-                  alt="logo-firma2"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo3.png"
-                  alt="logo-firma3"
-                />
-              </div>
-            </div>
-          </Card>
-          <Card onClick={Navigate} className="card-non-profit">
-            <CardContent
-              className="card-content"
-              style={{ backgroundImage: "url(./img/non-profit/card-img2.png)" }}
-            ></CardContent>
-            <div className="project-div-non-profit">
-              <h3>Syria</h3>
-              <div className="logo-firma-non-profit-img-wrap">
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo1.png"
-                  alt="logo-firma1"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo2.png"
-                  alt="logo-firma2"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo3.png"
-                  alt="logo-firma3"
-                />
-              </div>
-            </div>
-          </Card>
-          <Card onClick={Navigate} className="card-non-profit">
-            <CardContent
-              className="card-content"
-              style={{
-                backgroundImage: "url(./img/non-profit/card-img3.jpeg)",
-              }}
-            ></CardContent>
-            <div className="project-div-non-profit">
-              <h3>Trygt tilbake til skolen</h3>
-              <div className="logo-firma-non-profit-img-wrap">
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo1.png"
-                  alt="logo-firma1"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo2.png"
-                  alt="logo-firma2"
-                />
-                <img
-                  class="logo-firma-non-profit-img"
-                  src="./img/non-profit/firma-logo3.png"
-                  alt="logo-firma3"
-                />
-              </div>
-            </div>
-          </Card>
-        </div>
-      </div>
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ width: "100%" }}>
+          <div>{children}</div>
+        </Box>
+      )}
     </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+export default function NonProfits() {
+  let selectedNonProfit = {};
+  const query = window.location.pathname.split("/").slice(-1)[0].toLowerCase();
+  const data = NonProfitsData;
+  for (let i = 0; i < data.length; i++) {
+    const name = data[i].name.replace(/ /g, "").toLowerCase();
+    if (name === query) {
+      selectedNonProfit = data[i];
+      break;
+    }
+  }
+
+  console.log(selectedNonProfit);
+
+  const img = "url(" + process.env.PUBLIC_URL + selectedNonProfit.img;
+
+  return (
+    <div className={"nonprofit-content"}>
+      <header
+        style={{
+          backgroundImage: img,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
+        className="nonProfit-search-hero"
+      >
+        <ButtonAppBar />
+        <div className="nonProfit-search-hero-text">
+          <h1>{selectedNonProfit.name}</h1>
+          <p>{selectedNonProfit.aboutText}</p>
+          <button className={"donate-button"}>Donate</button>
+        </div>
+      </header>
+      <NavTabs data={selectedNonProfit} />
+      <div className={"grey-line"} />
+
+      <FooterTest />
+    </div>
+  );
+}
+
+function NavTabs(props) {
+  const [chosenNonProfit, setChosenNonProfit] = useState("recommended");
+  const [value, setValue] = useState(0);
+
+  const handleCatBtn = (e) => {
+    setChosenNonProfit(e);
+  };
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  const CustomTab = withStyles({
+    root: {
+      textTransform: "none",
+    },
+  })(Tab);
+
+  return (
+    <Box sx={{ width: "100%", marginTop: "100px" }}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        aria-label="tabs"
+        centered
+        textColor="secondary"
+        indicatorColor="secondary"
+      >
+        <CustomTab
+          iconPosition="start"
+          label="About"
+          onClick={() => handleCatBtn("recommended")}
+          {...a11yProps(0)}
+        />
+        <CustomTab
+          iconPosition="start"
+          label="Projects"
+          onClick={() => handleCatBtn("humanitarian")}
+          {...a11yProps(1)}
+        />
+        <CustomTab
+          iconPosition="start"
+          label="Inside stories"
+          onClick={() => handleCatBtn("education")}
+          {...a11yProps(2)}
+        />
+        <CustomTab
+          iconPosition="start"
+          label="What you get"
+          onClick={() => handleCatBtn("environment")}
+          {...a11yProps(3)}
+        />
+        <CustomTab
+          iconPosition="start"
+          label="Our donators"
+          onClick={() => handleCatBtn("equality")}
+          {...a11yProps(4)}
+        />
+      </Tabs>
+      <TabPanel value={value} index={0}></TabPanel>
+      <TabPanel value={value} index={1}></TabPanel>
+      <TabPanel value={value} index={2}></TabPanel>
+      <TabPanel value={value} index={3}></TabPanel>
+      <TabPanel value={value} index={4}></TabPanel>
+    </Box>
   );
 }

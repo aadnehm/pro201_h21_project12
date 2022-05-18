@@ -1,0 +1,23 @@
+.grey-line{
+    background: lightgray;
+    height: 2px;
+    width: 80vw;
+    margin: 30px auto auto auto;
+}
+.donate-button{
+    background: #EAEAEA;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    font-weight: 500;
+}
+.nonprofit-content{
+    font-family: "DM Sans", sans-serif;
+    background: #EAEAEA;
+}
+
+.nonprofit-content header{
+    color: #EAEAEA;
+    text-shadow: #FC0 1px 0 10px;
+}
