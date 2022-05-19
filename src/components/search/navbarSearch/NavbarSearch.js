@@ -81,7 +81,7 @@ function SearchResults(props) {
   }
 }
 
-function uppercaseFirstLetter(string) {
+export function uppercaseFirstLetter(string) {
   const string2 = string.charAt(0).toUpperCase() + string.slice(1);
   return string2;
 }
