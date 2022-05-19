@@ -7,6 +7,31 @@ import {
 } from "../../components/search/navbarSearch/NavbarSearch";
 import { useNavigate } from "react-router";
 
+function ChooseSubscription() {
+  const img =
+    "url(" +
+    process.env.PUBLIC_URL +
+    "/img/frontpage/frontpage-second-header.png)";
+
+  return (
+    <div
+      className={"choose-subscription-content"}
+      style={{
+        backgroundImage: img,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "70vh",
+      }}
+    >
+      <div className={"choose-subscription-content-text"}>
+        <h1>Choose subscription</h1>
+        <p>Find a subscription that suits your company and strategy</p>
+      </div>
+    </div>
+  );
+}
+
 export function FrontPage() {
   return (
     <>
@@ -14,6 +39,7 @@ export function FrontPage() {
       <div className={"frontpage-content"}>
         <NewestNonProfits />
         <WhoAreWe />
+        <ChooseSubscription />
       </div>
     </>
   );
@@ -110,7 +136,6 @@ function WhoAreWe() {
   return (
     <>
       <h3 style={{ fontWeight: "bold", marginBottom: "30px" }}>Who are we?</h3>
-
       <PersonCards />
     </>
   );
