@@ -115,7 +115,7 @@ cursor: pointer;
     .footer-middle-right{
         width: 100%;
     }
-} */
+}
 
 @media screen and (max-width: 1250px) {
     .footer{
@@ -125,3 +125,5 @@ cursor: pointer;
         height: 100px;
     }
 }
+
+ */

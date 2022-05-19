@@ -1,7 +1,7 @@
 import React from "react";
-import "./FooterTest.css";
+import "./Footer.css";
 
-const FooterTest = () => {
+const Footer = () => {
   return (
     <div className="wrapper">
       <footer className="footer-wrapper">
@@ -100,4 +100,4 @@ const FooterTest = () => {
   );
 };
 
-export default FooterTest;
+export default Footer;
