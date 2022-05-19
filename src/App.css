@@ -4,3 +4,6 @@ body{
     box-sizing:border-box;
     font-family: "DM Sans", sans-serif;
 }
+.App{
+    background-color: #FAFAFA;
+}

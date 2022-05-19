@@ -16,7 +16,7 @@ import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
-import FooterTest from "./components/FooterTest/FooterTest";
+import Footer from "./components/Footer/Footer";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -95,7 +95,7 @@ function App() {
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
-        <FooterTest />
+        <Footer />
       </div>
     </ThemeProvider>
   );
