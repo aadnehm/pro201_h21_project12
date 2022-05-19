@@ -16,11 +16,18 @@ export default function AboutUs() {
           <div className="about-text-left">
             <h2>About Redd Barna</h2>
             <article className={"about-text"}>
-              {moreEnabled ? aboutText : aboutText.substring(0, 350)}
+              {moreEnabled ? (
+                <div>
+                  <p>{aboutText.substring(0, 350)}</p>
+                  <p>{aboutText.substring(350, aboutText.length)}</p>
+                </div>
+              ) : (
+                aboutText.substring(0, 350)
+              )}
             </article>
-            <p className="about-header show-more " onClick={handleMore}>
+            <div className="about-header show-more " onClick={handleMore}>
               {moreEnabled ? "Show less" : "Show more"}
-            </p>
+            </div>
           </div>
           <div className="about-text-image">
             <div className={"about-text-image-wrapper"}>
