@@ -1,15 +1,20 @@
 .about-wrapper{
-
+margin-top: 3rem;
 }
 .about-text{
     width: 100%;
     line-height: 2.5;
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+}
+.show-more{
+   cursor: pointer;
 }
 .about-text-wrapper{
     width: 100%;
     display: flex;
     height: max-content;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 .about-text-left{
     width: 50%;
@@ -23,7 +28,7 @@
 }
 .about-text-image-wrapper{
     max-height: 80%;
-    width: 80%;
+    width: 100%;
 }
 .about-text-image img {
     height:100%;
@@ -32,14 +37,48 @@
 .about-values-wrapper{
     width: 100%;
     display: flex;
+    margin-bottom: 5rem;
 }
-
 .about-values-list{
     width: 50%;
-    padding: 5rem;
+   padding-left: 5rem;
+}
+.about-values-image img{
+    height: 100%;
+    width: 100%;
+}
+.about-values-image{
+    width: 50%;
+}
+.about-values-image-container {
+    max-height: 80%;
+    width: 100%;
+}
+.values-list-item-icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding-top: 0.3rem;
+}
+.values-list-item-icon img{
+    height: 100%;
+}
+.values-list-item{
+    display: flex;
+    padding-bottom: 3rem;
+}
+.about-values-items-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.our-values{
+    margin-bottom: 35px;
 }
 .people-cards-wrapper{
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
     display: flex;
     justify-content: space-between;
 }
@@ -61,6 +100,7 @@
 .people-card-image img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 .people-card-name{
     font-size: 24px;
@@ -72,15 +112,14 @@
     width: 100%;
 
 }
-.about-people-wrapper{
-}
 .contact-footer{
     display: flex;
-    padding: 5rem;
     width: 100%;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
 }
 .about-location-wrapper{
-    width: 30%;
+    width: 50%;
 }
 .about-location-wrapper div{
     padding-bottom: 1rem;
@@ -88,41 +127,13 @@
 .about-contactinfo-wrapper div{
     padding-bottom: 1rem;
 }
+.about-location-map{
+    height: 400px;
+    width: 400px;
+}
 .about-header{
     font-weight: bold;
     font-size: 24px;
-}
-.about-values-image img{
-    height: 100%;
-    width: 100%;
-}
-.about-values-image{
-    width: 50%;
-    padding: 0rem;
-}
-.about-values-image-container {
-    height: 80%;
-    width: 100%;
-}
-.values-list-item-icon{
-    height: 50px;
-    margin-right: 10px;
-}
-.values-list-item-icon img{
-    height: 100%;
-}
-.values-list-item{
-    display: flex;
-    padding-bottom: 3rem;
-
-}
-.about-values-items-wrapper{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.our-values{
-    margin-bottom: 35px;
 }
 
 

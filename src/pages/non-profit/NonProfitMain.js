@@ -6,11 +6,12 @@ import NonProfitsData from "../../components/search/NonProfitsData";
 import { Button, withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import FooterTest from "../../components/FooterTest/FooterTest";
+import Footer from "../../components/Footer/Footer";
 import "./nonProfitMain.css";
 import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation } from "react-router";
 import AboutUs from "../../components/AboutUs/AboutUs";
+import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -73,14 +74,13 @@ export default function NonProfits() {
         }}
         className="nonProfit-search-hero"
       >
-        <div className="nonProfit-search-hero-text">
+        <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
           <button className={"donate-button"}>Donate</button>
         </div>
       </header>
       <NavTabs data={selectedNonProfit} />
-      <div className={"grey-line"} />
     </div>
   );
 }
@@ -100,7 +100,7 @@ function NavTabs(props) {
   return (
     <Box
       sx={{
-        width: "70vw",
+        width: "80vw",
         marginTop: "100px",
         marginRight: "auto",
         marginLeft: "auto",
@@ -134,7 +134,9 @@ function NavTabs(props) {
       <TabPanel value={value} index={0}>
         <AboutUs />
       </TabPanel>
-      <TabPanel value={value} index={1}></TabPanel>
+      <TabPanel value={value} index={1}>
+        <ProjectCardGrid data={props.data} />
+      </TabPanel>
       <TabPanel value={value} index={2}>
         <InsideStories selectedNonProfit={props.data} />
       </TabPanel>

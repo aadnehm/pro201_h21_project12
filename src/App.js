@@ -5,9 +5,8 @@ import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import Login from "./pages/login/Login";
-import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
 import InsideStories from "./components/non-profit-pages/InsideStories";
+
 //Global CSS
 import "./App.css";
 //MUI
@@ -17,7 +16,7 @@ import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 //Firebase
 import db from "./lib/firebase";
-import FooterTest from "./components/FooterTest/FooterTest";
+import Footer from "./components/Footer/Footer";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -25,6 +24,7 @@ import {
   ButtonAppBar,
   NonProfitSearch,
 } from "./pages/nonProfitSearch/NonProfitSearch";
+import { FrontPage } from "./pages/frontPage/frontPage";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -68,7 +68,7 @@ function App() {
       <div className="App">
         <ButtonAppBar />
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<FrontPage />} />
           <Route path="/nonprofits" element={<NonProfitSearch />} />
           <Route path="/signin-employee" element={<SigninEmployee />} />
           <Route path="/choose-subscription" element={<SubscriptionPage />} />
@@ -92,11 +92,10 @@ function App() {
           /> */}
           {/*Terje's test-route */}
           <Route path="/aboutTest" element={<AboutUs />} />
-          <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
-        <FooterTest />
+        <Footer />
       </div>
     </ThemeProvider>
   );

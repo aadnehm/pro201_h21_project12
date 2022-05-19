@@ -1,0 +1,33 @@
+.home-header1{
+    height: 60vh;
+    color: #eaeaea;
+    position: relative;
+}
+.home-header1 .home-header1-content{
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.home-header1 .home-header1-content button{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 300px;
+    font-weight: 500;
+    transition: transform .2s; /* Animation */
+}
+.home-header1 .home-header1-content button:first-of-type {
+    background: #F69F37;
+    color: #FAFAFA;
+    margin-right: 5vw;
+}
+.home-header1 .home-header1-content button:last-of-type {
+    background: #FAFAFA;
+    color: #333333;
+}
+
+.home-header1 .home-header1-content button:hover{
+    transform: scale(1.1);
+}

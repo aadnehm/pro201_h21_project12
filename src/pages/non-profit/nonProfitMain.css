@@ -13,7 +13,6 @@
     padding: 5px 30px 5px 30px;
     font-weight: 500;
     transition: transform .2s; /* Animation */
-
 }
 
 .donate-button:hover{
@@ -26,4 +25,10 @@
 
 .nonprofit-content header{
     color: #FAFAFA;
+}
+
+.nonProfit-header-content{
+    position: absolute;
+    bottom: 10vh;
+    left: 10%;
 }
