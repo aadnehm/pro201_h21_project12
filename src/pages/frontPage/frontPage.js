@@ -7,26 +7,35 @@ import {
 } from "../../components/search/navbarSearch/NavbarSearch";
 import { useNavigate } from "react-router";
 
-function ChooseSubscription() {
+function Communtiy() {
   const img =
-    "url(" +
-    process.env.PUBLIC_URL +
-    "/img/frontpage/frontpage-second-header.png)";
-
+    "url(" + process.env.PUBLIC_URL + "/img/frontpage/frontpage-community.png)";
   return (
     <div
-      className={"choose-subscription-content"}
+      className={"community-background"}
       style={{
+        marginTop: "90px",
+        marginBottom: "90px",
         backgroundImage: img,
-        backgroundPosition: "center",
+        backgroundPosition: "right",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: "70vh",
+        backgroundSize: "contain",
+        width: "80vw",
+        height: "50vh",
       }}
+      className="home-header1"
     >
-      <div className={"choose-subscription-content-text"}>
-        <h1>Choose subscription</h1>
-        <p>Find a subscription that suits your company and strategy</p>
+      <div className={"community-content"}>
+        <div className={"community-text"}>
+          <h1>Get the latest from our community</h1>
+          <p>
+            Sign up to our newsletter today, and get a weekly report on what is
+            going on in our community
+          </p>
+          <input type={"email"} placeholder={"Enter email adress"} />
+          <br />
+          <button>Sign up now</button>
+        </div>
       </div>
     </div>
   );
@@ -40,11 +49,15 @@ export function FrontPage() {
         <NewestNonProfits />
         <WhoAreWe />
         <ChooseSubscription />
+        <ImpactStatements />
+        <CuratedNonprofits />
+        <Communtiy />
       </div>
     </>
   );
 }
 function FrontPageHeader() {
+  const navigate = useNavigate();
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/frontpage/frontpage-header.png)";
   return (
@@ -67,7 +80,13 @@ function FrontPageHeader() {
           nisl turpis, ornare id suscipit accumsan, volutpat vitae tortor.
           Aenean.
         </h4>
-        <button>Find Non-profit</button>
+        <button
+          onClick={() => {
+            navigate("nonprofits");
+          }}
+        >
+          Find Non-profit
+        </button>
         <button>About us</button>
       </div>
     </header>
@@ -114,18 +133,14 @@ function NewestNonProfitsCard(props) {
   );
 }
 
-function PersonCards() {
-  const persons = [
-    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person1.png" },
-    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person2.png" },
-    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person3.png" },
-  ];
+function PersonCards(props) {
+  const data = props.data;
   return (
     <div className={"person-cardgrid"}>
-      {persons.map((person) => (
-        <div className={"person-card"}>
-          <img src={process.env.PUBLIC_URL + person.img} />
-          <p>{person.name}</p>
+      {data.map((value) => (
+        <div className={"data-card"}>
+          <img src={process.env.PUBLIC_URL + value.img} />
+          <p>{value.name}</p>
         </div>
       ))}
     </div>
@@ -133,10 +148,90 @@ function PersonCards() {
 }
 
 function WhoAreWe() {
+  const persons = [
+    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person1.png" },
+    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person2.png" },
+    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person3.png" },
+  ];
   return (
-    <>
+    <div className={"who-are-we"}>
       <h3 style={{ fontWeight: "bold", marginBottom: "30px" }}>Who are we?</h3>
-      <PersonCards />
-    </>
+      <PersonCards data={persons} />
+    </div>
+  );
+}
+
+function ChooseSubscription() {
+  const img =
+    "url(" +
+    process.env.PUBLIC_URL +
+    "/img/frontpage/frontpage-second-header.png)";
+
+  return (
+    <div
+      className={"choose-subscription-content"}
+      style={{
+        backgroundImage:
+          "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))," + img,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "70vh",
+      }}
+    >
+      <div className={"choose-subscription-content-text"}>
+        <h1>Choose subscription</h1>
+        <p>Find a subscription that suits your company and strategy</p>
+        <button>Subscriptions</button>
+      </div>
+    </div>
+  );
+}
+
+function ImpactStatements() {
+  const projects = [];
+  for (let i = 0; i < 3; i++) {
+    projects.push(NonProfitsData[0].projects[i]);
+  }
+  return (
+    <div className={"impact-statements"}>
+      <h3 style={{ fontWeight: "bold", marginBottom: "30px" }}>
+        Impact statements
+      </h3>
+      <PersonCards data={projects} />
+    </div>
+  );
+}
+
+function CuratedNonprofits() {
+  const img =
+    "url(" +
+    process.env.PUBLIC_URL +
+    "/img/frontpage/frontpage-curated-nonprofits.png)";
+  return (
+    <div
+      className={"curated-nonprofits"}
+      style={{
+        width: "80vw",
+        backgroundColor: "#333333",
+        backgroundImage: img,
+        backgroundPosition: "right",
+        backgroundRepeat: "no-repeat",
+        height: "80vh",
+      }}
+    >
+      <div className={"curated-nonprofits-content"}>
+        <div className={"curated-nonprofits-text"}>
+          <h1>Curated non-profits, just for you!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            facilisis mi ac nunc tincidunt, vitae ultricies purus sodales. Morbi
+            nisl turpis, ornare id suscipit accumsan, volutpat vitae tortor.
+            Aenean.
+          </p>
+          <button>Become a giver</button>
+        </div>
+      </div>
+    </div>
   );
 }
