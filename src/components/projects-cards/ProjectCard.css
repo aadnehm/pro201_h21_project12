@@ -18,6 +18,10 @@
   gap: 6vw;
   font-family: sans-serif;
 }
+/* mindre margin før show all button  */
+.project-cards-container:last-of-type {
+  margin-bottom: 5em;
+}
 
 /* img container venstre side */
 .project-img-gallery {
@@ -50,6 +54,7 @@
   margin-top: 30px;
   font-weight: bold;
 }
+/* go to project button */
 .project-text-content button {
   color: #fff;
   background-color: #f69f37;
@@ -63,6 +68,17 @@
 
 .project-text-content button:hover {
   opacity: 0.8;
+}
+/* show all button */
+.project-page-container .showAllBtn {
+  color: #fff;
+  background-color: #333;
+  width: 16vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  margin-left: 40%;
 }
 
 .project-cards-container .split-line {

@@ -1,16 +1,29 @@
 import "./ProjectCard.css";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
 export function ProjectCardGrid({ data }) {
   const reddBarnaProjects = data.projects;
+  const [showAll, setShowAll] = useState(false);
+
   return (
     <div className="project-page-container">
       <div className="top-line"></div>
       <h1>Our Projects</h1>
-      {reddBarnaProjects.map((project, index) => (
-        <Pcard key={index} project={project} />
-      ))}
+      {!showAll && (
+        <>
+          <Pcard project={reddBarnaProjects[0]} />
+          <Pcard project={reddBarnaProjects[1]} />
+        </>
+      )}
+
+      {showAll &&
+        reddBarnaProjects.map((project, index) => (
+          <Pcard key={index} project={project} />
+        ))}
+      <button className="showAllBtn" onClick={() => setShowAll(!showAll)}>
+        {showAll ? "Show less projects" : "Show all projects"}
+      </button>
     </div>
   );
 }

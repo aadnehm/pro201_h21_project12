@@ -6,7 +6,7 @@ import NonProfitsData from "../../components/search/NonProfitsData";
 import { Button, withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import FooterTest from "../../components/FooterTest/FooterTest";
+import Footer from "../../components/Footer/Footer";
 import "./nonProfitMain.css";
 import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation } from "react-router";
@@ -81,7 +81,6 @@ export default function NonProfits() {
         </div>
       </header>
       <NavTabs data={selectedNonProfit} />
-      <div className={"grey-line"} />
     </div>
   );
 }
