@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "../../components/navbar/Menu.js";
 
 /* CSS */
@@ -13,10 +13,11 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { NavbarSearch } from "../../components/search/navbarSearch/NavbarSearch";
-import FooterTest from "../../components/FooterTest/FooterTest";
+import Footer from "../../components/Footer/Footer";
 import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
+import { useNavigate } from "react-router";
 
-export default function NonProfitSearch() {
+export function NonProfitSearch() {
   const img = "url(./img/non-profit/nonProfitHero.png)";
 
   return (
@@ -31,7 +32,6 @@ export default function NonProfitSearch() {
         }}
         className="nonProfit-search-hero"
       >
-        <ButtonAppBar />
         <div className="nonProfit-search-hero-text">
           <h1>Carefully curated</h1>
           <h1>Non-profits</h1>
@@ -43,14 +43,32 @@ export default function NonProfitSearch() {
         <h3>Categories of Non-profits</h3>
         <NavTabs />
       </main>
-      <FooterTest />
     </div>
   );
 }
 
-function ButtonAppBar() {
+export function ButtonAppBar() {
+  const [appbarTop, setAppbarTop] = useState(true);
+  const navigate = useNavigate();
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setAppbarTop(false);
+    } else {
+      setAppbarTop(true);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <AppBar style={{ backgroundColor: "transparent" }} position="fixed">
+    <AppBar
+      className={appbarTop ? "appbar on-top" : ""}
+      color="secondary"
+      style={{
+        transition: "0.5s ease-in",
+        opacity: "1",
+      }}
+    >
       <Menu />
       <Toolbar className="nonProfit-search-navbar">
         <IconButton
@@ -68,12 +86,18 @@ function ButtonAppBar() {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
+          onClick={() => {
+            navigate("/nonprofits");
+          }}
         >
           <div className="nonprofit-firma-name">
             <h5>Meliora</h5>
             <h5>Impact</h5>
           </div>
-          <img src="./img/MI-logo-white.png" alt="logo-pic-login" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/MI-logo-white.png"}
+            alt="logo-pic-login"
+          />
         </IconButton>
       </Toolbar>
     </AppBar>

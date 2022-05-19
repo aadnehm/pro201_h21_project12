@@ -2,7 +2,6 @@ import { React, useState } from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { NpCardGrid } from "../NonProfit-cardgrid/NpCardGrid";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
@@ -26,7 +25,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ width: "100%" }}>
-          <Typography>{children}</Typography>
+          <div>{children}</div>
         </Box>
       )}
     </div>

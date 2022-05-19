@@ -1,7 +1,6 @@
 
 .footer-wrapper{
 height: 400px;
-width: 100%;
 box-shadow: 0 -7px 15px #33333320;
 }
 .footer{
@@ -116,7 +115,7 @@ cursor: pointer;
     .footer-middle-right{
         width: 100%;
     }
-} */
+}
 
 @media screen and (max-width: 1250px) {
     .footer{
@@ -126,3 +125,5 @@ cursor: pointer;
         height: 100px;
     }
 }
+
+ */

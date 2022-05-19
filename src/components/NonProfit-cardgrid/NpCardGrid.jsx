@@ -1,4 +1,6 @@
 import "./NpCardGrid.css";
+import { useNavigate } from "react-router";
+import { goToTop } from "../search/navbarSearch/NavbarSearch";
 
 export function NpCardGrid({ data }) {
   return (
@@ -11,8 +13,20 @@ export function NpCardGrid({ data }) {
 }
 
 function Card({ post }) {
+  const navigate = useNavigate();
+  function redirectNonprofit(name) {
+    const path = "/non-profit/" + name.replace(/ /g, "");
+    navigate(path);
+    goToTop();
+  }
+
   return (
-    <div className="np-card">
+    <div
+      className="np-card"
+      onClick={() => {
+        redirectNonprofit(post.name);
+      }}
+    >
       <img src={post.img} alt="non profit image" />
       <div className="np-card-content">
         <span>{post.categories[0]}</span>

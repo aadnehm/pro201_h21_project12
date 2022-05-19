@@ -3,8 +3,8 @@
   margin-top: 2rem;
   max-width: 70vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 70px;
   font-family: sans-serif;
 }
 
@@ -12,7 +12,14 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 3%;
+  transition: transform .2s; /* Animation */
 }
+
+.np-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /* sentrerer bilde */
 .np-card img {
   display: block;
