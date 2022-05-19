@@ -26,3 +26,9 @@
 .nonprofit-content header{
     color: #FAFAFA;
 }
+
+.nonProfit-header-content{
+    position: absolute;
+    bottom: 10vh;
+    left: 10%;
+}

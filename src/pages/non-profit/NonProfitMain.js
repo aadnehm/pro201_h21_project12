@@ -73,7 +73,7 @@ export default function NonProfits() {
         }}
         className="nonProfit-search-hero"
       >
-        <div className="nonProfit-search-hero-text">
+        <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
           <button className={"donate-button"}>Donate</button>
