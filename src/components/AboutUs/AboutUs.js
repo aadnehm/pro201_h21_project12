@@ -115,15 +115,22 @@ export default function AboutUs() {
             <div className="about-location-wrapper">
               <div className={"about-header"}>Location</div>
               <div>Storgata 38, 0182 Oslo</div>
+              <iframe
+                className={"about-location-map"}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.956801082852!2d10.755611116436636!3d59.91626428186806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e60dceea5cb%3A0xcb746ddbd3f7d3e7!2sStorgata%2038%2C%200182%20Oslo!5e0!3m2!1sen!2sno!4v1652953502553!5m2!1sen!2sno"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
             <div className="about-contactinfo-wrapper">
               <div className={"about-header"}>Contact Info</div>
               <div>Redd Barna</div>
               <div>Postboks 0492 St. Olavs Plass</div>
               <div>0130 Oslo</div>
-              <div></div>
+              <div />
               <div>(+47) 22 99 09 00</div>
-              <div></div>
+              <div />
               <div>giverservice@reddbarna.no</div>
               <div>post@reddbarna.no</div>
             </div>

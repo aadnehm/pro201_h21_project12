@@ -88,13 +88,17 @@ margin-top: 3rem;
     margin-bottom: 3rem;
 }
 .about-location-wrapper{
-    width: 30%;
+    width: 50%;
 }
 .about-location-wrapper div{
     padding-bottom: 1rem;
 }
 .about-contactinfo-wrapper div{
     padding-bottom: 1rem;
+}
+.about-location-map{
+    height: 400px;
+    width: 400px;
 }
 .about-header{
     font-weight: bold;
