@@ -115,18 +115,28 @@ export default function AboutUs() {
           <div className="people-cards-wrapper">
             <PeopleCard
               img={process.env.PUBLIC_URL + "/img/Employees/person1.jpg"}
+              name={"Test Persson"}
+              title={"Founder"}
             />
             <PeopleCard
               img={process.env.PUBLIC_URL + "/img/Employees/person2.jpg"}
+              name={"Max Powers"}
+              title={"CEO"}
             />
             <PeopleCard
               img={process.env.PUBLIC_URL + "/img/Employees/person3.jpg"}
+              name={"Luna Lovegood"}
+              title={"Key Account Manager"}
             />
             <PeopleCard
               img={process.env.PUBLIC_URL + "/img/Employees/person4.jpg"}
+              name={"Lance Hardwood"}
+              title={"PR Rep"}
             />
             <PeopleCard
               img={process.env.PUBLIC_URL + "/img/Employees/person5.jpg"}
+              name={"Louis Lane"}
+              title={"Head of Relations"}
             />
           </div>
         </div>
@@ -161,15 +171,15 @@ export default function AboutUs() {
     </>
   );
 
-  function PeopleCard({ img }) {
+  function PeopleCard({ img, name, title }) {
     return (
       <>
         <div className="people-card-wrapper">
           <div className="people-card-image">
             <img src={img} alt="profile-pic" />
           </div>
-          <div className="people-card-name">Max Power</div>
-          <div className="people-card-title">Founder</div>
+          <div className="people-card-name">{name}</div>
+          <div className="people-card-title">{title}</div>
         </div>
       </>
     );
