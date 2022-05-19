@@ -6,6 +6,18 @@ export function ProjectCardGrid({ data }) {
   const reddBarnaProjects = data.projects;
   const [showAll, setShowAll] = useState(false);
 
+  const goToTop = () => {
+    window.scrollTo({
+      top: 670,
+      behavior: "smooth",
+    });
+  };
+
+  const handleShowAll = () => {
+    setShowAll(!showAll);
+    goToTop();
+  };
+
   return (
     <div className="project-page-container">
       <div className="top-line"></div>
@@ -21,7 +33,7 @@ export function ProjectCardGrid({ data }) {
         reddBarnaProjects.map((project, index) => (
           <Pcard key={index} project={project} />
         ))}
-      <button className="showAllBtn" onClick={() => setShowAll(!showAll)}>
+      <button className="showAllBtn" onClick={() => handleShowAll()}>
         {showAll ? "Show less projects" : "Show all projects"}
       </button>
     </div>
