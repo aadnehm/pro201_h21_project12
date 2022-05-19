@@ -1,5 +1,5 @@
 //Import React and CSS
-import React from "react";
+import React, { useState } from "react";
 import "./WhatYouGet.css";
 //Import MUI
 import Box from "@mui/material/Box";
@@ -8,8 +8,28 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+//Import Collapse
+import { MDBCollapse, MDBBtn, MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 function WhatYouGet() {
+  const [showMoreInstagram, setShowMoreInstagram] = useState(false);
+  const [showMoreLinkedIn, setShowMoreLinkedIn] = useState(false);
+  const [showMoreSnapchat, setShowMoreSnapchat] = useState(false);
+  const [showInstagramElement, setShowInstagramElement] = useState(false);
+  const [showLinkedInElement, setShowLinkedInElement] = useState(false);
+  const [showSnapchatElement, setShowSnapchatElement] = useState(false);
+
+  const toggleShowMoreInstagram = () =>
+    setShowMoreInstagram(!showMoreInstagram);
+  const toggleShowMoreLinkedIn = () => setShowMoreLinkedIn(!showMoreLinkedIn);
+  const toggleShowMoreSnapchat = () => setShowMoreSnapchat(!showMoreSnapchat);
+  const toggleInstagramElement = () =>
+    setShowInstagramElement(!showInstagramElement);
+  const toggleLinkedInElement = () =>
+    setShowLinkedInElement(!showLinkedInElement);
+  const toggleSnapchatElement = () =>
+    setShowSnapchatElement(!showSnapchatElement);
+
   return (
     <div>
       <h3
@@ -64,56 +84,117 @@ function WhatYouGet() {
           <Grid item lg={2}></Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src="./img/WYGInstaStory.png"
+              src="./img/WYGInstaStory1.png"
               alt="instagram story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src="./img/WYGInstaStory.png"
+              src="./img/WYGInstaStory2.png"
               alt="instagram story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src="./img/WYGInstaStory.png"
+              src="./img/WYGInstaStory3.png"
               alt="instagram story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
+          <MDBCollapse show={showInstagramElement}>
+            <div className="wyg-collapse-content">
+              <Grid container spacing={12} style={{ marginTop: "0.1%" }}>
+                <Grid item lg={2}></Grid>
+                <Grid item xs={12} lg={3}>
+                  <img
+                    src="./img/WYGInstaStory4.png"
+                    alt="instagram story"
+                    style={{ width: "90%" }}
+                  ></img>
+                </Grid>
+                <Grid item xs={12} lg={3}>
+                  <img
+                    src="./img/WYGInstaStory5.png"
+                    alt="instagram story"
+                    style={{ width: "90%" }}
+                  ></img>
+                </Grid>
+                <Grid item xs={12} lg={3}>
+                  <img
+                    src="./img/WYGInstaStory6.png"
+                    alt="instagram story"
+                    style={{ width: "90%" }}
+                  ></img>
+                </Grid>
+              </Grid>
+            </div>
+          </MDBCollapse>
         </Grid>
-
-        <button className="wyg-btn">Show all instagram</button>
+        <button
+          className="wyg-btn"
+          onClick={() => {
+            toggleInstagramElement();
+            toggleShowMoreInstagram();
+          }}
+        >
+          {showMoreInstagram ? "Show less Instagram" : "Show all Instagram"}
+        </button>
       </div>
       <div className="wyg-box">
         <h2>LinkedIn</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          nibh massa, elementum id hendrerit ut, condimentum id orci.
+          Our LinkedIn community connects nonprofits, donors, and companies in
+          all over the world.
         </p>
         <p style={{ marginBottom: "2%" }}>
-          Sed sodales tellus dolor. Donec laoreet nisl ac mi sodales vulputate
-          quis ut ipsum.
+          It’s also about helping nonprofits access information and ideas that
+          will help them listen, learn, and grow.
         </p>
         <Grid container spacing={12}>
           <Grid item xs={12} lg={4}>
             <img
-              src="./img/WYGLinkedIn.png"
+              src="./img/WYGLinkedIn1.png"
               alt="LinkedIn story"
               style={{ width: "100%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={4}>
             <img
-              src="./img/WYGLinkedIn.png"
+              src="./img/WYGLinkedIn2.png"
               alt="LinkedIn story"
               style={{ width: "100%" }}
             ></img>
           </Grid>
         </Grid>
-        <button className="wyg-btn">Show all LinkedIn</button>
+        <MDBCollapse show={showLinkedInElement}>
+          <Grid container spacing={12}>
+            <Grid item xs={12} lg={4}>
+              <img
+                src="./img/WYGLinkedIn3.png"
+                alt="LinkedIn story"
+                style={{ width: "100%" }}
+              ></img>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <img
+                src="./img/WYGLinkedIn4.png"
+                alt="LinkedIn story"
+                style={{ width: "100%" }}
+              ></img>
+            </Grid>
+          </Grid>
+        </MDBCollapse>
+        <button
+          className="wyg-btn"
+          onClick={() => {
+            toggleLinkedInElement();
+            toggleShowMoreLinkedIn();
+          }}
+        >
+          {showMoreLinkedIn ? "Show less LinkedIn" : "Show all LinkedIn"}
+        </button>
       </div>
       <div className="wyg-box">
         <h2>Snapchat</h2>
@@ -140,8 +221,44 @@ function WhatYouGet() {
               style={{ width: "90%" }}
             ></img>
           </Grid>
+          <MDBCollapse show={showSnapchatElement}>
+            <div className="wyg-collapse-content">
+              <Grid container spacing={12} style={{ marginTop: "0.1%" }}>
+                <Grid item lg={2}></Grid>
+                <Grid item xs={12} lg={3}>
+                  <img
+                    src="./img/WYGInstaStory.png"
+                    alt="snapchat story"
+                    style={{ width: "90%" }}
+                  ></img>
+                </Grid>
+                <Grid item xs={12} lg={3}>
+                  <img
+                    src="./img/WYGInstaStory.png"
+                    alt="snapchat story"
+                    style={{ width: "90%" }}
+                  ></img>
+                </Grid>
+                <Grid item xs={12} lg={3}>
+                  <img
+                    src="./img/WYGInstaStory.png"
+                    alt="snapchat story"
+                    style={{ width: "90%" }}
+                  ></img>
+                </Grid>
+              </Grid>
+            </div>
+          </MDBCollapse>
         </Grid>
-        <button className="wyg-btn">Show all snapchat</button>
+        <button
+          className="wyg-btn"
+          onClick={() => {
+            toggleSnapchatElement();
+            toggleShowMoreSnapchat();
+          }}
+        >
+          {showMoreSnapchat ? "Show less Snapchat" : "Show all Snapchat"}
+        </button>
       </div>
       <div className="wyg-bottom-banner">
         <Card
@@ -163,8 +280,8 @@ function WhatYouGet() {
                   style={{ padding: "5rem", marginTop: "5rem" }}
                 >
                   <Typography component="div" variant="h4" color="white">
-                    Get a glimpse into our exclusive content bank. We make you
-                    sustainable marketing easier
+                    Connects nonprofits, donors, and companies in nearly every
+                    country in the world.
                   </Typography>
                 </CardContent>
               </Box>
