@@ -16,6 +16,7 @@
     "form": "^0.2.4",
     "formik": "^2.2.9",
     "hamburger-react": "^2.5.0",
+    "mdb-react-ui-kit": "^3.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.3",
     "react-burger-menu": "^3.0.6",
