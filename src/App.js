@@ -5,9 +5,8 @@ import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
 import NonProfit from "./pages/non-profit/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import Login from "./pages/login/Login";
-import { NpCardGrid } from "./components/NonProfit-cardgrid/NpCardGrid";
 import InsideStories from "./components/non-profit-pages/InsideStories";
+
 //Global CSS
 import "./App.css";
 //MUI
@@ -93,7 +92,6 @@ function App() {
           /> */}
           {/*Terje's test-route */}
           <Route path="/aboutTest" element={<AboutUs />} />
-          <Route path="/grid" element={<NpCardGrid />} />
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
