@@ -49,15 +49,17 @@ margin-top: 3rem;
 }
 .about-values-image{
     width: 50%;
-    padding: 0rem;
 }
 .about-values-image-container {
     max-height: 80%;
     width: 100%;
 }
 .values-list-item-icon{
-    height: 50px;
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
+    border-radius: 50px;
+    padding-top: 0.3rem;
 }
 .values-list-item-icon img{
     height: 100%;
@@ -65,7 +67,6 @@ margin-top: 3rem;
 .values-list-item{
     display: flex;
     padding-bottom: 3rem;
-
 }
 .about-values-items-wrapper{
     display: flex;
