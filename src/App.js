@@ -79,7 +79,6 @@ function App() {
             path="/non-profit"
             element={<NonProfit selectedOrg={selectedOrg} />}
           />
-
           <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
 
           <Route
