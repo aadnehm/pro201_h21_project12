@@ -100,7 +100,7 @@ function NavTabs(props) {
   return (
     <Box
       sx={{
-        width: "70vw",
+        width: "80vw",
         marginTop: "100px",
         marginRight: "auto",
         marginLeft: "auto",

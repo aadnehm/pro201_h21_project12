@@ -25,6 +25,7 @@ import {
   ButtonAppBar,
   NonProfitSearch,
 } from "./pages/nonProfitSearch/NonProfitSearch";
+import { FrontPage } from "./pages/frontPage/frontPage";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -68,7 +69,7 @@ function App() {
       <div className="App">
         <ButtonAppBar />
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<FrontPage />} />
           <Route path="/nonprofits" element={<NonProfitSearch />} />
           <Route path="/signin-employee" element={<SigninEmployee />} />
           <Route path="/choose-subscription" element={<SubscriptionPage />} />

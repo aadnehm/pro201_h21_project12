@@ -17,7 +17,8 @@
     overflow-y: hidden;
     z-index: 9;
     border-radius: 10px;
-    border: 1px solid #333;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
   }
 
   .solid {
