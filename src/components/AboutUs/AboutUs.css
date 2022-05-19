@@ -68,6 +68,7 @@ margin-top: 3rem;
 .people-card-image img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 .people-card-name{
     font-size: 24px;

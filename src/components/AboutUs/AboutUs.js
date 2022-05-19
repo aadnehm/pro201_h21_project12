@@ -51,7 +51,7 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="values-list-item-text">
-                  <div>Transparency</div>
+                  <div className={"about-header"}>Transparency</div>
                   <div>
                     Redd Barna will always be open and transparent about what we
                     do
@@ -65,7 +65,7 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="values-list-item-text">
-                  <div>Honesty</div>
+                  <div className={"about-header"}>Honesty</div>
                   <div>
                     Redd Barna will always be open and transparent about what we
                     do
@@ -79,7 +79,21 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="values-list-item-text">
-                  <div>Open-hearted</div>
+                  <div className={"about-header"}>Open-hearted</div>
+                  <div>
+                    Redd Barna will always be open and transparent about what we
+                    do
+                  </div>
+                </div>
+              </div>
+              <div className={"values-list-item"}>
+                <div className="values-list-item-icon">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/handhearticon.jpeg"}
+                  />
+                </div>
+                <div className="values-list-item-text">
+                  <div className={"about-header"}>Hard working</div>
                   <div>
                     Redd Barna will always be open and transparent about what we
                     do
