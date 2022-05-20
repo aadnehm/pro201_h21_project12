@@ -52,14 +52,11 @@ function WhatYouGet() {
                   flexDirection: "column",
                 }}
               >
-                <CardContent
-                  sx={{ flex: "1 0 auto" }}
-                  style={{ padding: "5rem", marginTop: "5rem" }}
-                >
-                  <Typography component="div" variant="h4" color="white">
-                    Get a glimpse into our exclusive content bank. We make you
-                    sustainable marketing easier
-                  </Typography>
+                <CardContent>
+                  <h1 className="wyg-card-text">
+                    Get a glimpse of the social media you will recive, if you
+                    become a partner.
+                  </h1>
                 </CardContent>
               </Box>
             </Grid>
@@ -141,14 +138,14 @@ function WhatYouGet() {
       </div>
       <div className="wyg-box">
         <h2>LinkedIn</h2>
-        <p>
+        <h4>
           Our LinkedIn community connects nonprofits, donors, and companies in
           all over the world.
-        </p>
-        <p style={{ marginBottom: "2%" }}>
+        </h4>
+        <h4 style={{ marginBottom: "4%" }}>
           It’s also about helping nonprofits access information and ideas that
           will help them listen, learn, and grow.
-        </p>
+        </h4>
         <Grid container spacing={12}>
           <Grid item xs={12} lg={4}>
             <img
@@ -164,8 +161,15 @@ function WhatYouGet() {
               style={{ width: "100%" }}
             ></img>
           </Grid>
+          <Grid item xs={12} lg={4}>
+            <img
+              src={process.env.PUBLIC_URL + "/img/WYGLinkedIn4.png"}
+              alt="LinkedIn story"
+              style={{ width: "100%" }}
+            ></img>
+          </Grid>
         </Grid>
-        <MDBCollapse show={showLinkedInElement}>
+        <MDBCollapse show={showLinkedInElement} style={{ marginTop: "2%" }}>
           <Grid container spacing={12}>
             <Grid item xs={12} lg={4}>
               <img
@@ -177,6 +181,13 @@ function WhatYouGet() {
             <Grid item xs={12} lg={4}>
               <img
                 src={process.env.PUBLIC_URL + "/img/WYGLinkedIn4.png"}
+                alt="LinkedIn story"
+                style={{ width: "100%" }}
+              ></img>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <img
+                src={process.env.PUBLIC_URL + "/img/WYGLinkedIn1.png"}
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
               ></img>
@@ -199,21 +210,21 @@ function WhatYouGet() {
           <Grid item lg={2}></Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+              src={process.env.PUBLIC_URL + "/img/WYGSnapchat1.png"}
               alt="snapchat story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+              src={process.env.PUBLIC_URL + "/img/WYGSnapchat2.png"}
               alt="snapchat story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+              src={process.env.PUBLIC_URL + "/img/WYGSnapchat3.png"}
               alt="snapchat story"
               style={{ width: "90%" }}
             ></img>
@@ -224,21 +235,21 @@ function WhatYouGet() {
                 <Grid item lg={2}></Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+                    src={process.env.PUBLIC_URL + "/img/WYGSnapchat4.png"}
                     alt="snapchat story"
                     style={{ width: "90%" }}
                   ></img>
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+                    src={process.env.PUBLIC_URL + "/img/WYGSnapchat5.png"}
                     alt="snapchat story"
                     style={{ width: "90%" }}
                   ></img>
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+                    src={process.env.PUBLIC_URL + "/img/WYGSnapchat6.png"}
                     alt="snapchat story"
                     style={{ width: "90%" }}
                   ></img>
@@ -272,14 +283,11 @@ function WhatYouGet() {
           <Grid container spacing={0}>
             <Grid item xs={6}>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent
-                  sx={{ flex: "1 0 auto" }}
-                  style={{ padding: "5rem", marginTop: "5rem" }}
-                >
-                  <Typography component="div" variant="h4" color="white">
+                <CardContent>
+                  <h1 className="wyg-card-text">
                     Connects nonprofits, donors, and companies in nearly every
                     country in the world.
-                  </Typography>
+                  </h1>
                 </CardContent>
               </Box>
             </Grid>
