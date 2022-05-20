@@ -1,6 +1,6 @@
 // array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
 // same ID as Redd Barna if needed.
-const reddBarnaProjects = [
+const dummyProjects = [
   {
     id: "1",
     img: "/img/eksempelbilde1.png",
@@ -26,7 +26,7 @@ const reddBarnaProjects = [
   {
     id: "1",
     img: "/img/eksempelbilde3.png",
-    name: "Redd Barna Youth Camps",
+    name: "Summer Youth Camps",
     established: "01.05.2010",
     info1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non",
@@ -48,7 +48,7 @@ const reddBarnaProjects = [
   {
     id: "1",
     img: "/img/eksempelbilde5.png",
-    name: "Chiou",
+    name: "Saving Chiou",
     established: "04.02.1999",
     info1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra.",
@@ -59,7 +59,7 @@ const reddBarnaProjects = [
   {
     id: "1",
     img: "/img/eksempelbilde6.png",
-    name: "School lorem lorem",
+    name: "School for All",
     established: "02.06.2000",
     info1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
@@ -77,7 +77,7 @@ const nonProfitsPosts = [
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova ipsum",
     categories: ["humanitarian", "recommended"],
-    projects: reddBarnaProjects,
+    projects: dummyProjects,
   },
   {
     id: "2",
@@ -86,6 +86,7 @@ const nonProfitsPosts = [
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova lorem ",
     categories: ["environment", "recommended"],
+    projects: dummyProjects,
   },
   {
     id: "3",
@@ -94,6 +95,7 @@ const nonProfitsPosts = [
     averageDonated: 150,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["humanitarian", ""],
+    projects: dummyProjects,
   },
   {
     id: "4",
@@ -102,6 +104,7 @@ const nonProfitsPosts = [
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["environment", "recommended"],
+    projects: dummyProjects,
   },
   {
     id: "5",
@@ -110,6 +113,7 @@ const nonProfitsPosts = [
     averageDonated: 350,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["equality", ""],
+    projects: dummyProjects,
   },
   {
     id: "6",
@@ -118,6 +122,7 @@ const nonProfitsPosts = [
     averageDonated: 400,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["education", "recommended"],
+    projects: dummyProjects,
   },
   {
     id: "7",
@@ -126,6 +131,7 @@ const nonProfitsPosts = [
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["education", ""],
+    projects: dummyProjects,
   },
   {
     id: "8",
@@ -134,6 +140,7 @@ const nonProfitsPosts = [
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["humanitarian", "recommended"],
+    projects: dummyProjects,
   },
   {
     id: "9",
@@ -142,6 +149,7 @@ const nonProfitsPosts = [
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["environment", ""],
+    projects: dummyProjects,
   },
   {
     id: "10",
@@ -150,6 +158,7 @@ const nonProfitsPosts = [
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["education", ""],
+    projects: dummyProjects,
   },
   {
     id: "11",
@@ -158,6 +167,7 @@ const nonProfitsPosts = [
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["equality", ""],
+    projects: dummyProjects,
   },
   {
     id: "12",
@@ -166,6 +176,7 @@ const nonProfitsPosts = [
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
     categories: ["equality", "recommended"],
+    projects: dummyProjects,
   },
 ];
 
