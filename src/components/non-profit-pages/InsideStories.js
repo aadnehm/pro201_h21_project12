@@ -30,8 +30,8 @@ export default function InsideStories() {
 
   return (
     <div className="inside-stories">
-      <hr className="horizontal-lines" />
-      <h2>Inside stories</h2>
+    <div className="grey-line" />         
+      <h1>Inside stories</h1>
       <div className="iframes-div">
         {insideStoriesData.map((story) => (
           <div className="story-div" id={`player-div${story.id}`}>
@@ -54,7 +54,6 @@ export default function InsideStories() {
           </div>
         ))}
       </div>
-      <hr />
     </div>
   );
 }
