@@ -33,7 +33,7 @@
 .nonProfit-search-hero-text {
   position: absolute;
   bottom: 10vh;
-  left: 15%;
+  left: 10%;
 }
 
 .nonProfit-search-hero-text p {
@@ -60,6 +60,6 @@
 }
 
 .nonProfit-search-categories {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  width: 80vw;
+  margin: 8rem auto 8rem auto;
 }

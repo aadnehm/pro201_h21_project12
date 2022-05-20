@@ -11,6 +11,7 @@ import "./nonProfitMain.css";
 import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation } from "react-router";
 import AboutUs from "../../components/AboutUs/AboutUs";
+import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 
 function TabPanel(props) {
@@ -140,7 +141,9 @@ function NavTabs(props) {
       <TabPanel value={value} index={2}>
         <InsideStories selectedNonProfit={props.data} />
       </TabPanel>
-      <TabPanel value={value} index={3}></TabPanel>
+      <TabPanel value={value} index={3}>
+        <WhatYouGet />
+      </TabPanel>
       <TabPanel value={value} index={4}></TabPanel>
     </Box>
   );
