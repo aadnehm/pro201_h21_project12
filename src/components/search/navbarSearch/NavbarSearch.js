@@ -35,7 +35,7 @@ function SearchResults(props) {
   let navigate = useNavigate();
 
   function redirectNonprofit(name) {
-    const path = "/non-profit/" + name.replace(/ /g, "");
+    const path = "/nonprofit/" + name.replace(/ /g, "");
     props.setSearch("");
     navigate(path);
     goToTop();

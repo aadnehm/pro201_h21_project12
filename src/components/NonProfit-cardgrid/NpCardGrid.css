@@ -1,10 +1,10 @@
 .np-cards-container {
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: 2rem auto;
   max-width: 80vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 70px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  column-gap: 120px;
+  row-gap: 70px;
   font-family: sans-serif;
 }
 

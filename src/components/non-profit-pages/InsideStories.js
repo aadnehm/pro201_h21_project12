@@ -33,8 +33,8 @@ export default function InsideStories() {
       <hr className="horizontal-lines" />
       <h2>Inside stories</h2>
       <div className="iframes-div">
-        {insideStoriesData.map((story) => (
-          <div className="story-div" id={`player-div${story.id}`}>
+        {insideStoriesData.map((story, index) => (
+          <div className="story-div" id={`player-div${story.id}`} key={index}>
             <div id={`reactPlayer${story.id}`} className="react-player">
               <ReactPlayer
                 id={`player${story.id}`}

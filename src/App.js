@@ -25,6 +25,7 @@ import {
   NonProfitSearch,
 } from "./pages/nonProfitSearch/NonProfitSearch";
 import { FrontPage } from "./pages/frontPage/frontPage";
+import Login from "./pages/login/Login";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -46,9 +47,20 @@ const mainColor = createTheme({
   },
 });
 
+function NavbarFooter(props) {
+  return (
+    <>
+      <ButtonAppBar />
+      <>{props.page}</>
+      <Footer />
+    </>
+  );
+}
+
 function App() {
   //Pulling non-profits from cloud database and storing it in state that gets passed
   //to SearchNonProfits-page
+  /*
   const fetchOrgs = async () => {
     const response = db.collection("nonprofits");
     const data = await response.get();
@@ -59,33 +71,40 @@ function App() {
   const [orgs, setOrgs] = useState([]);
   const [selectedOrg, setSelectedOrg] = useState();
 
+
+
   useEffect(() => {
     fetchOrgs();
   }, []);
 
+   */
+
   return (
     <ThemeProvider theme={mainColor}>
       <div className="App">
-        <ButtonAppBar />
         <Routes>
-          <Route path="/" element={<FrontPage />} />
-          <Route path="/nonprofits" element={<NonProfitSearch />} />
-          <Route path="/signin-employee" element={<SigninEmployee />} />
-          <Route path="/choose-subscription" element={<SubscriptionPage />} />
-          <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/create-account" element={<CreateAccountPage />} />
+          <Route path="/" element={<NavbarFooter page={<FrontPage />} />} />
+          <Route
+            path="/nonprofits"
+            element={<NavbarFooter page={<NonProfitSearch />} />}
+          />
 
           <Route
-            path="/non-profit"
-            element={<NonProfit selectedOrg={selectedOrg} />}
+            path="/nonprofit/:nonprofit"
+            element={<NavbarFooter page={<NonProfit />} />}
           />
-          <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
+          <Route path="/login" element={<Login />} />
+          {/*
+            <Route path="/choose-subscription" element={<SubscriptionPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />
+           <Route path="/signin-employee" element={<SigninEmployee />} />
 
           <Route
             path="/non-project"
             element={<NonProfitProject selectedOrg={selectedOrg} />}
           />
-          {/* <Route
+          <Route
             path="/nonprofithome"
             element={<NonProfitHome selectedOrg={selectedOrg} />}
           /> */}
@@ -94,7 +113,6 @@ function App() {
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
-        <Footer />
       </div>
     </ThemeProvider>
   );

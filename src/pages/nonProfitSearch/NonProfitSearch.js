@@ -7,13 +7,7 @@ import "./nonProfitSearch.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import PersonIcon from "@mui/icons-material/Person";
-import { styled, alpha } from "@mui/material/styles";
-import InputBase from "@mui/material/InputBase";
-import SearchIcon from "@mui/icons-material/Search";
 import { NavbarSearch } from "../../components/search/navbarSearch/NavbarSearch";
-import Footer from "../../components/Footer/Footer";
 import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 import { useNavigate } from "react-router";
 
@@ -86,7 +80,7 @@ export function ButtonAppBar() {
           aria-label="menu"
           sx={{ mr: 2 }}
           onClick={() => {
-            navigate("/nonprofits");
+            navigate("/");
           }}
         >
           <div className="nonprofit-firma-name">

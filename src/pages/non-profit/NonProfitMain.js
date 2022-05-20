@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { ButtonAppBar } from "../nonProfitSearch/NonProfitSearch";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import NonProfitsData from "../../components/search/NonProfitsData";
-import { Button, withStyles } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import Footer from "../../components/Footer/Footer";
 import "./nonProfitMain.css";
 import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation } from "react-router";
@@ -46,6 +44,7 @@ function a11yProps(index) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
+
 export default function NonProfits() {
   let location = useLocation();
   useEffect(() => {}, [location]);

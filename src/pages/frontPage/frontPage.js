@@ -68,7 +68,7 @@ function FrontPageHeader() {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
-        height: "70vh",
+        height: "100vh",
       }}
       className="home-header1"
     >
@@ -112,7 +112,7 @@ function NewestNonProfits() {
 function NewestNonProfitsCard(props) {
   const navigate = useNavigate();
   function redirectNonprofit(name) {
-    const path = "/non-profit/" + name.replace(/ /g, "");
+    const path = "/nonprofit/" + name.replace(/ /g, "");
     navigate(path);
     goToTop();
   }
@@ -137,8 +137,8 @@ function PersonCards(props) {
   const data = props.data;
   return (
     <div className={"person-cardgrid"}>
-      {data.map((value) => (
-        <div className={"data-card"}>
+      {data.map((value, index) => (
+        <div className={"data-card"} key={index}>
           <img src={process.env.PUBLIC_URL + value.img} />
           <p>{value.name}</p>
         </div>

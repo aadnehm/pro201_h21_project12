@@ -1,28 +1,30 @@
 .home-header1{
-    height: 60vh;
+    height: 80vh;
     color: #eaeaea;
     position: relative;
 }
 .home-header1 .home-header1-content{
     position: absolute;
-    bottom: 10vh;
+    bottom: 50vh;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 50%);
     text-align: center;
 }
 .home-header1 .home-header1-content button{
     border: none;
     border-radius: 5px;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 15px 10px 15px;
     width: 300px;
     font-weight: 500;
     transition: transform .2s; /* Animation */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .home-header1 .home-header1-content button:first-of-type {
     background: #F69F37;
     color: #FAFAFA;
-    margin-right: 5vw;
+    margin-bottom: 20px;
 }
 .home-header1 .home-header1-content button:last-of-type {
     background: #FAFAFA;
@@ -229,7 +231,7 @@
     color: #FEFEFE;
 }
 
-.curated-nonprofits-content button:hover{
+.community-text button:hover{
     transform: scale(1.1);
 }
 
