@@ -6,12 +6,11 @@
 }
 
 .expandedPlayer {
+  border-radius: 10px;
   display: flex;
   background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
+  margin: 8% auto;
   border: 1px solid #888;
-  border-radius: 30px;
   width: 80% !important;
   height: 80% !important;
 }
@@ -29,6 +28,27 @@
   margin-right: 20px;
 }
 
+.expandedPlayer iframe {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.expandedPlayer .playerText {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.expandedPlayer span {
+  margin-right: -40px;
+}
+
+.longText {
+  display: none;
+}
+
+.expandedPlayer .longText {
+  display: block;
+}
+
 .react-player {
   height: 270px !important;
   width: 270px !important;
@@ -36,6 +56,7 @@
 
 .playerText {
   float: left;
+  margin: 0 10px 0 10px;
 }
 
 .modal-div {
@@ -52,11 +73,17 @@
 }
 
 iframe {
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .story-div {
-  width: 270px;
+  width: fit-content;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.story-div:hover {
+  cursor: pointer;
 }
 
 .inside-stories h2 {
@@ -66,4 +93,45 @@ iframe {
 .story-div h4,
 .story-div p {
   padding: 10px 10px 0px 0px;
+}
+
+.posterDiv {
+  border: 0px solid #fff;
+  border-radius: 15px;
+  background-color: black;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.posterDiv2 {
+  border: 0px solid #fff;
+  border-radius: 15px;
+  background-color: black;
+  margin-top: 40px;
+  display: flex;
+}
+
+.posterDiv2 button {
+  padding: 10px;
+}
+
+.posterDiv img {
+  border-radius: 0 15px 15px 0;
+  width: 110%;
+}
+
+.posterDiv2 img {
+  border-radius: 0 15px 15px 0;
+  width: 110%;
+}
+
+.posterParagraphDiv {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.posterParagraphDiv h2 {
+  margin: auto;
+  width: 80%;
 }
