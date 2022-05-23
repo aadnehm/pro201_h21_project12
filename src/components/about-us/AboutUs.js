@@ -15,7 +15,7 @@ export default function AboutUs() {
       <div className="about-wrapper">
         <div className="about-text-wrapper">
           <div className="about-text-left">
-            <h2>About Redd Barna</h2>
+            <h1>About Redd Barna</h1>
             <article className={"about-text"}>
               {moreEnabled ? (
                 <div>
