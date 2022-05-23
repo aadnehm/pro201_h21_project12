@@ -1,8 +1,12 @@
+.inside-stories h1{
+  margin-top: 3rem;
+}
 .iframes-div {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
   row-gap: 40px;
+  margin: 5rem 0;
 }
 
 .expandedPlayer {
