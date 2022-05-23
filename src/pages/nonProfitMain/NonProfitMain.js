@@ -61,7 +61,6 @@ export default function NonProfits() {
   }
 
   const img = "url(" + process.env.PUBLIC_URL + selectedNonProfit.img;
-
   return (
     <div className={"nonprofit-content"}>
       <header
@@ -96,7 +95,7 @@ function NavTabs(props) {
     root: {
       textTransform: "none",
     },
-  })(Tab);  
+  })(Tab);
 
   return (
     <Box
@@ -145,7 +144,7 @@ function NavTabs(props) {
         <WhatYouGet />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <OurDonators/>
+        <OurDonators />
       </TabPanel>
     </Box>
   );

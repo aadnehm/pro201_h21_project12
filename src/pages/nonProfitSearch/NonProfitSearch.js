@@ -12,7 +12,8 @@ import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 import { useNavigate } from "react-router";
 
 export function NonProfitSearch() {
-  const img = "url(./img/non-profit/nonProfitHero.png)";
+  const img =
+    "url(" + process.env.PUBLIC_URL + "/img/non-profit/nonProfitHero.png)";
 
   return (
     <div className="nonProfit-search-container">
