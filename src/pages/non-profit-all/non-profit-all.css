@@ -21,6 +21,7 @@
 }
 .appbar.on-top {
   background: transparent;
+  z-index: 1;
 }
 
 /* Hero */

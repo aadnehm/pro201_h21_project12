@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import PropTypes from "prop-types";
 import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
@@ -12,32 +11,7 @@ import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ width: "100%" }}>
-          <div>{children}</div>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
+import TabPanel from "../../lib/TabPanel";
 
 function a11yProps(index) {
   return {
@@ -58,6 +32,22 @@ export default function NonProfits() {
       selectedNonProfit = data[i];
       break;
     }
+  }
+
+  if (selectedNonProfit.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "white",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
   }
 
   const img = "url(" + process.env.PUBLIC_URL + selectedNonProfit.img;

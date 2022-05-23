@@ -1,11 +1,9 @@
-.about-wrapper{
-margin-top: 3rem;
-}
+
 .about-text{
     width: 100%;
     line-height: 2.5;
     padding-right: 5rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 .show-more{
    cursor: pointer;

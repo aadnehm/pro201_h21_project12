@@ -1,40 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import PropTypes from "prop-types";
 import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
+<<<<<<< HEAD
 import { goToTop } from "../../components/navbar/NavbarSearch";
 import InsideStories from "../../components/inside-stories/InsideStories";
+=======
+>>>>>>> 6786a4c404925cbadc8007c44f64cad5b2a70dc6
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ width: "100%" }}>
-          <div>{children}</div>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
+import TabPanel from "../../lib/TabPanel";
+import { goToTop } from "../../lib/toTop";
 
 function a11yProps(index) {
   return {
@@ -60,6 +39,22 @@ export function Projects() {
     }
   }
 
+  if (selectedNonProfit.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "white",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
+  }
+
   let selectedProject = {};
   const projectQuery = window.location.pathname
     .split("/")
@@ -74,6 +69,22 @@ export function Projects() {
       selectedProject = selectedNonProfit.projects[i];
       break;
     }
+  }
+
+  if (selectedProject.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "white",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
   }
 
   const img = "url(" + process.env.PUBLIC_URL + selectedProject.img;

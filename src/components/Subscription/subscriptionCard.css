@@ -37,7 +37,7 @@ h4 {
 
 .subscription-model-grid .sub-card {
   position: relative;
-  border: 2.5px solid black;
+  border: 2px solid black;
   /*   transition: 300ms;
   transition-timing-function: ease-in-out; */
   height: 30em;

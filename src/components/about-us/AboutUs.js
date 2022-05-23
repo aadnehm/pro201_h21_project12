@@ -15,7 +15,7 @@ export default function AboutUs() {
       <div className="about-wrapper">
         <div className="about-text-wrapper">
           <div className="about-text-left">
-            <h2>About Redd Barna</h2>
+            <h1>About Redd Barna</h1>
             <article className={"about-text"}>
               {moreEnabled ? (
                 <div>
@@ -70,6 +70,7 @@ export default function AboutUs() {
                 <div className="values-list-item-icon">
                   <img
                     src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                    alt={"image"}
                   />
                 </div>
                 <div className="values-list-item-text">
@@ -84,6 +85,7 @@ export default function AboutUs() {
                 <div className="values-list-item-icon">
                   <img
                     src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                    alt={"image"}
                   />
                 </div>
                 <div className="values-list-item-text">
@@ -98,6 +100,7 @@ export default function AboutUs() {
                 <div className="values-list-item-icon">
                   <img
                     src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                    alt={"image"}
                   />
                 </div>
                 <div className="values-list-item-text">

@@ -127,7 +127,7 @@ export default function SigninEmployee() {
     const auth = getAuth();
     const temp = companies.filter((element) => element.firmakode === code);
     if (validateInputs()) {
-      if (temp.length == 1) {
+      if (temp.length === 1) {
         await createUserWithEmailAndPassword(
           auth,
           dataEpost,

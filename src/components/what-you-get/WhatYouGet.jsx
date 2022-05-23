@@ -33,6 +33,7 @@ function WhatYouGet() {
     <div>
       <div className="grey-line" />
       <div className="wyg-top-banner">
+        <h1 className="component-title">What you get</h1>
         <Card
           sx={{
             width: "100%",

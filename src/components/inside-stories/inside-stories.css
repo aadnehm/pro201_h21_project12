@@ -98,9 +98,8 @@ iframe {
   cursor: pointer;
 }
 
-.inside-stories h2 {
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+.inside-stories h1 {
+  margin: 3rem 0 5rem;
 }
 
 .story-div h4,
@@ -113,6 +112,7 @@ iframe {
   border-radius: 40px;
   background-color: black;
   margin-bottom: 40px;
+
   display: flex;
 }
 

@@ -92,6 +92,7 @@ function App() {
             element={<NavbarFooter page={<Projects />} />}
           />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<h1>Not found 404</h1>}></Route>
           {/*
             <Route path="/choose-subscription" element={<SubscriptionPage />} />
           <Route path="/payment" element={<PaymentPage />} />

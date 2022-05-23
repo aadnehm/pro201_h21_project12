@@ -47,8 +47,8 @@ export default function InsideStories({ selectedNonProfit }) {
   }
 
   window.onclick = function (event) {
-    var modal = document.getElementsByClassName("modal-div")[0];
-    var player = document.getElementsByClassName("expandedPlayer")[0];
+    let modal = document.getElementsByClassName("modal-div")[0];
+    let player = document.getElementsByClassName("expandedPlayer")[0];
 
     if (event.target === modal) {
       modal.className = "story-div";
@@ -58,8 +58,8 @@ export default function InsideStories({ selectedNonProfit }) {
 
   return (
     <div className="inside-stories">
-      <div className="grey-line"> </div>
-      <h2>Inside stories</h2>
+        <div className="grey-line" />
+      <h1>Inside stories</h1>
       <div className="posterDiv">
         <div className="posterParagraphDiv">
           <h2>
@@ -72,6 +72,7 @@ export default function InsideStories({ selectedNonProfit }) {
             process.env.PUBLIC_URL +
             "/img/insidestories/african-chldren-insidestories.jpg"
           }
+          alt={"image"}
         ></img>
       </div>
       <div>
@@ -285,6 +286,16 @@ export default function InsideStories({ selectedNonProfit }) {
             </div>
           ))}
         </div>
+<<<<<<< HEAD
+=======
+        <img
+          src={
+            process.env.PUBLIC_URL +
+            "/img/insidestories/other-children-insidestories.jpg"
+          }
+          alt={"image"}
+        ></img>
+>>>>>>> 6786a4c404925cbadc8007c44f64cad5b2a70dc6
       </div>
     </div>
   );

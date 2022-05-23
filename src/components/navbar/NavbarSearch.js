@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import NonProfitsData from "../non-profits-data/NonProfitsData";
 import { useNavigate } from "react-router-dom";
 import "./navbarSearch.css";
+import { uppercaseFirstLetter } from "../../lib/upperCaseFirstLetter";
+import { goToTop } from "../../lib/toTop";
 
 function useOutsideAlerter(ref) {
   useEffect(() => {
@@ -22,13 +24,6 @@ function useOutsideAlerter(ref) {
     };
   }, [ref]);
 }
-
-export const goToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
 
 function SearchResults(props) {
   const results = props.result;
@@ -79,11 +74,6 @@ function SearchResults(props) {
       </div>
     );
   }
-}
-
-export function uppercaseFirstLetter(string) {
-  const string2 = string.charAt(0).toUpperCase() + string.slice(1);
-  return string2;
 }
 
 export function NavbarSearch() {
