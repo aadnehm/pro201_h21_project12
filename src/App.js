@@ -3,7 +3,7 @@ import SigninEmployee from "./pages/signin-employee/SigninEmployee";
 import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
 import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
 import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
-import NonProfit from "./pages/non-profit/NonProfitMain";
+import NonProfit from "./pages/nonProfitMain/NonProfitMain";
 import NonProfitProject from "./pages/non-profit/NonprofitProject";
 import InsideStories from "./components/non-profit-pages/InsideStories";
 
@@ -26,6 +26,7 @@ import {
 } from "./pages/nonProfitSearch/NonProfitSearch";
 import { FrontPage } from "./pages/frontPage/frontPage";
 import Login from "./pages/login/Login";
+import { Projects } from "./pages/projects/projectMainLayout";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -93,6 +94,12 @@ function App() {
             path="/nonprofit/:nonprofit"
             element={<NavbarFooter page={<NonProfit />} />}
           />
+
+          <Route
+            path="/nonprofit/:nonprofit/:project"
+            element={<NavbarFooter page={<Projects />} />}
+          />
+
           <Route path="/login" element={<Login />} />
           {/*
             <Route path="/choose-subscription" element={<SubscriptionPage />} />

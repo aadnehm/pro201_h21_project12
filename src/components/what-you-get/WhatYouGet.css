@@ -18,7 +18,7 @@
   color: black;
   border-radius: 100px 100px 100px 100px;
   border: 1px solid black;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
 
