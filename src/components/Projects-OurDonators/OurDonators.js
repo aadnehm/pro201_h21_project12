@@ -8,7 +8,7 @@ export function OurProjectDonators({ project_name }) {
   return (
     <div className="donator-wrapper">
       <div className="grey-line" />
-      <h1>Our Donators to {project_name}</h1>
+      <h1 id="top">Our Donators to {project_name}</h1>
       <div className="donators-logo-wrapper">
         <DonatorCard
           img={logoVy}
@@ -73,7 +73,7 @@ export function OurProjectDonators({ project_name }) {
   );
 }
 
-function DonatorCard({ img, company, project, donations }) {
+function DonatorCard({ img, company, donations }) {
   return (
     <>
       <div>
@@ -81,7 +81,6 @@ function DonatorCard({ img, company, project, donations }) {
           <img src={img} alt="logo-donators" />
         </div>
         <div className="donators-company-name">{company}</div>
-        <div className="donators-project-title">{project}</div>
         <div className="donators-donations">
           Total contributions: {donations} ,-
         </div>

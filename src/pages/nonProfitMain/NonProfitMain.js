@@ -78,7 +78,9 @@ export default function NonProfits() {
         <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
-          <button className={"donate-button"}>Donate</button>
+          <button id={"top"} className={"donate-button"}>
+            Donate
+          </button>
         </div>
       </header>
       <NavTabs data={selectedNonProfit} />
@@ -86,17 +88,25 @@ export default function NonProfits() {
   );
 }
 
+const goToTabs = () => {
+  window.scrollTo({
+    top: window.innerHeight * 0.6,
+    behavior: "smooth",
+  });
+};
+
 function NavTabs(props) {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    goToTabs();
   };
   const CustomTab = withStyles({
     root: {
       textTransform: "none",
     },
-  })(Tab);  
+  })(Tab);
 
   return (
     <Box
@@ -145,7 +155,7 @@ function NavTabs(props) {
         <WhatYouGet />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <OurDonators/>
+        <OurDonators />
       </TabPanel>
     </Box>
   );
