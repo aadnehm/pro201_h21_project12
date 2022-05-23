@@ -1,0 +1,29 @@
+.donate-button{
+    background: #F69F37;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    font-weight: 500;
+    transition: transform .2s; /* Animation */
+}
+
+.donate-button:hover{
+    transform: scale(1.1);
+}
+.nonprofit-content{
+    font-family: "DM Sans", sans-serif;
+    background: #FAFAFA;
+}
+
+.nonprofit-content header{
+    color: #FAFAFA;
+}
+
+.nonProfit-header-content{
+    position: absolute;
+    bottom: 10vh;
+    left: 10%;
+}
+

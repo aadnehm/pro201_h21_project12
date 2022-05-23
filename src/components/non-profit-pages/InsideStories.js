@@ -27,16 +27,6 @@ export default function InsideStories() {
     }
   };
 
-  var counter = 0;
-  function AddPoster() {
-    if (counter === 2) {
-      counter++;
-      return <h1>Hello</h1>;
-    }
-    counter++;
-    return <h1>failed</h1>;
-  }
-
   return (
     <div className="inside-stories">
       <hr className="horizontal-lines" />
