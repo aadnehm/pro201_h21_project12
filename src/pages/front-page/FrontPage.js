@@ -1,6 +1,6 @@
 import React from "react";
 import "./front-page.css";
-import NonProfitsData from "../../components/search/NonProfitsData";
+import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import {
   goToTop,
   uppercaseFirstLetter,

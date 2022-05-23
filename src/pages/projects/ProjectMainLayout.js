@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
-import NonProfitsData from "../../components/search/NonProfitsData";
+import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";

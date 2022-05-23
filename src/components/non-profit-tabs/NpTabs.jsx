@@ -9,7 +9,7 @@ import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivism
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import NonProfitsData from "../search/NonProfitsData";
+import NonProfitsData from "../non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 
 function TabPanel(props) {
