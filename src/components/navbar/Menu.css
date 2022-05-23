@@ -17,7 +17,7 @@
     overflow-y: hidden;
     z-index: 9;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   }
 
   .solid {
@@ -60,7 +60,7 @@
     overflow-y: hidden;
     z-index: 9;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   }
 
   .menuDiv {

@@ -43,7 +43,12 @@ export function ProjectCardGrid({ data }) {
 function Pcard({ project }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(project.link);
+    const path =
+      window.location.pathname +
+      "/" +
+      project.name.replace(/ /g, "").toLowerCase();
+
+    navigate(path);
   };
 
   return (

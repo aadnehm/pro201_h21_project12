@@ -29,7 +29,7 @@
 }
 
 .expandedPlayer iframe {
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .expandedPlayer .playerText {
@@ -79,7 +79,7 @@ iframe {
 .story-div {
   width: fit-content;
   border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .story-div:hover {
@@ -92,11 +92,11 @@ iframe {
 
 .story-div h4,
 .story-div p {
-  padding: 10px 10px 0px 0px;
+  padding: 10px 10px 0 0;
 }
 
 .posterDiv {
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   border-radius: 15px;
   background-color: black;
   margin-bottom: 40px;
@@ -104,7 +104,7 @@ iframe {
 }
 
 .posterDiv2 {
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   border-radius: 15px;
   background-color: black;
   margin-top: 40px;

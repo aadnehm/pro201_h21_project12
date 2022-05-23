@@ -22,7 +22,7 @@
 }
 .account-container .form-grid-container .create-button {
   background-color: var(--blue-color);
-  margin: 1em 0 0em;
+  margin: 1em 0 0;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
