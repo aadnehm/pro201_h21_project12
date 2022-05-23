@@ -11,8 +11,8 @@ import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
 import {
   getAuth,
-  signInWithEmailAndPassword,
   sendPasswordResetEmail,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 
 export default function Login() {

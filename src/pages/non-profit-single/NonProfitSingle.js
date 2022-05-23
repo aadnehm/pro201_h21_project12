@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
-import NonProfitsData from "../../components/search/NonProfitsData";
+import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import "./nonProfitMain.css";
-import InsideStories from "../../components/non-profit-pages/InsideStories";
+import "./non-profit-single.css";
+import InsideStories from "../../components/inside-stories/InsideStories";
 import { useLocation } from "react-router";
-import AboutUs from "../../components/AboutUs/AboutUs";
+import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
@@ -61,7 +61,6 @@ export default function NonProfits() {
   }
 
   const img = "url(" + process.env.PUBLIC_URL + selectedNonProfit.img;
-
   return (
     <div className={"nonprofit-content"}>
       <header
@@ -96,7 +95,7 @@ function NavTabs(props) {
     root: {
       textTransform: "none",
     },
-  })(Tab);  
+  })(Tab);
 
   return (
     <Box
@@ -145,7 +144,7 @@ function NavTabs(props) {
         <WhatYouGet />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <OurDonators/>
+        <OurDonators />
       </TabPanel>
     </Box>
   );

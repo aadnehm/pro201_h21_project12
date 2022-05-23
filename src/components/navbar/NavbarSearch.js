@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import NonProfitsData from "../NonProfitsData";
+import NonProfitsData from "../non-profits-data/NonProfitsData";
 import { useNavigate } from "react-router-dom";
 import "./navbarSearch.css";
 

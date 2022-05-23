@@ -1,15 +1,14 @@
 //Import React and CSS
 import React, { useState } from "react";
-import "./WhatYouGet.css";
+import "./what-you-get.css";
 //Import MUI
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 //Import Collapse
-import { MDBCollapse, MDBBtn, MDBRow, MDBCol } from "mdb-react-ui-kit";
+import { MDBCollapse } from "mdb-react-ui-kit";
 
 function WhatYouGet() {
   const [showMoreInstagram, setShowMoreInstagram] = useState(false);

@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
-import NonProfitsData from "../../components/search/NonProfitsData";
+import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import "./projectMainLayout.css";
-import InsideStories from "../../components/non-profit-pages/InsideStories";
+import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
-import AboutUs from "../../components/AboutUs/AboutUs";
-import WhatYouGet from "../../components/what-you-get/WhatYouGet";
-import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
-import { goToTop } from "../../components/search/navbarSearch/NavbarSearch";
+import { goToTop } from "../../components/navbar/NavbarSearch";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -46,7 +42,7 @@ function a11yProps(index) {
   };
 }
 
-export function Projects(props) {
+export function Projects() {
   let location = useLocation();
   useEffect(() => {}, [location]);
   let selectedNonProfit = {};

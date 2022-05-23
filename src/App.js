@@ -1,32 +1,26 @@
-//Componentes
-import SigninEmployee from "./pages/signin-employee/SigninEmployee";
-import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
-import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
-import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
-import NonProfit from "./pages/nonProfitMain/NonProfitMain";
-import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import InsideStories from "./components/non-profit-pages/InsideStories";
+//Components
+import NonProfit from "./pages/non-profit-single/NonProfitSingle";
+
+import InsideStories from "./components/inside-stories/InsideStories";
 
 //Global CSS
 import "./App.css";
 //MUI
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 //React
-import { Routes, Route } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import React from "react";
 //Firebase
-import db from "./lib/firebase";
-import Footer from "./components/Footer/Footer";
-import NavTabs from "./components/non-profit-tabs/NpTabs";
-
-import AboutUs from "./components/AboutUs/AboutUs";
+import { FrontPage } from "./pages/front-page/FrontPage";
 import {
   ButtonAppBar,
-  NonProfitSearch,
-} from "./pages/nonProfitSearch/NonProfitSearch";
-import { FrontPage } from "./pages/frontPage/frontPage";
+  NonProfitAll,
+} from "./pages/non-profit-all/NonProfitAll";
+import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
-import { Projects } from "./pages/projects/projectMainLayout";
+import AboutUs from "./components/about-us/AboutUs";
+import NavTabs from "./components/non-profit-tabs/NpTabs";
+import Footer from "./components/footer/Footer";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -87,19 +81,16 @@ function App() {
           <Route path="/" element={<NavbarFooter page={<FrontPage />} />} />
           <Route
             path="/nonprofits"
-            element={<NavbarFooter page={<NonProfitSearch />} />}
+            element={<NavbarFooter page={<NonProfitAll />} />}
           />
-
           <Route
             path="/nonprofit/:nonprofit"
             element={<NavbarFooter page={<NonProfit />} />}
           />
-
           <Route
             path="/nonprofit/:nonprofit/:project"
             element={<NavbarFooter page={<Projects />} />}
           />
-
           <Route path="/login" element={<Login />} />
           {/*
             <Route path="/choose-subscription" element={<SubscriptionPage />} />

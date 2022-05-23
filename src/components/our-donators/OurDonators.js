@@ -1,5 +1,5 @@
 import React from "react";
-import "./ourDonators.css";
+import "./our-donators.css";
 
 function OurDonators() {
   const logoVy = "/img/non-profit/vy.png";

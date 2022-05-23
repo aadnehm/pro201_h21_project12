@@ -1,4 +1,4 @@
-import "./ProjectCard.css";
+import "./project-card.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -20,7 +20,7 @@ export function ProjectCardGrid({ data }) {
 
   return (
     <div className="project-page-container">
-    <div className="grey-line" />
+      <div className="grey-line" />
       <h1>Our Projects</h1>
       {!showAll && (
         <>
@@ -71,7 +71,20 @@ function Pcard({ project }) {
       </div>
 
       <div className="project-text-content">
-        <h3>{project.name}</h3>
+        <div className="top-flex-content">
+          <h3>{project.name}</h3>
+          <div className="add-favorites">
+            <span>
+              <img
+                className="heart-png"
+                src={process.env.PUBLIC_URL + "/img/projects/heart.png"}
+                alt="heart img"
+              />
+              add to favorites
+            </span>
+          </div>
+        </div>
+
         <p className="project-start-p">PROJECT START {project.established}</p>
         <div>
           <p>{project.info1}</p>

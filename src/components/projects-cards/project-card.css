@@ -46,6 +46,25 @@
   font-size: 1em;
 }
 
+/* heading and and add to favorites in text content */
+.project-text-content .top-flex-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-text-content .add-favorites {
+  display: flex;
+  margin-right: 1em;
+}
+.project-text-content .add-favorites:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.project-text-content .add-favorites .heart-png {
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
 .project-text-content .project-start-p {
   margin-top: 30px;
   font-weight: bold;
@@ -77,6 +96,7 @@
   margin-left: 40%;
 }
 
+/* line separating projects */
 .project-cards-container .split-line {
   border-bottom: 1px solid #c4c4c4;
   grid-column-start: 1;

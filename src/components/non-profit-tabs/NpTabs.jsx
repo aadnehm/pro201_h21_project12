@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import { NpCardGrid } from "../NonProfit-cardgrid/NpCardGrid";
+import { NpCardGrid } from "../non-profit-cardgrid/NpCardGrid";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
 import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivismOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import NonProfitsData from "../search/NonProfitsData";
+import NonProfitsData from "../non-profits-data/NonProfitsData";
 import { withStyles } from "@material-ui/core";
 
 function TabPanel(props) {

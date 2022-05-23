@@ -1,10 +1,10 @@
 import React from "react";
-import "./frontPage.css";
-import NonProfitsData from "../../components/search/NonProfitsData";
+import "./front-page.css";
+import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import {
   goToTop,
   uppercaseFirstLetter,
-} from "../../components/search/navbarSearch/NavbarSearch";
+} from "../../components/navbar/NavbarSearch";
 import { useNavigate } from "react-router";
 
 function Communtiy() {
