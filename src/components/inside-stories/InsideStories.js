@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import "./InsideStories.css";
+import "./inside-stories.css";
 
 export default function InsideStories({ selectedNonProfit }) {
   var insideStoriesData;
