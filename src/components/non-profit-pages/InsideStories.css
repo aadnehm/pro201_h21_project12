@@ -1,4 +1,4 @@
-.inside-stories h1{
+.inside-stories h1 {
   margin-top: 3rem;
 }
 .iframes-div {
@@ -33,7 +33,7 @@
 }
 
 .expandedPlayer iframe {
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .expandedPlayer .playerText {
@@ -84,7 +84,7 @@ iframe {
 .story-div {
   width: fit-content;
   border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .story-div:hover {
@@ -98,7 +98,7 @@ iframe {
 
 .story-div h4,
 .story-div p {
-  padding: 10px 10px 0px 0px;
+  padding: 10px 10px 0 0;
 }
 
 .posterDiv {
