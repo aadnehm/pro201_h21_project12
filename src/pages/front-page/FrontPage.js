@@ -124,7 +124,7 @@ function NewestNonProfitsCard(props) {
         redirectNonprofit(props.nonprofit.name);
       }}
     >
-      <img src={process.env.PUBLIC_URL + props.nonprofit.img} clas />
+      <img src={process.env.PUBLIC_URL + props.nonprofit.img} alt={"image"} />
       <div className={"newest-nonprofit-card-text"}>
         <p>{props.nonprofit.name}</p>
         <p>{uppercaseFirstLetter(props.nonprofit.categories[0])}</p>
@@ -139,7 +139,7 @@ function PersonCards(props) {
     <div className={"person-cardgrid"}>
       {data.map((value, index) => (
         <div className={"data-card"} key={index}>
-          <img src={process.env.PUBLIC_URL + value.img} />
+          <img src={process.env.PUBLIC_URL + value.img} alt={"image"} />
           <p>{value.name}</p>
         </div>
       ))}

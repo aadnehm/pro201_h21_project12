@@ -56,7 +56,6 @@
 /* creating line with after pseudo */
 .sub-page-container .line-stepper div::after {
   position: absolute;
-  left: 1;
   bottom: 1.1em;
   content: "";
   height: 0.4em;

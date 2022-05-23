@@ -18,10 +18,10 @@ export default function InsideStories() {
   }
 
   window.onclick = function (event) {
-    var modal = document.getElementsByClassName("modal-div")[0];
-    var player = document.getElementsByClassName("expandedPlayer")[0];
+    let modal = document.getElementsByClassName("modal-div")[0];
+    let player = document.getElementsByClassName("expandedPlayer")[0];
 
-    if (event.target == modal) {
+    if (event.target === modal) {
       modal.className = "story-div";
       player.className = "react-player";
     }
@@ -43,6 +43,7 @@ export default function InsideStories() {
             process.env.PUBLIC_URL +
             "/img/insidestories/african-chldren-insidestories.jpg"
           }
+          alt={"image"}
         ></img>
       </div>
       <div className="iframes-div">
@@ -89,6 +90,7 @@ export default function InsideStories() {
             process.env.PUBLIC_URL +
             "/img/insidestories/other-children-insidestories.jpg"
           }
+          alt={"image"}
         ></img>
       </div>
       <hr />

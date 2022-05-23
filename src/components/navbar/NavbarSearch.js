@@ -82,8 +82,7 @@ function SearchResults(props) {
 }
 
 export function uppercaseFirstLetter(string) {
-  const string2 = string.charAt(0).toUpperCase() + string.slice(1);
-  return string2;
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 export function NavbarSearch() {

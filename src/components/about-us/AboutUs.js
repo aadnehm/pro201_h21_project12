@@ -70,6 +70,7 @@ export default function AboutUs() {
                 <div className="values-list-item-icon">
                   <img
                     src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                    alt={"image"}
                   />
                 </div>
                 <div className="values-list-item-text">
@@ -84,6 +85,7 @@ export default function AboutUs() {
                 <div className="values-list-item-icon">
                   <img
                     src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                    alt={"image"}
                   />
                 </div>
                 <div className="values-list-item-text">
@@ -98,6 +100,7 @@ export default function AboutUs() {
                 <div className="values-list-item-icon">
                   <img
                     src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                    alt={"image"}
                   />
                 </div>
                 <div className="values-list-item-text">
