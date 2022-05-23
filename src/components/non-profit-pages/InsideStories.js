@@ -29,7 +29,7 @@ export default function InsideStories() {
 
   return (
     <div className="inside-stories">
-      <hr className="horizontal-lines" />
+      <div className="grey-line"> </div>
       <h2>Inside stories</h2>
       <div className="posterDiv">
         <div className="posterParagraphDiv">
