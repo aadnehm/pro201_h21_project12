@@ -1,9 +1,17 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "./InsideStories.css";
-import insideStoriesData from "./InsideStoriesData";
 
-export default function InsideStories() {
+export default function InsideStories({ selectedNonProfit }) {
+  var insideStoriesData;
+  if (window.location.pathname.split("/").length === 3) {
+    insideStoriesData = selectedNonProfit.insideStories;
+  } else {
+    insideStoriesData = selectedNonProfit.projectStories;
+  }
+
+  console.log(insideStoriesData);
+
   let expandedPlayerId = 0;
   function HandlePlay(id) {
     if (expandedPlayerId !== 0) {
