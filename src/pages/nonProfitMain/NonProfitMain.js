@@ -10,6 +10,7 @@ import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation } from "react-router";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
+import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 
 function TabPanel(props) {
@@ -95,7 +96,7 @@ function NavTabs(props) {
     root: {
       textTransform: "none",
     },
-  })(Tab);
+  })(Tab);  
 
   return (
     <Box
@@ -143,7 +144,9 @@ function NavTabs(props) {
       <TabPanel value={value} index={3}>
         <WhatYouGet />
       </TabPanel>
-      <TabPanel value={value} index={4}></TabPanel>
+      <TabPanel value={value} index={4}>
+        <OurDonators/>
+      </TabPanel>
     </Box>
   );
 }

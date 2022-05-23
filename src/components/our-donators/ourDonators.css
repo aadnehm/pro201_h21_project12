@@ -1,0 +1,35 @@
+.donator-wrapper{
+font-family: "DM Sans", sans-serif;
+}
+
+.donator-wrapper h1{
+    margin-top: 3rem;
+}
+
+.donators-logo-wrapper{
+    display: flex;
+   justify-content: space-around;
+   margin: 5rem 0;
+}
+
+.donators-logo-img{
+    height: 250px;
+    width: 300px;
+}
+.donators-logo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    border-radius: 15%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.donators-company-name{
+    font-size: 2em;
+    margin: 2rem 0 1rem;   
+}
+
+.donators-donations{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
