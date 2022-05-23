@@ -47,7 +47,6 @@ function Pcard({ project }) {
       window.location.pathname +
       "/" +
       project.name.replace(/ /g, "").toLowerCase();
-
     navigate(path);
   };
 

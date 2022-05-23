@@ -1,11 +1,9 @@
 import React from "react";
 import "./front-page.css";
 import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
-import {
-  goToTop,
-  uppercaseFirstLetter,
-} from "../../components/navbar/NavbarSearch";
 import { useNavigate } from "react-router";
+import { goToTop } from "../../lib/toTop";
+import { uppercaseFirstLetter } from "../../lib/upperCaseFirstLetter";
 
 function Communtiy() {
   const img =
@@ -101,8 +99,8 @@ function NewestNonProfits() {
       </h3>
 
       <div className={"newest-nonprofits-cardgrid"}>
-        {NonProfitsData.slice(0, 6).map((nonprofit) => (
-          <NewestNonProfitsCard nonprofit={nonprofit} />
+        {NonProfitsData.slice(0, 6).map((nonprofit, index) => (
+          <NewestNonProfitsCard nonprofit={nonprofit} key={index} />
         ))}
       </div>
     </>

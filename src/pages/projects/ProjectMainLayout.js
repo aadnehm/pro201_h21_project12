@@ -6,9 +6,10 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
-import { goToTop } from "../../components/navbar/NavbarSearch";
 
 import TabPanel from "../../lib/TabPanel";
+import { goToTop } from "../../lib/toTop";
+
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
@@ -33,6 +34,22 @@ export function Projects() {
     }
   }
 
+  if (selectedNonProfit.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "white",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
+  }
+
   let selectedProject = {};
   const projectQuery = window.location.pathname
     .split("/")
@@ -47,6 +64,22 @@ export function Projects() {
       selectedProject = selectedNonProfit.projects[i];
       break;
     }
+  }
+
+  if (selectedProject.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "white",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
   }
 
   const img = "url(" + process.env.PUBLIC_URL + selectedProject.img;

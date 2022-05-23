@@ -34,6 +34,22 @@ export default function NonProfits() {
     }
   }
 
+  if (selectedNonProfit.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "white",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
+  }
+
   const img = "url(" + process.env.PUBLIC_URL + selectedNonProfit.img;
   return (
     <div className={"nonprofit-content"}>
