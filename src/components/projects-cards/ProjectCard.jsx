@@ -20,7 +20,7 @@ export function ProjectCardGrid({ data }) {
 
   return (
     <div className="project-page-container">
-      <div className="top-line"></div>
+    <div className="grey-line" />
       <h1>Our Projects</h1>
       {!showAll && (
         <>
@@ -43,7 +43,12 @@ export function ProjectCardGrid({ data }) {
 function Pcard({ project }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(project.link);
+    const path =
+      window.location.pathname +
+      "/" +
+      project.name.replace(/ /g, "").toLowerCase();
+
+    navigate(path);
   };
 
   return (
