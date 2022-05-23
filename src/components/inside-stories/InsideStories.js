@@ -286,8 +286,6 @@ export default function InsideStories({ selectedNonProfit }) {
           ))}
         </div>
       </div>
-
-      <hr />
     </div>
   );
 }
