@@ -8,6 +8,7 @@ import Tabs from "@mui/material/Tabs";
 import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
 import { goToTop } from "../../components/navbar/NavbarSearch";
+import InsideStories from "../../components/inside-stories/InsideStories";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

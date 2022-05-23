@@ -9,6 +9,13 @@
   margin: 5rem 0;
 }
 
+.overflow-iframes-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 40px;
+  margin: 5rem 0;
+}
+
 .expandedPlayer {
   border-radius: 10px;
   display: flex;
