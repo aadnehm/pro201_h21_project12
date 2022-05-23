@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import "./InsideStories.css";
+import "./inside-stories.css";
 import insideStoriesData from "./InsideStoriesData";
 
 export default function InsideStories() {

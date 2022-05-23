@@ -1,5 +1,6 @@
-import "./AboutUs.css";
+import "./about-us.css";
 import { useState } from "react";
+
 export default function AboutUs() {
   const [moreEnabled, setMoreEnabled] = useState(false);
   const aboutText =

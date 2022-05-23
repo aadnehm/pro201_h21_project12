@@ -5,7 +5,7 @@ import "./login/login.css";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 
 const SignupLogic = () => {
   const [email, setEmail] = useState("");

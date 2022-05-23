@@ -1,6 +1,6 @@
-import "./NpCardGrid.css";
+import "./np-card-grid.css";
 import { useNavigate } from "react-router";
-import { goToTop } from "../search/navbarSearch/NavbarSearch";
+import { goToTop } from "../navbar/NavbarSearch";
 
 export function NpCardGrid({ data }) {
   return (

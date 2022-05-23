@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import Menu from "../../components/navbar/Menu.js";
 
 /* CSS */
-import "./nonProfitSearch.css";
+import "./non-profit-all.css";
 /* MUI */
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import { NavbarSearch } from "../../components/search/navbarSearch/NavbarSearch";
+import { NavbarSearch } from "../../components/navbar/NavbarSearch";
 import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 import { useNavigate } from "react-router";
 
-export function NonProfitSearch() {
+export function NonProfitAll() {
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/non-profit/nonProfitHero.png)";
 

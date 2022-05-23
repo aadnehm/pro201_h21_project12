@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 /* css */
 import "./CreateAccount.css";
 /* MUI */
-import { Grid, Button, TextField } from "@mui/material";
+import { Button, Grid, TextField } from "@mui/material";
 /* components */
 import PasswordInputWhite from "./PasswordInputWhite";
 //Firebase
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import db from "../../lib/firebase";
 import { addDoc, collection } from "firebase/firestore";
 

@@ -1,4 +1,4 @@
-import "./ProjectCard.css";
+import "./project-card.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -20,7 +20,7 @@ export function ProjectCardGrid({ data }) {
 
   return (
     <div className="project-page-container">
-    <div className="grey-line" />
+      <div className="grey-line" />
       <h1>Our Projects</h1>
       {!showAll && (
         <>
