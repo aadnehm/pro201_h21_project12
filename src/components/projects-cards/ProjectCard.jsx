@@ -20,7 +20,7 @@ export function ProjectCardGrid({ data }) {
 
   return (
     <div className="project-page-container">
-      <div className="top-line"></div>
+    <div className="grey-line" />
       <h1>Our Projects</h1>
       {!showAll && (
         <>
