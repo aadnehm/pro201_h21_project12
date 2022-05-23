@@ -12,6 +12,8 @@ import AboutUs from "../../components/AboutUs/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 import { goToTop } from "../../components/search/navbarSearch/NavbarSearch";
+import { OurProjectDonators } from "../../components/Projects-OurDonators/OurDonators";
+import data from "bootstrap/js/src/dom/data";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -159,7 +161,9 @@ function NavTabs(props) {
       </Tabs>
       <TabPanel value={value} index={0}></TabPanel>
       <TabPanel value={value} index={1}></TabPanel>
-      <TabPanel value={value} index={2}></TabPanel>
+      <TabPanel value={value} index={2}>
+        <OurProjectDonators project_name={props.data.name} />
+      </TabPanel>
       <TabPanel value={value} index={3}></TabPanel>
       <TabPanel value={value} index={4}></TabPanel>
     </Box>

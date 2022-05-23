@@ -28,6 +28,12 @@ function OurDonators() {
           project={"Project1"}
           donations={"1000"}
         ></DonatorCard>
+        <DonatorCard
+          img={logoIss}
+          company={"ISS"}
+          project={"Project1"}
+          donations={"1000"}
+        ></DonatorCard>
       </div>
       <div className="donators-logo-wrapper">
         <DonatorCard
@@ -39,6 +45,12 @@ function OurDonators() {
         <DonatorCard
           img={logoShell}
           company={"Shell"}
+          project={"Project1"}
+          donations={"1000"}
+        ></DonatorCard>
+        <DonatorCard
+          img={logoIss}
+          company={"ISS"}
           project={"Project1"}
           donations={"1000"}
         ></DonatorCard>
