@@ -6,14 +6,9 @@ import { withStyles } from "@material-ui/core";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "./projectMainLayout.css";
-import InsideStories from "../../components/non-profit-pages/InsideStories";
 import { useLocation, useNavigate } from "react-router";
-import AboutUs from "../../components/AboutUs/AboutUs";
-import WhatYouGet from "../../components/what-you-get/WhatYouGet";
-import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 import { goToTop } from "../../components/search/navbarSearch/NavbarSearch";
 import { OurProjectDonators } from "../../components/Projects-OurDonators/OurDonators";
-import data from "bootstrap/js/src/dom/data";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
