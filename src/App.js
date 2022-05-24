@@ -21,6 +21,7 @@ import Login from "./pages/login/Login";
 import AboutUs from "./components/about-us/AboutUs";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 import Footer from "./components/footer/Footer";
+import TimeLine from "./components/about-projects/TimeLine";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -111,6 +112,7 @@ function App() {
           <Route path="/aboutTest" element={<AboutUs />} />
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
+          <Route path="/timeline" element={<TimeLine />} />
         </Routes>
       </div>
     </ThemeProvider>
