@@ -1,9 +1,9 @@
-
+/* container and boxes*/
 .time-component-container{
     background-color: #fff;
 }
 .timeline-container{
-    margin: 10rem 5rem auto;
+    margin: 20rem 5rem auto;
     position: relative;
     background-color: white;
 }
@@ -39,7 +39,7 @@
 
 
 /*  all dots  */
-.content div {
+.dot {
     position: absolute;
     content: "";
     width: 25px;
@@ -50,33 +50,48 @@
     border: 1px solid black;
 }
 /*position of each dot*/
-.content .dot-1 {
+.dot-1 {
     top: -10px;
 }
 
-.content .dot-2 {
+.dot-2 {
     top: -10px;
     left: 45vw;
 }
 
-.content .dot-3 {
+ .dot-3 {
     margin-top: -12px;
     left: 25vw;
 }
 
-.content .dot-4 {
+.dot-4 {
     margin-top: -12px;
     left: 65vw;
 }
 
-.content .dot-5 {
+.dot-5 {
     margin-top: -12px;
     left: 45vw;
 }
 
-.content .dot-6 {
+.dot-6 {
     margin-top: -12px;
     left: 80vw;
+}
+
+/*dot text*/
+.dot-1-text{
+    position: absolute;
+    width: 15vw;
+    margin-top: -15vh;
+    white-space: nowrap;
+}
+.dot-2-text{
+    position: absolute;
+    width: 15vw;
+    margin-top: -15vh;
+    margin-left: 35vw;
+    white-space: nowrap;
 }
 
 
