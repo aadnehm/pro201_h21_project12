@@ -6,14 +6,10 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
-<<<<<<< HEAD
-import { goToTop } from "../../components/navbar/NavbarSearch";
-import InsideStories from "../../components/inside-stories/InsideStories";
-=======
->>>>>>> 6786a4c404925cbadc8007c44f64cad5b2a70dc6
 
 import TabPanel from "../../lib/TabPanel";
 import { goToTop } from "../../lib/toTop";
+import InsideStories from "../../components/inside-stories/InsideStories";
 
 function a11yProps(index) {
   return {

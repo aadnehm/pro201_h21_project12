@@ -31,8 +31,6 @@ export default function InsideStories({ selectedNonProfit }) {
     );
   }
 
-  console.log(allArrays);
-
   let expandedPlayerId = 0;
   function HandlePlay(id) {
     if (expandedPlayerId !== 0) {
@@ -56,9 +54,30 @@ export default function InsideStories({ selectedNonProfit }) {
     }
   };
 
+  var posterData = selectedNonProfit.posters;
+
+  function CreatePoster() {
+    if (posterData[0] !== null) {
+      return (
+        <div className="posterDiv2">
+          <div className="posterParagraphDiv">
+            <h2>
+              {posterData[0].info} <br />
+              <br />
+              <button>Go to article</button>
+            </h2>
+          </div>
+          <img src={process.env.PUBLIC_URL + posterData[0].image}></img>
+        </div>
+      );
+    } else {
+      return <div></div>;
+    }
+  }
+
   return (
     <div className="inside-stories">
-        <div className="grey-line" />
+      <div className="grey-line" />
       <h1>Inside stories</h1>
       <div className="posterDiv">
         <div className="posterParagraphDiv">
@@ -158,22 +177,7 @@ export default function InsideStories({ selectedNonProfit }) {
                 </div>
               </div>
             </div>
-            <div className="posterDiv2">
-              <div className="posterParagraphDiv">
-                <h2>
-                  Read about how Foodora have made a massive impact through our
-                  project <br />
-                  <br />
-                  <button>Go to article</button>
-                </h2>
-              </div>
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  "/img/insidestories/other-children-insidestories.jpg"
-                }
-              ></img>
-            </div>
+            <CreatePoster />
             <div className="iframes-div">
               <div
                 className="story-div"
@@ -286,16 +290,6 @@ export default function InsideStories({ selectedNonProfit }) {
             </div>
           ))}
         </div>
-<<<<<<< HEAD
-=======
-        <img
-          src={
-            process.env.PUBLIC_URL +
-            "/img/insidestories/other-children-insidestories.jpg"
-          }
-          alt={"image"}
-        ></img>
->>>>>>> 6786a4c404925cbadc8007c44f64cad5b2a70dc6
       </div>
     </div>
   );

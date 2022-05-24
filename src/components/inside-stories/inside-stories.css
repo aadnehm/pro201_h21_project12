@@ -2,18 +2,19 @@
   margin-top: 3rem;
 }
 .iframes-div {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  row-gap: 40px;
+  display: flex;
+  width: 100%;
   margin: 5rem 0;
+  justify-content: space-between;
 }
 
 .overflow-iframes-div {
   display: grid;
   grid-template-columns: auto auto auto;
-  row-gap: 40px;
   margin: 5rem 0;
+  width: 100%;
+  row-gap: 5rem;
+  justify-content: space-between;
 }
 
 .expandedPlayer {
@@ -61,8 +62,8 @@
 }
 
 .react-player {
-  height: 270px !important;
-  width: 270px !important;
+  height: 300px !important;
+  width: 320px !important;
 }
 
 .playerText {
@@ -92,6 +93,7 @@ iframe {
   width: fit-content;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  grid-column-start: auto;
 }
 
 .story-div:hover {
