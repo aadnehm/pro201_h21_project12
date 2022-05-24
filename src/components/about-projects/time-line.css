@@ -23,12 +23,12 @@
 }
 /*tomme diver som gis border for å lage figurer*/
 .timeline-container .box-1{
-    margin-left: 70px;
+    margin-left: 100px;
     border-top: 0.2em solid black;
     border-right: 0.2em solid black;
     border-bottom: 0.2em solid black;
-    border-top-right-radius:50px;
-    border-bottom-right-radius:50px;
+    border-top-right-radius:100px;
+    border-bottom-right-radius:100px;
 }
 
 .timeline-container .box-2{
@@ -36,8 +36,8 @@
     border-top: 0.2em solid black;
     border-left:0.2em solid black;
     border-bottom: 0.2em solid black;
-    border-top-left-radius:40px;
-    border-bottom-left-radius:50px;
+    border-top-left-radius:100px;
+    border-bottom-left-radius:100px;
 }
 
 
@@ -66,7 +66,7 @@
 }
 
 .dot-5 {
-    left: 42vw;
+    left: 38vw;
 }
 
 .dot-6 {

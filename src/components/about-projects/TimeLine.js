@@ -9,7 +9,7 @@ export default function TimeLine() {
                     <div className="dot dot-1">
                         <div className="dot-text">
                             <img className="img-left" src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"} alt="bilde"/>
-                            <h3>Lorem</h3>
+                            <h3>Start</h3>
                             <p>Lorem ipsum dolor sit amet</p>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
@@ -56,7 +56,7 @@ export default function TimeLine() {
                     <div className="dot dot-6">
                         <div className="dot-text">
                             <img className="img-left"  src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"} alt="bilde"/>
-                            <h3>Lorem</h3>
+                            <h3>End</h3>
                             <p>Lorem ipsum dolor sit amet</p>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
