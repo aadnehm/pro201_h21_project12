@@ -1,0 +1,137 @@
+.iframes-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+.expandedPlayer {
+  border-radius: 10px;
+  display: flex;
+  background-color: #fefefe;
+  margin: 8% auto;
+  border: 1px solid #888;
+  width: 80% !important;
+  height: 80% !important;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.expandedPlayer .player {
+  width: 70% !important;
+  height: 100% !important;
+  margin-right: 20px;
+}
+
+.expandedPlayer iframe {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.expandedPlayer .playerText {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.expandedPlayer span {
+  margin-right: -40px;
+}
+
+.longText {
+  display: none;
+}
+
+.expandedPlayer .longText {
+  display: block;
+}
+
+.react-player {
+  height: 270px !important;
+  width: 270px !important;
+}
+
+.playerText {
+  float: left;
+  margin: 0 10px 0 10px;
+}
+
+.modal-div {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+iframe {
+  border-radius: 15px 15px 0 0;
+}
+
+.story-div {
+  width: fit-content;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.story-div:hover {
+  cursor: pointer;
+}
+
+.inside-stories h2 {
+  margin-bottom: 5vh;
+}
+
+.story-div h4,
+.story-div p {
+  padding: 10px 10px 0px 0px;
+}
+
+.posterDiv {
+  border: 0px solid #fff;
+  border-radius: 15px;
+  background-color: black;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.posterDiv2 {
+  border: 0px solid #fff;
+  border-radius: 15px;
+  background-color: black;
+  margin-top: 40px;
+  display: flex;
+}
+
+.posterDiv2 button {
+  padding: 10px;
+}
+
+.posterDiv img {
+  border-radius: 0 15px 15px 0;
+  width: 110%;
+}
+
+.posterDiv2 img {
+  border-radius: 0 15px 15px 0;
+  width: 110%;
+}
+
+.posterParagraphDiv {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.posterParagraphDiv h2 {
+  margin: auto;
+  width: 80%;
+}
