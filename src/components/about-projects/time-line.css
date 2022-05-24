@@ -1,12 +1,14 @@
 /* container and boxes*/
 .time-component-container{
     background-color: #fff;
+    width: 100vw;
 }
 .timeline-container{
-    margin: 20rem 5rem auto;
     position: relative;
     background-color: white;
     line-height: 1em;
+    /* margin er rar... vanskelig å sentrere container perfekt pga negative abs verdier*/
+    margin: 10rem 0 0 7rem ;
 }
 
 
@@ -19,7 +21,7 @@
 .timeline-container .box-2{
     width:75vw;
 }
-
+/*tomme diver som gis border for å lage figurer*/
 .timeline-container .box-1{
     margin-left: 70px;
     border-top: 0.2em solid black;
