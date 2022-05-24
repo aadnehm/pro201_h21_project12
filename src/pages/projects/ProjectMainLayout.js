@@ -9,6 +9,7 @@ import { useLocation, useNavigate } from "react-router";
 
 import TabPanel from "../../lib/TabPanel";
 import { goToTop } from "../../lib/toTop";
+import InsideStories from "../../components/inside-stories/InsideStories";
 
 function a11yProps(index) {
   return {
@@ -161,7 +162,9 @@ function NavTabs(props) {
         />
       </Tabs>
       <TabPanel value={value} index={0}></TabPanel>
-      <TabPanel value={value} index={1}></TabPanel>
+      <TabPanel value={value} index={1}>
+        <InsideStories selectedNonProfit={props.nonProfit} />
+      </TabPanel>
       <TabPanel value={value} index={2}></TabPanel>
       <TabPanel value={value} index={3}></TabPanel>
       <TabPanel value={value} index={4}></TabPanel>
