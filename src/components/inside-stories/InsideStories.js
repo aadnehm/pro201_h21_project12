@@ -10,6 +10,8 @@ export default function InsideStories({ selectedNonProfit }) {
     insideStoriesData = selectedNonProfit.projectStories;
   }
 
+  const articleData = selectedNonProfit.articles;
+
   var allArrays = [];
 
   let overflowNumber = insideStoriesData.length % 6;
@@ -289,6 +291,27 @@ export default function InsideStories({ selectedNonProfit }) {
               </div>
             </div>
           ))}
+        </div>
+        <div>
+          <h2>Articles</h2>
+          <div className="articles-div">
+            {articleData.map((article) => (
+              <div className="article-div">
+                <img
+                  className="article-image"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/img/insidestories/african-chldren-insidestories.jpg"
+                  }
+                  alt={"image"}
+                ></img>
+                <div className="playerText">
+                  <h4>{article.header}</h4>
+                  <p>{article.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

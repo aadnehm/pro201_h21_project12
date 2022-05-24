@@ -198,6 +198,44 @@ const posterData = [
   },
 ];
 
+const articleData = [
+  {
+    id: "1",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "2",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "3",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "4",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "5",
+    header: "PROJECT NIPPLE",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "6",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+];
+
 const projectStoriesData = [
   {
     id: "1",
@@ -302,6 +340,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "2",
@@ -314,6 +353,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "3",
@@ -326,6 +366,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "4",
@@ -338,6 +379,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "5",
@@ -350,6 +392,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "6",
@@ -362,6 +405,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "7",
@@ -374,6 +418,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "8",
@@ -386,6 +431,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "9",
@@ -398,6 +444,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "10",
@@ -410,6 +457,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "11",
@@ -422,6 +470,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
   {
     id: "12",
@@ -434,6 +483,7 @@ const nonProfitsPosts = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     posters: posterData,
+    articles: articleData,
   },
 ];
 
