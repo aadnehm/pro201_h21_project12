@@ -78,5 +78,13 @@
     top: -13vh;
     white-space: nowrap;
 }
+.dot-text img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    right: 16vw;
+    object-fit: cover;
+}
 
 
