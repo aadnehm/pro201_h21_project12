@@ -24,7 +24,7 @@
 }
 /*tomme diver som gis border for å lage figurer*/
 .timeline-container .box-1{
-    margin-left: 150px;
+    margin-left: 110px;
     border-top: 0.15em solid black;
     border-right: 0.15em solid black;
     border-bottom: 0.15em solid black;
@@ -89,12 +89,13 @@
     right: 16vw;
     object-fit: cover;
 }
+
 /*.dot-text .img-right{
     position: absolute;
     width: 100px;
     height: 100px;
     border-radius:50%;
-    right: -12vw;
+    right: -5vw;
     object-fit: cover;
 }*/
 
