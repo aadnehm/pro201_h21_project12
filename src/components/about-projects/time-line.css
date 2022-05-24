@@ -2,6 +2,7 @@
 .time-component-container{
     background-color: #fff;
     width: 100vw;
+    font-family: sans-serif;
 }
 .timeline-container{
     position: relative;
@@ -23,19 +24,19 @@
 }
 /*tomme diver som gis border for å lage figurer*/
 .timeline-container .box-1{
-    margin-left: 100px;
-    border-top: 0.2em solid black;
-    border-right: 0.2em solid black;
-    border-bottom: 0.2em solid black;
+    margin-left: 150px;
+    border-top: 0.15em solid black;
+    border-right: 0.15em solid black;
+    border-bottom: 0.15em solid black;
     border-top-right-radius:100px;
     border-bottom-right-radius:100px;
 }
 
 .timeline-container .box-2{
-    margin-top: -.2em;
-    border-top: 0.2em solid black;
-    border-left:0.2em solid black;
-    border-bottom: 0.2em solid black;
+    margin-top: -.15em;
+    border-top: 0.15em solid black;
+    border-left:0.15em solid black;
+    border-bottom: 0.15em solid black;
     border-top-left-radius:100px;
     border-bottom-left-radius:100px;
 }
