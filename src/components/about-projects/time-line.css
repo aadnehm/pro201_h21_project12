@@ -6,17 +6,18 @@
     margin: 20rem 5rem auto;
     position: relative;
     background-color: white;
+    line-height: 1em;
 }
 
 
 .timeline-container , .box-1,.box-2, .box-3{
-    height: 220px;
-    width: 80vw;
+    height: 160px;
+    width: 75vw;
     background-color: white;
 }
 
 .timeline-container .box-2{
-    width:80vw;
+    width:75vw;
 }
 
 .timeline-container .box-1{
@@ -44,55 +45,38 @@
     content: "";
     width: 25px;
     height: 25px;
-    background-color: #000;
-    transform: translateX(-50%);
+    background-color: #fff;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid black;
+    transform: translateY(-50%);
 }
 /*position of each dot*/
-.dot-1 {
-    top: -10px;
-}
-
 .dot-2 {
-    top: -10px;
-    left: 45vw;
+    left: 42vw;
 }
 
  .dot-3 {
-    margin-top: -12px;
-    left: 25vw;
+    left: 22vw;
 }
 
 .dot-4 {
-    margin-top: -12px;
-    left: 65vw;
+    left: 60vw;
 }
 
 .dot-5 {
-    margin-top: -12px;
-    left: 45vw;
+    left: 42vw;
 }
 
 .dot-6 {
-    margin-top: -12px;
-    left: 80vw;
+    left: 75vw;
 }
 
 /*dot text*/
-.dot-1-text{
+.dot-text{
     position: absolute;
     width: 15vw;
-    margin-top: -15vh;
+    top: -13vh;
     white-space: nowrap;
 }
-.dot-2-text{
-    position: absolute;
-    width: 15vw;
-    margin-top: -15vh;
-    margin-left: 35vw;
-    white-space: nowrap;
-}
-
 
 
