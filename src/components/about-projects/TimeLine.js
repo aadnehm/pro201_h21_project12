@@ -5,6 +5,7 @@ export default function TimeLine() {
     return (
         <div className={"time-component-container"}>
             <div className="timeline-container">
+                <div className="top-swing"></div>
                 <div className="box-1">
                     <div className="dot dot-1">
                         <div className="dot-text">
@@ -61,7 +62,9 @@ export default function TimeLine() {
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
+                    <div className="bottom-swing"></div>
                 </div>
+
             </div>
         </div>
     );

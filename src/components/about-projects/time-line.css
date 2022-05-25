@@ -8,15 +8,33 @@
     position: relative;
     background-color: white;
     line-height: 1em;
-    /* margin er rar... vanskelig å sentrere container perfekt pga negative abs verdier*/
+    /* margin er rart tweaket til for å sentrere container... auto funker ikke pga negative absolute verdier*/
     margin: 10rem 0 0 7rem ;
 }
 
 
-.timeline-container , .box-1,.box-2, .box-3{
+.timeline-container , .box-1,.box-2, .box-3, .top-swing, .bottom-swing{
     height: 160px;
     width: 75vw;
     background-color: white;
+}
+
+
+.top-swing{
+    top: auto;
+    width: 200px;
+    border-bottom-left-radius:50%;
+    border-bottom: 0.15em solid black;
+}
+
+.bottom-swing{
+    position: absolute;
+    margin-top: -.15em;
+    left: 70vw;
+    width: 240px;
+    z-index: -1;
+    border-top-right-radius:50%;
+    border-top: 0.15em solid black;
 }
 
 .timeline-container .box-2{
