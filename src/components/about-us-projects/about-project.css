@@ -32,7 +32,8 @@
   margin-left: 0;
 }
 .testomonials {
-  width: 40vw;
+  width: 38vw;
+  margin-top: -5rem;
 }
 .companies-testemonials-grid {
   display: grid;
@@ -52,9 +53,13 @@
   text-align: center;
 }
 .companies-testemonials-grid p {
-  margin-left: 5em;
+  margin-left: 4em;
 }
 /* utility classes */
 .p-margin {
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+
+.section-margin {
+  margin-bottom: 3rem;
 }

@@ -3,7 +3,6 @@ import "./about-project.css";
 import TimeLine from "./TimeLine";
 
 export default function AboutProjects({ project }) {
-  console.log(project.testemonials[0].name);
   return (
     <>
       <div className="about-component-container">
@@ -29,9 +28,8 @@ export default function AboutProjects({ project }) {
         <div className="timeline-wrapper">
           <TimeLine />
         </div>
-        <div className="testomonials">
+        <div className="testomonials section-margin">
           <h2>Testemonials</h2>
-
           <p className="p-margin">
             Our donators are companies that want to make a difference for
             vulnerable children. Together, we invest in children's rights, which
