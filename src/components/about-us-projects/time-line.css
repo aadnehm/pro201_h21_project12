@@ -1,0 +1,112 @@
+/* container*/
+.time-component-container {
+  background-color: #fff;
+  width: 100vw;
+  font-family: sans-serif;
+}
+.timeline-container {
+  position: relative;
+  background-color: white;
+  line-height: 1em;
+  /* margin er rart tweaket til for å sentrere container... auto funker ikke pga negative absolute verdier*/
+  margin: 10rem 0 0 7rem;
+}
+
+.timeline-container,
+.box-1,
+.box-2,
+.box-3,
+.top-swing,
+.bottom-swing {
+  height: 160px;
+  width: 75vw;
+  background-color: white;
+}
+
+.timeline-container .box-2 {
+  margin-left: -3vw;
+  width: 75vw;
+}
+
+/*tomme diver som gis border for å lage figurer*/
+.top-swing {
+  margin-left: 40px;
+  width: 180px;
+  border-bottom-left-radius: 50%;
+  border-bottom: 0.15em solid black;
+}
+
+.timeline-container .box-1 {
+  margin-left: 200px;
+  border-top: 0.15em solid black;
+  border-right: 0.15em solid black;
+  border-bottom: 0.15em solid black;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.timeline-container .box-2 {
+  margin-top: -0.15em;
+  border-top: 0.15em solid black;
+  border-left: 0.15em solid black;
+  border-bottom: 0.15em solid black;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.bottom-swing {
+  position: absolute;
+  margin-top: -0.15em;
+  left: 70vw;
+  width: 180px;
+  z-index: -1;
+  border-top-right-radius: 50%;
+  border-top: 0.15em solid black;
+}
+/*  alle dots  */
+.dot {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid black;
+  transform: translateY(-50%);
+}
+/*position for hver dot*/
+.dot-2 {
+  left: 42vw;
+}
+
+.dot-3 {
+  left: 22vw;
+}
+
+.dot-4 {
+  left: 60vw;
+}
+
+.dot-5 {
+  left: 38vw;
+}
+
+.dot-6 {
+  left: 71vw;
+}
+
+/*dot text*/
+.dot-text {
+  position: absolute;
+  width: 15vw;
+  top: -13vh;
+  white-space: nowrap;
+}
+.dot-text .img-left {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  right: 16vw;
+  object-fit: cover;
+}
