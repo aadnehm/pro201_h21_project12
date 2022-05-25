@@ -16,11 +16,17 @@ export default function AboutProjects({ project }) {
           }}
         >
           <div className="img-text">
-            <p>
-              - The "e-lab" is the best I know! It's fun to learn here. I have
-              become better at reading and learning Somali letters
-            </p>
+            <p>{project.imgText}</p>
           </div>
+        </div>
+        <div className="what-we-do">
+          <h2>What we do</h2>
+          <p>{project.whatWeDo1}</p>
+          <p>{project.whatWeDo2}</p>
+        </div>
+        <div className="timeline-wrapper">
+          <h2>Our progress</h2>
+          <TimeLine />
         </div>
       </div>
     </>

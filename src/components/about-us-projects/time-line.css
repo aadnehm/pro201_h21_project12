@@ -1,26 +1,29 @@
 /* container*/
 .time-component-container {
-  background-color: #fff;
+  background-color: #fafafa;
   width: 100vw;
   font-family: sans-serif;
 }
 .timeline-container {
   position: relative;
-  background-color: white;
+  background-color: #fafafa;
   line-height: 1em;
   /* margin er rart tweaket til for å sentrere container... auto funker ikke pga negative absolute verdier*/
-  margin: 10rem 0 0 7rem;
 }
 
 .timeline-container,
 .box-1,
 .box-2,
-.box-3,
 .top-swing,
 .bottom-swing {
   height: 160px;
   width: 75vw;
-  background-color: white;
+  background-color: #fafafa;
+}
+.timeline-container .box-3 {
+  height: 160px;
+  width: 75vw;
+  background-color: #fafafa;
 }
 
 .timeline-container .box-2 {
@@ -34,6 +37,14 @@
   width: 180px;
   border-bottom-left-radius: 50%;
   border-bottom: 0.15em solid black;
+}
+.bottom-swing {
+  position: absolute;
+  margin-top: -0.15em;
+  left: 70vw;
+  width: 180px;
+  border-top-right-radius: 50%;
+  border-top: 0.15em solid black;
 }
 
 .timeline-container .box-1 {
@@ -54,15 +65,6 @@
   border-bottom-left-radius: 100px;
 }
 
-.bottom-swing {
-  position: absolute;
-  margin-top: -0.15em;
-  left: 70vw;
-  width: 180px;
-  z-index: -1;
-  border-top-right-radius: 50%;
-  border-top: 0.15em solid black;
-}
 /*  alle dots  */
 .dot {
   position: absolute;
@@ -93,6 +95,7 @@
 
 .dot-6 {
   left: 71vw;
+  z-index: 1;
 }
 
 /*dot text*/

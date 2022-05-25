@@ -13,6 +13,12 @@ const dummyProjects = [
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- The 'e-lab' is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
   },
   {
     id: "1",
@@ -26,6 +32,12 @@ const dummyProjects = [
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Water Supply Kongo provides fresh water to thousands of families in Kongo. Water means life and life means Rick Astley",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
   },
   {
     id: "1",
@@ -39,6 +51,12 @@ const dummyProjects = [
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
   },
   {
     id: "1",
@@ -52,6 +70,12 @@ const dummyProjects = [
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
   },
   {
     id: "1",
@@ -65,6 +89,12 @@ const dummyProjects = [
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Saving Chiou is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
   },
   {
     id: "1",
@@ -78,6 +108,12 @@ const dummyProjects = [
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- School for All is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
   },
 ];
 
