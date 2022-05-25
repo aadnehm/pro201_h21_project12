@@ -66,7 +66,7 @@ export function OurProjectDonators({ project_name }) {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
           consectetur deleniti doloremque laudantium, praesentium quia quos rem
           suscipit? Cum delectus ducimus earum hic molestias natus obcaecati rem
-          rerum sapiente tempora.
+          rerum sapiente tempora
         </div>
       </div>
     </div>
