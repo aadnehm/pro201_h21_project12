@@ -21,8 +21,8 @@
 
 
 .top-swing{
-    top: auto;
-    width: 200px;
+    margin-left: 40px;
+    width: 180px;
     border-bottom-left-radius:50%;
     border-bottom: 0.15em solid black;
 }
@@ -31,18 +31,19 @@
     position: absolute;
     margin-top: -.15em;
     left: 70vw;
-    width: 240px;
+    width: 180px;
     z-index: -1;
     border-top-right-radius:50%;
     border-top: 0.15em solid black;
 }
 
 .timeline-container .box-2{
+    margin-left: -3vw;
     width:75vw;
 }
 /*tomme diver som gis border for å lage figurer*/
 .timeline-container .box-1{
-    margin-left: 180px;
+    margin-left: 200px;
     border-top: 0.15em solid black;
     border-right: 0.15em solid black;
     border-bottom: 0.15em solid black;
@@ -89,7 +90,7 @@
 }
 
 .dot-6 {
-    left: 75vw;
+    left: 71vw;
 }
 
 /*dot text*/
