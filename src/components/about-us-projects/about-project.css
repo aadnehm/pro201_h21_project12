@@ -1,6 +1,10 @@
-.about-info-container {
+.about-component-container {
   margin: 4rem auto;
   background-color: #fafafa;
+}
+
+.about-component-container h2 {
+  margin: 2rem 0;
 }
 
 .img-container {
@@ -16,15 +20,26 @@
   padding: 70px;
   background-color: #fefefe;
   width: 30vw;
+  line-height: 1.8;
 }
 .what-we-do {
   margin: 4rem 0;
+  line-height: 1.8;
 }
 
-.what-we-do h2 {
-  margin: 2rem 0;
-}
 .timeline-wrapper {
   height: 70vh;
   margin-left: 0;
+}
+.testomonials {
+  width: 50vw;
+}
+.companies-testemonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+/* utility classes */
+.p-margin {
+  margin: 2rem 0;
 }
