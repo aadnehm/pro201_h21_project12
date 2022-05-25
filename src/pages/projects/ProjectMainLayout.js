@@ -172,7 +172,9 @@ function NavTabs(props) {
       <TabPanel value={value} index={1}>
         <InsideStories selectedNonProfit={props.nonProfit} />
       </TabPanel>
-      <TabPanel value={value} index={2}></TabPanel>
+      <TabPanel value={value} index={2}>
+        <OurProjectDonators project_name={props.data.name} />
+      </TabPanel>
     </Box>
   );
 }

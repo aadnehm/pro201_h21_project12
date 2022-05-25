@@ -8,8 +8,9 @@ font-family: "DM Sans", sans-serif;
 
 .donators-logo-wrapper{
     display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    margin: 5rem 0;
+
 }
 
 .donators-logo-img{
@@ -21,7 +22,6 @@ font-family: "DM Sans", sans-serif;
     width: 100%;
     object-fit:fill;
     border-radius: 15%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .donators-company-name{
@@ -32,4 +32,25 @@ font-family: "DM Sans", sans-serif;
 .donators-donations{
     font-size: 1rem;
     margin-top: 0.5rem;
+}
+.donators-image-wrapper {
+    width: 80%;
+    height: 600px;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://images.unsplash.com/photo-1497415957044-0c986b8666ef?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2834");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.donators-image-text{
+    width: 50%;
+    min-height: 15%;
+    padding: 2.5rem 1.5rem;
+    background-color: rgba(255,255,255, 1);
+    border-radius: 2rem;
 }
