@@ -2,9 +2,11 @@
   margin-top: 3rem;
 }
 .iframes-div {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   width: 100%;
-  margin: 5rem 0;
+  row-gap: 5rem;
+  margin: 2rem 0 5rem 0;
   justify-content: space-between;
 }
 
@@ -21,13 +23,13 @@
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
-  margin: 5rem 0;
+  margin: 2rem 0 5rem 0;
   justify-content: space-between;
   row-gap: 5rem;
 }
 
 .article-div {
-  width: 320px;
+  width: 300px;
   height: fit-content;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
@@ -35,7 +37,7 @@
 }
 
 .article-image {
-  width: 320px;
+  width: 300px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -84,8 +86,8 @@
 }
 
 .react-player {
-  height: 300px !important;
-  width: 320px !important;
+  height: 250px !important;
+  width: 300px !important;
 }
 
 .playerText {
@@ -118,6 +120,29 @@ iframe {
   grid-column-start: auto;
 }
 
+.other-story-div {
+  display: none;
+  width: fit-content;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  grid-column-start: auto;
+}
+
+.show-all {
+  display: flex;
+  justify-content: center;
+}
+
+.show-all button {
+  border: 0px solid black;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-bottom: 5rem;
+}
+
 .story-div:hover,
 .article-div:hover {
   cursor: pointer;
@@ -136,8 +161,7 @@ iframe {
   border: 0px solid #fff;
   border-radius: 40px;
   background-color: black;
-  margin-bottom: 40px;
-
+  margin-bottom: 5rem;
   display: flex;
 }
 
@@ -145,8 +169,26 @@ iframe {
   border: 0px solid #fff;
   border-radius: 40px;
   background-color: black;
-  margin-top: 40px;
+  margin-bottom: 5rem;
   display: flex;
+}
+.posterDiv3 {
+  border: 0px solid #fff;
+  border-radius: 40px;
+  background-color: #fafafa;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.posterDiv3 h2 {
+  color: black;
+}
+
+.posterDiv3 button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px;
 }
 
 .posterDiv2 button {
@@ -170,6 +212,6 @@ iframe {
 }
 
 .posterParagraphDiv h2 {
-  margin: auto;
   width: 80%;
+  margin: auto;
 }
