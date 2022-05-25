@@ -57,66 +57,20 @@ export default function AboutUs(props) {
           <div className="about-values-list">
             <div className={"about-header our-values"}>Our Values</div>
             <div className="about-values-items-wrapper">
-              <div className={"values-list-item"}>
-                <div className="values-list-item-icon">
-                  <img
-                    src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
-                    alt="some icon"
-                  />
-                </div>
-                <div className="values-list-item-text">
-                  <div className={"about-header"}>Transparency</div>
-                  <div>
-                    Redd Barna will always be open and transparent about what we
-                    do
+              {props.data.values.map((item, key) => (
+                <div className={"values-list-item"} key={key}>
+                  <div className="values-list-item-icon">
+                    <img
+                      src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
+                      alt="some icon"
+                    />
+                  </div>
+                  <div className="values-list-item-text">
+                    <div className={"about-header"}>{item.name}</div>
+                    <div>{item.desc}</div>
                   </div>
                 </div>
-              </div>
-              <div className={"values-list-item"}>
-                <div className="values-list-item-icon">
-                  <img
-                    src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
-                    alt={"image"}
-                  />
-                </div>
-                <div className="values-list-item-text">
-                  <div className={"about-header"}>Honesty</div>
-                  <div>
-                    Redd Barna will always be open and transparent about what we
-                    do
-                  </div>
-                </div>
-              </div>
-              <div className={"values-list-item"}>
-                <div className="values-list-item-icon">
-                  <img
-                    src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
-                    alt={"image"}
-                  />
-                </div>
-                <div className="values-list-item-text">
-                  <div className={"about-header"}>Open-hearted</div>
-                  <div>
-                    Redd Barna will always be open and transparent about what we
-                    do
-                  </div>
-                </div>
-              </div>
-              <div className={"values-list-item"}>
-                <div className="values-list-item-icon">
-                  <img
-                    src={process.env.PUBLIC_URL + "/img/handhearticon.png"}
-                    alt={"image"}
-                  />
-                </div>
-                <div className="values-list-item-text">
-                  <div className={"about-header"}>Hard working</div>
-                  <div>
-                    Redd Barna will always be open and transparent about what we
-                    do
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

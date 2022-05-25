@@ -53,7 +53,7 @@ function Pcard({ project }) {
   function changeHeartFilterStyle() {
     if (heartFilterStyle.filter === undefined) {
       setHeartFilterStyle({
-        filter: "invert(30%) sepia() saturate(2000%) hue-rotate(0deg)",
+        filter: "invert(25%) sepia() saturate(2000%) hue-rotate(0deg)",
       });
     } else {
       setHeartFilterStyle({});

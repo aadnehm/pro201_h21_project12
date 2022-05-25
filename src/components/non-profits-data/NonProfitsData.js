@@ -328,6 +328,21 @@ const projectStoriesData = [
   },
 ];
 
+const nonProfitValues = [
+  {
+    name: "Transparency",
+    desc: "Save the children will always be open and transparent about what we do",
+  },
+  {
+    name: "Children in the center",
+    desc: "An important part of our method and our work is that the children themselves are involved in what we do.\n",
+  },
+  {
+    name: "Protection",
+    desc: "This will ensure that all children who come into contact with Save the Children will have a positive experience where they feel respected and safe.",
+  },
+];
+
 const nonProfitsPosts = [
   {
     id: "1",
@@ -338,10 +353,16 @@ const nonProfitsPosts = [
       "Help us provide refugee children with shelter, food, shelter, clothing and medicine.",
     categories: ["humanitarian", "recommended"],
     projects: dummyProjects,
+
     descriptionShort:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    posters: posterData,
+    articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "2",
@@ -360,6 +381,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "3",
@@ -378,6 +400,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "4",
@@ -396,6 +419,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "5",
@@ -414,6 +438,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "6",
@@ -432,6 +457,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "7",
@@ -449,6 +475,7 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    values: nonProfitValues,
   },
   {
     id: "8",
@@ -466,6 +493,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "9",
@@ -483,6 +511,7 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    values: nonProfitValues,
   },
   {
     id: "10",
@@ -500,6 +529,7 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    values: nonProfitValues,
   },
   {
     id: "6",
@@ -517,6 +547,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "7",
@@ -530,6 +561,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "12",
@@ -547,6 +579,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "13",
@@ -564,6 +597,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "14",
@@ -581,6 +615,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "15",
@@ -598,6 +633,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
   {
     id: "16",
@@ -615,6 +651,7 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    values: nonProfitValues,
   },
 ];
 

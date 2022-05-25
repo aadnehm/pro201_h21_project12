@@ -8,6 +8,9 @@
 .show-more{
    cursor: pointer;
 }
+.about-wrapper{
+    margin-top: 3rem;
+}
 .about-text-wrapper{
     width: 100%;
     display: flex;
@@ -16,17 +19,17 @@
 }
 .about-text-left{
     width: 50%;
-    padding-top: 3rem;
 }
 .about-text-image{
     width: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 100%;
 
 }
 .about-text-image-wrapper{
-    max-height: 80%;
+    max-height: 100%;
     width: 100%;
 }
 .about-text-image img {
@@ -50,7 +53,7 @@
     width: 50%;
 }
 .about-values-image-container {
-    max-height: 80%;
+    max-height: 100%;
     width: 100%;
 }
 .values-list-item-icon{
