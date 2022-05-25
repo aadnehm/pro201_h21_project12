@@ -1,13 +1,13 @@
 /* container*/
 .time-component-container {
   background-color: #fafafa;
-  width: 100vw;
-  font-family: sans-serif;
+  max-width: 100vw;
 }
 .timeline-container {
   position: relative;
   background-color: #fafafa;
   line-height: 1em;
+  margin-left: -2em;
   /* margin er rart tweaket til for å sentrere container... auto funker ikke pga negative absolute verdier*/
 }
 
@@ -15,18 +15,14 @@
 .box-1,
 .box-2,
 .top-swing,
+.box-3,
 .bottom-swing {
   height: 160px;
   width: 75vw;
-  background-color: #fafafa;
-}
-.timeline-container .box-3 {
-  height: 160px;
-  width: 75vw;
-  background-color: #fafafa;
 }
 
 .timeline-container .box-2 {
+  margin-top: -0.15em;
   margin-left: -3vw;
   width: 75vw;
 }

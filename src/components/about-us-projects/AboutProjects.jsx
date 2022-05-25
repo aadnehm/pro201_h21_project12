@@ -24,8 +24,8 @@ export default function AboutProjects({ project }) {
           <p>{project.whatWeDo1}</p>
           <p>{project.whatWeDo2}</p>
         </div>
+        <h2>Our progress</h2>
         <div className="timeline-wrapper">
-          <h2>Our progress</h2>
           <TimeLine />
         </div>
       </div>
