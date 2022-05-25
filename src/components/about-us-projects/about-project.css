@@ -17,7 +17,7 @@
   text-align: center;
 }
 .img-text {
-  padding: 70px;
+  padding: 70px 30px;
   background-color: #fefefe;
   width: 30vw;
   line-height: 1.8;
@@ -32,12 +32,27 @@
   margin-left: 0;
 }
 .testomonials {
-  width: 50vw;
+  width: 40vw;
 }
-.companies-testemonials {
+.companies-testemonials-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  grid-column-gap: 5rem;
+}
+.companies-testemonials-grid img {
+  margin-right: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.companies-testemonials-grid .title-and-img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.companies-testemonials-grid p {
+  margin-left: 5em;
 }
 /* utility classes */
 .p-margin {

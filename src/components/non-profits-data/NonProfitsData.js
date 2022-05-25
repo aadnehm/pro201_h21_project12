@@ -1,5 +1,29 @@
 // array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
 // same ID as Redd Barna if needed.
+
+const testemonials = [
+  {
+    name: "Foodora",
+    text: "The collaboration with Save the Children is well established among Foodora`s committed employees. A large proportion of the employees at Foodora Norway give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/foodora.png",
+  },
+  {
+    name: "Avinor",
+    text: "The collaboration with Save the Children is well established among Avinor`s committed employees. A large proportion of the employees at Avinor give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/avinor.png",
+  },
+  {
+    name: "Colombus",
+    text: "The collaboration with Save the Children is well established among Colombus committed employees. A large proportion of the employees at Columbus give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/columbus.jpeg",
+  },
+  {
+    name: "DNB Bank",
+    text: "The collaboration with Save the Children is well established among DNB Bank`s committed employees. A large proportion of the employees at DNB Bank give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/dnb.png",
+  },
+];
+
 const dummyProjects = [
   {
     id: "1",
@@ -19,6 +43,7 @@ const dummyProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     id: "1",
@@ -38,6 +63,7 @@ const dummyProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     id: "1",
@@ -57,6 +83,7 @@ const dummyProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     id: "1",
@@ -76,6 +103,7 @@ const dummyProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     id: "1",
@@ -95,6 +123,7 @@ const dummyProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     id: "1",
@@ -114,6 +143,7 @@ const dummyProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
 ];
 
