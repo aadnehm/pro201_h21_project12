@@ -1,5 +1,5 @@
 import React from "react";
-import "../our-donators/ourDonators.css";
+import "../our-donators/our-donators.css";
 
 export function OurProjectDonators({ project_name }) {
   const logoVy = "/img/non-profit/vy.png";
