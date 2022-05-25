@@ -24,7 +24,7 @@
 }
 /*tomme diver som gis border for å lage figurer*/
 .timeline-container .box-1{
-    margin-left: 110px;
+    margin-left: 180px;
     border-top: 0.15em solid black;
     border-right: 0.15em solid black;
     border-bottom: 0.15em solid black;
