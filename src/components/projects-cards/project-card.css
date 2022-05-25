@@ -79,10 +79,11 @@
   border: none;
   font-weight: bold;
   margin-top: auto;
+  transition: transform .2s;
 }
 
 .project-text-content button:hover {
-  opacity: 0.8;
+  transform: scale(1.1);
 }
 /* show all button */
 .project-page-container .showAllBtn {
@@ -94,7 +95,13 @@
   border: none;
   font-weight: bold;
   margin-left: 40%;
+  transition: transform .2s;
 }
+
+.project-page-container .showAllBtn:hover {
+  transform: scale(1.1);
+}
+
 
 /* line separating projects */
 .project-cards-container .split-line {

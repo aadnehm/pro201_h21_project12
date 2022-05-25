@@ -8,7 +8,6 @@ import { goToTop } from "../../lib/toTop";
 function useOutsideAlerter(ref) {
   useEffect(() => {
     function handleClickOutside(event) {
-      console.log();
       if (
         (ref.current && !ref.current.contains(event.target)) ||
         ref.current.firstChild.value === ""
@@ -38,16 +37,12 @@ function SearchResults(props) {
 
   if (props.search === "") {
     return <div className={"results-search"} style={{ display: "none" }} />;
-  } else if (results.length === 0) {
-    return (
-      <div className={"results-search"}>
-        <p style={{ marginLeft: "20px" }}>No results...</p>
-      </div>
-    );
   } else {
     return (
       <div className={"results-search"} style={{ display: "block" }}>
-        {results.length === 0 && <p>No results...</p>}
+        {results.length === 0 && (
+          <p style={{ marginLeft: "20px" }}>No results...</p>
+        )}
         {results.length !== 0 && (
           <ul className={"search-results"}>
             {results.map((nonprofit) => (

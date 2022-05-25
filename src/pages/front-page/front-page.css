@@ -17,7 +17,7 @@
     padding: 10px 15px 10px 15px;
     width: 300px;
     font-weight: 500;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -110,9 +110,10 @@
 .newest-nonprofit-card{
     margin: 10px 0 10px 0;
 }
-.data-card p{
+.data-card p:first-of-type{
     font-weight: bold;
     font-size: 20px;
+    margin: 10px 0 0 0;
 }
 
 .data-card img{

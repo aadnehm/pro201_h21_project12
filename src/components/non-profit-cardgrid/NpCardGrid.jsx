@@ -15,7 +15,7 @@ export function NpCardGrid({ data }) {
 function Card({ post }) {
   const navigate = useNavigate();
   function redirectNonprofit(name) {
-    const path = "/nonprofit/" + name.replace(/ /g, "");
+    const path = "/nonprofit/" + name.replace(/ /g, "").toLowerCase();
     navigate(path);
     goToTop();
   }

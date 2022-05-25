@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 //React
 import { Route, Routes } from "react-router-dom";
 import React from "react";
+import { motion } from "framer-motion";
 //Firebase
 import { FrontPage } from "./pages/front-page/FrontPage";
 import {
@@ -18,9 +19,9 @@ import {
 } from "./pages/non-profit-all/NonProfitAll";
 import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
-import AboutUs from "./components/about-us/AboutUs";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 import Footer from "./components/footer/Footer";
+import { useLocation } from "react-router";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -43,41 +44,30 @@ const mainColor = createTheme({
 });
 
 function NavbarFooter(props) {
+  const transition = { duration: 0.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
   return (
     <>
       <ButtonAppBar />
-      <>{props.page}</>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.1 }}
+        transition={transition}
+      >
+        {props.page}
+      </motion.div>
       <Footer />
     </>
   );
 }
 
 function App() {
-  //Pulling non-profits from cloud database and storing it in state that gets passed
-  //to SearchNonProfits-page
-  /*
-  const fetchOrgs = async () => {
-    const response = db.collection("nonprofits");
-    const data = await response.get();
-    data.forEach((element) => {
-      setOrgs((prevValue) => [...prevValue, element.data()]);
-    });
-  };
-  const [orgs, setOrgs] = useState([]);
-  const [selectedOrg, setSelectedOrg] = useState();
-
-
-
-  useEffect(() => {
-    fetchOrgs();
-  }, []);
-
-   */
-
+  const location = useLocation();
   return (
     <ThemeProvider theme={mainColor}>
       <div className="App">
-        <Routes>
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<NavbarFooter page={<FrontPage />} />} />
           <Route
             path="/nonprofits"
@@ -92,23 +82,7 @@ function App() {
             element={<NavbarFooter page={<Projects />} />}
           />
           <Route path="/login" element={<Login />} />
-          <Route path="*" element={<h1>Not found 404</h1>}></Route>
-          {/*
-            <Route path="/choose-subscription" element={<SubscriptionPage />} />
-          <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/create-account" element={<CreateAccountPage />} />
-           <Route path="/signin-employee" element={<SigninEmployee />} />
-
-          <Route
-            path="/non-project"
-            element={<NonProfitProject selectedOrg={selectedOrg} />}
-          />
-          <Route
-            path="/nonprofithome"
-            element={<NonProfitHome selectedOrg={selectedOrg} />}
-          /> */}
-          {/*Terje's test-route */}
-          <Route path="/aboutTest" element={<AboutUs />} />
+          <Route path="/*" element={<h1>Not found 404</h1>} />
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>

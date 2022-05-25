@@ -75,7 +75,13 @@ color: #333333;
 .input-wrapper button{
     background-color: #333333;
     color: #FBFAFA;
+    transition: .2s linear;
 }
+
+.input-wrapper button:hover{
+    transform: scale(1.1);
+}
+
 .sm-wrapper{
     display: flex;
     justify-content: space-between;

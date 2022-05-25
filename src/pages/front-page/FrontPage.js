@@ -4,7 +4,7 @@ import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { useNavigate } from "react-router";
 import { goToTop } from "../../lib/toTop";
 import { uppercaseFirstLetter } from "../../lib/upperCaseFirstLetter";
-
+import { motion } from "framer-motion";
 function Communtiy() {
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/frontpage/frontpage-community.png)";
@@ -59,7 +59,7 @@ function FrontPageHeader() {
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/frontpage/frontpage-header.png)";
   return (
-    <header
+    <div
       style={{
         backgroundImage: img,
         backgroundPosition: "center",
@@ -73,10 +73,10 @@ function FrontPageHeader() {
       <div className="home-header1-content">
         <h1>MELIORA IMPACT</h1>
         <h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          facilisis mi ac nunc tincidunt, vitae ultricies purus sodales. Morbi
-          nisl turpis, ornare id suscipit accumsan, volutpat vitae tortor.
-          Aenean.
+          By using Meliora Impact's platform, companies can leverage their
+          corporate resources for greater social good. Donors get access to
+          engaging reports on their philanthropic activity, continuously updated
+          dashboards, and of course have full control over their donations.
         </h4>
         <button
           onClick={() => {
@@ -87,7 +87,7 @@ function FrontPageHeader() {
         </button>
         <button>About us</button>
       </div>
-    </header>
+    </div>
   );
 }
 
@@ -139,6 +139,7 @@ function PersonCards(props) {
         <div className={"data-card"} key={index}>
           <img src={process.env.PUBLIC_URL + value.img} alt={"image"} />
           <p>{value.name}</p>
+          {value.role && <p>{value.role}</p>}
         </div>
       ))}
     </div>
@@ -147,9 +148,21 @@ function PersonCards(props) {
 
 function WhoAreWe() {
   const persons = [
-    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person1.png" },
-    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person2.png" },
-    { name: "Navn navnesen", img: "/img/frontpage/frontpage-person3.png" },
+    {
+      name: "Mara Lehmann",
+      role: "Co-founder, product designer",
+      img: "/img/frontpage/frontpage-mara.png",
+    },
+    {
+      name: "Acacia De Meo",
+      role: "Co-Founder, Philanthropic Adviser & Outreach",
+      img: "/img/frontpage/frontpage-acacia.png",
+    },
+    {
+      name: "Henriette Friling",
+      role: "Sustainability coordinator",
+      img: "/img/frontpage/frontpage-henriette.png",
+    },
   ];
   return (
     <div className={"who-are-we"}>

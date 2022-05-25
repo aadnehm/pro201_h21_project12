@@ -1,7 +1,8 @@
 import "./about-us.css";
 import { useState } from "react";
 
-export default function AboutUs() {
+export default function AboutUs(props) {
+  console.log(props.data);
   const [moreEnabled, setMoreEnabled] = useState(false);
   const aboutText =
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloremque eaque illum minus non possimus quia recusandae repellat unde voluptates. Exercitationem, perspiciatis, repudiandae? Architecto culpa, cupiditate, dignissimos enim explicabo facilis illum inventore iure laboriosam molestias nam nemo nostrum optio soluta tempora ullam veritatis voluptates. Ad fugit ipsum libero nisi obcaecati officiis praesentium soluta? Adipisci animi asperiores beatae consequatur doloremque eius est et id, incidunt ipsam iure nisi odio officiis, placeat praesentium quasi qui quis quos suscipit temporibus ullam unde voluptates. Architecto at atque blanditiis consequatur deleniti dolores eaque eos ex expedita explicabo fugit, laudantium maiores molestiae, nemo nesciunt nostrum pariatur quo recusandae reiciendis rem reprehenderit saepe sunt tempora totam vel veritatis voluptas. Debitis ducimus illum ipsum itaque molestias non perspiciatis quibusdam quo voluptate, voluptatibus. ";
@@ -15,15 +16,20 @@ export default function AboutUs() {
       <div className="about-wrapper">
         <div className="about-text-wrapper">
           <div className="about-text-left">
-            <h1>About Redd Barna</h1>
+            <h1>{"About " + props.data.name}</h1>
             <article className={"about-text"}>
               {moreEnabled ? (
                 <div>
-                  <p>{aboutText.substring(0, 350)}</p>
-                  <p>{aboutText.substring(350, aboutText.length)}</p>
+                  <p>{props.data.descriptionShort.substring(0, 350)}</p>
+                  <p>
+                    {props.data.descriptionExtended.substring(
+                      350,
+                      aboutText.length
+                    )}
+                  </p>
                 </div>
               ) : (
-                aboutText.substring(0, 350)
+                props.data.descriptionShort.substring(0, 350)
               )}
             </article>
             <div className="about-header show-more " onClick={handleMore}>

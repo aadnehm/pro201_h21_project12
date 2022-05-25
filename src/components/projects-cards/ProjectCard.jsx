@@ -1,5 +1,5 @@
 import "./project-card.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
 export function ProjectCardGrid({ data }) {
@@ -49,6 +49,16 @@ function Pcard({ project }) {
       project.name.replace(/ /g, "").toLowerCase();
     navigate(path);
   };
+  const [heartFilterStyle, setHeartFilterStyle] = useState({});
+  function changeHeartFilterStyle() {
+    if (heartFilterStyle.filter === undefined) {
+      setHeartFilterStyle({
+        filter: "invert(30%) sepia() saturate(2000%) hue-rotate(0deg)",
+      });
+    } else {
+      setHeartFilterStyle({});
+    }
+  }
 
   return (
     <div className="project-cards-container">
@@ -73,13 +83,14 @@ function Pcard({ project }) {
         <div className="top-flex-content">
           <h3>{project.name}</h3>
           <div className="add-favorites">
-            <span>
+            <span onClick={changeHeartFilterStyle}>
               <img
                 className="heart-png"
                 src={process.env.PUBLIC_URL + "/img/projects/heart.png"}
                 alt="heart img"
+                style={heartFilterStyle}
               />
-              add to favorites
+              Add to favorites
             </span>
           </div>
         </div>

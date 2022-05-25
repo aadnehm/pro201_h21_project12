@@ -67,12 +67,11 @@ export default function NavTabs() {
   })(Tab);
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%", marginTop: "5vh" }}>
       <Tabs
         value={value}
         onChange={handleChange}
         aria-label="tabs"
-        centered
         textColor="secondary"
         indicatorColor="secondary"
       >
@@ -93,8 +92,8 @@ export default function NavTabs() {
         <CustomTab
           icon={<SchoolOutlinedIcon />}
           iconPosition="start"
-          label="Education"
-          onClick={() => handleCatBtn("education")}
+          label="Knowledge"
+          onClick={() => handleCatBtn("knowledge")}
           {...a11yProps(2)}
         />
         <CustomTab
@@ -107,8 +106,8 @@ export default function NavTabs() {
         <CustomTab
           icon={<FavoriteBorderOutlinedIcon />}
           iconPosition="start"
-          label="Equality"
-          onClick={() => handleCatBtn("equality")}
+          label="Water"
+          onClick={() => handleCatBtn("water")}
           {...a11yProps(4)}
         />
       </Tabs>

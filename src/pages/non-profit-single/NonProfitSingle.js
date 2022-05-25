@@ -122,7 +122,7 @@ function NavTabs(props) {
         />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <AboutUs />
+        <AboutUs data={props.data} />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <ProjectCardGrid data={props.data} />

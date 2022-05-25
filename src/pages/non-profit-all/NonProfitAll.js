@@ -14,10 +14,9 @@ import { useNavigate } from "react-router";
 export function NonProfitAll() {
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/non-profit/nonProfitHero.png)";
-
   return (
     <div className="nonProfit-search-container">
-      <header
+      <div
         style={{
           backgroundImage: img,
           backgroundPosition: "center",
@@ -33,11 +32,11 @@ export function NonProfitAll() {
           <p>We have selected a number of non-profits</p>
           <p>that suits your business strategy.</p>
         </div>
-      </header>
-      <main className="nonProfit-search-categories">
+      </div>
+      <div className="nonProfit-search-categories">
         <h3>Categories of Non-profits</h3>
         <NavTabs />
-      </main>
+      </div>
     </div>
   );
 }
