@@ -6,6 +6,7 @@ export default function InsideStories({ selectedNonProfit }) {
   const [moreEnabled, setMoreEnabled] = useState(false);
   const handleMore = () => {
     setMoreEnabled(!moreEnabled);
+    document.getElementById("videos-header").scrollIntoView();
   };
 
   const [moreArticlesEnabled, setMoreArticlesEnabled] = useState(false);
@@ -102,7 +103,7 @@ export default function InsideStories({ selectedNonProfit }) {
           alt={"image"}
         ></img>
       </div>
-      <h2>Videos</h2>
+      <h2 id="videos-header">Videos</h2>
       {moreEnabled ? (
         <div className="iframes-div">
           {allVideos.map((video) => (
