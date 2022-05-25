@@ -2,82 +2,56 @@
 // same ID as Redd Barna if needed.
 const dummyProjects = [
   {
-    id: "1",
-    img: "/img/eksempelbilde1.png",
-    name: "Africa Teaching Aid",
+    name: "Project Nepal",
     established: "30.0.2012",
     info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate ",
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. ",
     info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
+      "With this project, your company can help improve children's access to education, participation in school and a better learning outcome for girls, marginalized and excluded children. Save the Children also contributes with school materials, education for teachers and parent education.",
     headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+      "With this project, your company can help improve children's access to education.",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
+    img3: "/img/projects/project-nepal/3.png",
   },
   {
-    id: "1",
-    img: "/img/eksempelbilde2.png",
-    name: "Water Supply Kongo",
-    established: "11.04.2014",
+    name: "Project Somalia",
+    established: "30.09.2020",
     info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living.",
     info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
+      "Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked.",
     headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+      "Education gives girls in Nepal a second chance and they are better protected ",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
+    img3: "/img/projects/project-somalia/3.png",
   },
   {
-    id: "1",
-    img: "/img/eksempelbilde3.png",
-    name: "Summer Youth Camps",
-    established: "01.05.2010",
+    name: "Project Myanmar",
+    established: "02.01.2018",
     info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non",
+      "The project in Myanmar focuses on children's learning and safety at school, as well as promoting children's rights. The project is implemented in two regions, Magway and Kayah, and aims to reach 56,000 children in 180 schools.",
     info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
+      "In education, we will improve children's reading and writing skills, ensure that schools are safe for children, ensure access to schools for vulnerable groups and improve the quality of the learning environment in schools.",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
+    img3: "/img/projects/project-myanmar/3.png",
   },
   {
-    id: "1",
-    img: "/img/eksempelbilde4.png",
-    name: "Ocean Rescue",
-    established: "01.05.2010",
+    name: "Project Back to School",
+    established: "16.05.2019",
     info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+      "The pandemic has created one of the biggest educational crises in history. During the worst period of the pandemic, 1.6 billion children disrupted their education. Millions of children are out of school today.",
     info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
+      "The longer children are out of school, the less likely they are to return. This can affect children for the rest of their lives. Without school, children are at risk of being married off, forced into child labor and losing their future.",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-  },
-  {
-    id: "1",
-    img: "/img/eksempelbilde5.png",
-    name: "Saving Chiou",
-    established: "04.02.1999",
-    info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra.",
-    info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
-    headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-  },
-  {
-    id: "1",
-    img: "/img/eksempelbilde6.png",
-    name: "School for All",
-    established: "02.06.2000",
-    info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
-    headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    img1: "/img/projects/project-back-to-school/1.png",
+    img2: "/img/projects/project-back-to-school/2.png",
+    img3: "/img/projects/project-back-to-school/3.png",
   },
 ];
 

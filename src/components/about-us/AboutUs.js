@@ -20,16 +20,11 @@ export default function AboutUs(props) {
             <article className={"about-text"}>
               {moreEnabled ? (
                 <div>
-                  <p>{props.data.descriptionShort.substring(0, 350)}</p>
-                  <p>
-                    {props.data.descriptionExtended.substring(
-                      350,
-                      aboutText.length
-                    )}
-                  </p>
+                  <p>{props.data.descriptionShort}</p>
+                  <p>{props.data.descriptionExtended}</p>
                 </div>
               ) : (
-                props.data.descriptionShort.substring(0, 350)
+                props.data.descriptionShort
               )}
             </article>
             <div className="about-header show-more " onClick={handleMore}>

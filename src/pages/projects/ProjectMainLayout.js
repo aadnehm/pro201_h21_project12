@@ -83,7 +83,7 @@ export function Projects() {
     );
   }
 
-  const img = "url(" + process.env.PUBLIC_URL + selectedProject.img;
+  const img = "url(" + process.env.PUBLIC_URL + selectedProject.img1;
 
   return (
     <div className={"nonprofit-content"}>
@@ -128,7 +128,9 @@ function NavTabs(props) {
         marginTop: "100px",
         marginRight: "auto",
         marginLeft: "auto",
+        transition: "transform .2s",
       }}
+      style={{ display: "flex" }}
     >
       <Tabs
         value={value}
@@ -148,26 +150,29 @@ function NavTabs(props) {
           label="Our donators"
           {...a11yProps(2)}
         />
-        <CustomTab
-          iconPosition="start"
-          label={"Back to " + props.nonProfit.name}
-          onClick={() => {
-            navigate(
-              "/nonprofit/" +
-                props.nonProfit.name.replace(/ /g, "").toLowerCase()
-            );
-            goToTop();
-          }}
-          {...a11yProps(4)}
-        />
       </Tabs>
+      <button
+        style={{
+          marginRight: 0,
+          marginLeft: "auto",
+          border: "none",
+          background: "transparent",
+          fontWeight: "600",
+        }}
+        onClick={() => {
+          navigate(
+            "/nonprofit/" + props.nonProfit.name.replace(/ /g, "").toLowerCase()
+          );
+          goToTop();
+        }}
+      >
+        {"Back to " + props.nonProfit.name}
+      </button>
       <TabPanel value={value} index={0}></TabPanel>
       <TabPanel value={value} index={1}>
         <InsideStories selectedNonProfit={props.nonProfit} />
       </TabPanel>
       <TabPanel value={value} index={2}></TabPanel>
-      <TabPanel value={value} index={3}></TabPanel>
-      <TabPanel value={value} index={4}></TabPanel>
     </Box>
   );
 }
