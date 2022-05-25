@@ -342,10 +342,6 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
-    insideStories: insideStoriesData,
-    projectStories: projectStoriesData,
-    posters: posterData,
-    articles: articleData,
   },
   {
     id: "2",
@@ -360,6 +356,10 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    posters: posterData,
+    articles: articleData,
   },
   {
     id: "3",
@@ -374,6 +374,10 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    posters: posterData,
+    articles: articleData,
   },
   {
     id: "4",
@@ -388,6 +392,10 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    posters: posterData,
+    articles: articleData,
   },
   {
     id: "5",
@@ -402,6 +410,10 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    posters: posterData,
+    articles: articleData,
   },
   {
     id: "6",
@@ -416,6 +428,10 @@ const nonProfitsPosts = [
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
     descriptionExtended:
       "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    posters: posterData,
+    articles: articleData,
   },
   {
     id: "7",
@@ -480,6 +496,10 @@ const nonProfitsPosts = [
     projectStories: projectStoriesData,
     posters: posterData,
     articles: articleData,
+    descriptionShort:
+      "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
+    descriptionExtended:
+      "Save the Children has worked for children's rights for more than 100 years. We are a member-run rights organization that is politically and religiously neutral. Here you will find information about the organization Save the Children, who we are and how we work. In Norway and around the world, we work to ensure that children are safe and healthy. We are passionate about a world where all children survive, learn and are safe.",
   },
   {
     id: "6",
