@@ -97,15 +97,21 @@
   position: relative;
 }
 
+.hamburger-react {
+  height: 36px !important;
+  width: 36px !important;
+  top: -5px;
+}
+
 .menu button {
   padding-left: 1%;
   padding-right: 1%;
   background-color: #fefefe;
   position: fixed;
-  border: 1px solid #333;
+  border: 0px solid #333;
   border-radius: 30px;
   left: 10px;
-  top: 1rem;
+  top: 1.5rem;
   z-index: 10;
   cursor: pointer;
 }
@@ -134,14 +140,13 @@
 
 .buttonSymbol {
   float: left;
-  margin: auto;
   color: #333;
 }
 
 .personIcon {
-  margin-left: 0.5vw;
-  -ms-transform: translateY(38%);
-  transform: translateY(38%);
+  margin-left: 1.5vw;
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
 }
 
 .logoutBtn {
