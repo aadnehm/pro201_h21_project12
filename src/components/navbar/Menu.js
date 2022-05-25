@@ -47,7 +47,6 @@ export default function Menu() {
                 direction="right"
                 toggled={navbarOpen}
                 toggle={setNavbarOpen}
-                size={25}
               />
             </div>
             <div className="personIcon buttonSymbol">

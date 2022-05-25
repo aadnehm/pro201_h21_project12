@@ -196,6 +196,18 @@ const posterData = [
     info: "Read about how Foodora have made a massive impact through our project",
     image: "/img/insidestories/other-children-insidestories.jpg",
   },
+
+  {
+    id: "2",
+    info: "We do stuff to people. Mostly good stuff. Read about ONLY the good stuff here!",
+    image: "/img/frontpage/frontpage-community.png",
+  },
+
+  {
+    id: "3",
+    info: "Read about how Foodora have made a massive impact through our project",
+    image: "/img/insidestories/other-children-insidestories.jpg",
+  },
 ];
 
 const articleData = [
@@ -231,6 +243,24 @@ const articleData = [
 
   {
     id: "6",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "7",
+    header: "PROJECT NEPAL",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "8",
+    header: "PROJECT NIPPLE",
+    text: "Read about how we are working on bettering the conditions for the children in Nepal",
+  },
+
+  {
+    id: "9",
     header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
