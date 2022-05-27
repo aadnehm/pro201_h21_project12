@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { TextField } from "@mui/material/";
 
 export default function BlankInput(props) {
-
   return (
     <TextField
       helperText={props.helperText}

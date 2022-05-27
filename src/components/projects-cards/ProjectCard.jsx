@@ -1,5 +1,5 @@
-import "./ProjectCard.css";
-import React, { useState } from "react";
+import "./project-card.css";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
 export function ProjectCardGrid({ data }) {
@@ -20,7 +20,7 @@ export function ProjectCardGrid({ data }) {
 
   return (
     <div className="project-page-container">
-    <div className="grey-line" />
+      <div className="grey-line" />
       <h1>Our Projects</h1>
       {!showAll && (
         <>
@@ -42,37 +42,77 @@ export function ProjectCardGrid({ data }) {
 
 function Pcard({ project }) {
   const navigate = useNavigate();
+  let project1 = {};
+  if (project !== undefined) {
+    project1 = project;
+  }
+
+  useEffect(() => {}, [project]);
   const handleClick = () => {
-    navigate(project.link);
+    const path =
+      window.location.pathname +
+      "/" +
+      project.name.replace(/ /g, "").toLowerCase();
+    navigate(path);
   };
+  const [heartFilterStyle, setHeartFilterStyle] = useState({});
+  function changeHeartFilterStyle() {
+    if (heartFilterStyle.filter === undefined) {
+      setHeartFilterStyle({
+        filter: "invert(30%) sepia() saturate(2000%) hue-rotate(0deg)",
+      });
+    } else {
+      setHeartFilterStyle({});
+    }
+  }
+
+  console.log(project1);
 
   return (
     <div className="project-cards-container">
       <div className="project-img-gallery">
         <img
           className="big-img"
-          src={process.env.PUBLIC_URL + project.img}
+          src={process.env.PUBLIC_URL + project1.img1}
           alt="non profit image"
         />
         <img
           className="small-img"
-          src={process.env.PUBLIC_URL + project.img}
+          src={process.env.PUBLIC_URL + project1.img2}
           alt="non profit image"
         />
         <img
-          src={process.env.PUBLIC_URL + project.img}
+          className="small-img"
+          src={process.env.PUBLIC_URL + project1.img3}
           alt="non profit image"
         />
       </div>
 
       <div className="project-text-content">
-        <h3>{project.name}</h3>
-        <p className="project-start-p">PROJECT START {project.established}</p>
-        <div>
-          <p>{project.info1}</p>
-          <p>{project.info2}</p>
+        <div className="top-flex-content">
+          <h3>{project1.name}</h3>
+          <div className="add-favorites">
+            <span onClick={changeHeartFilterStyle}>
+              <img
+                className="heart-png"
+                src={process.env.PUBLIC_URL + "/img/projects/heart.png"}
+                alt="heart img"
+                style={heartFilterStyle}
+              />
+              Add to favorites
+            </span>
+          </div>
         </div>
-        <button onClick={handleClick}>Go to project</button>
+
+        <p className="project-start-p">PROJECT START {project1.established}</p>
+        <div>
+          <p>{project1.info1}</p>
+          <p>{project1.info2}</p>
+        </div>
+        <div className={"button-container"}>
+          <button onClick={handleClick}>Go to project</button>
+          <button onClick={handleClick}>Donate</button>
+        </div>
       </div>
       <span className="split-line"></span>
     </div>

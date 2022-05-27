@@ -1,0 +1,66 @@
+/* Main div */
+.nonProfit-search-container{
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Navbar */
+.nonProfit-search-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nonprofit-firma-name {
+  margin-right: 20%;
+}
+
+.nonprofit-firma-name h5:first-child {
+  margin-bottom: 5px;
+}
+.nonprofit-firma-name h5 {
+  margin-bottom: 0;
+}
+.appbar.on-top {
+  background: transparent;
+  z-index: 1;
+}
+
+/* Hero */
+.nonProfit-search-hero {
+  height: 60vh;
+  color: #eaeaea;
+  position: relative;
+}
+
+.nonProfit-search-hero-text {
+  position: absolute;
+  bottom: 10vh;
+  left: 10%;
+}
+
+.nonProfit-search-hero-text p {
+  line-height: 1;
+  font-size: 17px;
+}
+
+.nonProfit-search-hero-text h1 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.nonProfit-search-hero-text h1:last-of-type {
+  margin-bottom: 10%;
+}
+
+/* Categories */
+
+.nonProfit-search-categories h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 34px;
+}
+
+.nonProfit-search-categories {
+  width: 80vw;
+  margin: 8rem auto 8rem auto;
+}

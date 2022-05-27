@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./Menu.css";
+import React, { useEffect, useRef, useState } from "react";
+import "./menu.css";
 
 //Icons
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
@@ -47,7 +47,6 @@ export default function Menu() {
                 direction="right"
                 toggled={navbarOpen}
                 toggle={setNavbarOpen}
-                size={25}
               />
             </div>
             <div className="personIcon buttonSymbol">

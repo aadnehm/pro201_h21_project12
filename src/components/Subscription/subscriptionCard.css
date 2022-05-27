@@ -37,7 +37,7 @@ h4 {
 
 .subscription-model-grid .sub-card {
   position: relative;
-  border: 2.5px solid black;
+  border: 2px solid black;
   /*   transition: 300ms;
   transition-timing-function: ease-in-out; */
   height: 30em;
@@ -113,15 +113,15 @@ h4 {
     height: auto;
   }
   .subscription-model-grid .sub-card {
-    margin: 0em auto;
+    margin: 0 auto;
     width: 78vw;
     max-width: 30em;
   }
   .subscription-model-grid .popular-box {
-    margin: 2em 3.5em 0em;
+    margin: 2em 3.5em 0;
   }
   .subscription-model-grid .ghost-box {
-    margin: 0em 3.5em 0em;
+    margin: 0 3.5em 0;
   }
 }
 @media screen and (max-width: 900px) {

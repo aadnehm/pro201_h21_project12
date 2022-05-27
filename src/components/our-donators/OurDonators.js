@@ -1,5 +1,5 @@
 import React from "react";
-import "./ourDonators.css";
+import "./our-donators.css";
 
 function OurDonators() {
   const logoVy = "/img/non-profit/vy.png";
@@ -15,19 +15,25 @@ function OurDonators() {
           company={"VY"}
           project={"Project1"}
           donations={"1000"}
-        ></DonatorCard>
+        />
         <DonatorCard
           img={logoShell}
           company={"Shell"}
           project={"Project1"}
           donations={"1000"}
-        ></DonatorCard>
+        />
         <DonatorCard
           img={logoIss}
           company={"ISS"}
           project={"Project1"}
           donations={"1000"}
-        ></DonatorCard>
+        />
+        <DonatorCard
+          img={logoIss}
+          company={"ISS"}
+          project={"Project1"}
+          donations={"1000"}
+        />
       </div>
       <div className="donators-logo-wrapper">
         <DonatorCard
@@ -35,19 +41,25 @@ function OurDonators() {
           company={"VY"}
           project={"Project1"}
           donations={"1000"}
-        ></DonatorCard>
+        />
         <DonatorCard
           img={logoShell}
           company={"Shell"}
           project={"Project1"}
           donations={"1000"}
-        ></DonatorCard>
+        />
         <DonatorCard
           img={logoIss}
           company={"ISS"}
           project={"Project1"}
           donations={"1000"}
-        ></DonatorCard>
+        />
+        <DonatorCard
+          img={logoIss}
+          company={"ISS"}
+          project={"Project1"}
+          donations={"1000"}
+        />
       </div>
     </div>
   );

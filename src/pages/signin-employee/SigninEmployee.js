@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 //CSS
@@ -7,9 +7,9 @@ import "./signinEmployee.css";
 import PasswordInput from "../../components/Login-Signup/input-fields/PasswordInput";
 import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
 //MUI
-import { Button, TextField, Box } from "@mui/material/";
+import { Button, TextField } from "@mui/material/";
 //Firebase
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import db from "../../lib/firebase";
 import { addDoc, collection } from "firebase/firestore";
 
@@ -127,7 +127,7 @@ export default function SigninEmployee() {
     const auth = getAuth();
     const temp = companies.filter((element) => element.firmakode === code);
     if (validateInputs()) {
-      if (temp.length == 1) {
+      if (temp.length === 1) {
         await createUserWithEmailAndPassword(
           auth,
           dataEpost,

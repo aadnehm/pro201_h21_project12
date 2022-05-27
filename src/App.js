@@ -1,30 +1,28 @@
-//Componentes
-import SigninEmployee from "./pages/signin-employee/SigninEmployee";
-import SubscriptionPage from "./pages/SubscriptionPage/SubscriptionPage";
-import CreateAccountPage from "./pages/SubscriptionPage/CreateAccountPage";
-import PaymentPage from "./pages/SubscriptionPage/PaymentPage";
-import NonProfit from "./pages/non-profit/NonProfitMain";
-import NonProfitProject from "./pages/non-profit/NonprofitProject";
-import InsideStories from "./components/non-profit-pages/InsideStories";
+//Components
+import NonProfit from "./pages/non-profit-single/NonProfitSingle";
+
+import InsideStories from "./components/inside-stories/InsideStories";
 
 //Global CSS
 import "./App.css";
 //MUI
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 //React
-import { Routes, Route } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import React from "react";
+import { motion } from "framer-motion";
 //Firebase
-import db from "./lib/firebase";
-import Footer from "./components/Footer/Footer";
-import NavTabs from "./components/non-profit-tabs/NpTabs";
-
-import AboutUs from "./components/AboutUs/AboutUs";
+import { FrontPage } from "./pages/front-page/FrontPage";
 import {
   ButtonAppBar,
-  NonProfitSearch,
-} from "./pages/nonProfitSearch/NonProfitSearch";
-import { FrontPage } from "./pages/frontPage/frontPage";
+  NonProfitAll,
+} from "./pages/non-profit-all/NonProfitAll";
+import { Projects } from "./pages/projects/ProjectMainLayout";
+import Login from "./pages/login/Login";
+import AboutUs from "./components/about-us/AboutUs";
+import NavTabs from "./components/non-profit-tabs/NpTabs";
+import Footer from "./components/footer/Footer";
+import { useLocation } from "react-router";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -46,55 +44,49 @@ const mainColor = createTheme({
   },
 });
 
+function NavbarFooter(props) {
+  const transition = { duration: 0.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
+  return (
+    <>
+      <ButtonAppBar />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.1 }}
+        transition={transition}
+      >
+        {props.page}
+      </motion.div>
+      <Footer />
+    </>
+  );
+}
+
 function App() {
-  //Pulling non-profits from cloud database and storing it in state that gets passed
-  //to SearchNonProfits-page
-  const fetchOrgs = async () => {
-    const response = db.collection("nonprofits");
-    const data = await response.get();
-    data.forEach((element) => {
-      setOrgs((prevValue) => [...prevValue, element.data()]);
-    });
-  };
-  const [orgs, setOrgs] = useState([]);
-  const [selectedOrg, setSelectedOrg] = useState();
-
-  useEffect(() => {
-    fetchOrgs();
-  }, []);
-
+  const location = useLocation();
   return (
     <ThemeProvider theme={mainColor}>
       <div className="App">
-        <ButtonAppBar />
-        <Routes>
-          <Route path="/" element={<FrontPage />} />
-          <Route path="/nonprofits" element={<NonProfitSearch />} />
-          <Route path="/signin-employee" element={<SigninEmployee />} />
-          <Route path="/choose-subscription" element={<SubscriptionPage />} />
-          <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/create-account" element={<CreateAccountPage />} />
-
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<NavbarFooter page={<FrontPage />} />} />
           <Route
-            path="/non-profit"
-            element={<NonProfit selectedOrg={selectedOrg} />}
+            path="/nonprofits"
+            element={<NavbarFooter page={<NonProfitAll />} />}
           />
-          <Route path="/non-profit/:nonprofit" element={<NonProfit />} />
-
           <Route
-            path="/non-project"
-            element={<NonProfitProject selectedOrg={selectedOrg} />}
+            path="/nonprofit/:nonprofit"
+            element={<NavbarFooter page={<NonProfit />} />}
           />
-          {/* <Route
-            path="/nonprofithome"
-            element={<NonProfitHome selectedOrg={selectedOrg} />}
-          /> */}
-          {/*Terje's test-route */}
-          <Route path="/aboutTest" element={<AboutUs />} />
+          <Route
+            path="/nonprofit/:nonprofit/:project"
+            element={<NavbarFooter page={<Projects />} />}
+          />
+          <Route path="/login" element={<Login />} />
+          <Route path="/*" element={<h1>Not found 404</h1>} />
           <Route path="/tabsTest" element={<NavTabs />} />
           <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
-        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -1,0 +1,248 @@
+.home-header1{
+    height: 80vh;
+    color: #eaeaea;
+    position: relative;
+}
+.home-header1 .home-header1-content{
+    position: absolute;
+    bottom: 50vh;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+.home-header1 .home-header1-content button{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    width: 300px;
+    font-weight: 500;
+    transition: transform .2s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.home-header1 .home-header1-content button:first-of-type {
+    background: #F69F37;
+    color: #FAFAFA;
+    margin-bottom: 20px;
+}
+.home-header1 .home-header1-content button:last-of-type {
+    background: #FAFAFA;
+    color: #333333;
+}
+
+.home-header1 .home-header1-content button:hover{
+    transform: scale(1.1);
+}
+
+.home-header1-content h1{
+    font-size: 80px;
+    margin: auto auto 3vh auto;
+    width: fit-content;
+}
+
+.home-header1-content h4{
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.newest-nonprofit-card{
+    display: flex;
+    width: 400px;
+    transition: .2s linear;
+    border-radius: 20px;
+}
+
+.newest-nonprofit-card:hover{
+    transform: scale(1.1);
+    background: lightgray;
+    cursor: pointer;
+}
+
+
+.newest-nonprofits-cardgrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.person-cardgrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+
+
+.newest-nonprofit-card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.newest-nonprofit-card div p:first-of-type{
+    color: #333333;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.newest-nonprofit-card div p:last-of-type{
+    color: #777777;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 600;
+}
+.frontpage-content{
+    width: 80vw;
+    margin: 60px auto auto auto;
+}
+
+.newest-nonprofit-card-text{
+    justify-content: center;
+    height: fit-content;
+    margin: auto 0 auto 0;
+}
+
+.newest-nonprofit-card{
+    margin: 10px 0 10px 0;
+}
+.data-card p:first-of-type{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.data-card img{
+    width: 23vw;
+    height: 23vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choose-subscription-content{
+    border-radius: 30px;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.choose-subscription-content-text{
+    color: #FAFAFA;
+    width: fit-content;
+    margin-left: 10vw;
+}
+
+
+.choose-subscription-content-text button{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+    font-weight: 500;
+    transition: transform .2s;
+    background: #FAFAFA;
+    color: #333333;
+}
+
+
+.choose-subscription-content-text button:hover{
+    transform: scale(1.1);
+}
+
+.impact-statements{
+    margin-top: 70px;
+}
+.who-are-we{
+    margin-top: 70px;
+}
+
+.curated-nonprofits-content{
+    color: #FAFAFA;
+    width: 50vw;
+    height: 80vh;
+    background-color: #333333;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.curated-nonprofits-text{
+    width: 40vw;
+    margin: auto;
+}
+
+.curated-nonprofits-content h1{
+    font-size: 60px;
+}
+.curated-nonprofits-content p{
+    font-size: 20px;
+}
+
+.curated-nonprofits-content button{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+    font-weight: 500;
+    transition: transform .2s;
+    background: #F69F37;
+    color: #FEFEFE;
+}
+
+.curated-nonprofits-content button:hover{
+    transform: scale(1.1);
+}
+
+
+.community-content{
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.community-text{
+    width: 40vw;
+    margin: auto;
+    color: #333333
+}
+
+.community-text h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.community-text button{
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+    font-weight: 500;
+    transition: transform .2s;
+    background: #F69F37;
+    color: #FEFEFE;
+}
+
+.community-text button:hover{
+    transform: scale(1.1);
+}
+
+.community-text input{
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 500;
+    transition: transform .2s;
+    border: solid 2px black;
+}

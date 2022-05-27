@@ -5,7 +5,7 @@ import "./login/login.css";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 
 const SignupLogic = () => {
   const [email, setEmail] = useState("");
@@ -38,12 +38,8 @@ const SignupLogic = () => {
     <>
       <div>
         {error && <p>{error}</p>}
-        <input label="E-mail" value={email} onChange={handleEmail}></input>
-        <input
-          label="Passowrd"
-          value={password}
-          onChange={handlePassword}
-        ></input>
+        <input value={email} onChange={handleEmail}></input>
+        <input value={password} onChange={handlePassword}></input>
       </div>
       <div>
         <Button
