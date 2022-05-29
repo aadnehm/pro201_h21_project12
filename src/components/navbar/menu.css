@@ -138,15 +138,14 @@
   margin-bottom: 1rem;
 }
 
+
+.personIcon {
+  margin-left: 10px;
+}
+
 .buttonSymbol {
   float: left;
   color: #333;
-}
-
-.personIcon {
-  margin-left: 1.5vw;
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
 }
 
 .logoutBtn {
