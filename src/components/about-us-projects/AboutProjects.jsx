@@ -39,8 +39,8 @@ export default function AboutProjects({ project }) {
           </p>
         </div>
         <div className="companies-testemonials-grid">
-          {project.testemonials.map((testemonial) => (
-            <TestemonialsCard testemonial={testemonial} />
+          {project.testemonials.map((testemonial, index) => (
+            <TestemonialsCard key={index} testemonial={testemonial} />
           ))}
         </div>
       </div>

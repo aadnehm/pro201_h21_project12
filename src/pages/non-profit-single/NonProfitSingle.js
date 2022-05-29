@@ -6,7 +6,8 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "./non-profit-single.css";
 import InsideStories from "../../components/inside-stories/InsideStories";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
+import { goToTop } from "../../lib/toTop";
 import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
@@ -85,8 +86,7 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
-  console.log("Choosen Nonprofit")
-  console.log(props.data)
+  const navigate = useNavigate();
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -132,6 +132,21 @@ function NavTabs(props) {
           label="Our donators"
           {...a11yProps(4)}
         />
+        <button
+          style={{
+            marginRight: 0,
+            marginLeft: "auto",
+            border: "none",
+            background: "transparent",
+            fontWeight: "600",
+          }}
+          onClick={() => {
+            navigate("/nonprofits");
+            goToTop();
+          }}
+        >
+          {"Back to all non-profits"}
+        </button>
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutUs data={props.data} />
