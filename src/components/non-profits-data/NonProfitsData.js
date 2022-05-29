@@ -42,6 +42,9 @@ const dummyProjects = [
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     testemonials: testemonials,
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
+    img3: "/img/projects/project-nepal/3.png",
   },
   {
     id: "1",
@@ -62,6 +65,9 @@ const dummyProjects = [
     whatWeDo2:
       "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
     testemonials: testemonials,
+    img1: "/img/projects/project-back-to-school/1.png",
+    img2: "/img/projects/project-back-to-school/2.png",
+    img3: "/img/projects/project-back-to-school/3.png",
   },
   {
     id: "1",
