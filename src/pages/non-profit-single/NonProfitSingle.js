@@ -85,6 +85,8 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
+  console.log("Choosen Nonprofit")
+  console.log(props.data)
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {

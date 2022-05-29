@@ -119,6 +119,8 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
+  console.log("Choosen Project")
+  console.log(props.data)
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
 
@@ -181,12 +183,11 @@ function NavTabs(props) {
           {"Back to " + props.nonProfit.name}
         </button>
       </Tabs>
-
       <TabPanel value={value} index={0}>
         <AboutProjects project={props.data} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <InsideStories project={props.data} />
+        <InsideStories selectedNonProfit={props.data} />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <OurProjectDonators project_name={props.data.name} />

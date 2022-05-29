@@ -1,159 +1,95 @@
-// array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
-// same ID as Redd Barna if needed.
+const projectStoriesData = [
+  {
+    id: "1",
+    link: "https://youtu.be/dQw4w9WgXcQ",
+    title: "Michael Stevens",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
+  },
 
-const testemonials = [
   {
-    name: "Foodora",
-    text: "The collaboration with Save the Children is well established among Foodora`s committed employees. A large proportion of the employees at Foodora Norway give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
-    img: "/img/testemonials/foodora.png",
+    id: "2",
+    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
+    title: "Torstein Horgmo",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
+
   {
-    name: "Avinor",
-    text: "The collaboration with Save the Children is well established among Avinor`s committed employees. A large proportion of the employees at Avinor give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
-    img: "/img/testemonials/avinor.png",
+    id: "3",
+    link: "https://youtu.be/dQw4w9WgXcQ",
+    title: "Rick Astley",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
+
   {
-    name: "Colombus",
-    text: "The collaboration with Save the Children is well established among Colombus committed employees. A large proportion of the employees at Columbus give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
-    img: "/img/testemonials/columbus.jpeg",
+    id: "4",
+    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
+    title: "Michael Stevens",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
+
   {
-    name: "DNB Bank",
-    text: "The collaboration with Save the Children is well established among DNB Bank`s committed employees. A large proportion of the employees at DNB Bank give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
-    img: "/img/testemonials/dnb.png",
+    id: "5",
+    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
+    title: "Michael Stevens",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
+  },
+
+  {
+    id: "6",
+    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
+    title: "Michael Stevens",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
+  },
+
+  {
+    id: "7",
+    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
+    title: "Michael Stevens",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
+  },
+
+  {
+    id: "8",
+    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
+    title: "Michael Stevens",
+    about: "Hurr de durr",
+    longText:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
+  },
+
+  {
+    id: "9",
+    link: "https://youtu.be/dQw4w9WgXcQ",
+    title: "Michael Stevens",
+    about: "This is Michael Stevens video on love. A philosophy.",
+    longText:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
+  },
+
+  {
+    id: "10",
+    link: "https://youtu.be/dQw4w9WgXcQ",
+    title: "Michael Stevens",
+    about: "This is Michael Stevens video on love. A philosophy.",
+    longText:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 ];
 
-const dummyProjects = [
-  {
-    name: "Project Nepal",
-    established: "30.0.2012",
-    info1:
-      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate ",
-    info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
-    headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-    imgText:
-      "- The 'e-lab' is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
-    whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    testemonials: testemonials,
-    img1: "/img/projects/project-nepal/1.png",
-    img2: "/img/projects/project-nepal/2.png",
-    img3: "/img/projects/project-nepal/3.png",
-  },
-  {
-    id: "1",
-    img: "/img/eksempelbilde2.png",
-    name: "Water Supply Kongo",
-    established: "11.04.2014",
-    info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
-    link: "/",
-    headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-    imgText:
-      "- Water Supply Kongo provides fresh water to thousands of families in Kongo. Water means life and life means Rick Astley",
-    whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    testemonials: testemonials,
-    img1: "/img/projects/project-back-to-school/1.png",
-    img2: "/img/projects/project-back-to-school/2.png",
-    img3: "/img/projects/project-back-to-school/3.png",
-  },
-  {
-    id: "1",
-    img: "/img/eksempelbilde3.png",
-    name: "Summer Youth Camps",
-    established: "01.05.2010",
-    info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non",
-    info2:
-      "With this project, your company can help improve children's access to education, participation in school and a better learning outcome for girls, marginalized and excluded children. Save the Children also contributes with school materials, education for teachers and parent education.",
-    headerInfo:
-      "With this project, your company can help improve children's access to education.",
-    img1: "/img/projects/project-nepal/1.png",
-    img2: "/img/projects/project-nepal/2.png",
-    img3: "/img/projects/project-nepal/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-    imgText:
-      "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
-    whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    testemonials: testemonials,
-  },
-  {
-    name: "Project Somalia",
-    established: "30.09.2020",
-    info1:
-      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living.",
-    info2:
-      "Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked.",
-    headerInfo:
-      "Education gives girls in Nepal a second chance and they are better protected ",
-    img1: "/img/projects/project-somalia/1.png",
-    img2: "/img/projects/project-somalia/2.png",
-    img3: "/img/projects/project-somalia/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-    imgText:
-      "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
-    whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    testemonials: testemonials,
-  },
-  {
-    name: "Project Myanmar",
-    established: "02.01.2018",
-    info1:
-      "The project in Myanmar focuses on children's learning and safety at school, as well as promoting children's rights. The project is implemented in two regions, Magway and Kayah, and aims to reach 56,000 children in 180 schools.",
-    info2:
-      "In education, we will improve children's reading and writing skills, ensure that schools are safe for children, ensure access to schools for vulnerable groups and improve the quality of the learning environment in schools.",
-    headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-    img1: "/img/projects/project-myanmar/1.png",
-    img2: "/img/projects/project-myanmar/2.png",
-    img3: "/img/projects/project-myanmar/3.png",
-    imgText:
-      "- Saving Chiou is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
-    whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    testemonials: testemonials,
-  },
-  {
-    name: "Project Back to School",
-    established: "16.05.2019",
-    info1:
-      "The pandemic has created one of the biggest educational crises in history. During the worst period of the pandemic, 1.6 billion children disrupted their education. Millions of children are out of school today.",
-    info2:
-      "The longer children are out of school, the less likely they are to return. This can affect children for the rest of their lives. Without school, children are at risk of being married off, forced into child labor and losing their future.",
-    headerInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
-    img1: "/img/projects/project-back-to-school/1.png",
-    img2: "/img/projects/project-back-to-school/2.png",
-    img3: "/img/projects/project-back-to-school/3.png",
-    imgText:
-      "- School for All is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
-    whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
-    testemonials: testemonials,
-  },
-];
 
 const insideStoriesData = [
   {
@@ -263,27 +199,6 @@ const insideStoriesData = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 ];
-
-const posterData = [
-  {
-    id: "1",
-    info: "Read about how Foodora have made a massive impact through our project",
-    image: "/img/insidestories/other-children-insidestories.jpg",
-  },
-
-  {
-    id: "2",
-    info: "We do stuff to people. Mostly good stuff. Read about ONLY the good stuff here!",
-    image: "/img/frontpage/frontpage-community.png",
-  },
-
-  {
-    id: "3",
-    info: "Read about how Foodora have made a massive impact through our project",
-    image: "/img/insidestories/other-children-insidestories.jpg",
-  },
-];
-
 const articleData = [
   {
     id: "1",
@@ -340,97 +255,210 @@ const articleData = [
   },
 ];
 
-const projectStoriesData = [
+
+const posterData = [
   {
     id: "1",
-    link: "https://youtu.be/dQw4w9WgXcQ",
-    title: "Michael Stevens",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
+    info: "Read about how Foodora have made a massive impact through our project",
+    image: "/img/insidestories/other-children-insidestories.jpg",
   },
 
   {
     id: "2",
-    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
-    title: "Torstein Horgmo",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
+    info: "We do stuff to people. Mostly good stuff. Read about ONLY the good stuff here!",
+    image: "/img/frontpage/frontpage-community.png",
   },
 
   {
     id: "3",
-    link: "https://youtu.be/dQw4w9WgXcQ",
-    title: "Rick Astley",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
-  },
-
-  {
-    id: "4",
-    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
-    title: "Michael Stevens",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
-  },
-
-  {
-    id: "5",
-    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
-    title: "Michael Stevens",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
-  },
-
-  {
-    id: "6",
-    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
-    title: "Michael Stevens",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
-  },
-
-  {
-    id: "7",
-    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
-    title: "Michael Stevens",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
-  },
-
-  {
-    id: "8",
-    link: "https://www.youtube.com/watch?v=U6lpBi39N78",
-    title: "Michael Stevens",
-    about: "Hurr de durr",
-    longText:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
-  },
-
-  {
-    id: "9",
-    link: "https://youtu.be/dQw4w9WgXcQ",
-    title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
-    longText:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
-  },
-
-  {
-    id: "10",
-    link: "https://youtu.be/dQw4w9WgXcQ",
-    title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
-    longText:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
+    info: "Read about how Foodora have made a massive impact through our project",
+    image: "/img/insidestories/other-children-insidestories.jpg",
   },
 ];
+
+
+// array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
+// same ID as Redd Barna if needed.
+
+const testemonials = [
+  {
+    name: "Foodora",
+    text: "The collaboration with Save the Children is well established among Foodora`s committed employees. A large proportion of the employees at Foodora Norway give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/foodora.png",
+  },
+  {
+    name: "Avinor",
+    text: "The collaboration with Save the Children is well established among Avinor`s committed employees. A large proportion of the employees at Avinor give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/avinor.png",
+  },
+  {
+    name: "Colombus",
+    text: "The collaboration with Save the Children is well established among Colombus committed employees. A large proportion of the employees at Columbus give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/columbus.jpeg",
+  },
+  {
+    name: "DNB Bank",
+    text: "The collaboration with Save the Children is well established among DNB Bank`s committed employees. A large proportion of the employees at DNB Bank give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/dnb.png",
+  },
+];
+
+const dummyProjects = [
+  {
+    name: "Project Nepal",
+    established: "30.0.2012",
+    info1:
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate ",
+    info2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+    link: "/",
+    headerInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- The 'e-lab' is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
+    img3: "/img/projects/project-nepal/3.png",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    articles: articleData,
+    posters: posterData
+  },
+  {
+    id: "1",
+    img: "/img/eksempelbilde2.png",
+    name: "Water Supply Kongo",
+    established: "11.04.2014",
+    info1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+    info2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+    link: "/",
+    headerInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Water Supply Kongo provides fresh water to thousands of families in Kongo. Water means life and life means Rick Astley",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+    img1: "/img/projects/project-back-to-school/1.png",
+    img2: "/img/projects/project-back-to-school/2.png",
+    img3: "/img/projects/project-back-to-school/3.png",
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    articles: articleData,
+    posters: posterData
+  },
+  {
+    id: "1",
+    img: "/img/eksempelbilde3.png",
+    name: "Summer Youth Camps",
+    established: "01.05.2010",
+    info1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non",
+    info2:
+      "With this project, your company can help improve children's access to education, participation in school and a better learning outcome for girls, marginalized and excluded children. Save the Children also contributes with school materials, education for teachers and parent education.",
+    headerInfo:
+      "With this project, your company can help improve children's access to education.",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
+    img3: "/img/projects/project-nepal/3.png",
+      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    articles: articleData,
+    posters: posterData
+  },
+  {
+    name: "Project Somalia",
+    established: "30.09.2020",
+    info1:
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living.",
+    info2:
+      "Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked.",
+    headerInfo:
+      "Education gives girls in Nepal a second chance and they are better protected ",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
+    img3: "/img/projects/project-somalia/3.png",
+      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    articles: articleData,
+    posters: posterData
+  },
+  {
+    name: "Project Myanmar",
+    established: "02.01.2018",
+    info1:
+      "The project in Myanmar focuses on children's learning and safety at school, as well as promoting children's rights. The project is implemented in two regions, Magway and Kayah, and aims to reach 56,000 children in 180 schools.",
+    info2:
+      "In education, we will improve children's reading and writing skills, ensure that schools are safe for children, ensure access to schools for vulnerable groups and improve the quality of the learning environment in schools.",
+    headerInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
+    img3: "/img/projects/project-myanmar/3.png",
+    imgText:
+      "- Saving Chiou is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    articles: articleData,
+    posters: posterData
+  },
+  {
+    name: "Project Back to School",
+    established: "16.05.2019",
+    info1:
+      "The pandemic has created one of the biggest educational crises in history. During the worst period of the pandemic, 1.6 billion children disrupted their education. Millions of children are out of school today.",
+    info2:
+      "The longer children are out of school, the less likely they are to return. This can affect children for the rest of their lives. Without school, children are at risk of being married off, forced into child labor and losing their future.",
+    headerInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    img1: "/img/projects/project-back-to-school/1.png",
+    img2: "/img/projects/project-back-to-school/2.png",
+    img3: "/img/projects/project-back-to-school/3.png",
+    imgText:
+      "- School for All is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+    insideStories: insideStoriesData,
+    projectStories: projectStoriesData,
+    articles: articleData,
+    posters: posterData
+  },
+];
+
+
 
 const nonProfitValues = [
   {

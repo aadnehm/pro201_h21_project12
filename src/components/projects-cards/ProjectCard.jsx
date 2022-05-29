@@ -66,7 +66,6 @@ function Pcard({ project }) {
     }
   }
 
-  console.log(project1);
 
   return (
     <div className="project-cards-container">

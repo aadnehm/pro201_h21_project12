@@ -3,7 +3,6 @@ import "./about-project.css";
 import TimeLine from "./TimeLine";
 
 export default function AboutProjects({ project }) {
-  console.log(project)
   return (
     <>
       <div className="about-component-container">
