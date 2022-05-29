@@ -1,5 +1,7 @@
 import "./about-us.css";
 import { useState } from "react";
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 export default function AboutUs(props) {
   const [moreEnabled, setMoreEnabled] = useState(false);
@@ -27,7 +29,7 @@ export default function AboutUs(props) {
               )}
             </article>
             <div className="about-header show-more " onClick={handleMore}>
-              {moreEnabled ? "Show less" : "Show more"}
+              {moreEnabled ? (<ArrowCircleUpIcon/>):(<div>Show more <ArrowCircleDownIcon/></div>)}
             </div>
           </div>
           <div className="about-text-image">
