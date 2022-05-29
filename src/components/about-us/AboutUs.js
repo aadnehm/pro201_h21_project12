@@ -29,7 +29,7 @@ export default function AboutUs(props) {
               )}
             </article>
             <div className="about-header show-more " onClick={handleMore}>
-              {moreEnabled ? (<ArrowCircleUpIcon/>):(<div>Show more <ArrowCircleDownIcon/></div>)}
+              {moreEnabled ? (<ArrowCircleUpIcon/>):(<div><ArrowCircleDownIcon/> Show more</div>)}
             </div>
           </div>
           <div className="about-text-image">
