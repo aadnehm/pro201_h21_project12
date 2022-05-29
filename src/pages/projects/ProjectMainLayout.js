@@ -111,12 +111,20 @@ export function Projects() {
   );
 }
 
+const goToTabs = () => {
+  window.scrollTo({
+    top: window.innerHeight * 0.6,
+    behavior: "smooth",
+  });
+};
+
 function NavTabs(props) {
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    goToTabs();
   };
   const CustomTab = withStyles({
     root: {

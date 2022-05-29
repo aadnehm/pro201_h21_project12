@@ -116,22 +116,21 @@
 }
 .contact-footer{
     display: flex;
-    width: 100%;
-    padding-top: 3rem;
-    margin-bottom: 3rem;
+    justify-content: space-between;
 }
-.about-location-wrapper{
-    width: 50%;
-}
+
 .about-location-wrapper div{
-    padding-bottom: 1rem;
+   margin: 3% 0;
 }
-.about-contactinfo-wrapper div{
-    padding-bottom: 1rem;
-}
+
+.about-contactinfo-wrapper .about-header{
+    margin: 3% 0;
+ }
+
+
 .about-location-map{
     height: 400px;
-    width: 400px;
+    width: 700px;
 }
 .about-header{
     font-weight: bold;

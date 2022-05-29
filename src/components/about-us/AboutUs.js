@@ -114,13 +114,13 @@ export default function AboutUs(props) {
               />
             </div>
             <div className="about-contactinfo-wrapper">
-              <div className={"about-header"}>Contact Info</div>
+              <div className={"about-header"}>Post-Address</div>
               <div>Redd Barna</div>
               <div>Postboks 0492 St. Olavs Plass</div>
               <div>0130 Oslo</div>
-              <div />
+              <div className={"about-header"}>Telephone</div>
               <div>(+47) 22 99 09 00</div>
-              <div />
+              <div className={"about-header"}>Email</div>
               <div>giverservice@reddbarna.no</div>
               <div>post@reddbarna.no</div>
             </div>

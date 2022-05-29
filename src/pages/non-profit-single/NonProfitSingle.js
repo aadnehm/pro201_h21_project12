@@ -135,16 +135,16 @@ function NavTabs(props) {
         <AboutUs data={props.data} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <ProjectCardGrid data={props.data} />
+        <ProjectCardGrid data={props.data}/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <InsideStories selectedNonProfit={props.data} />
+        <InsideStories selectedNonProfit={props.data}/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <WhatYouGet />
+        <WhatYouGet/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <OurDonators />
+        <OurDonators/>
       </TabPanel>
     </Box>
   );
