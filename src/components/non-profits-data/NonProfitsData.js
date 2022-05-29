@@ -1,11 +1,75 @@
 // array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
 // same ID as Redd Barna if needed.
+
+const testemonials = [
+  {
+    name: "Foodora",
+    text: "The collaboration with Save the Children is well established among Foodora`s committed employees. A large proportion of the employees at Foodora Norway give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/foodora.png",
+  },
+  {
+    name: "Avinor",
+    text: "The collaboration with Save the Children is well established among Avinor`s committed employees. A large proportion of the employees at Avinor give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/avinor.png",
+  },
+  {
+    name: "Colombus",
+    text: "The collaboration with Save the Children is well established among Colombus committed employees. A large proportion of the employees at Columbus give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/columbus.jpeg",
+  },
+  {
+    name: "DNB Bank",
+    text: "The collaboration with Save the Children is well established among DNB Bank`s committed employees. A large proportion of the employees at DNB Bank give a fixed amount to Save the Children every month through payroll. This money goes to Project Somalia. We have seen that our employees take greater pride in working for Foodora.",
+    img: "/img/testemonials/dnb.png",
+  },
+];
+
 const dummyProjects = [
   {
     name: "Project Nepal",
     established: "30.0.2012",
     info1:
-      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. ",
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate ",
+    info2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+    link: "/",
+    headerInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- The 'e-lab' is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+  },
+  {
+    id: "1",
+    img: "/img/eksempelbilde2.png",
+    name: "Water Supply Kongo",
+    established: "11.04.2014",
+    info1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+    info2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+    link: "/",
+    headerInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Water Supply Kongo provides fresh water to thousands of families in Kongo. Water means life and life means Rick Astley",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
+  },
+  {
+    id: "1",
+    img: "/img/eksempelbilde3.png",
+    name: "Summer Youth Camps",
+    established: "01.05.2010",
+    info1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non",
     info2:
       "With this project, your company can help improve children's access to education, participation in school and a better learning outcome for girls, marginalized and excluded children. Save the Children also contributes with school materials, education for teachers and parent education.",
     headerInfo:
@@ -13,6 +77,14 @@ const dummyProjects = [
     img1: "/img/projects/project-nepal/1.png",
     img2: "/img/projects/project-nepal/2.png",
     img3: "/img/projects/project-nepal/3.png",
+      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     name: "Project Somalia",
@@ -26,6 +98,14 @@ const dummyProjects = [
     img1: "/img/projects/project-somalia/1.png",
     img2: "/img/projects/project-somalia/2.png",
     img3: "/img/projects/project-somalia/3.png",
+      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    imgText:
+      "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     name: "Project Myanmar",
@@ -39,6 +119,13 @@ const dummyProjects = [
     img1: "/img/projects/project-myanmar/1.png",
     img2: "/img/projects/project-myanmar/2.png",
     img3: "/img/projects/project-myanmar/3.png",
+    imgText:
+      "- Saving Chiou is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
   {
     name: "Project Back to School",
@@ -52,6 +139,13 @@ const dummyProjects = [
     img1: "/img/projects/project-back-to-school/1.png",
     img2: "/img/projects/project-back-to-school/2.png",
     img3: "/img/projects/project-back-to-school/3.png",
+    imgText:
+      "- School for All is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
+    whatWeDo1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    whatWeDo2:
+      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+    testemonials: testemonials,
   },
 ];
 

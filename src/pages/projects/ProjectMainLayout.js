@@ -11,6 +11,7 @@ import TabPanel from "../../lib/TabPanel";
 import { goToTop } from "../../lib/toTop";
 import InsideStories from "../../components/inside-stories/InsideStories";
 import { OurProjectDonators } from "../../components/Projects-OurDonators/OurDonators";
+import AboutProjects from "../../components/about-us-projects/AboutProjects";
 
 function a11yProps(index) {
   return {
@@ -113,6 +114,7 @@ export function Projects() {
 function NavTabs(props) {
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -131,7 +133,7 @@ function NavTabs(props) {
         marginLeft: "auto",
         transition: "transform .2s",
       }}
-      style={{ display: "flex" }}
+      //style={{ display: "flex" }}
     >
       <Tabs
         value={value}
@@ -151,27 +153,32 @@ function NavTabs(props) {
           label="Our donators"
           {...a11yProps(2)}
         />
+
+        <button
+          style={{
+            marginRight: 0,
+            marginLeft: "auto",
+            border: "none",
+            background: "transparent",
+            fontWeight: "600",
+          }}
+          onClick={() => {
+            navigate(
+              "/nonprofit/" +
+                props.nonProfit.name.replace(/ /g, "").toLowerCase()
+            );
+            goToTop();
+          }}
+        >
+          {"Back to " + props.nonProfit.name}
+        </button>
       </Tabs>
-      <button
-        style={{
-          marginRight: 0,
-          marginLeft: "auto",
-          border: "none",
-          background: "transparent",
-          fontWeight: "600",
-        }}
-        onClick={() => {
-          navigate(
-            "/nonprofit/" + props.nonProfit.name.replace(/ /g, "").toLowerCase()
-          );
-          goToTop();
-        }}
-      >
-        {"Back to " + props.nonProfit.name}
-      </button>
-      <TabPanel value={value} index={0} />
+
+      <TabPanel value={value} index={0}>
+        <AboutProjects project={props.data} />
+      </TabPanel>
       <TabPanel value={value} index={1}>
-        <InsideStories selectedNonProfit={props.nonProfit} />
+        <InsideStories project={props.data} />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <OurProjectDonators project_name={props.data.name} />
