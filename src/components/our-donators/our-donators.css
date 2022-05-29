@@ -16,6 +16,7 @@ font-family: "DM Sans", sans-serif;
 .donators-logo-img{
     height: 250px;
     width: 300px;
+    margin: 10px;
 }
 .donators-logo-img img{
     height: 100%;
