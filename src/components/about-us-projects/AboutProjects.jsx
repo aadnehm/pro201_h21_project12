@@ -3,6 +3,7 @@ import "./about-project.css";
 import TimeLine from "./TimeLine";
 
 export default function AboutProjects({ project }) {
+  console.log(project)
   return (
     <>
       <div className="about-component-container">
@@ -12,7 +13,7 @@ export default function AboutProjects({ project }) {
           className="img-container"
           style={{
             background: `url(${
-              process.env.PUBLIC_URL + project.img
+              process.env.PUBLIC_URL + project.img2
             }) no-repeat center center/cover`,
           }}
         >
