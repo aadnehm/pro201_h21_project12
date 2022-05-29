@@ -6,16 +6,8 @@ export function ProjectCardGrid({ data }) {
   const reddBarnaProjects = data.projects;
   const [showAll, setShowAll] = useState(false);
 
-  const goToTop = () => {
-    window.scrollTo({
-      top: 670,
-      behavior: "smooth",
-    });
-  };
-
   const handleShowAll = () => {
     setShowAll(!showAll);
-    goToTop();
   };
 
   return (
