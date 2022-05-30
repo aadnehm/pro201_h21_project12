@@ -21,7 +21,7 @@ import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
 import AboutUs from "./components/about-us/AboutUs";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
 
 /* Changing default value for secondary color */
