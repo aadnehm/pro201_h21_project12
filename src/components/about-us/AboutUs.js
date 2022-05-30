@@ -1,8 +1,12 @@
 import "./about-us.css";
 import { useState } from "react";
+import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import { motion } from "framer-motion";
 
 export default function AboutUs(props) {
-  console.log(props.data);
+  const transition = { duration: 0.4, ease: [0.6, 0.01, -0.05, 0.9] };
+  
   const [moreEnabled, setMoreEnabled] = useState(false);
   const aboutText =
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloremque eaque illum minus non possimus quia recusandae repellat unde voluptates. Exercitationem, perspiciatis, repudiandae? Architecto culpa, cupiditate, dignissimos enim explicabo facilis illum inventore iure laboriosam molestias nam nemo nostrum optio soluta tempora ullam veritatis voluptates. Ad fugit ipsum libero nisi obcaecati officiis praesentium soluta? Adipisci animi asperiores beatae consequatur doloremque eius est et id, incidunt ipsam iure nisi odio officiis, placeat praesentium quasi qui quis quos suscipit temporibus ullam unde voluptates. Architecto at atque blanditiis consequatur deleniti dolores eaque eos ex expedita explicabo fugit, laudantium maiores molestiae, nemo nesciunt nostrum pariatur quo recusandae reiciendis rem reprehenderit saepe sunt tempora totam vel veritatis voluptas. Debitis ducimus illum ipsum itaque molestias non perspiciatis quibusdam quo voluptate, voluptatibus. ";
@@ -20,20 +24,28 @@ export default function AboutUs(props) {
             <article className={"about-text"}>
               {moreEnabled ? (
                 <div>
-                  <p>{props.data.descriptionShort.substring(0, 350)}</p>
-                  <p>
-                    {props.data.descriptionExtended.substring(
-                      350,
-                      aboutText.length
-                    )}
-                  </p>
+                  <p>{props.data.descriptionShort}</p>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.5 }}
+                    transition={transition}
+                  >
+                    <p>{props.data.descriptionExtended}</p>
+                  </motion.div>
                 </div>
               ) : (
-                props.data.descriptionShort.substring(0, 350)
+                props.data.descriptionShort
               )}
             </article>
             <div className="about-header show-more " onClick={handleMore}>
-              {moreEnabled ? "Show less" : "Show more"}
+              {moreEnabled ? (
+                <ArrowCircleUpIcon />
+              ) : (
+                <div>
+                  <ArrowCircleDownIcon /> Show more
+                </div>
+              )}
             </div>
           </div>
           <div className="about-text-image">
@@ -119,13 +131,13 @@ export default function AboutUs(props) {
               />
             </div>
             <div className="about-contactinfo-wrapper">
-              <div className={"about-header"}>Contact Info</div>
+              <div className={"about-header"}>Post-Address</div>
               <div>Redd Barna</div>
               <div>Postboks 0492 St. Olavs Plass</div>
               <div>0130 Oslo</div>
-              <div />
+              <div className={"about-header"}>Telephone</div>
               <div>(+47) 22 99 09 00</div>
-              <div />
+              <div className={"about-header"}>Email</div>
               <div>giverservice@reddbarna.no</div>
               <div>post@reddbarna.no</div>
             </div>

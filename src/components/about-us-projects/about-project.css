@@ -1,0 +1,66 @@
+.about-component-container {
+  background-color: #fafafa;
+  padding-bottom: 5rem;
+}
+
+.about-component-container h2 {
+  margin: 2rem 0;
+}
+
+.img-container {
+  margin-top: 4rem;
+  border-radius: 10px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.img-text {
+  padding: 70px 30px;
+  background-color: #fefefe;
+  width: 30vw;
+  line-height: 1.8;
+  border-radius: 2rem;
+}
+.what-we-do {
+  margin: 4rem 0;
+  line-height: 1.8;
+}
+
+.timeline-wrapper {
+  height: 70vh;
+  margin-left: 0;
+}
+.testomonials {
+  width: 38vw;
+  margin-top: -5rem;
+}
+.companies-testemonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+}
+.companies-testemonials-grid img {
+  margin-right: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.companies-testemonials-grid .title-and-img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.companies-testemonials-grid p {
+  margin-left: 4em;
+}
+/* utility classes */
+.p-margin {
+  margin: 1rem 0;
+}
+
+.section-margin {
+  margin-bottom: 3rem;
+}

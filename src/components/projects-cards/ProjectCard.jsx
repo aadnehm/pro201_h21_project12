@@ -1,21 +1,15 @@
 import "./project-card.css";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import { motion } from "framer-motion";
 
 export function ProjectCardGrid({ data }) {
+  const transition = { duration: 0.4, ease: [0.6, 0.01, -0.05, 0.9] };
   const reddBarnaProjects = data.projects;
   const [showAll, setShowAll] = useState(false);
 
-  const goToTop = () => {
-    window.scrollTo({
-      top: 670,
-      behavior: "smooth",
-    });
-  };
-
   const handleShowAll = () => {
     setShowAll(!showAll);
-    goToTop();
   };
 
   return (
@@ -31,7 +25,14 @@ export function ProjectCardGrid({ data }) {
 
       {showAll &&
         reddBarnaProjects.map((project, index) => (
-          <Pcard key={index} project={project} />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={transition}
+          >
+            <Pcard key={index} project={project} />
+          </motion.div>
         ))}
       <button className="showAllBtn" onClick={() => handleShowAll()}>
         {showAll ? "Show less projects" : "Show all projects"}
@@ -42,6 +43,12 @@ export function ProjectCardGrid({ data }) {
 
 function Pcard({ project }) {
   const navigate = useNavigate();
+  let project1 = {};
+  if (project !== undefined) {
+    project1 = project;
+  }
+
+  useEffect(() => {}, [project]);
   const handleClick = () => {
     const path =
       window.location.pathname +
@@ -53,7 +60,7 @@ function Pcard({ project }) {
   function changeHeartFilterStyle() {
     if (heartFilterStyle.filter === undefined) {
       setHeartFilterStyle({
-        filter: "invert(25%) sepia() saturate(2000%) hue-rotate(0deg)",
+        filter: "invert(30%) sepia() saturate(2000%) hue-rotate(0deg)",
       });
     } else {
       setHeartFilterStyle({});
@@ -65,23 +72,24 @@ function Pcard({ project }) {
       <div className="project-img-gallery">
         <img
           className="big-img"
-          src={process.env.PUBLIC_URL + project.img}
+          src={process.env.PUBLIC_URL + project1.img1}
           alt="non profit image"
         />
         <img
           className="small-img"
-          src={process.env.PUBLIC_URL + project.img}
+          src={process.env.PUBLIC_URL + project1.img2}
           alt="non profit image"
         />
         <img
-          src={process.env.PUBLIC_URL + project.img}
+          className="small-img"
+          src={process.env.PUBLIC_URL + project1.img3}
           alt="non profit image"
         />
       </div>
 
       <div className="project-text-content">
         <div className="top-flex-content">
-          <h3>{project.name}</h3>
+          <h3>{project1.name}</h3>
           <div className="add-favorites">
             <span onClick={changeHeartFilterStyle}>
               <img
@@ -95,12 +103,15 @@ function Pcard({ project }) {
           </div>
         </div>
 
-        <p className="project-start-p">PROJECT START {project.established}</p>
+        <p className="project-start-p">PROJECT START {project1.established}</p>
         <div>
-          <p>{project.info1}</p>
-          <p>{project.info2}</p>
+          <p>{project1.info1}</p>
+          <p>{project1.info2}</p>
         </div>
-        <button onClick={handleClick}>Go to project</button>
+        <div className={"button-container"}>
+          <button onClick={handleClick}>Go to project</button>
+          <button onClick={handleClick}>Donate</button>
+        </div>
       </div>
       <span className="split-line"></span>
     </div>

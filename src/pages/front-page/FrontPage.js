@@ -139,7 +139,7 @@ function PersonCards(props) {
         <div className={"data-card"} key={index}>
           <img src={process.env.PUBLIC_URL + value.img} alt={"image"} />
           <p>{value.name}</p>
-          {value.role && <p>{value.role}</p>}
+          <p>{value.role}</p>
         </div>
       ))}
     </div>
@@ -209,7 +209,23 @@ function ImpactStatements() {
       <h3 style={{ fontWeight: "bold", marginBottom: "30px" }}>
         Impact statements
       </h3>
-      <PersonCards data={projects} />
+      <ImpactCard data={projects} />
+    </div>
+  );
+}
+
+function ImpactCard(props) {
+  const data = props.data;
+  return (
+    <div className={"person-cardgrid"}>
+      {data.map((value, index) => (
+        <div className={"data-card"} key={index}>
+          <img src={process.env.PUBLIC_URL + value.img1} alt={"image"} />
+          <br />
+          <text>Project</text>
+          <p>{value.name}</p>
+        </div>
+      ))}
     </div>
   );
 }

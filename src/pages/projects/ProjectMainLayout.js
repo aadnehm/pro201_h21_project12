@@ -10,6 +10,8 @@ import { useLocation, useNavigate } from "react-router";
 import TabPanel from "../../lib/TabPanel";
 import { goToTop } from "../../lib/toTop";
 import InsideStories from "../../components/inside-stories/InsideStories";
+import { OurProjectDonators } from "../../components/Projects-OurDonators/OurDonators";
+import AboutProjects from "../../components/about-us-projects/AboutProjects";
 
 function a11yProps(index) {
   return {
@@ -83,7 +85,7 @@ export function Projects() {
     );
   }
 
-  const img = "url(" + process.env.PUBLIC_URL + selectedProject.img;
+  const img = "url(" + process.env.PUBLIC_URL + selectedProject.img1;
 
   return (
     <div className={"nonprofit-content"}>
@@ -109,11 +111,22 @@ export function Projects() {
   );
 }
 
+const goToTabs = () => {
+  window.scrollTo({
+    top: window.innerHeight * 0.6,
+    behavior: "smooth",
+  });
+};
+
 function NavTabs(props) {
+  console.log("Choosen Project")
+  console.log(props.data)
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    goToTabs();
   };
   const CustomTab = withStyles({
     root: {
@@ -128,7 +141,9 @@ function NavTabs(props) {
         marginTop: "100px",
         marginRight: "auto",
         marginLeft: "auto",
+        transition: "transform .2s",
       }}
+      //style={{ display: "flex" }}
     >
       <Tabs
         value={value}
@@ -148,9 +163,15 @@ function NavTabs(props) {
           label="Our donators"
           {...a11yProps(2)}
         />
-        <CustomTab
-          iconPosition="start"
-          label={"Back to " + props.nonProfit.name}
+
+        <button
+          style={{
+            marginRight: 0,
+            marginLeft: "auto",
+            border: "none",
+            background: "transparent",
+            fontWeight: "600",
+          }}
           onClick={() => {
             navigate(
               "/nonprofit/" +
@@ -158,16 +179,19 @@ function NavTabs(props) {
             );
             goToTop();
           }}
-          {...a11yProps(4)}
-        />
+        >
+          {"Back to " + props.nonProfit.name}
+        </button>
       </Tabs>
-      <TabPanel value={value} index={0}></TabPanel>
-      <TabPanel value={value} index={1}>
-        <InsideStories selectedNonProfit={props.nonProfit} />
+      <TabPanel value={value} index={0}>
+        <AboutProjects project={props.data} />
       </TabPanel>
-      <TabPanel value={value} index={2}></TabPanel>
-      <TabPanel value={value} index={3}></TabPanel>
-      <TabPanel value={value} index={4}></TabPanel>
+      <TabPanel value={value} index={1}>
+        <InsideStories selectedNonProfit={props.data} />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <OurProjectDonators project_name={props.data.name} />
+      </TabPanel>
     </Box>
   );
 }

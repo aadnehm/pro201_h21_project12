@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import "./inside-stories.css";
 
 export default function InsideStories({ selectedNonProfit }) {
+  console.log(selectedNonProfit)
   const [moreEnabled, setMoreEnabled] = useState(false);
   const handleMore = () => {
     setMoreEnabled(!moreEnabled);
@@ -106,8 +107,9 @@ export default function InsideStories({ selectedNonProfit }) {
       <h2 id="videos-header">Videos</h2>
       {moreEnabled ? (
         <div className="iframes-div">
-          {allVideos.map((video) => (
+          {allVideos.map((video, index) => (
             <div
+              key={index}
               className="story-div"
               id={`player-div${video.id}`}
               onClick={() => {
@@ -137,8 +139,9 @@ export default function InsideStories({ selectedNonProfit }) {
         </div>
       ) : (
         <div className="iframes-div">
-          {threeNewestVideos.map((video) => (
+          {threeNewestVideos.map((video, index) => (
             <div
+              key={index}
               className="story-div"
               id={`player-div${video.id}`}
               onClick={() => {
@@ -186,8 +189,8 @@ export default function InsideStories({ selectedNonProfit }) {
           <h2>Articles</h2>
           {moreArticlesEnabled ? (
             <div className="articles-div">
-              {allArticles.map((article) => (
-                <div className="article-div">
+              {allArticles.map((article, index) => (
+                <div className="article-div" key={index}>
                   <img
                     className="article-image"
                     src={
@@ -205,8 +208,8 @@ export default function InsideStories({ selectedNonProfit }) {
             </div>
           ) : (
             <div className="articles-div">
-              {sixNewestArticles.map((article) => (
-                <div className="article-div">
+              {sixNewestArticles.map((article, index) => (
+                <div className="article-div" key={index}>
                   <img
                     className="article-image"
                     src={

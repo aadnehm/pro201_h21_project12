@@ -6,12 +6,15 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "./non-profit-single.css";
 import InsideStories from "../../components/inside-stories/InsideStories";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
+import { goToTop } from "../../lib/toTop";
 import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 import TabPanel from "../../lib/TabPanel";
+import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
+
 
 function a11yProps(index) {
   return {
@@ -67,7 +70,9 @@ export default function NonProfits() {
         <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
-          <button className={"donate-button"}>Donate</button>
+          <button id={"top"} className={"donate-button"}>
+            Donate
+          </button>
         </div>
       </header>
       <NavTabs data={selectedNonProfit} />
@@ -75,11 +80,20 @@ export default function NonProfits() {
   );
 }
 
+const goToTabs = () => {
+  window.scrollTo({
+    top: window.innerHeight * 0.6,
+    behavior: "smooth",
+  });
+};
+
 function NavTabs(props) {
+  const navigate = useNavigate();
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    goToTabs();
   };
   const CustomTab = withStyles({
     root: {
@@ -120,21 +134,36 @@ function NavTabs(props) {
           label="Our donators"
           {...a11yProps(4)}
         />
+        <button
+          style={{
+            marginRight: 0,
+            marginLeft: "auto",
+            border: "none",
+            background: "transparent",
+            fontWeight: "600",
+          }}
+          onClick={() => {
+            navigate("/nonprofits");
+            goToTop();
+          }}
+        >
+          {<div><ArrowCircleLeftOutlinedIcon/> Back</div>}
+        </button>
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutUs data={props.data} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <ProjectCardGrid data={props.data} />
+        <ProjectCardGrid data={props.data}/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <InsideStories selectedNonProfit={props.data} />
+        <InsideStories selectedNonProfit={props.data}/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <WhatYouGet />
+        <WhatYouGet/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <OurDonators />
+        <OurDonators/>
       </TabPanel>
     </Box>
   );
