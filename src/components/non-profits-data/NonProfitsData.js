@@ -90,7 +90,6 @@ const projectStoriesData = [
   },
 ];
 
-
 const insideStoriesData = [
   {
     id: "1",
@@ -226,13 +225,13 @@ const articleData = [
 
   {
     id: "5",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
   {
     id: "6",
-    header: "PROJECT NEPAL",
+    header: "PROJECT NIPPLE",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
@@ -244,7 +243,7 @@ const articleData = [
 
   {
     id: "8",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
@@ -254,7 +253,6 @@ const articleData = [
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 ];
-
 
 const posterData = [
   {
@@ -275,7 +273,6 @@ const posterData = [
     image: "/img/insidestories/other-children-insidestories.jpg",
   },
 ];
-
 
 // array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
 // same ID as Redd Barna if needed.
@@ -308,7 +305,8 @@ const dummyProjects = [
     name: "Project Nepal",
     established: "30.0.2012",
     info1:
-      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate ",
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " +
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate ",
     info2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
     link: "/",
@@ -327,7 +325,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     id: "1",
@@ -354,7 +352,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     id: "1",
@@ -370,7 +368,7 @@ const dummyProjects = [
     img1: "/img/projects/project-nepal/1.png",
     img2: "/img/projects/project-nepal/2.png",
     img3: "/img/projects/project-nepal/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
     whatWeDo1:
@@ -381,7 +379,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Somalia",
@@ -395,7 +393,7 @@ const dummyProjects = [
     img1: "/img/projects/project-somalia/1.png",
     img2: "/img/projects/project-somalia/2.png",
     img3: "/img/projects/project-somalia/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
     whatWeDo1:
@@ -406,7 +404,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Myanmar",
@@ -430,7 +428,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Back to School",
@@ -454,11 +452,9 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
 ];
-
-
 
 const nonProfitValues = [
   {
