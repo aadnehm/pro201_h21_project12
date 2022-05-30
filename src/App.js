@@ -10,7 +10,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 //React
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-import { motion } from "framer-motion";
 import { FrontPage } from "./pages/front-page/FrontPage";
 import {
   ButtonAppBar,
@@ -48,14 +47,7 @@ function NavbarFooter(props) {
   return (
     <>
       <ButtonAppBar />
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.5 }}
-        transition={transition}
-      >
-        {props.page}
-      </motion.div>
+      <div>{props.page}</div>
       <Footer />
     </>
   );
