@@ -49,7 +49,11 @@ export default function Menu() {
               />
             </div>
             <div className="personIcon buttonSymbol">
-              <img src="/img/non-profit/shell.png" alt="profil-img" width={50}></img>
+              <img
+                src="/img/non-profit/pngshell.png"
+                alt="profil-img"
+                width={27}
+              ></img>
             </div>
           </button>
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
