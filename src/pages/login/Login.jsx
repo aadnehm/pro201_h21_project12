@@ -9,18 +9,10 @@ import BlankInput from "../../components/Login-Signup/input-fields/BlankInput";
 //MUI
 import { Button, Checkbox, FormControlLabel } from "@mui/material/";
 //Firebase
-import {
-  getAuth,
-  sendPasswordResetEmail,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
-
 export default function Login() {
   //Navigation
-  const navigate = useNavigate();
 
   //Error handling
-  const [error, setError] = useState("");
 
   /* Values Epost & Password */
   const [dataEpost, setDataEpost] = useState();
@@ -44,27 +36,6 @@ export default function Login() {
     setDataPassword(newData);
   }
 
-  const auth = getAuth();
-  const handleLogin = async () => {
-    if (validateInputs()) {
-      await signInWithEmailAndPassword(auth, dataEpost, dataPassword)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          navigate("/nonprofits");
-          // ...
-        })
-        .catch((error) => {
-          setPasswordHelperText(
-            "The username or password you entered is incorrect"
-          );
-          setEpostHelperText(" ");
-          setEpostError(true);
-          setPasswordError(true);
-        });
-    }
-  };
-
   /* Input validation function */
   function validateInputs() {
     let needMore = true;
@@ -87,27 +58,6 @@ export default function Login() {
     }
     return needMore;
   }
-
-  /* HandleLogin function 
-  function handleLogin() {
-    if (dataEpost === "smidig@smidig.com" && dataPassword === "1234") {
-      navigate("/nonprofits");
-    } else {
-      validateInputs();
-    }
-  } */
-
-  //reset password
-  const handleResetPassword = async (e) => {
-    e.preventDefault();
-    await sendPasswordResetEmail(auth, prompt("Enter email"))
-      .then(function () {
-        alert("email sent");
-      })
-      .catch(function (error) {
-        alert(error.message);
-      });
-  };
 
   return (
     <div className="container-login">
@@ -142,21 +92,18 @@ export default function Login() {
               error={passwordError}
               helperText={passwordHelperText}
             ></PasswordInput>
-            {error && <p>{error}</p>}
             <FormControlLabel
               control={<Checkbox color="secondary"></Checkbox>}
               label="Remember me"
             ></FormControlLabel>
           </div>
           <div className="right-content-button">
-            <a onClick={handleResetPassword} href="">
-              Forgot your password?
-            </a>
+            <a href="">Forgot your password?</a>
             <Button
               size="large"
               color="secondary"
               variant="contained"
-              onClick={handleLogin}
+              onClick={validateInputs}
             >
               Log in
             </Button>

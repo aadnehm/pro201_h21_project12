@@ -20,7 +20,6 @@ function Communtiy() {
         width: "80vw",
         height: "50vh",
       }}
-      className="home-header1"
     >
       <div className={"community-content"}>
         <div className={"community-text"}>

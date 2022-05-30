@@ -71,6 +71,7 @@ color: #333333;
 }
 .input-wrapper input{
     width: 70%;
+    padding-left: 10px;
 }
 .input-wrapper button{
     background-color: #333333;
