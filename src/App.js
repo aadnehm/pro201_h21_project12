@@ -11,7 +11,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Route, Routes } from "react-router-dom";
 import React from "react";
 import { motion } from "framer-motion";
-//Firebase
 import { FrontPage } from "./pages/front-page/FrontPage";
 import {
   ButtonAppBar,
@@ -19,7 +18,6 @@ import {
 } from "./pages/non-profit-all/NonProfitAll";
 import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
-import AboutUs from "./components/about-us/AboutUs";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
