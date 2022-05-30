@@ -22,7 +22,6 @@ export default function Menu() {
   function useOutsideAlerter(ref) {
     useEffect(() => {
       function handleClickOutside(event) {
-        console.log();
         if (ref.current && !ref.current.contains(event.target)) {
           ref.current.lastChild.style.visibility = "hidden";
           closeMenu();
