@@ -2,6 +2,7 @@
     height: 80vh;
     color: #eaeaea;
     position: relative;
+    font-family: "DM Sans",sans-serif;
 }
 .home-header1 .home-header1-content{
     position: absolute;
@@ -14,7 +15,7 @@
     border: none;
     border-radius: 5px;
     font-size: 20px;
-    padding: 10px 15px 10px 15px;
+    padding: 15px 15px;
     width: 300px;
     font-weight: 500;
     transition: transform .2s;
@@ -23,12 +24,12 @@
 }
 .home-header1 .home-header1-content button:first-of-type {
     background: #F69F37;
-    color: #FAFAFA;
+    color: #fefefe;
     margin-bottom: 20px;
 }
 .home-header1 .home-header1-content button:last-of-type {
-    background: #FAFAFA;
-    color: #333333;
+    background: #fefefe;
+    color: #2b2b2b
 }
 
 .home-header1 .home-header1-content button:hover{
@@ -39,13 +40,12 @@
     font-size: 80px;
     margin: auto auto 3vh auto;
     width: fit-content;
+    font-weight: bold;
 }
 
 .home-header1-content h4{
-    margin: auto;
     width: fit-content;
-    margin-bottom: 40px;
-    font-weight: 600;
+    margin: auto auto 40px;
 }
 .newest-nonprofit-card{
     display: flex;
@@ -55,8 +55,7 @@
 }
 
 .newest-nonprofit-card:hover{
-    transform: scale(1.1);
-    background: lightgray;
+    background: #f3f3f3;
     cursor: pointer;
 }
 
@@ -85,7 +84,7 @@
 }
 
 .newest-nonprofit-card div p:first-of-type{
-    color: #333333;
+    color: #2b2b2b;
     font-weight: bolder;
     margin-bottom: 0;
 }
@@ -120,11 +119,11 @@
     width: 23vw;
     height: 23vw;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .choose-subscription-content{
-    border-radius: 30px;
+    border-radius: 20px;
     height: 70vh;
     width: 80vw;
     display: flex;
@@ -133,7 +132,7 @@
 }
 
 .choose-subscription-content-text{
-    color: #FAFAFA;
+    color: #fefefe;
     width: fit-content;
     margin-left: 10vw;
 }
@@ -147,8 +146,8 @@
     width: 200px;
     font-weight: 500;
     transition: transform .2s;
-    background: #FAFAFA;
-    color: #333333;
+    background: #fefefe;
+    color: #2b2b2b
 }
 
 
@@ -164,10 +163,11 @@
 }
 
 .curated-nonprofits-content{
-    color: #FAFAFA;
+    color: #fefefe;
     width: 50vw;
     height: 80vh;
-    background-color: #333333;
+    background-color: #2b2b2b;
+    border-radius: 5px;
     text-align: center;
     align-items: center;
     display: flex;
@@ -211,7 +211,7 @@
 .community-text{
     width: 40vw;
     margin: auto;
-    color: #333333
+    color: #2b2b2b
 }
 
 .community-text h1{
@@ -228,7 +228,7 @@
     width: 200px;
     font-weight: 500;
     transition: transform .2s;
-    background: #F69F37;
+    background: #2b2b2b;
     color: #FEFEFE;
 }
 
@@ -238,11 +238,10 @@
 
 .community-text input{
     margin-top: 30px;
-    border: none;
     border-radius: 5px;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     font-weight: 500;
     transition: transform .2s;
-    border: solid 2px black;
+    border: solid 2px #2b2b2b;
 }

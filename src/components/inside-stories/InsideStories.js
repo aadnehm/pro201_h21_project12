@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import "./inside-stories.css";
 
 export default function InsideStories({ selectedNonProfit }) {
-  console.log(selectedNonProfit)
+  console.log(selectedNonProfit);
   const [moreEnabled, setMoreEnabled] = useState(false);
   const handleMore = () => {
     setMoreEnabled(!moreEnabled);

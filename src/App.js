@@ -33,7 +33,7 @@ const mainColor = createTheme({
   },
 
   typography: {
-    fontFamily: `"Raleway", "Helvetica", "Arial", sans-serif`,
+    fontFamily: "DM Sans, sans-serif",
     fontSize: 16,
     fontWeightLight: 300,
     fontWeightRegular: 400,
@@ -42,8 +42,6 @@ const mainColor = createTheme({
 });
 
 function NavbarFooter(props) {
-  const transition = { duration: 0.4, ease: [0.6, 0.01, -0.05, 0.9] };
-
   return (
     <>
       <ButtonAppBar />
@@ -74,8 +72,6 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/*" element={<h1>Not found 404</h1>} />
-          <Route path="/tabsTest" element={<NavTabs />} />
-          <Route path="/insidestoriestest" element={<InsideStories />} />
         </Routes>
       </div>
     </ThemeProvider>

@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6vw;
-  font-family: sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 /* mindre margin før show all button  */
 .project-cards-container:last-of-type {

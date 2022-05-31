@@ -44,7 +44,7 @@ export function Projects() {
           position: "absolute",
           width: "100%",
           height: "100%",
-          background: "white",
+          background: "#FEFEFE",
           zIndex: "2",
         }}
       >
@@ -76,7 +76,7 @@ export function Projects() {
           position: "absolute",
           width: "100%",
           height: "100%",
-          background: "white",
+          background: "#FEFEFE",
           zIndex: "2",
         }}
       >
@@ -119,8 +119,8 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
-  console.log("Choosen Project")
-  console.log(props.data)
+  console.log("Choosen Project");
+  console.log(props.data);
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
 

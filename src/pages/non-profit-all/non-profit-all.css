@@ -35,11 +35,11 @@
   position: absolute;
   bottom: 10vh;
   left: 10%;
+
 }
 
-.nonProfit-search-hero-text p {
+.nonProfit-search-hero-text h4 {
   line-height: 1;
-  font-size: 17px;
 }
 
 .nonProfit-search-hero-text h1 {
