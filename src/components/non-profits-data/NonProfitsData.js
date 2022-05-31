@@ -231,7 +231,7 @@ const articleData = [
 
   {
     id: "6",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 

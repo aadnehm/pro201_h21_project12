@@ -97,28 +97,22 @@
   position: relative;
 }
 
-.hamburger-react {
-  height: 36px !important;
-  width: 36px !important;
-  top: -5px;
-}
-
 .menu button {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding: 0 1%;
   background-color: #fefefe;
   position: fixed;
   border: 0px solid #333;
   border-radius: 30px;
   left: 10px;
-  top: 1.5rem;
+  top: 25px;
   z-index: 10;
   cursor: pointer;
+  height: 36px;
 }
 
 .menuNav li {
   border-radius: 7px;
-  padding: 6%;
+  padding: 20px;
 }
 
 .menuNav li:hover {
@@ -139,13 +133,17 @@
 }
 
 .personIcon {
-  margin-left: 20px;
+  margin-left: 5px;
   margin-top: 4px;
 }
 
 .buttonSymbol {
   float: left;
   color: #333;
+}
+
+.hamburger-react {
+  top: -5px;
 }
 
 .logoutBtn {
