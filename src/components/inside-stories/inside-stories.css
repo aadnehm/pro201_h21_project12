@@ -1,13 +1,10 @@
-.inside-stories h1 {
-  margin-top: 3rem;
-}
 .iframes-div {
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
   row-gap: 5rem;
   margin: 2rem 0 5rem 0;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .articles-div {
@@ -15,26 +12,26 @@
   grid-template-columns: auto auto auto;
   width: 100%;
   margin: 2rem 0 5rem 0;
-  justify-content: space-around;
+  justify-content: space-between;
   row-gap: 5rem;
 }
 
 .article-div {
-  width: 300px;
+  width: 21vw;
   height: fit-content;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   grid-column-start: auto;
   transition: transform 0.2s;
 }
 
 .article-image {
-  width: 300px;
-  border-radius: 15px 15px 0 0;
+  width: 21vw;
+  border-radius: 20px 20px 0 0;
 }
 
 .expandedPlayer {
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   background-color: #fefefe;
   margin: 8% auto;
@@ -57,7 +54,7 @@
 }
 
 .expandedPlayer iframe {
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px 0 0 20px;
 }
 
 .expandedPlayer .playerText {
@@ -79,7 +76,7 @@
 
 .react-player {
   height: 250px !important;
-  width: 300px !important;
+  width: 21vw !important;
 }
 
 .playerText {
@@ -102,13 +99,13 @@
 }
 
 iframe {
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .story-div {
   width: fit-content;
-  border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   grid-column-start: auto;
   transition: transform 0.2s;
 }
@@ -116,7 +113,7 @@ iframe {
 .other-story-div {
   display: none;
   width: fit-content;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   grid-column-start: auto;
 }
@@ -153,25 +150,28 @@ iframe {
 
 .posterDiv {
   border: 0px solid #fff;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: black;
   margin-bottom: 5rem;
   display: flex;
+  font-size: 42px;
 }
 
 .posterDiv2 {
   border: 0px solid #fff;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: black;
   margin-bottom: 5rem;
   display: flex;
+  font-size: 42px;
 }
 .posterDiv3 {
   border: 0px solid #fff;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #fafafa;
   margin-bottom: 5rem;
   display: flex;
+  font-size: 42px;
 }
 
 .posterDiv3 h2 {
@@ -190,12 +190,12 @@ iframe {
 }
 
 .posterDiv img {
-  border-radius: 0 40px 40px 0;
+  border-radius: 0 20px 20px 0;
   width: 110%;
 }
 
 .posterDiv2 img {
-  border-radius: 0 40px 40px 0;
+  border-radius: 0 20px 20px 0;
   width: 110%;
 }
 
