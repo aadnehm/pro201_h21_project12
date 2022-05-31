@@ -3,7 +3,7 @@ const projectStoriesData = [
     id: "1",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -12,7 +12,7 @@ const projectStoriesData = [
     id: "2",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Torstein Horgmo",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -21,7 +21,7 @@ const projectStoriesData = [
     id: "3",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Rick Astley",
-    about: "Hurr de durr",
+    about: "Hurr de durr.  Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -30,7 +30,7 @@ const projectStoriesData = [
     id: "4",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -39,7 +39,7 @@ const projectStoriesData = [
     id: "5",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -48,7 +48,7 @@ const projectStoriesData = [
     id: "6",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -57,7 +57,7 @@ const projectStoriesData = [
     id: "7",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -66,7 +66,7 @@ const projectStoriesData = [
     id: "8",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Hurr de durr",
+    about: "Hurr de durr. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -75,7 +75,7 @@ const projectStoriesData = [
     id: "9",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -84,19 +84,18 @@ const projectStoriesData = [
     id: "10",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 ];
-
 
 const insideStoriesData = [
   {
     id: "1",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -105,7 +104,7 @@ const insideStoriesData = [
     id: "2",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Torstein Horgmo",
-    about: "Horgasm - A Love Story",
+    about: "Horgasm - A Love Story. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -114,7 +113,7 @@ const insideStoriesData = [
     id: "3",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Rick Astley",
-    about: "Get rickrolled boiii",
+    about: "Get rickrolled boiii. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -123,7 +122,7 @@ const insideStoriesData = [
     id: "4",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Hello",
+    about: "Hello. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -132,7 +131,7 @@ const insideStoriesData = [
     id: "5",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Not actually Michael Stevens",
+    about: "Not actually Michael Stevens. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -141,7 +140,7 @@ const insideStoriesData = [
     id: "6",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Still not actually Michael Stevens",
+    about: "Still not actually Michael Stevens. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -150,7 +149,7 @@ const insideStoriesData = [
     id: "7",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Still not actually Michael Stevens",
+    about: "Still not actually Michael Stevens. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -159,7 +158,7 @@ const insideStoriesData = [
     id: "8",
     link: "https://www.youtube.com/watch?v=U6lpBi39N78",
     title: "Michael Stevens",
-    about: "Still not actually Michael Stevens",
+    about: "Still not actually Michael Stevens. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
@@ -168,7 +167,7 @@ const insideStoriesData = [
     id: "9",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -177,7 +176,7 @@ const insideStoriesData = [
     id: "10",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -186,7 +185,7 @@ const insideStoriesData = [
     id: "11",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -194,7 +193,7 @@ const insideStoriesData = [
     id: "12",
     link: "https://youtu.be/dQw4w9WgXcQ",
     title: "Michael Stevens",
-    about: "This is Michael Stevens video on love. A philosophy.",
+    about: "This is Michael Stevens video on love. A philosophy. Never gonna give you up, Never gonna let you dooown. Never gonna run around and desert you.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -226,7 +225,7 @@ const articleData = [
 
   {
     id: "5",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
@@ -244,7 +243,7 @@ const articleData = [
 
   {
     id: "8",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
@@ -255,7 +254,6 @@ const articleData = [
   },
 ];
 
-
 const posterData = [
   {
     id: "1",
@@ -265,7 +263,7 @@ const posterData = [
 
   {
     id: "2",
-    info: "We do stuff to people. Mostly good stuff. Read about ONLY the good stuff here!",
+    info: "Read about all the good things we get done with the donations we recieve!",
     image: "/img/frontpage/frontpage-community.png",
   },
 
@@ -275,7 +273,6 @@ const posterData = [
     image: "/img/insidestories/other-children-insidestories.jpg",
   },
 ];
-
 
 // array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
 // same ID as Redd Barna if needed.
@@ -327,7 +324,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     id: "1",
@@ -354,7 +351,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     id: "1",
@@ -370,7 +367,7 @@ const dummyProjects = [
     img1: "/img/projects/project-nepal/1.png",
     img2: "/img/projects/project-nepal/2.png",
     img3: "/img/projects/project-nepal/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
     whatWeDo1:
@@ -381,7 +378,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Somalia",
@@ -395,7 +392,7 @@ const dummyProjects = [
     img1: "/img/projects/project-somalia/1.png",
     img2: "/img/projects/project-somalia/2.png",
     img3: "/img/projects/project-somalia/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
     whatWeDo1:
@@ -406,7 +403,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Myanmar",
@@ -430,7 +427,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Back to School",
@@ -454,11 +451,9 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
 ];
-
-
 
 const nonProfitValues = [
   {
