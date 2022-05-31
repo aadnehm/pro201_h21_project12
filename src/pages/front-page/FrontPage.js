@@ -4,7 +4,6 @@ import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { useNavigate } from "react-router";
 import { goToTop } from "../../lib/toTop";
 import { uppercaseFirstLetter } from "../../lib/upperCaseFirstLetter";
-import { motion } from "framer-motion";
 function Communtiy() {
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/frontpage/frontpage-community.png)";
@@ -21,7 +20,6 @@ function Communtiy() {
         width: "80vw",
         height: "50vh",
       }}
-      className="home-header1"
     >
       <div className={"community-content"}>
         <div className={"community-text"}>

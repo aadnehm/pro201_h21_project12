@@ -1,15 +1,21 @@
 import "./project-card.css";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { motion } from "framer-motion";
 
 export function ProjectCardGrid({ data }) {
-  const transition = { duration: 0.4, ease: [0.6, 0.01, -0.05, 0.9] };
   const reddBarnaProjects = data.projects;
   const [showAll, setShowAll] = useState(false);
 
+  const goToTop = () => {
+    window.scrollTo({
+      top: 670,
+      behavior: "smooth",
+    });
+  };
+
   const handleShowAll = () => {
     setShowAll(!showAll);
+    goToTop();
   };
 
   return (
@@ -25,14 +31,7 @@ export function ProjectCardGrid({ data }) {
 
       {showAll &&
         reddBarnaProjects.map((project, index) => (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.5 }}
-            transition={transition}
-          >
-            <Pcard key={index} project={project} />
-          </motion.div>
+          <Pcard key={index} project={project} />
         ))}
       <button className="showAllBtn" onClick={() => handleShowAll()}>
         {showAll ? "Show less projects" : "Show all projects"}

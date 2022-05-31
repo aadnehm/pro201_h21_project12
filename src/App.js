@@ -10,8 +10,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 //React
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-import { motion } from "framer-motion";
-//Firebase
 import { FrontPage } from "./pages/front-page/FrontPage";
 import {
   ButtonAppBar,
@@ -19,9 +17,8 @@ import {
 } from "./pages/non-profit-all/NonProfitAll";
 import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
-import AboutUs from "./components/about-us/AboutUs";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
 
 /* Changing default value for secondary color */
@@ -50,14 +47,7 @@ function NavbarFooter(props) {
   return (
     <>
       <ButtonAppBar />
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.5 }}
-        transition={transition}
-      >
-        {props.page}
-      </motion.div>
+      <div>{props.page}</div>
       <Footer />
     </>
   );
