@@ -46,13 +46,14 @@ export default function Menu() {
                 direction="right"
                 toggled={navbarOpen}
                 toggle={setNavbarOpen}
+                size={28}
               />
             </div>
             <div className="personIcon buttonSymbol">
               <img
                 src="/img/non-profit/pngshell.png"
                 alt="profil-img"
-                width={27}
+                width={24}
               ></img>
             </div>
           </button>

@@ -90,7 +90,6 @@ const projectStoriesData = [
   },
 ];
 
-
 const insideStoriesData = [
   {
     id: "1",
@@ -226,7 +225,7 @@ const articleData = [
 
   {
     id: "5",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
@@ -244,7 +243,7 @@ const articleData = [
 
   {
     id: "8",
-    header: "PROJECT NIPPLE",
+    header: "PROJECT NEPAL",
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 
@@ -254,7 +253,6 @@ const articleData = [
     text: "Read about how we are working on bettering the conditions for the children in Nepal",
   },
 ];
-
 
 const posterData = [
   {
@@ -275,7 +273,6 @@ const posterData = [
     image: "/img/insidestories/other-children-insidestories.jpg",
   },
 ];
-
 
 // array of dummy projects for Redd Barna. Placed as property in NonProfitsPost array.
 // same ID as Redd Barna if needed.
@@ -327,7 +324,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     id: "1",
@@ -354,7 +351,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     id: "1",
@@ -370,7 +367,7 @@ const dummyProjects = [
     img1: "/img/projects/project-nepal/1.png",
     img2: "/img/projects/project-nepal/2.png",
     img3: "/img/projects/project-nepal/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
     whatWeDo1:
@@ -381,7 +378,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Somalia",
@@ -395,7 +392,7 @@ const dummyProjects = [
     img1: "/img/projects/project-somalia/1.png",
     img2: "/img/projects/project-somalia/2.png",
     img3: "/img/projects/project-somalia/3.png",
-      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
+    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Ocean Rescue is all about the great blue. Fish is great food, nam nam nam",
     whatWeDo1:
@@ -406,7 +403,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Myanmar",
@@ -430,7 +427,7 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
   {
     name: "Project Back to School",
@@ -454,11 +451,9 @@ const dummyProjects = [
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,
     articles: articleData,
-    posters: posterData
+    posters: posterData,
   },
 ];
-
-
 
 const nonProfitValues = [
   {
