@@ -39,7 +39,7 @@
 .companies-testemonials-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5rem;
+  row-gap: 5rem;
 }
 .companies-testemonials-grid img {
   margin-right: 1em;
@@ -52,9 +52,11 @@
   display: flex;
   align-items: center;
   text-align: center;
+  width: 80%;
 }
 .companies-testemonials-grid p {
   margin-left: 4em;
+  width: 80%;
 }
 /* utility classes */
 .p-margin {
