@@ -18,13 +18,13 @@
 .box-3,
 .bottom-swing {
   height: 160px;
-  width: 75vw;
+  width: 71vw;
 }
 
 .timeline-container .box-2 {
   margin-top: -0.15em;
-  margin-left: -3vw;
-  width: 75vw;
+  margin-left: 2vw;
+  width: 69vw;
 }
 
 /*tomme diver som gis border for å lage figurer*/
@@ -37,7 +37,7 @@
 .bottom-swing {
   position: absolute;
   margin-top: -0.15em;
-  left: 70vw;
+  left: 72vw;
   width: 180px;
   border-top-right-radius: 50%;
   border-top: 0.15em solid#2b2b2b;
