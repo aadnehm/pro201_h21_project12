@@ -127,13 +127,19 @@ iframe {
 }
 
 .show-all button {
-  border: 0px solid #2b2b2b;
+  background: #2b2b2b;
+  color: #fefefe;
+  border: none;
   border-radius: 5px;
-  font-size: larger;
-  padding: 10px;
-  background-color:#2b2b2b;
-  color: #FEFEFE;
+  font-size: 20px;
+  padding: 15px 40px;
+  font-weight: 500;
+  transition: transform .2s;
   margin-bottom: 5rem;
+}
+
+.show-all button:hover{
+  transform: scale(1.1);
 }
 
 .story-div:hover,
@@ -186,15 +192,15 @@ iframe {
 }
 
 
-.posterDiv2 button{
-  background: #fefefe;
-  color: #2b2b2b;
+.posterDiv2 button {
+  background: #2b2b2b;
+  color: #fefefe;
   border: none;
   border-radius: 5px;
-  font-size: 25px;
-  padding: 15px 50px;
+  font-size: 20px;
+  padding: 15px 40px;
   font-weight: 500;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
 }
 
 .posterDiv2 button:hover{
@@ -206,11 +212,20 @@ iframe {
   font-size: 42px;
 }
 
+
 .posterDiv3 button {
-  background-color: orange;
+  background: #2b2b2b;
+  color: #fefefe;
   border: none;
-  color: #FEFEFE;
-  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 40px;
+  font-weight: 500;
+  transition: transform .2s; /* Animation */
+}
+
+.posterDiv3 button:hover {
+  transform: scale(1.1);
 }
 
 .posterDiv2 button {
