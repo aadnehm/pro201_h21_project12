@@ -305,9 +305,9 @@ const dummyProjects = [
     name: "Project Nepal",
     established: "30.0.2012",
     info1:
-      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque.",
+      "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " + "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex.",
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
@@ -332,9 +332,9 @@ const dummyProjects = [
     name: "Water Supply Kongo",
     established: "11.04.2014",
     info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex.",
     info2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non lobortis magna, eu cursus enim.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex.",
     link: "/",
     headerInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
@@ -359,7 +359,7 @@ const dummyProjects = [
     name: "Summer Youth Camps",
     established: "01.05.2010",
     info1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex. Mauris pellentesque velit eget massa vulputate viverra. Duis non",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis eget lorem tellus. In venenatis scelerisque interdum. Pellentesque dui dui, vulputate posuere auctor sit amet, iaculis non ex.",
     info2:
       "With this project, your company can help improve children's access to education, participation in school and a better learning outcome for girls, marginalized and excluded children. Save the Children also contributes with school materials, education for teachers and parent education.",
     headerInfo:
