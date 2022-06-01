@@ -4,7 +4,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { NpCardGrid } from "../non-profit-cardgrid/NpCardGrid";
-import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
 import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivismOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
@@ -29,6 +28,16 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
+  );
+}
+
+function ThumbUp() {
+  return (
+    <img
+      src={process.env.PUBLIC_URL + "/img/thumbup.png"}
+      style={{ height: "1.5em", width: "1.5em", marginRight: "0.5em" }}
+      alt={"icon"}
+    />
   );
 }
 
@@ -76,7 +85,7 @@ export default function NavTabs() {
         indicatorColor="secondary"
       >
         <CustomTab
-          icon={<ThumbUpOffAltOutlinedIcon />}
+          icon={<ThumbUp />}
           iconPosition="start"
           label="Our recommendations"
           onClick={() => handleCatBtn("recommended")}

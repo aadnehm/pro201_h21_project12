@@ -61,6 +61,7 @@ export function ButtonAppBar() {
       style={{
         transition: "0.5s ease-in",
         opacity: "1",
+        fontFamily: "'DM sans', sans-serif",
       }}
     >
       <Menu />
