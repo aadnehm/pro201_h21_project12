@@ -9,7 +9,7 @@
     background: #fff;
     position: fixed;
     top: 5rem;
-    left: 10px;
+    left: 30px;
     height: 0;
     width: 0;
     max-width: 15%;
@@ -54,7 +54,7 @@
     background: #fff;
     position: fixed;
     top: 5rem;
-    left: 10px;
+    left: 20px;
     height: 0;
     width: 0;
     overflow-y: hidden;
@@ -103,7 +103,7 @@
   position: fixed;
   border: 0px solid #333;
   border-radius: 30px;
-  left: 10px;
+  left: 20px;
   top: 25px;
   z-index: 10;
   cursor: pointer;
