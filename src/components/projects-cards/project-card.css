@@ -48,6 +48,10 @@
   font-size: 1em;
 }
 
+.top-flex-content h3 {
+  font-size: 42px;
+}
+
 /* heading and and add to favorites in text content */
 .project-text-content .top-flex-content {
   display: flex;
@@ -70,6 +74,7 @@
 .project-text-content .project-start-p {
   margin-top: 30px;
   font-weight: bold;
+  font-size: 24px;
 }
 /* go to project button */
 .button-container button {

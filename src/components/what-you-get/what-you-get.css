@@ -22,7 +22,7 @@
   color: black;
   border-radius: 100px 100px 100px 100px;
   border: 1px solid black;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   transition: all 0.3s ease 0s;
 }
 
