@@ -238,11 +238,12 @@ function CuratedNonprofits() {
       className={"curated-nonprofits"}
       style={{
         width: "80vw",
-        backgroundColor: "#333333",
+        backgroundColor: "#2b2b2b",
         backgroundImage: img,
         backgroundPosition: "right",
         backgroundRepeat: "no-repeat",
         height: "80vh",
+        borderRadius: "5px",
       }}
     >
       <div className={"curated-nonprofits-content"}>

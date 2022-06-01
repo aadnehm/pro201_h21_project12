@@ -17,18 +17,18 @@
   margin-top: 4%;
   margin-bottom: 2%;
   padding: 10px 30px;
-  background: white;
+  background: #FEFEFE;
   margin-left: 45%;
-  color: black;
+  color:#2b2b2b;
   border-radius: 100px 100px 100px 100px;
-  border: 1px solid black;
+  border: 1px solid #2b2b2b;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   transition: all 0.3s ease 0s;
 }
 
 .wyg-btn:hover {
   background: #f69f37;
-  color: white;
+  color: #FEFEFE;
 }
 
 .wyg-collapse-content {
@@ -36,10 +36,7 @@
 }
 
 .wyg-card-text {
-  color: white;
-  margin-left: 15%;
-  margin-right: 5%;
-  margin-top: 25%;
-  margin-bottom: 20%;
+  color: #FEFEFE;
+  margin: 25% 5% 20% 15%;
   text-align: left;
 }

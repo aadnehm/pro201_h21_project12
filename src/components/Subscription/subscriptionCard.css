@@ -10,7 +10,7 @@
   font-size: 1.8em;
 }
 .subscription-model-grid {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -37,7 +37,7 @@ h4 {
 
 .subscription-model-grid .sub-card {
   position: relative;
-  border: 2px solid black;
+  border: 2px solid#2b2b2b;
   /*   transition: 300ms;
   transition-timing-function: ease-in-out; */
   height: 30em;

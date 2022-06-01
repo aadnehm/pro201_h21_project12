@@ -29,8 +29,8 @@ export function NonProfitAll() {
         <div className="nonProfit-search-hero-text">
           <h1>Carefully curated</h1>
           <h1>Non-profits</h1>
-          <p>We have selected a number of non-profits</p>
-          <p>that suits your business strategy.</p>
+          <h4>We have selected a number of non-profits</h4>
+          <h4>that suits your business strategy.</h4>
         </div>
       </div>
       <div className="nonProfit-search-categories">

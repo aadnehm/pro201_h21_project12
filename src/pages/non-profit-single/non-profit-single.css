@@ -4,27 +4,25 @@
     width: 80vw;
     margin: 30px auto auto auto;
 }
-.donate-button{
-    background: #F69F37;
-    color: #FAFAFA;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 5px 30px 5px 30px;
-    font-weight: 500;
-    transition: transform .2s; /* Animation */
-}
-
 .donate-button:hover{
     transform: scale(1.1);
 }
 .nonprofit-content{
     font-family: "DM Sans", sans-serif;
-    background-color: #FAFAFA;
+    background-color: #fefefe;
 }
 
+.nonprofit-content h1{
+    font-size: 44px;
+    font-weight: bold;
+}
+.nonprofit-content h4{
+    width: 40vw;
+}
+
+
 .nonprofit-content header{
-    color: #FAFAFA;
+    color: #fefefe;
 }
 
 .nonProfit-header-content{

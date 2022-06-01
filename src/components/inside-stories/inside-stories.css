@@ -1,3 +1,6 @@
+.inside-stories h1 {
+  margin-top: 3rem;
+}
 .iframes-div {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -42,7 +45,7 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color:#2b2b2b;
   text-decoration: none;
   cursor: pointer;
 }
@@ -124,12 +127,12 @@ iframe {
 }
 
 .show-all button {
-  border: 0px solid black;
+  border: 0px solid #2b2b2b;
   border-radius: 5px;
   font-size: larger;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color:#2b2b2b;
+  color: #FEFEFE;
   margin-bottom: 5rem;
 }
 
@@ -151,18 +154,26 @@ iframe {
 .posterDiv {
   border: 0px solid #fff;
   border-radius: 20px;
-  background-color: black;
+  background-color: #2b2b2b;
   margin-bottom: 5rem;
   display: flex;
+  font-size: 42px;
+}
+
+.posterDiv h2{
   font-size: 42px;
 }
 
 .posterDiv2 {
   border: 0px solid #fff;
   border-radius: 20px;
-  background-color: black;
+  background-color:#2b2b2b;
   margin-bottom: 5rem;
   display: flex;
+  font-size: 42px;
+}
+
+.posterDiv2 h2{
   font-size: 42px;
 }
 .posterDiv3 {
@@ -174,14 +185,31 @@ iframe {
   font-size: 42px;
 }
 
+
+.posterDiv2 button{
+  background: #fefefe;
+  color: #2b2b2b;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 15px 50px;
+  font-weight: 500;
+  transition: transform .2s; /* Animation */
+}
+
+.posterDiv2 button:hover{
+  transform: scale(1.1);
+}
+
 .posterDiv3 h2 {
-  color: black;
+  color:#2b2b2b;
+  font-size: 42px;
 }
 
 .posterDiv3 button {
   background-color: orange;
   border: none;
-  color: white;
+  color: #FEFEFE;
   padding: 10px;
 }
 

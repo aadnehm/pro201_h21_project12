@@ -7,7 +7,7 @@ box-shadow: 0 -7px 15px #33333320;
 display: flex;
 justify-content: space-around;
 height: 100%;
-color: #333333;
+color: #2b2b2b
 }
 .header-text{
     font-weight: bold;
@@ -17,7 +17,7 @@ color: #333333;
 .footer a{
     cursor: pointer;
     text-decoration: none;
-    color: #333333;
+    color: #2b2b2b
 }
 .link-wrapper{
     transition: transform 0.1s ease-in-out;
@@ -74,7 +74,7 @@ color: #333333;
     padding-left: 10px;
 }
 .input-wrapper button{
-    background-color: #333333;
+    background-color: #2b2b2b;
     color: #FBFAFA;
     transition: .2s linear;
 }

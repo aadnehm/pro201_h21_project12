@@ -39,7 +39,7 @@ function WhatYouGet() {
             width: "100%",
             marginLeft: "auto",
             marginRight: "auto",
-            backgroundColor: "black",
+            backgroundColor: "#2b2b2b",
             borderRadius: "40px",
             marginTop: "5%",
           }}
@@ -274,7 +274,7 @@ function WhatYouGet() {
             width: "100%",
             marginLeft: "auto",
             marginRight: "auto",
-            backgroundColor: "black",
+            backgroundColor: "#2b2b2b",
             borderRadius: "40px",
             marginTop: "5rem",
             marginBottom: "10rem",
