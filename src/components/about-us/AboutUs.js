@@ -8,7 +8,7 @@ export default function AboutUs(props) {
 
   const [moreEnabled, setMoreEnabled] = useState(false);
   const aboutText =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloremque eaque illum minus non possimus quia recusandae repellat unde voluptates. Exercitationem, perspiciatis, repudiandae? Architecto culpa, cupiditate, dignissimos enim explicabo facilis illum inventore iure laboriosam molestias nam nemo nostrum optio soluta tempora ullam veritatis voluptates. Ad fugit ipsum libero nisi obcaecati officiis praesentium soluta? Adipisci animi asperiores beatae consequatur doloremque eius est et id, incidunt ipsam iure nisi odio officiis, placeat praesentium quasi qui quis quos suscipit temporibus ullam unde voluptates. Architecto at atque blanditiis consequatur deleniti dolores eaque eos ex expedita explicabo fugit, laudantium maiores molestiae, nemo nesciunt nostrum pariatur quo recusandae reiciendis rem reprehenderit saepe sunt tempora totam vel veritatis voluptas. Debitis ducimus illum ipsum itaque molestias non perspiciatis quibusdam quo voluptate, voluptatibus. ";
+  "Around the world, too many children start life at a disadvantage simply because of who they are and where they come from. Millions of children are dying from preventable causes, face poverty, violence, disease and hunger. They are caught up in war zones and disasters they did nothing to create. And they are denied an education and other basic rights owed to them. All children deserve better. We champion the rights and interests of children worldwide, putting the most vulnerable children first.";
 
   const handleMore = () => {
     setMoreEnabled(!moreEnabled);
