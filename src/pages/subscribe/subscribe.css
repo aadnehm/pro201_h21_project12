@@ -33,6 +33,8 @@
   /* Form */
   .subscription-form{
       margin: 5% 0;
+      display: flex;
+      justify-content: space-between;
   }
   .subscription-form h3{
     margin: 5% 0; 

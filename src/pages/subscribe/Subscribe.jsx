@@ -10,10 +10,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import { TextField } from "@mui/material";
-/* 
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker"; */
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import LocalizationProvider from "@mui/lab/LocalizationProvider";
+import DatePicker from "@mui/lab/DatePicker";
 
 
 /* CSS */
@@ -73,18 +72,25 @@ export function Subscribe() {
                 2000 NOK
               </MenuItem>
             </TextField>
-{/* 
+
+            <h3>Choose start date?</h3>
             <LocalizationProvider dateAdapter={AdapterDateFns}>
-              <DesktopDatePicker
-                label="For desktop"
+              <DatePicker
+                label="Choose a date"
                 value={date}
-                minDate={new Date("2017-01-01")}
                 onChange={(newValue) => {
                   setDate(newValue);
                 }}
-                renderInput={(params) => <TextField {...params} />}
+                renderInput={(params) => (
+                  <TextField
+                    color="secondary"
+                    fullWidth
+                    margin="dense"
+                    {...params}
+                  />
+                )}
               />
-            </LocalizationProvider> */}
+            </LocalizationProvider>
 
             <h3>Choose for how long?</h3>
             <TextField
@@ -116,7 +122,11 @@ export function Subscribe() {
               </MenuItem>
             </TextField>
           </FormControl>
+          <div>
+              <h3>Content you will get</h3>
+          </div>
         </div>
+        <button className={"donate-button"}>Go to payment</button>
       </div>
     </div>
   );
