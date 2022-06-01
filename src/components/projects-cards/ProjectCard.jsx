@@ -15,7 +15,6 @@ export function ProjectCardGrid({ data }) {
 
   const handleShowAll = () => {
     setShowAll(!showAll);
-    goToTop();
   };
 
   return (

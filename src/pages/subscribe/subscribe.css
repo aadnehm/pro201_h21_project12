@@ -1,0 +1,39 @@
+.subscribe-page-container{
+    margin: 10% auto 0;
+    width: 80%;
+}
+
+.subscribe-content{
+    border: 1px solid black;
+}
+
+/* Image grid */
+.subscribe-hero-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 0.8em;
+  row-gap: 1.2em;
+}
+
+.subscribe-hero-images img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.subscribe-small-img{
+    height: 30vh;
+  }
+  .subscribe-big-img {
+    height: 100%;
+    grid-row: span 2 / auto;
+  }
+
+  /* Form */
+  .subscription-form{
+      margin: 5% 0;
+  }
+  .subscription-form h3{
+    margin: 5% 0; 
+}

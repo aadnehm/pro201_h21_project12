@@ -25,6 +25,7 @@ function a11yProps(index) {
 
 export default function NonProfits() {
   let location = useLocation();
+  let navigate = useNavigate();
   useEffect(() => {}, [location]);
   let selectedNonProfit = {};
   const query = window.location.pathname.split("/").slice(-1)[0].toLowerCase();
@@ -70,7 +71,10 @@ export default function NonProfits() {
         <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
-          <button id={"top"} className={"donate-button"}>
+          <button id={"top"} className={"donate-button"} onClick={()=>{
+            navigate("/subscribe", {state:{img:selectedNonProfit.img}})
+            goToTop()
+          }}>
             Donate
           </button>
         </div>
