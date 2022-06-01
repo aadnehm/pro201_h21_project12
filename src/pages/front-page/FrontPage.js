@@ -250,10 +250,7 @@ function CuratedNonprofits() {
         <div className={"curated-nonprofits-text"}>
           <h1>Curated non-profits, just for you!</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            facilisis mi ac nunc tincidunt, vitae ultricies purus sodales. Morbi
-            nisl turpis, ornare id suscipit accumsan, volutpat vitae tortor.
-            Aenean.
+            We have a very thorough vetting process for our non-profits. You can have confidence in all the non-profits we've chosen. <br /> We also help you find the non-profits we think would fit your company's values!
           </p>
           <button>Become a giver</button>
         </div>
