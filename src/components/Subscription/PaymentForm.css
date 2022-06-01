@@ -1,71 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 .payment-container {
-  max-width: 60em;
-  margin: 3em auto;
-  background-color: #f3f5f6;
+    max-width: 60em;
+    margin: 3em auto;
+    background-color: #f3f5f6;
 }
+
 .form-grid-container {
-  display: flex;
-  max-width: 35em;
-  margin: 3em auto;
-  padding: 1em;
-  font-family: "DM Sans", sans-serif;
+    display: flex;
+    max-width: 35em;
+    margin: 3em auto;
+    padding: 1em;
+    font-family: "DM Sans", sans-serif;
 }
 
 .form-grid-container .label img {
-  margin: 0 0.2em;
+    margin: 0 0.2em;
 }
+
 .form-grid-container .label {
-  margin-top: 1.2em;
+    margin-top: 1.2em;
 }
 
 /* or pay with card  */
 .form-grid-container .heading-with-lines {
-  margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
+
 .lines {
-  width: 100%;
-  height: 0.6em;
-  border-bottom: 1px solid #c4c4c4;
-  text-align: center;
-  margin: 1em 0;
+    width: 100%;
+    height: 0.6em;
+    border-bottom: 1px solid #c4c4c4;
+    text-align: center;
+    margin: 1em 0;
 }
+
 .line-text {
-  font-size: 1em;
-  background-color: #f3f5f6;
-  padding: 0 10px;
-  margin-top: 3em;
+    font-size: 1em;
+    background-color: #f3f5f6;
+    padding: 0 10px;
+    margin-top: 3em;
 }
 
 /* buttons */
 .form-grid-container .vipps-button {
-  background-color: #ff5b24;
-  text-transform: capitalize;
+    background-color: #ff5b24;
+    text-transform: capitalize;
 }
+
 .form-grid-container .vipps-button:hover {
-  background-color: #ff5b24;
-  opacity: 0.8;
+    background-color: #ff5b24;
+    opacity: 0.8;
 }
+
 .form-grid-container .confirm-button {
-  background-color: #8792a2;
-  margin: 1em 0 0;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 18px;
+    background-color: #8792a2;
+    margin: 1em 0 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
 }
+
 .form-grid-container .confirm-button:hover {
-  background-color: #8792a2;
-  opacity: 0.8;
+    background-color: #8792a2;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 1200px) {
-  .payment-container {
-    max-width: 80vw;
-  }
+    .payment-container {
+        max-width: 80vw;
+    }
 }
+
 @media screen and (max-width: 600px) {
-  .payment-container {
-    max-width: 90vw;
-  }
+    .payment-container {
+        max-width: 90vw;
+    }
 }

@@ -47,10 +47,12 @@ export default function SigninEmployee() {
     const newData = e.target.value;
     setDataEpost(newData);
   }
+
   function childToParentPassword(e) {
     const newData = e.target.value;
     setDataPassword(newData);
   }
+
   function childToParentPassword1(e) {
     const newData = e.target.value;
     setDataPassword1(newData);
@@ -112,6 +114,7 @@ export default function SigninEmployee() {
     }
     return needsMoreValidation;
   }
+
   //Fetching companies
   const fetchCompanies = async () => {
     const response = db.collection("companies");

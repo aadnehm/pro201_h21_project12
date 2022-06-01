@@ -53,6 +53,7 @@ export function FrontPage() {
     </>
   );
 }
+
 function FrontPageHeader() {
   const navigate = useNavigate();
   const img =
@@ -108,6 +109,7 @@ function NewestNonProfits() {
 
 function NewestNonProfitsCard(props) {
   const navigate = useNavigate();
+
   function redirectNonprofit(name) {
     const path = "/nonprofit/" + name.replace(/ /g, "");
     navigate(path);

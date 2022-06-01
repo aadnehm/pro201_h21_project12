@@ -28,6 +28,7 @@ export default function Menu() {
           ref.current.lastChild.style.visibility = "visible";
         }
       }
+
       document.addEventListener("mousedown", handleClickOutside);
       return () => {
         document.removeEventListener("mousedown", handleClickOutside);
@@ -52,7 +53,7 @@ export default function Menu() {
               <img
                 src="/img/companies/company-f5.png"
                 alt="profil-img"
-                width={24}
+                height={24}
               />
             </div>
           </button>
@@ -75,7 +76,7 @@ export default function Menu() {
                   <li>Favorites</li>
                 </a>
               </div>
-              <div className="solid"></div>
+              <div className="solid" />
               <div className="menuDiv">
                 <a href="/" onClick={() => closeMenu()}>
                   <li>Privacy</li>

@@ -30,6 +30,7 @@ export default function Login() {
     const newData = e.target.value;
     setDataEpost(newData);
   }
+
   function childToParentPassword(e) {
     const newData = e.target.value;
     setDataPassword(newData);

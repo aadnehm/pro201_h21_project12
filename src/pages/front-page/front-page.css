@@ -4,6 +4,7 @@
   position: relative;
   font-family: "DM Sans", sans-serif;
 }
+
 .home-header1 .home-header1-content {
   position: absolute;
   bottom: 50vh;
@@ -11,6 +12,7 @@
   transform: translate(-50%, 50%);
   text-align: center;
 }
+
 .home-header1 .home-header1-content button {
   border: none;
   border-radius: 5px;
@@ -22,11 +24,13 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .home-header1 .home-header1-content button:first-of-type {
   background: #f69f37;
   color: #fefefe;
   margin-bottom: 20px;
 }
+
 .home-header1 .home-header1-content button:last-of-type {
   background: #fefefe;
   color: #2b2b2b;
@@ -47,6 +51,7 @@
   width: fit-content;
   margin: auto auto 40px;
 }
+
 .newest-nonprofit-card {
   display: flex;
   width: 400px;
@@ -92,6 +97,7 @@
   margin: 0;
   font-weight: 600;
 }
+
 .frontpage-content {
   width: 80vw;
   margin: 60px auto auto auto;
@@ -106,6 +112,7 @@
 .newest-nonprofit-card {
   margin: 10px 0 10px 0;
 }
+
 .data-card p:first-of-type {
   font-weight: bold;
   font-size: 22px;
@@ -153,6 +160,7 @@
 .impact-statements {
   margin-top: 70px;
 }
+
 .who-are-we {
   margin-top: 70px;
 }
@@ -167,6 +175,7 @@
   align-items: center;
   display: flex;
 }
+
 .curated-nonprofits-text {
   width: 40vw;
   margin: auto;
@@ -175,6 +184,7 @@
 .curated-nonprofits-content h1 {
   font-size: 60px;
 }
+
 .curated-nonprofits-content p {
   font-size: 22px;
 }
@@ -202,6 +212,7 @@
   align-items: center;
   display: flex;
 }
+
 .community-text {
   width: 40vw;
   margin: auto;

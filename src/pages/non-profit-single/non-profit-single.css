@@ -1,30 +1,30 @@
-.grey-line{
+.grey-line {
     background: lightgray;
     height: 2px;
     width: 80vw;
     margin: 30px auto auto auto;
 }
-.donate-button:hover{
+
+.donate-button:hover {
     transform: scale(1.1);
 }
-.nonprofit-content{
+
+.nonprofit-content {
     font-family: "DM Sans", sans-serif;
     background-color: #fefefe;
 }
 
-.nonprofit-content h1{
+.nonprofit-content h1 {
     font-size: 44px;
     font-weight: bold;
 }
 
 
-
-
-.nonprofit-content header{
+.nonprofit-content header {
     color: #fefefe;
 }
 
-.nonProfit-header-content{
+.nonProfit-header-content {
     position: absolute;
     bottom: 10vh;
     left: 10%;

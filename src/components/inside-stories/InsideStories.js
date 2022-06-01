@@ -62,6 +62,7 @@ export default function InsideStories({ selectedNonProfit }) {
   }
 
   let expandedPlayerId = 0;
+
   function HandlePlay(id) {
     if (expandedPlayerId !== 0) {
       document.getElementById(`reactPlayer${expandedPlayerId}`).className =

@@ -92,6 +92,7 @@ export default function CreateAccount() {
     const newData = e.target.value;
     setPassword(newData);
   }
+
   function childToParentConfirmedPassword(e) {
     const newData = e.target.value;
     setPasswordConfirmed(newData);
@@ -113,6 +114,7 @@ export default function CreateAccount() {
   ];
 
   let validated = true;
+
   function validateInputs() {
     if (postBox) {
       setPostalCodeError(false);
