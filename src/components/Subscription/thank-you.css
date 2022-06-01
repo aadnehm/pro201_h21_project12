@@ -1,0 +1,56 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/* farger som brukes på alle deler/component i subscriptions */
+:root {
+  --grey-color: lightgray;
+}
+
+.thankyou-component-container{
+  width: 60vw;
+  margin: 7em auto;
+  padding: 2em 5em;
+  border: 1px solid var(--grey-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.thankyou-component-container button{
+    width: 15em;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #F69F37;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+  }
+.thankyou-content-container {
+  font-size: 18px;
+  line-height: 1.8em;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thankyou-content-container span {
+    font-weight: bold;
+}
+.thankyou-content-container > *{
+    margin: 1em 0;
+}
+.some-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3em;
+}
+
+.some-gallery img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+
