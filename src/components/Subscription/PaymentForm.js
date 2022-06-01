@@ -77,7 +77,7 @@ export default function PaymentForm() {
   };
 
   return (
-    <div className="payment-container">
+
       <form autoComplete="off">
         <div className="form-grid-container">
           <Grid container>
@@ -89,7 +89,7 @@ export default function PaymentForm() {
                 size="large"
                 fullWidth
               >
-                Pay With <img src={vippsImg} style={{ height: "2em" }} alt="" />
+                Pay With <img src={vippsImg} style={{ height: "2em"}} alt="" />
               </Button>
             </Grid>
             {/* line and text */}
@@ -295,6 +295,6 @@ export default function PaymentForm() {
           </Grid>
         </div>
       </form>
-    </div>
+
   );
 }
