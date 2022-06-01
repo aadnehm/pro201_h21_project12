@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 //CSS
 import "./login.css";

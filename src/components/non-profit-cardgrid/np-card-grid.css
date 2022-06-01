@@ -2,7 +2,7 @@
   margin: 2rem auto;
   max-width: 80vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   column-gap: 120px;
   row-gap: 70px;
   font-family: "DM Sans", sans-serif;
@@ -12,7 +12,7 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 3%;
-  transition: transform .2s; /* Animation */
+  transition: transform 0.2s; /* Animation */
 }
 
 .np-card:hover {
@@ -26,12 +26,12 @@
   object-fit: cover;
   width: 100%;
   height: 240px;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
 }
 
 .np-card-content {
   line-height: 2.5;
-  font-size: 1em;
+  font-size: 22px;
   padding: 15px;
 }
 
@@ -56,7 +56,7 @@
 
 /* kan ha flex og justify content spacebetween om det er flere ting */
 .np-card-footer {
-  font-size: 0.8em;
+  font-size: 18px;
   font-weight: bold;
   padding: 0 0 15px 15px;
   margin-top: 30px;

@@ -14,7 +14,7 @@
 .home-header1 .home-header1-content button {
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   padding: 15px 15px;
   width: 300px;
   font-weight: 500;
@@ -88,7 +88,7 @@
 
 .newest-nonprofit-card div p:last-of-type {
   color: #777777;
-  font-size: 13px;
+  font-size: 16px;
   margin: 0;
   font-weight: 600;
 }
@@ -108,7 +108,7 @@
 }
 .data-card p:first-of-type {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   margin: 10px 0 0 0;
 }
 
@@ -137,7 +137,7 @@
 .choose-subscription-content-text button {
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px 20px 10px 20px;
   width: 200px;
   font-weight: 500;
@@ -176,13 +176,13 @@
   font-size: 60px;
 }
 .curated-nonprofits-content p {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .curated-nonprofits-content button {
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px 20px 10px 20px;
   width: 200px;
   font-weight: 500;
@@ -217,7 +217,7 @@
   margin-top: 30px;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px 20px 10px 20px;
   width: 200px;
   font-weight: 500;
@@ -233,7 +233,7 @@
 .community-text input {
   margin-top: 30px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px 20px 10px 20px;
   font-weight: 500;
   transition: transform 0.2s;

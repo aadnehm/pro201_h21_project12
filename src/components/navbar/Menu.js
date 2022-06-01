@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./menu.css";
 
 //Icons
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import Hamburger from "hamburger-react";
 import LogoutIcon from "@mui/icons-material/Logout";
 
@@ -51,10 +50,10 @@ export default function Menu() {
             </div>
             <div className="personIcon buttonSymbol">
               <img
-                src="/img/non-profit/pngshell.png"
+                src="/img/companies/company-f5.png"
                 alt="profil-img"
                 width={24}
-              ></img>
+              />
             </div>
           </button>
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
