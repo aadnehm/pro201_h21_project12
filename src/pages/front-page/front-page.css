@@ -1,247 +1,242 @@
-.home-header1{
-    height: 80vh;
-    color: #eaeaea;
-    position: relative;
-    font-family: "DM Sans",sans-serif;
+.home-header1 {
+  height: 80vh;
+  color: #eaeaea;
+  position: relative;
+  font-family: "DM Sans", sans-serif;
 }
-.home-header1 .home-header1-content{
-    position: absolute;
-    bottom: 50vh;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    text-align: center;
+.home-header1 .home-header1-content {
+  position: absolute;
+  bottom: 50vh;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
 }
-.home-header1 .home-header1-content button{
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 15px 15px;
-    width: 300px;
-    font-weight: 500;
-    transition: transform .2s;
-    margin-left: 10px;
-    margin-right: 10px;
+.home-header1 .home-header1-content button {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 15px;
+  width: 300px;
+  font-weight: 500;
+  transition: transform 0.2s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .home-header1 .home-header1-content button:first-of-type {
-    background: #F69F37;
-    color: #fefefe;
-    margin-bottom: 20px;
+  background: #f69f37;
+  color: #fefefe;
+  margin-bottom: 20px;
 }
 .home-header1 .home-header1-content button:last-of-type {
-    background: #fefefe;
-    color: #2b2b2b
+  background: #fefefe;
+  color: #2b2b2b;
 }
 
-.home-header1 .home-header1-content button:hover{
-    transform: scale(1.1);
+.home-header1 .home-header1-content button:hover {
+  transform: scale(1.1);
 }
 
-.home-header1-content h1{
-    font-size: 80px;
-    margin: auto auto 3vh auto;
-    width: fit-content;
-    font-weight: bold;
+.home-header1-content h1 {
+  font-size: 80px;
+  margin: auto auto 3vh auto;
+  width: fit-content;
+  font-weight: bold;
 }
 
-.home-header1-content h4{
-    width: fit-content;
-    margin: auto auto 40px;
+.home-header1-content h4 {
+  width: fit-content;
+  margin: auto auto 40px;
 }
-.newest-nonprofit-card{
-    display: flex;
-    width: 400px;
-    transition: .2s linear;
-    border-radius: 20px;
-}
-
-.newest-nonprofit-card:hover{
-    background: #f3f3f3;
-    cursor: pointer;
+.newest-nonprofit-card {
+  display: flex;
+  width: 400px;
+  transition: 0.2s linear;
+  border-radius: 20px;
 }
 
-
-.newest-nonprofits-cardgrid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.newest-nonprofit-card:hover {
+  background: #f3f3f3;
+  cursor: pointer;
 }
 
-.person-cardgrid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 75px;
+.newest-nonprofits-cardgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
-
-.newest-nonprofit-card img{
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 20px;
+.person-cardgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
 }
 
-.newest-nonprofit-card div p:first-of-type{
-    color: #2b2b2b;
-    font-weight: bolder;
-    margin-bottom: 0;
+.newest-nonprofit-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
-.newest-nonprofit-card div p:last-of-type{
-    color: #777777;
-    font-size: 13px;
-    margin: 0;
-    font-weight: 600;
-}
-.frontpage-content{
-    width: 80vw;
-    margin: 60px auto auto auto;
+.newest-nonprofit-card div p:first-of-type {
+  color: #2b2b2b;
+  font-weight: bolder;
+  margin-bottom: 0;
 }
 
-.newest-nonprofit-card-text{
-    justify-content: center;
-    height: fit-content;
-    margin: auto 0 auto 0;
+.newest-nonprofit-card div p:last-of-type {
+  color: #777777;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 600;
+}
+.frontpage-content {
+  width: 80vw;
+  margin: 60px auto auto auto;
 }
 
-.newest-nonprofit-card{
-    margin: 10px 0 10px 0;
-}
-.data-card p:first-of-type{
-    font-weight: bold;
-    font-size: 20px;
-    margin: 10px 0 0 0;
+.newest-nonprofit-card-text {
+  justify-content: center;
+  height: fit-content;
+  margin: auto 0 auto 0;
 }
 
-.data-card img{
-    width: 23vw;
-    height: 23vw;
-    object-fit: cover;
-    border-radius: 5px;
+.newest-nonprofit-card {
+  margin: 10px 0 10px 0;
+}
+.data-card p:first-of-type {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0 0 0;
 }
 
-.choose-subscription-content{
-    border-radius: 20px;
-    height: 70vh;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
+.data-card img {
+  width: 23vw;
+  height: 23vw;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.choose-subscription-content-text{
-    color: #fefefe;
-    width: fit-content;
-    margin-left: 10vw;
+.choose-subscription-content {
+  border-radius: 20px;
+  height: 70vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
 }
 
-
-.choose-subscription-content-text button{
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    width: 200px;
-    font-weight: 500;
-    transition: transform .2s;
-    background: #fefefe;
-    color: #2b2b2b
+.choose-subscription-content-text {
+  color: #fefefe;
+  width: fit-content;
+  margin-left: 10vw;
 }
 
-
-.choose-subscription-content-text button:hover{
-    transform: scale(1.1);
+.choose-subscription-content-text button {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  width: 200px;
+  font-weight: 500;
+  transition: transform 0.2s;
+  background: #fefefe;
+  color: #2b2b2b;
 }
 
-.impact-statements{
-    margin-top: 70px;
-}
-.who-are-we{
-    margin-top: 70px;
+.choose-subscription-content-text button:hover {
+  transform: scale(1.1);
 }
 
-.curated-nonprofits-content{
-    color: #fefefe;
-    width: 50vw;
-    height: 80vh;
-    background-color: #2b2b2b;
-    border-radius: 5px;
-    text-align: center;
-    align-items: center;
-    display: flex;
+.impact-statements {
+  margin-top: 70px;
 }
-.curated-nonprofits-text{
-    width: 40vw;
-    margin: auto;
+.who-are-we {
+  margin-top: 70px;
 }
 
-.curated-nonprofits-content h1{
-    font-size: 60px;
+.curated-nonprofits-content {
+  color: #fefefe;
+  width: 50vw;
+  height: 80vh;
+  background-color: #2b2b2b;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  display: flex;
 }
-.curated-nonprofits-content p{
-    font-size: 20px;
-}
-
-.curated-nonprofits-content button{
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    width: 200px;
-    font-weight: 500;
-    transition: transform .2s;
-    background: #F69F37;
-    color: #FEFEFE;
+.curated-nonprofits-text {
+  width: 40vw;
+  margin: auto;
 }
 
-.curated-nonprofits-content button:hover{
-    transform: scale(1.1);
+.curated-nonprofits-content h1 {
+  font-size: 60px;
+}
+.curated-nonprofits-content p {
+  font-size: 20px;
 }
 
-
-.community-content{
-    height: 50vh;
-    width: 50vw;
-    text-align: center;
-    align-items: center;
-    display: flex;
-}
-.community-text{
-    width: 40vw;
-    margin: auto;
-    color: #2b2b2b
+.curated-nonprofits-content button {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  width: 200px;
+  font-weight: 500;
+  transition: transform 0.2s;
+  background: #f69f37;
+  color: #fefefe;
 }
 
-.community-text h1{
-    font-size: 50px;
-    font-weight: bold;
+.curated-nonprofits-content button:hover {
+  transform: scale(1.1);
 }
 
-.community-text button{
-    margin-top: 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    width: 200px;
-    font-weight: 500;
-    transition: transform .2s;
-    background: #2b2b2b;
-    color: #FEFEFE;
+.community-content {
+  height: 50vh;
+  width: 50vw;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.community-text {
+  width: 40vw;
+  margin: auto;
+  color: #2b2b2b;
 }
 
-.community-text button:hover{
-    transform: scale(1.1);
+.community-text h1 {
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.community-text input{
-    margin-top: 30px;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    font-weight: 500;
-    transition: transform .2s;
-    border: solid 2px #2b2b2b;
+.community-text button {
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  width: 200px;
+  font-weight: 500;
+  transition: transform 0.2s;
+  background: #2b2b2b;
+  color: #fefefe;
+}
+
+.community-text button:hover {
+  transform: scale(1.1);
+}
+
+.community-text input {
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  font-weight: 500;
+  transition: transform 0.2s;
+  border: solid 2px #2b2b2b;
+  width: 70%;
 }
