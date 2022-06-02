@@ -50,12 +50,14 @@ export default function AboutProjects({ project }) {
 
 function TestemonialsCard({ testemonial }) {
   return (
-    <div>
+    <div className="testemonials-content">
       <div className="title-and-img">
         <img src={process.env.PUBLIC_URL + testemonial.img} alt="" />
-        <h4>{testemonial.name}</h4>
       </div>
-      <p className="p-margin">{testemonial.text}</p>
+      <div className="testemonial-text">
+        <h4>{testemonial.name}</h4>
+        <p>{testemonial.text}</p>
+      </div>
     </div>
   );
 }

@@ -42,8 +42,8 @@
 
 .companies-testemonials-grid {
   display: flex;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .companies-testemonials-grid img {
@@ -54,16 +54,7 @@
   object-fit: cover;
 }
 
-.companies-testemonials-grid .title-and-img {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-}
-
 .companies-testemonials-grid p {
-  margin-left: 4em;
-  width: 80%;
   font-size: 22px;
 }
 
@@ -78,4 +69,14 @@
 
 p {
   font-size: 22px;
+}
+
+.testemonials-content {
+  display: flex;
+  margin-bottom: 4 em;
+}
+
+.testemonials-content .testemonial-text {
+  width: 30vw;
+  margin-top: 0.6em;
 }
