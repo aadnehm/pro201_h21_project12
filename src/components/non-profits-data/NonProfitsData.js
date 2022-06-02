@@ -497,6 +497,8 @@ const nonProfitsPosts = [
   {
     id: "1",
     img: "/img/non-profits/headers/reddbarna-header.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "Save the children",
     averageDonated: 1550,
     aboutText:
@@ -517,6 +519,8 @@ const nonProfitsPosts = [
   {
     id: "2",
     img: "/img/non-profits/headers/generosity-header.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Generosity",
     averageDonated: 2000,
     aboutText:
@@ -536,6 +540,8 @@ const nonProfitsPosts = [
   {
     id: "3",
     img: "/img/non-profits/headers/the-education-trust-header.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "The education trust",
     averageDonated: 500,
     aboutText:
@@ -555,6 +561,8 @@ const nonProfitsPosts = [
   {
     id: "4",
     img: "/img/non-profits/headers/helsinki-foundation-header.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Helsinki Foundation",
     averageDonated: 200,
     aboutText:
@@ -574,6 +582,8 @@ const nonProfitsPosts = [
   {
     id: "5",
     img: "/img/non-profits/headers/just-a-drop-header.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Just a drop",
     averageDonated: 3200,
     aboutText:
@@ -593,6 +603,8 @@ const nonProfitsPosts = [
   {
     id: "6",
     img: "/img/non-profits/headers/sos-barnebyer-header.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "SOS barnebyer",
     averageDonated: 800,
     aboutText:
@@ -612,6 +624,8 @@ const nonProfitsPosts = [
   {
     id: "7",
     img: "/img/eksempelbilde2.png",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     name: "Charity:Water",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova lorem ",
@@ -630,6 +644,8 @@ const nonProfitsPosts = [
   {
     id: "8",
     img: "/img/eksempelbilde10.png",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     name: "Leger uten grenser",
     averageDonated: 150,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -648,6 +664,8 @@ const nonProfitsPosts = [
   {
     id: "9",
     img: "/img/eksempelbilde4.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "Occean Conservacy",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -666,6 +684,8 @@ const nonProfitsPosts = [
   {
     id: "10",
     img: "/img/eksempelbilde5.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Amnesty",
     averageDonated: 350,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -684,6 +704,8 @@ const nonProfitsPosts = [
   {
     id: "6",
     img: "/img/eksempelbilde6.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Education Trust",
     averageDonated: 400,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -702,6 +724,8 @@ const nonProfitsPosts = [
   {
     id: "7",
     img: "/img/eksempelbilde7.png",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     name: "The tomorrow school",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -716,6 +740,8 @@ const nonProfitsPosts = [
   {
     id: "12",
     img: "/img/eksempelbilde8.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "Care Norge",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -734,6 +760,8 @@ const nonProfitsPosts = [
   {
     id: "13",
     img: "/img/eksempelbilde9.png",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     name: "Forum 18",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -752,6 +780,8 @@ const nonProfitsPosts = [
   {
     id: "14",
     img: "/img/eksempelbilde11.png",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     name: "African Education Foundation",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -770,6 +800,8 @@ const nonProfitsPosts = [
   {
     id: "15",
     img: "/img/eksempelbilde12.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "Earth Justice",
     averageDonated: 200,
     aboutText: "lorem ipsum cadeva ivo fiva pova",
@@ -788,6 +820,8 @@ const nonProfitsPosts = [
   {
     id: "16",
     img: "/img/eksempelbilde13.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "United way",
     averageDonated: 300,
     aboutText: "lorem ipsum cadeva ivo fiva pova",

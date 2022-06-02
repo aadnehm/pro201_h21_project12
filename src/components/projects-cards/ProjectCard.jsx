@@ -6,7 +6,6 @@ import { goToTopQuickly } from "../../lib/toTop";
 export function ProjectCardGrid({ data }) {
   const reddBarnaProjects = data.projects;
   const [showAll, setShowAll] = useState(false);
-
   const goToTop = () => {
     window.scrollTo({
       top: 670,
@@ -16,7 +15,6 @@ export function ProjectCardGrid({ data }) {
 
   const handleShowAll = () => {
     setShowAll(!showAll);
-    goToTop();
   };
 
   return (

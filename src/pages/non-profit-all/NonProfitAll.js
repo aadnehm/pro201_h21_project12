@@ -13,7 +13,7 @@ import { useNavigate } from "react-router";
 
 export function NonProfitAll() {
   const img =
-    "url(" + process.env.PUBLIC_URL + "/img/non-profit/nonProfitHero.png)";
+    "url(img/non-profit/nonProfitHero.png)";
   return (
     <div className="nonProfit-search-container">
       <div
