@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="footer-left">
             <div className="footer-icon-wrapper">
               <img
-                src={process.env.PUBLIC_URL + "/img/MI-logo-black1.png"}
+                src={process.env.PUBLIC_URL + "/img/icons/MI-logo-black1.png"}
                 alt="logo"
               />
             </div>

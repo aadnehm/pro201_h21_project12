@@ -233,7 +233,7 @@ function ImpactCard(props) {
         <div className={"data-card"} key={index}>
           <img src={process.env.PUBLIC_URL + value.img1} alt={"image"} />
           <br />
-          <text>Project</text>
+          <textField>Project</textField>
           <p>{value.name}</p>
         </div>
       ))}

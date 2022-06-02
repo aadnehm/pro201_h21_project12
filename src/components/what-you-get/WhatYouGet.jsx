@@ -65,7 +65,9 @@ function WhatYouGet() {
                 sx={{ flex: "1 0 auto" }}
                 style={{ height: "100%" }}
                 component="img"
-                image={process.env.PUBLIC_URL + "/img/WYGTopBanner.png"}
+                image={
+                  process.env.PUBLIC_URL + "/img/social-media/WYGTopBanner.png"
+                }
                 alt="what you get banner"
               />
             </Grid>
@@ -78,21 +80,27 @@ function WhatYouGet() {
           <Grid item lg={2}></Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGInstaStory1.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGInstaStory1.png"
+              }
               alt="instagram story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGInstaStory2.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGInstaStory2.png"
+              }
               alt="instagram story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGInstaStory3.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGInstaStory3.png"
+              }
               alt="instagram story"
               style={{ width: "90%" }}
             ></img>
@@ -103,21 +111,30 @@ function WhatYouGet() {
                 <Grid item lg={2}></Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGInstaStory4.png"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/img/social-media/WYGInstaStory4.png"
+                    }
                     alt="instagram story"
                     style={{ width: "90%" }}
                   ></img>
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGInstaStory5.png"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/img/social-media/WYGInstaStory5.png"
+                    }
                     alt="instagram story"
                     style={{ width: "90%" }}
                   ></img>
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGInstaStory6.png"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/img/social-media/WYGInstaStory6.png"
+                    }
                     alt="instagram story"
                     style={{ width: "90%" }}
                   ></img>
@@ -149,21 +166,27 @@ function WhatYouGet() {
         <Grid container spacing={12}>
           <Grid item xs={12} lg={4}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGLinkedIn1.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGLinkedIn1.png"
+              }
               alt="LinkedIn story"
               style={{ width: "100%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={4}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGLinkedIn2.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGLinkedIn2.png"
+              }
               alt="LinkedIn story"
               style={{ width: "100%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={4}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGLinkedIn4.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGLinkedIn4.png"
+              }
               alt="LinkedIn story"
               style={{ width: "100%" }}
             ></img>
@@ -173,21 +196,27 @@ function WhatYouGet() {
           <Grid container spacing={12}>
             <Grid item xs={12} lg={4}>
               <img
-                src={process.env.PUBLIC_URL + "/img/WYGLinkedIn3.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/social-media/WYGLinkedIn3.png"
+                }
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
               ></img>
             </Grid>
             <Grid item xs={12} lg={4}>
               <img
-                src={process.env.PUBLIC_URL + "/img/WYGLinkedIn4.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/social-media/WYGLinkedIn4.png"
+                }
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
               ></img>
             </Grid>
             <Grid item xs={12} lg={4}>
               <img
-                src={process.env.PUBLIC_URL + "/img/WYGLinkedIn1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/social-media/WYGLinkedIn1.png"
+                }
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
               ></img>
@@ -210,21 +239,27 @@ function WhatYouGet() {
           <Grid item lg={2}></Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGSnapchat1.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGSnapchat1.png"
+              }
               alt="snapchat story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGSnapchat2.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGSnapchat2.png"
+              }
               alt="snapchat story"
               style={{ width: "90%" }}
             ></img>
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
-              src={process.env.PUBLIC_URL + "/img/WYGSnapchat3.png"}
+              src={
+                process.env.PUBLIC_URL + "/img/social-media/WYGSnapchat3.png"
+              }
               alt="snapchat story"
               style={{ width: "90%" }}
             ></img>
@@ -235,21 +270,30 @@ function WhatYouGet() {
                 <Grid item lg={2}></Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGSnapchat4.png"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/img/social-media/WYGSnapchat4.png"
+                    }
                     alt="snapchat story"
                     style={{ width: "90%" }}
                   ></img>
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGSnapchat5.png"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/img/social-media/WYGSnapchat5.png"
+                    }
                     alt="snapchat story"
                     style={{ width: "90%" }}
                   ></img>
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
-                    src={process.env.PUBLIC_URL + "/img/WYGSnapchat6.png"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/img/social-media/WYGSnapchat6.png"
+                    }
                     alt="snapchat story"
                     style={{ width: "90%" }}
                   ></img>
@@ -296,7 +340,10 @@ function WhatYouGet() {
                 sx={{ flex: "1 0 auto" }}
                 style={{ height: "100%" }}
                 component="img"
-                image={process.env.PUBLIC_URL + "/img/WYGBottomBanner.png"}
+                image={
+                  process.env.PUBLIC_URL +
+                  "/img/social-media/WYGBottomBanner.png"
+                }
                 alt="what you get banner"
               />
             </Grid>

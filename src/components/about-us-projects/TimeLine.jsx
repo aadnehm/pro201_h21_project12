@@ -11,7 +11,9 @@ export default function TimeLine() {
             <div className="dot-text">
               <img
                 className="img-left"
-                src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                }
                 alt="bilde"
               />
               <h3>Start</h3>
@@ -24,7 +26,9 @@ export default function TimeLine() {
             <div className="dot-text">
               <img
                 className="img-left"
-                src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                }
                 alt="bilde"
               />
               <h3>Lorem</h3>
@@ -39,7 +43,9 @@ export default function TimeLine() {
             <div className="dot-text">
               <img
                 className="img-left"
-                src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                }
                 alt="bilde"
               />
               <h3>Lorem</h3>
@@ -51,7 +57,9 @@ export default function TimeLine() {
             <div className="dot-text">
               <img
                 className="img-left"
-                src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                }
                 alt="bilde"
               />
               <h3>Lorem</h3>
@@ -66,7 +74,9 @@ export default function TimeLine() {
             <div className="dot-text">
               <img
                 className="img-left"
-                src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                }
                 alt="bilde"
               />
               <h3>Lorem</h3>
@@ -78,7 +88,9 @@ export default function TimeLine() {
             <div className="dot-text">
               <img
                 className="img-left"
-                src={process.env.PUBLIC_URL + "/img/eksempelbilde1.png"}
+                src={
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                }
                 alt="bilde"
               />
               <h3>End</h3>

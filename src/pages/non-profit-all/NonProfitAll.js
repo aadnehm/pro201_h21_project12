@@ -82,7 +82,7 @@ export function ButtonAppBar() {
             <h5>Impact</h5>
           </div>
           <img
-            src={process.env.PUBLIC_URL + "/img/MI-logo-white.png"}
+            src={process.env.PUBLIC_URL + "/img/icons/MI-logo-white.png"}
             alt="logo-pic-login"
           />
         </IconButton>

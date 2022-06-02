@@ -92,7 +92,7 @@ export function NavbarSearch() {
       }
     });
   }, [search]);
-  const img = "url(" + process.env.PUBLIC_URL + "/img/searchicon.png)";
+  const img = "url(" + process.env.PUBLIC_URL + "/img/icons/searchicon.png)";
 
   return (
     <div className={"search-navbar"} ref={wrapperRef}>

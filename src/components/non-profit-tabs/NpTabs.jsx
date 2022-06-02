@@ -34,8 +34,13 @@ function TabPanel(props) {
 function ThumbUp() {
   return (
     <img
-      src={process.env.PUBLIC_URL + "/img/thumbup.png"}
-      style={{ height: "1.5em", width: "1.5em", marginRight: "0.5em" }}
+      src={process.env.PUBLIC_URL + "/img/icons/thumbup.png"}
+      style={{
+        height: "1.3em",
+        width: "1.3em",
+        marginRight: "0.5em",
+        opacity: 0.7,
+      }}
       alt={"icon"}
     />
   );

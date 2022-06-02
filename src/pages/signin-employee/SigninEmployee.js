@@ -181,7 +181,7 @@ export default function SigninEmployee() {
       <div className="container-right">
         <img
           className="logo-login"
-          src="./img/MI-logo-black1.png"
+          src="./img/icons/MI-logo-black1.png"
           alt="logo-pic-login"
         />
         <div className="right-content">
