@@ -1,17 +1,16 @@
-
 .right-content-signin {
-    margin-top: -10%;
-    height: 55vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin-top: -10%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .right-content-signin .org-number {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .org-number .org-number-item {
-    width: 20%;
+  width: 20%;
 }

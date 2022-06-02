@@ -1,6 +1,6 @@
 import "./np-card-grid.css";
 import { useNavigate } from "react-router";
-import { goToTop } from "../../lib/toTop";
+import { goToTop, goToTopQuickly } from "../../lib/toTop";
 
 export function NpCardGrid({ data }) {
   return (
@@ -18,7 +18,7 @@ function Card({ post }) {
   function redirectNonprofit(name) {
     const path = "/nonprofit/" + name.replace(/ /g, "").toLowerCase();
     navigate(path);
-    goToTop();
+    goToTopQuickly();
   }
 
   return (

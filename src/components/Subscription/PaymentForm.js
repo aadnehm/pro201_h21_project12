@@ -83,12 +83,7 @@ export default function PaymentForm() {
           <Grid container>
             {/* vipps button */}
             <Grid item xs={12}>
-              <Button
-                className="vipps-button"
-                variant="contained"
-                size="large"
-                fullWidth
-              >
+              <Button className="vipps-button" variant="contained" size="large">
                 Pay With <img src={vippsImg} style={{ height: "2em" }} alt="" />
               </Button>
             </Grid>
@@ -286,7 +281,6 @@ export default function PaymentForm() {
                 className="confirm-button"
                 variant="contained"
                 size="large"
-                fullWidth
                 onClick={handleConfirmClick}
               >
                 <div>Confirm Payment</div>

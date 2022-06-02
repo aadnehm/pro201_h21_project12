@@ -4,3 +4,10 @@ export const goToTop = () => {
     behavior: "smooth",
   });
 };
+
+export const goToTopQuickly = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "instant",
+  });
+};

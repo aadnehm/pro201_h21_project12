@@ -7,13 +7,12 @@ import Tabs from "@mui/material/Tabs";
 import "./non-profit-single.css";
 import InsideStories from "../../components/inside-stories/InsideStories";
 import { useLocation, useNavigate } from "react-router";
-import { goToTop } from "../../lib/toTop";
+import { goToTop, goToTopQuickly } from "../../lib/toTop";
 import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 import TabPanel from "../../lib/TabPanel";
-import { SportsRugbySharp } from "@mui/icons-material";
 
 function a11yProps(index) {
   return {
@@ -145,7 +144,7 @@ function NavTabs(props) {
           }}
           onClick={() => {
             navigate("/nonprofits");
-            goToTop();
+            goToTopQuickly();
           }}
         >
           Back to nonprofits

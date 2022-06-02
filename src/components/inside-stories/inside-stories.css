@@ -163,7 +163,7 @@ iframe {
 }
 
 .posterDiv {
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   border-radius: 20px;
   background-color: #2b2b2b;
   margin-bottom: 5rem;
@@ -176,7 +176,7 @@ iframe {
 }
 
 .posterDiv2 {
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   border-radius: 20px;
   background-color: #2b2b2b;
   margin-bottom: 5rem;
@@ -189,7 +189,7 @@ iframe {
 }
 
 .posterDiv3 {
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   border-radius: 20px;
   background-color: #fefefe;
   margin-bottom: 5rem;
@@ -197,7 +197,7 @@ iframe {
 }
 
 .posterDiv2 button {
-  background: #FEFEFE;
+  background: #fefefe;
   color: #2b2b2b;
   border: none;
   border-radius: 5px;

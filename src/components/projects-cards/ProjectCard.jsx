@@ -1,6 +1,7 @@
 import "./project-card.css";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import { goToTopQuickly } from "../../lib/toTop";
 
 export function ProjectCardGrid({ data }) {
   const reddBarnaProjects = data.projects;
@@ -54,6 +55,7 @@ function Pcard({ project }) {
       "/" +
       project.name.replace(/ /g, "").toLowerCase();
     navigate(path);
+    goToTopQuickly();
   };
   const [heartFilterStyle, setHeartFilterStyle] = useState({});
 
@@ -109,7 +111,7 @@ function Pcard({ project }) {
         </div>
         <div className={"button-container"}>
           <button onClick={handleClick}>Go to project</button>
-          <button onClick={handleClick}>Donate</button>
+          <button>Donate</button>
         </div>
       </div>
       <span className="split-line"></span>

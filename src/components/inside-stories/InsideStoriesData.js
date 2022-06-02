@@ -71,5 +71,3 @@ const insideStoriesData = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 ];
-
-export default insideStoriesData;

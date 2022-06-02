@@ -8,7 +8,7 @@ import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
 
 import TabPanel from "../../lib/TabPanel";
-import { goToTop } from "../../lib/toTop";
+import { goToTop, goToTopQuickly } from "../../lib/toTop";
 import InsideStories from "../../components/inside-stories/InsideStories";
 import { OurProjectDonators } from "../../components/Projects-OurDonators/OurDonators";
 import AboutProjects from "../../components/about-us-projects/AboutProjects";
@@ -171,14 +171,14 @@ function NavTabs(props) {
             border: "none",
             background: "transparent",
             fontWeight: "600",
-            color: "rgba(0, 0, 0, 0.6)"
+            color: "rgba(0, 0, 0, 0.6)",
           }}
           onClick={() => {
             navigate(
               "/nonprofit/" +
                 props.nonProfit.name.replace(/ /g, "").toLowerCase()
             );
-            goToTop();
+            goToTopQuickly();
           }}
         >
           {"Back to " + props.nonProfit.name}

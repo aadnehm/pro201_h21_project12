@@ -514,7 +514,6 @@ export default function CreateAccount() {
                 className="create-button"
                 variant="contained"
                 size="large"
-                fullWidth
                 onClick={handleLogin}
               >
                 <div>Create Account</div>

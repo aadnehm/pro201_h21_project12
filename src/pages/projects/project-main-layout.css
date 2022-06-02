@@ -1,26 +1,25 @@
 .donate-button {
-    background: #F69F37;
-    color: #fefefe;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px 40px;
-    font-weight: 500;
-    transition: transform .2s; /* Animation */
+  background: #f69f37;
+  color: #fefefe;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 40px;
+  font-weight: 500;
+  transition: transform 0.2s; /* Animation */
 }
 
 .nonprofit-content {
-    font-family: "DM Sans", sans-serif;
-    background: #fefefe;
+  font-family: "DM Sans", sans-serif;
+  background: #fefefe;
 }
 
 .nonprofit-content header {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 .nonProfit-header-content {
-    position: absolute;
-    bottom: 10vh;
-    left: 10%;
+  position: absolute;
+  bottom: 10vh;
+  left: 10%;
 }
-
