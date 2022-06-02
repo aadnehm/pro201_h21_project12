@@ -48,10 +48,13 @@
     margin-bottom: -1em;
 }
 
-.some-card-top-line{
+.thank-you-some-card .s-card-top-line{
+    position: relative;
+    top: 0.3em;
     height: .3em;
     background-color:#8A8A8A;
     margin: 1em;
+    margin-top: 1em;
     border-radius: 5px;
 }
 
@@ -119,6 +122,12 @@
      margin-top: 5em;
   }
 
+.thank-you-some-card input{
+    margin-left: 45%;
+    margin-top: 2em;
+    width: 1.5em;
+    height: 1.5em;
+}
 /* button at bottom */
 .thankyou-component-container button{
     width: 15em;

@@ -21,13 +21,13 @@ export default function ThankYou(){
 
 function SomeCard(){
     return (
-        <>
-        <div className="thank-you-some-card" style={{
+        <div className="thank-you-some-card"  >    
+        <div style={{
             background: `url(${
               process.env.PUBLIC_URL + "/img/projects/project-nepal/1.png"
             }) no-repeat center center/cover`,
           }}>
-              <div className="some-card-top-line"></div>
+              <div className="s-card-top-line"></div>
               <div className="some-company-info">
               <img src={process.env.PUBLIC_URL + "/img/uwork.png"} alt="" />
               <p>UWork</p>
@@ -43,9 +43,9 @@ function SomeCard(){
                 <img src={process.env.PUBLIC_URL + "/img/send.png"} alt="" />
               </div>
           </div>
-         
-  
-        </>
+          <input type="radio" />
+           
+        </div>
     )
 }
 
