@@ -5,28 +5,18 @@
   --grey-color: lightgray;
 }
 
+/* containers */
 .thankyou-component-container{
-  width: 60vw;
+  width: 70vw;
   margin: 7em auto;
-  padding: 2em 5em;
+  padding: 1em 5em;
   border: 1px solid var(--grey-color);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-
 }
 
-.thankyou-component-container button{
-    width: 15em;
-    padding: 10px 20px;
-    text-align: center;
-    color: #fff;
-    background-color: #F69F37;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-  }
 .thankyou-content-container {
   font-size: 18px;
-  line-height: 1.8em;
+  line-height: 1.2em;
   font-family: "Raleway", sans-serif;
   width: 100%;
   display: flex;
@@ -40,17 +30,94 @@
 .thankyou-content-container > *{
     margin: 1em 0;
 }
+
+/* some cards */
 .some-gallery{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
 }
 
-.some-gallery img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 6px;
+.thank-you-some-card{
+    max-width: 15em;
 }
+.thank-you-some-card input{
+    margin-bottom: -1em;
+}
+
+.some-card-top-line{
+    height: .3em;
+    background-color:#8A8A8A;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.some-company-info{
+    display: flex;
+    margin: -.5em 1em;
+    justify-content: left;
+}
+
+.some-company-info img{
+    height: 1em;
+    border-radius: 50%;
+}
+
+.some-company-info p{
+    color: #fff;
+    font-size: 15px;
+}
+.some-company-info p:nth-child(3){
+    margin-left:1em;
+}
+
+.some-card-text{
+   margin-top: 10em;
+   text-align: center;
+}
+.some-card-text h4{
+    margin: 1em auto;
+    background-color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.some-message-wrapper{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+
+}
+.some-card-message{
+    color: #8A8A8A;
+    height: 2em;
+    background:transparent;
+    margin: 1em;
+    border-radius: 10px;
+    border: 2px solid #C4C4C4;
+    width:70%;
+}
+.some-card-message p{
+    margin: .3em 0 0 1em;
+}
+.some-message-wrapper img{
+    height: 2em;
+    filter: invert(100%);
+}
+
+/* button at bottom */
+.thankyou-component-container button{
+    width: 15em;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #F69F37;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+  }
+
 
 
 

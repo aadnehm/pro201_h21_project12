@@ -101,6 +101,8 @@ export default function PaymentForm() {
             {/* select subscription */}
             <Grid item xs={12}>
               <TextField
+               color="secondary"
+               required
                 select
                 variant="outlined"
                 size="small"
@@ -128,6 +130,8 @@ export default function PaymentForm() {
                   width: "100%",
                   backgroundColor: "#fff",
                 }}
+                color="secondary"
+                required
                 value={email}
                 onChange={handleEmailChange}
                 id="outlined-basic"
@@ -161,6 +165,8 @@ export default function PaymentForm() {
                   width: "100%",
                   backgroundColor: "#fff",
                 }}
+                color="secondary"
+                required
                 id="outlined-basic"
                 placeholder="1234 1234 1234 1234"
                 variant="outlined"
@@ -184,6 +190,8 @@ export default function PaymentForm() {
                 size="small"
                 value={mmyy}
                 onChange={handleMmyy}
+                color="secondary"
+                required
               />
             </Grid>
             {/* cvc */}
@@ -200,6 +208,8 @@ export default function PaymentForm() {
                 size="small"
                 value={cvc}
                 onChange={handleCvc}
+                color="secondary"
+                required
               />
             </Grid>
             {/* name on card */}
@@ -216,6 +226,8 @@ export default function PaymentForm() {
                 size="small"
                 value={cardName}
                 onChange={handleCardName}
+                color="secondary"
+                required
               />
             </Grid>
             {/* radio save card information*/}
@@ -243,7 +255,8 @@ export default function PaymentForm() {
             <Grid item xs={12}>
               <TextField
                 select
-                variant="outlined"
+                color="secondary"
+                required
                 size="small"
                 /* label={country === " " ? country : ""} */
                 value={country}
@@ -271,6 +284,8 @@ export default function PaymentForm() {
                 variant="outlined"
                 size="small"
                 value={zip}
+                color="secondary"
+                required
                 onChange={handleZip}
                 style={{
                   margin: ".4em 0",
