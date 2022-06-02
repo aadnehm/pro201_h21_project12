@@ -10,7 +10,7 @@
 
 .np-card {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: #fefefe;
   border-radius: 3%;
   transition: transform 0.2s; /* Animation */
 }
