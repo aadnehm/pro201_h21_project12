@@ -54,6 +54,10 @@ export function FrontPage() {
   );
 }
 
+function onclickScroll() {
+  document.getElementsByClassName("who-are-we")[0].scrollIntoView();
+}
+
 function FrontPageHeader() {
   const navigate = useNavigate();
   const img =
@@ -85,7 +89,13 @@ function FrontPageHeader() {
         >
           Find Non-profit
         </button>
-        <button>About us</button>
+        <button
+          onClick={() => {
+            onclickScroll();
+          }}
+        >
+          About us
+        </button>
       </div>
     </div>
   );
@@ -254,9 +264,9 @@ function CuratedNonprofits() {
           <h1>Curated non-profits, just for you!</h1>
           <p>
             We have a very thorough vetting process for our non-profits. You can
-            have confidence in all the non-profits we've chosen, <br /> as well as trusting us to
-            help you find the non-profits that correspond with your company's
-            values!
+            have confidence in all the non-profits we've chosen, <br /> as well
+            as trusting us to help you find the non-profits that correspond with
+            your company's values!
           </p>
           <button>Become a giver</button>
         </div>
