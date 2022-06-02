@@ -13,8 +13,7 @@ import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 import TabPanel from "../../lib/TabPanel";
-import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
-
+import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutlined";
 
 function a11yProps(index) {
   return {
@@ -71,10 +70,19 @@ export default function NonProfits() {
         <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
           <p>{selectedNonProfit.aboutText}</p>
-          <button id={"top"} className={"donate-button"} onClick={()=>{
-            navigate("/subscribe", {state:{img:selectedNonProfit.img}})
-            goToTop()
-          }}>
+          <button
+            id={"top"}
+            className={"donate-button"}
+            onClick={() => {
+              navigate("/subscribe", {
+                state: {
+                  img: selectedNonProfit.img,
+                  name: selectedNonProfit.name,
+                },
+              });
+              goToTop();
+            }}
+          >
             Donate
           </button>
         </div>
@@ -151,23 +159,27 @@ function NavTabs(props) {
             goToTop();
           }}
         >
-          {<div><ArrowCircleLeftOutlinedIcon/> Back</div>}
+          {
+            <div>
+              <ArrowCircleLeftOutlinedIcon /> Back
+            </div>
+          }
         </button>
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutUs data={props.data} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <ProjectCardGrid data={props.data}/>
+        <ProjectCardGrid data={props.data} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <InsideStories selectedNonProfit={props.data}/>
+        <InsideStories selectedNonProfit={props.data} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <WhatYouGet/>
+        <WhatYouGet />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <OurDonators/>
+        <OurDonators />
       </TabPanel>
     </Box>
   );
