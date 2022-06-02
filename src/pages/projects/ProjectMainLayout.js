@@ -21,6 +21,7 @@ function a11yProps(index) {
 }
 
 export function Projects() {
+  const navigate = useNavigate();
   let location = useLocation();
   useEffect(() => {}, [location]);
   let selectedNonProfit = {};
@@ -103,7 +104,22 @@ export function Projects() {
         <div className="nonProfit-header-content">
           <h1>{selectedProject.name}</h1>
           <p style={{ width: "40vw" }}>{selectedProject.headerInfo}</p>
-          <button className={"donate-button"}>Donate</button>
+          <button
+            className={"donate-button"}
+            onClick={() => {
+              navigate("/subscribe", {
+                state: {
+                  project: selectedProject.name,
+                  img: selectedNonProfit.img,
+                  img1: selectedNonProfit.img1,
+                  img2: selectedNonProfit.img2,
+                  name: selectedNonProfit.name,
+                },
+              });
+            }}
+          >
+            Donate
+          </button>
         </div>
       </header>
       <NavTabs data={selectedProject} nonProfit={selectedNonProfit} />

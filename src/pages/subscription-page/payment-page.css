@@ -1,0 +1,26 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/* farger som brukes på alle deler/component i subscriptions */
+:root {
+  --grey-color: lightgray;
+}
+
+.payment-page-container{
+  width: 60vw;
+  margin: 7em auto;
+  padding: 2em 5em;
+  border: 1px solid var(--grey-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+}
+.payment-content-container {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

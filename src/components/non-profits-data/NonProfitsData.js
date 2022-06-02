@@ -497,6 +497,8 @@ const nonProfitsPosts = [
   {
     id: "1",
     img: "/img/non-profits/headers/reddbarna-header.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "Save the children",
     averageDonated: 1550,
     aboutText:
@@ -517,6 +519,8 @@ const nonProfitsPosts = [
   {
     id: "2",
     img: "/img/non-profits/headers/generosity-header.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Generosity",
     averageDonated: 2000,
     aboutText:
@@ -536,6 +540,8 @@ const nonProfitsPosts = [
   {
     id: "3",
     img: "/img/non-profits/headers/the-education-trust-header.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "The education trust",
     averageDonated: 500,
     aboutText:
@@ -555,6 +561,8 @@ const nonProfitsPosts = [
   {
     id: "4",
     img: "/img/non-profits/headers/helsinki-foundation-header.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Helsinki Foundation",
     averageDonated: 200,
     aboutText:
@@ -574,6 +582,8 @@ const nonProfitsPosts = [
   {
     id: "5",
     img: "/img/non-profits/headers/just-a-drop-header.png",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     name: "Just a drop",
     averageDonated: 3200,
     aboutText:
@@ -593,6 +603,8 @@ const nonProfitsPosts = [
   {
     id: "6",
     img: "/img/non-profits/headers/sos-barnebyer-header.png",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     name: "SOS barnebyer",
     averageDonated: 800,
     aboutText:
@@ -611,6 +623,8 @@ const nonProfitsPosts = [
   },
   {
     id: "7",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     img: "/img/non-profits/eksempelbilde2.png",
     name: "Charity:Water",
     averageDonated: 200,
@@ -629,6 +643,8 @@ const nonProfitsPosts = [
   },
   {
     id: "8",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     img: "/img/non-profits/eksempelbilde10.png",
     name: "Leger uten grenser",
     averageDonated: 150,
@@ -647,6 +663,8 @@ const nonProfitsPosts = [
   },
   {
     id: "9",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     img: "/img/non-profits/eksempelbilde4.png",
     name: "Occean Conservacy",
     averageDonated: 300,
@@ -665,6 +683,8 @@ const nonProfitsPosts = [
   },
   {
     id: "10",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     img: "/img/non-profits/eksempelbilde5.png",
     name: "Amnesty",
     averageDonated: 350,
@@ -683,6 +703,8 @@ const nonProfitsPosts = [
   },
   {
     id: "6",
+    img1: "/img/projects/project-somalia/1.png",
+    img2: "/img/projects/project-somalia/2.png",
     img: "/img/non-profits/eksempelbilde6.png",
     name: "Education Trust",
     averageDonated: 400,
@@ -701,6 +723,8 @@ const nonProfitsPosts = [
   },
   {
     id: "7",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     img: "/img/non-profits/eksempelbilde7.png",
     name: "The tomorrow school",
     averageDonated: 200,
@@ -715,6 +739,8 @@ const nonProfitsPosts = [
   },
   {
     id: "12",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     img: "/img/non-profits/eksempelbilde8.png",
     name: "Care Norge",
     averageDonated: 300,
@@ -733,6 +759,8 @@ const nonProfitsPosts = [
   },
   {
     id: "13",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     img: "/img/non-profits/eksempelbilde9.png",
     name: "Forum 18",
     averageDonated: 200,
@@ -751,6 +779,8 @@ const nonProfitsPosts = [
   },
   {
     id: "14",
+    img1: "/img/projects/project-nepal/1.png",
+    img2: "/img/projects/project-nepal/2.png",
     img: "/img/non-profits/eksempelbilde11.png",
     name: "African Education Foundation",
     averageDonated: 300,
@@ -769,6 +799,8 @@ const nonProfitsPosts = [
   },
   {
     id: "15",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     img: "/img/non-profits/eksempelbilde12.png",
     name: "Earth Justice",
     averageDonated: 200,
@@ -787,6 +819,8 @@ const nonProfitsPosts = [
   },
   {
     id: "16",
+    img1: "/img/projects/project-myanmar/1.png",
+    img2: "/img/projects/project-myanmar/2.png",
     img: "/img/non-profits/eksempelbilde13.png",
     name: "United way",
     averageDonated: 300,

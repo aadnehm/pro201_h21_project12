@@ -23,6 +23,7 @@ function a11yProps(index) {
 
 export default function NonProfits() {
   let location = useLocation();
+  let navigate = useNavigate();
   useEffect(() => {}, [location]);
   let selectedNonProfit = {};
   const query = window.location.pathname.split("/").slice(-1)[0].toLowerCase();
@@ -67,8 +68,22 @@ export default function NonProfits() {
       >
         <div className="nonProfit-header-content">
           <h1>{selectedNonProfit.name}</h1>
-          <h4>{selectedNonProfit.aboutText}</h4>
-          <button id={"top"} className={"donate-button"}>
+          <p>{selectedNonProfit.aboutText}</p>
+          <button
+            id={"top"}
+            className={"donate-button"}
+            onClick={() => {
+              navigate("/subscribe", {
+                state: {
+                  img: selectedNonProfit.img,
+                  img1: selectedNonProfit.img1,
+                  img2: selectedNonProfit.img2,
+                  name: selectedNonProfit.name,
+                },
+              });
+              goToTop();
+            }}
+          >
             Donate
           </button>
         </div>
@@ -86,6 +101,7 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
+  console.log(props.data)
   const navigate = useNavigate();
   const [value, setValue] = useState(0);
 
