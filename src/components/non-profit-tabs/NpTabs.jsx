@@ -61,6 +61,9 @@ export default function NavTabs() {
 
   const handleCatBtn = (e) => {
     setChosenCat(e);
+    document
+      .getElementsByClassName("nonProfit-search-categories")[0]
+      .scrollIntoView();
   };
   const filteredData = data.filter((post) => {
     return post.categories.includes(chosenCat);

@@ -64,6 +64,7 @@
 .nonProfit-search-categories {
   width: 80vw;
   margin: 8rem auto 8rem auto;
+  scroll-margin: 120px;
 }
 
 .MuiTabs-flexContainer button {
