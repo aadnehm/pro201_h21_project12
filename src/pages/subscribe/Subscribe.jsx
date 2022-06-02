@@ -69,7 +69,8 @@ export function Subscribe() {
   }
 
   let selectedProject = {};
-  if (location.pathname === 4) {
+  console.log(location.pathname.split("/").length);
+  if (location.pathname.split("/").length === 5) {
     const projectQuery = window.location.pathname
       .split("/")
       .slice(3)[0]
@@ -87,6 +88,7 @@ export function Subscribe() {
         break;
       }
     }
+    console.log(selectedProject);
     selectedData = selectedProject;
 
     if (selectedProject.name === undefined) {
@@ -131,9 +133,12 @@ export function Subscribe() {
 }
 
 function SubscribeContent(props) {
-  const [amount, setAamount] = useState();
+  const [amount, setAmount] = useState();
   console.log(props);
-  const img = props.selectedData.img;
+  let img = props.selectedData.img;
+  if (location.pathname.split("/").length === 5) {
+    img = props.selectedData.img3;
+  }
   const img1 = props.selectedData.img1;
   const img2 = props.selectedData.img2;
   const name = props.selectedData.name;
@@ -173,8 +178,7 @@ function SubscribeContent(props) {
       </div>
 
       <div className="subscription-form">
-        <FormSubscribe setAamount={setAamount} amount={amount} />
-
+        <FormSubscribe setAamount={setAmount} amount={amount} />
         <WhatYouGetSubscribe amount={amount} />
       </div>
       <button
@@ -348,14 +352,14 @@ function WhatYouGetSubscribe({ amount }) {
       {amount <= 1000 && (
         <div>
           <div className="subscribe-what-you-get-wrapper">
-            <InstagramIcon></InstagramIcon>
+            <InstagramIcon />
             <p>
               1 Inside story you can share on social media to showcase your
               impact every month
             </p>
           </div>
           <div className="subscribe-what-you-get-wrapper">
-            <FeedIcon></FeedIcon>
+            <FeedIcon />
             <p>
               1 article from the frontline with a exclusive interview with one
               of our volunteers.
@@ -366,21 +370,21 @@ function WhatYouGetSubscribe({ amount }) {
       {amount > 1000 && amount < 1750 && (
         <div>
           <div className="subscribe-what-you-get-wrapper">
-            <InstagramIcon></InstagramIcon>
+            <InstagramIcon />
             <p>
               2 Inside story you can share on social media to showcase your
               impact every month
             </p>
           </div>
           <div className="subscribe-what-you-get-wrapper">
-            <FeedIcon></FeedIcon>
+            <FeedIcon />
             <p>
               2 article from the frontline with a exclusive interview with one
               of our volunteers.
             </p>
           </div>
           <div className="subscribe-what-you-get-wrapper">
-            <BarChartIcon></BarChartIcon>
+            <BarChartIcon />
             <p>Progress reports to use in your annual report</p>
           </div>
         </div>
@@ -388,25 +392,25 @@ function WhatYouGetSubscribe({ amount }) {
       {amount >= 1750 && (
         <div>
           <div className="subscribe-what-you-get-wrapper">
-            <InstagramIcon></InstagramIcon>
+            <InstagramIcon />
             <p>
               4 Inside story you can share on social media to showcase your
               impact every month
             </p>
           </div>
           <div className="subscribe-what-you-get-wrapper">
-            <FeedIcon></FeedIcon>
+            <FeedIcon />
             <p>
               2 article from the frontline with a exclusive interview with one
               of our volunteers.
             </p>
           </div>
           <div className="subscribe-what-you-get-wrapper">
-            <BarChartIcon></BarChartIcon>
+            <BarChartIcon />
             <p>Progress reports to use in your annual report</p>
           </div>
           <div className="subscribe-what-you-get-wrapper">
-            <CalendarMonthIcon></CalendarMonthIcon>
+            <CalendarMonthIcon />
             <p>
               Invitation to come down and see for yourself the impact your
               business is making

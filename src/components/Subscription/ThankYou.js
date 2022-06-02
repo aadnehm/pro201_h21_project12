@@ -3,13 +3,16 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 
-export default function ThankYou() {
-  const location = useLocation();
-  const img = location.state.img;
-  const img1 = location.state.img1;
-  const img2 = location.state.img2;
-  const name = location.state.name;
-  const project = location.state.project;
+export default function ThankYou(props) {
+  const { selectedData } = props;
+  let img = selectedData.img;
+  if (location.pathname.split("/").length === 5) {
+    img = selectedData.img3;
+  }
+  const img1 = selectedData.img1;
+  const img2 = selectedData.img2;
+  const name = selectedData.name;
+  const project = selectedData.project;
   const [checkedSomeCard, setCheckedSomeCard] = useState(0);
 
   const someText1 = "We support";
