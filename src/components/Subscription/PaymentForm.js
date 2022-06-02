@@ -19,7 +19,8 @@ import visaImg from "./img/visa.png";
 import masterCardImg from "./img/MasterCard.png";
 import vippsImg from "./img/vipps.png";
 
-export default function PaymentForm() {
+export default function PaymentForm(props) {
+  console.log(props);
   //Finding data that has been send with navigate hook
   const location = useLocation();
   const img = location.state.img;
@@ -307,15 +308,7 @@ export default function PaymentForm() {
               size="large"
               fullWidth
               onClick={() => {
-                navigate("/thank", {
-                  state: {
-                    project: project,
-                    img: img,
-                    img1: img1,
-                    img2: img2,
-                    name: name,
-                  },
-                });
+                props.setActiveStep(2);
               }}
             >
               <div>Confirm Payment</div>

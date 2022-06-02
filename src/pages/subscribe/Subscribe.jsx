@@ -21,8 +21,28 @@ import FeedIcon from "@mui/icons-material/Feed";
 
 /* CSS */
 import "./subscribe.css";
+import ThankYou from "../../components/Subscription/ThankYou";
+import PaymentPage from "../subscription-page/PaymentPage";
 
 export function Subscribe() {
+  const [activeStep, setActiveStep] = React.useState(0);
+  return (
+    <div className="subscribe-page-container">
+      <SubscribeStepper activeStep={activeStep} setActiveStep={setActiveStep} />
+      <div className="subscribe-content-border">
+        <div className="subscribe-content">
+          {activeStep === 0 && (
+            <SubscribeContent setActiveStep={setActiveStep} />
+          )}
+          {activeStep === 1 && <PaymentPage setActiveStep={setActiveStep} />}
+          {activeStep === 2 && <ThankYou />}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SubscribeContent(props) {
   const navigate = useNavigate();
   const [amount, setAamount] = useState();
   //Finding data that has been send with navigate hook
@@ -34,73 +54,57 @@ export function Subscribe() {
   const project = location.state.project;
 
   return (
-    <div className="subscribe-page-container">
-      <SubscribeStepper></SubscribeStepper>
-      <div className="subscribe-content-border">
-        <div className="subscribe-content">
-          <h1>Choose your donation strategy</h1>
+    <>
+      <h1>Choose your donation strategy</h1>
 
-          <div className="subscribe-hero-images">
-            <div className="subscribe-big-img">
-              <img src={img} alt="subscribe-img" />
-              {project ? (
-                <div>
-                  <h6 className="subscription-choosen-text">
-                    {name} - {project}
-                  </h6>
-                </div>
-              ) : (
-                <h5 className="subscription-choosen-text">{name}</h5>
-              )}
+      <div className="subscribe-hero-images">
+        <div className="subscribe-big-img">
+          <img src={img} alt="subscribe-img" />
+          {project ? (
+            <div>
+              <h6 className="subscription-choosen-text">
+                {name} - {project}
+              </h6>
             </div>
-            <div className="subscribe-small-img ">
-              <img
-                className="subscribe-first-small-img"
-                src={img1}
-                alt="subscribe-img"
-              />
-            </div>
-            <div className="subscribe-small-img ">
-              <img
-                className="subscribe-second-small-img"
-                src={img2}
-                alt="subscribe-img"
-              />
-            </div>
-          </div>
-
-          <div className="subscription-form">
-            <FormSubscribe
-              setAamount={setAamount}
-              amount={amount}
-            ></FormSubscribe>
-
-            <WhatYouGetSubscribe amount={amount} />
-          </div>
-          <button
-            className={"donate-button subscribe-btn"}
-            onClick={() => {
-              navigate("/payment", {
-                state: {
-                  project: project,
-                  img: img,
-                  img1: img1,
-                  img2: img2,
-                  name: name,
-                },
-              });
-            }}
-          >
-            Go to payment
-          </button>
+          ) : (
+            <h5 className="subscription-choosen-text">{name}</h5>
+          )}
+        </div>
+        <div className="subscribe-small-img ">
+          <img
+            className="subscribe-first-small-img"
+            src={img1}
+            alt="subscribe-img"
+          />
+        </div>
+        <div className="subscribe-small-img ">
+          <img
+            className="subscribe-second-small-img"
+            src={img2}
+            alt="subscribe-img"
+          />
         </div>
       </div>
-    </div>
+
+      <div className="subscription-form">
+        <FormSubscribe setAamount={setAamount} amount={amount} />
+
+        <WhatYouGetSubscribe amount={amount} />
+      </div>
+      <button
+        className={"donate-button subscribe-btn"}
+        onClick={() => {
+          props.setActiveStep(1);
+        }}
+      >
+        Go to payment
+      </button>
+    </>
   );
 }
 
-function SubscribeStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
+function SubscribeStepper(props) {
+  const { activeStep, setActiveStep } = props;
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -134,17 +138,24 @@ function SubscribeStepper() {
         }}
       >
         <Step>
-          <StepLabel>Choose payment plan</StepLabel>
+          <StepLabel>Donation strategy</StepLabel>
         </Step>
         <Step>
           <StepLabel>Payment</StepLabel>
         </Step>
+        <Step>
+          <StepLabel>Some</StepLabel>
+        </Step>
       </Stepper>
-
-      <Button color="inherit" disabled={activeStep === 0} onClick={handleBack}>
-        Back
-      </Button>
-      <Button onClick={handleNext}>Next</Button>
+      {activeStep >= 1 && (
+        <Button
+          color="inherit"
+          disabled={activeStep === 0}
+          onClick={handleBack}
+        >
+          Back
+        </Button>
+      )}
     </Box>
   );
 }
