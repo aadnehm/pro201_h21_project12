@@ -18,9 +18,6 @@ import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
-import PaymentPage from "./pages/subscription-page/PaymentPage";
-import ThankYou from "./components/Subscription/ThankYou";
-import { goToTop } from "./lib/toTop";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -72,7 +69,11 @@ function App() {
             element={<NavbarFooter page={<Projects />} />}
           />
           <Route
-            path="/subscribe"
+            path="/nonprofit/:nonprofit/subscribe"
+            element={<NavbarFooter page={<Subscribe />} />}
+          />
+          <Route
+            path="/nonprofit/:nonprofit/:project/subscribe"
             element={<NavbarFooter page={<Subscribe />} />}
           />
           <Route path="/login" element={<Login />} />

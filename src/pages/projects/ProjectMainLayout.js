@@ -81,7 +81,7 @@ export function Projects() {
           zIndex: "2",
         }}
       >
-        This non profit does not exist
+        This project does not exist
       </h1>
     );
   }
@@ -107,15 +107,14 @@ export function Projects() {
           <button
             className={"donate-button"}
             onClick={() => {
-              navigate("/subscribe", {
-                state: {
-                  project: selectedProject.name,
-                  img: selectedNonProfit.img,
-                  img1: selectedNonProfit.img1,
-                  img2: selectedNonProfit.img2,
-                  name: selectedNonProfit.name,
-                },
-              });
+              console.log(projectQuery);
+              navigate(
+                "/nonprofit/" +
+                  nonProfitQuery +
+                  "/" +
+                  projectQuery +
+                  "/subscribe"
+              );
             }}
           >
             Donate

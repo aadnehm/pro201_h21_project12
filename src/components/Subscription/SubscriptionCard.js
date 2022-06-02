@@ -21,8 +21,6 @@ export default function SubscriptionCard() {
     setSubscription(event.target.value);
   };
 
-  console.log(subscription);
-
   return (
     <>
       <Container className="subscription-model-grid" size="md">

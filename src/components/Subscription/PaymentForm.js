@@ -20,14 +20,14 @@ import masterCardImg from "./img/MasterCard.png";
 import vippsImg from "./img/vipps.png";
 
 export default function PaymentForm(props) {
-  console.log(props);
   //Finding data that has been send with navigate hook
   const location = useLocation();
-  const img = location.state.img;
-  const img1 = location.state.img1;
-  const img2 = location.state.img2;
-  const name = location.state.name;
-  const project = location.state.project;
+  console.log(props.selectedData);
+  const img = props.selectedData.img;
+  const img1 = props.selectedData.img1;
+  const img2 = props.selectedData.img2;
+  const name = props.selectedData.name;
+  const project = props.selectedData.project;
   /* Navigate */
   const navigate = useNavigate();
   /* state */

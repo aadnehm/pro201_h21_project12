@@ -5,11 +5,11 @@ import PaymentForm from "../../components/Subscription/PaymentForm";
 import "./payment-page.css";
 
 export function PaymentPage(props) {
-  const setActiveStep = props.setActiveStep;
+  const { setActiveStep, selectedData } = props;
   return (
     <div className="payment-content-container">
       <h2>Payment</h2>
-      <PaymentForm setActiveStep={setActiveStep} />
+      <PaymentForm setActiveStep={setActiveStep} selectedData={selectedData} />
     </div>
   );
 }

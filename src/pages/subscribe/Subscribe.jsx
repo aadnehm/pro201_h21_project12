@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 /* MUI */
 import Box from "@mui/material/Box";
@@ -23,19 +23,107 @@ import FeedIcon from "@mui/icons-material/Feed";
 import "./subscribe.css";
 import ThankYou from "../../components/Subscription/ThankYou";
 import PaymentPage from "../subscription-page/PaymentPage";
+import { goToTopQuickly } from "../../lib/toTop";
+import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 
 export function Subscribe() {
   const [activeStep, setActiveStep] = React.useState(0);
+  useEffect(() => {
+    goToTopQuickly();
+  }, [activeStep]);
+  let selectedData;
+  //Finding data that has been send with navigate hook
+  const location = useLocation();
+
+  useEffect(() => {}, [location]);
+  let selectedNonProfit = {};
+  const nonProfitQuery = window.location.pathname
+    .split("/")
+    .slice(2)[0]
+    .toLowerCase();
+  console.log(nonProfitQuery);
+  const data = NonProfitsData;
+  for (let i = 0; i < data.length; i++) {
+    const name = data[i].name.replace(/ /g, "").toLowerCase();
+    if (name === nonProfitQuery) {
+      selectedNonProfit = data[i];
+      break;
+    }
+  }
+  selectedData = selectedNonProfit;
+
+  if (selectedNonProfit.name === undefined) {
+    return (
+      <h1
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          background: "#FEFEFE",
+          zIndex: "2",
+        }}
+      >
+        This non profit does not exist
+      </h1>
+    );
+  }
+
+  let selectedProject = {};
+  if (location.pathname === 4) {
+    const projectQuery = window.location.pathname
+      .split("/")
+      .slice(3)[0]
+      .toLowerCase();
+
+    for (let i = 0; i < selectedNonProfit.projects.length; i++) {
+      const name = selectedNonProfit.projects[i].name
+        .replace(/ /g, "")
+        .toLowerCase();
+
+      console.log(name);
+      console.log(projectQuery);
+      if (name === projectQuery) {
+        selectedProject = selectedNonProfit.projects[i];
+        break;
+      }
+    }
+    selectedData = selectedProject;
+
+    if (selectedProject.name === undefined) {
+      return (
+        <h1
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            background: "#FEFEFE",
+            zIndex: "2",
+          }}
+        >
+          This project does not exist
+        </h1>
+      );
+    }
+  }
+
   return (
     <div className="subscribe-page-container">
       <SubscribeStepper activeStep={activeStep} setActiveStep={setActiveStep} />
       <div className="subscribe-content-border">
         <div className="subscribe-content">
           {activeStep === 0 && (
-            <SubscribeContent setActiveStep={setActiveStep} />
+            <SubscribeContent
+              setActiveStep={setActiveStep}
+              selectedData={selectedData}
+            />
           )}
-          {activeStep === 1 && <PaymentPage setActiveStep={setActiveStep} />}
-          {activeStep === 2 && <ThankYou />}
+          {activeStep === 1 && (
+            <PaymentPage
+              setActiveStep={setActiveStep}
+              selectedData={selectedData}
+            />
+          )}
+          {activeStep === 2 && <ThankYou selectedData={selectedData} />}
         </div>
       </div>
     </div>
@@ -43,19 +131,17 @@ export function Subscribe() {
 }
 
 function SubscribeContent(props) {
-  const navigate = useNavigate();
   const [amount, setAamount] = useState();
-  //Finding data that has been send with navigate hook
-  const location = useLocation();
-  const img = location.state.img;
-  const img1 = location.state.img1;
-  const img2 = location.state.img2;
-  const name = location.state.name;
-  const project = location.state.project;
+  console.log(props);
+  const img = props.selectedData.img;
+  const img1 = props.selectedData.img1;
+  const img2 = props.selectedData.img2;
+  const name = props.selectedData.name;
+  const project = props.selectedData.project;
 
   return (
     <>
-      <h1>Choose your donation strategy</h1>
+      <h1>Payment plan</h1>
 
       <div className="subscribe-hero-images">
         <div className="subscribe-big-img">
@@ -63,7 +149,7 @@ function SubscribeContent(props) {
           {project ? (
             <div>
               <h6 className="subscription-choosen-text">
-                {name} - {project}
+                {name} - {project && project}
               </h6>
             </div>
           ) : (
@@ -138,13 +224,13 @@ function SubscribeStepper(props) {
         }}
       >
         <Step>
-          <StepLabel>Donation strategy</StepLabel>
+          <StepLabel>Payment plan</StepLabel>
         </Step>
         <Step>
           <StepLabel>Payment</StepLabel>
         </Step>
         <Step>
-          <StepLabel>Some</StepLabel>
+          <StepLabel>Finish</StepLabel>
         </Step>
       </Stepper>
       {activeStep >= 1 && (

@@ -7,7 +7,7 @@ import Tabs from "@mui/material/Tabs";
 import "./non-profit-single.css";
 import InsideStories from "../../components/inside-stories/InsideStories";
 import { useLocation, useNavigate } from "react-router";
-import { goToTopQuickly } from "../../lib/toTop";
+import { goToTop, goToTopQuickly } from "../../lib/toTop";
 import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
@@ -73,7 +73,7 @@ export default function NonProfits() {
             id={"top"}
             className={"donate-button"}
             onClick={() => {
-              navigate("/subscribe", {
+              navigate(location.pathname + "/subscribe", {
                 state: {
                   img: selectedNonProfit.img,
                   img1: selectedNonProfit.img1,
@@ -101,7 +101,7 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
-  console.log(props.data)
+  console.log(props.data);
   const navigate = useNavigate();
   const [value, setValue] = useState(0);
 

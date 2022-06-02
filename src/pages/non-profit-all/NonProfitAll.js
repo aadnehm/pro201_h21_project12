@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Menu from "../../components/navbar/Menu.js";
 
 /* CSS */
@@ -12,8 +12,7 @@ import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
 import { useNavigate } from "react-router";
 
 export function NonProfitAll() {
-  const img =
-    "url(img/non-profit/nonProfitHero.png)";
+  const img = "url(img/non-profit/nonProfitHero.png)";
   return (
     <div className="nonProfit-search-container">
       <div
@@ -44,8 +43,13 @@ export function NonProfitAll() {
 export function ButtonAppBar() {
   const [appbarTop, setAppbarTop] = useState(true);
   const navigate = useNavigate();
+  useEffect(() => {
+    if (location.pathname.endsWith("/subscribe")) {
+      setAppbarTop(false);
+    }
+  }, [navigate]);
   const changeBackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 100 || location.pathname.endsWith("/subscribe")) {
       setAppbarTop(false);
     } else {
       setAppbarTop(true);
