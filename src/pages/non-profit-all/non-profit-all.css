@@ -65,3 +65,7 @@
   width: 80vw;
   margin: 8rem auto 8rem auto;
 }
+
+.MuiTabs-flexContainer button {
+  font-size: 22px;
+}
