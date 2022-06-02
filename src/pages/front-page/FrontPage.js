@@ -246,7 +246,7 @@ function CuratedNonprofits() {
         backgroundPosition: "right",
         backgroundRepeat: "no-repeat",
         height: "80vh",
-        borderRadius: "5px",
+        borderRadius: "20px",
       }}
     >
       <div className={"curated-nonprofits-content"}>
@@ -254,8 +254,8 @@ function CuratedNonprofits() {
           <h1>Curated non-profits, just for you!</h1>
           <p>
             We have a very thorough vetting process for our non-profits. You can
-            have confidence in all the non-profits we've chosen. <br /> We also
-            help you find the non-profits we think would fit your company's
+            have confidence in all the non-profits we've chosen, <br /> as well as trusting us to
+            help you find the non-profits that correspond with your company's
             values!
           </p>
           <button>Become a giver</button>
