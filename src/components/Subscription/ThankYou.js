@@ -44,8 +44,6 @@ function SomeCard(){
               </div>
           </div>
          
-     
-
   
         </>
     )

@@ -5,7 +5,7 @@
   --grey-color: lightgray;
 }
 
-/* containers */
+/* outer component container */
 .thankyou-component-container{
   width: 70vw;
   margin: 7em auto;
@@ -13,7 +13,7 @@
   border: 1px solid var(--grey-color);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
-
+/* inner container */
 .thankyou-content-container {
   font-size: 18px;
   line-height: 1.2em;
@@ -39,8 +39,11 @@
 }
 
 .thank-you-some-card{
-    max-width: 15em;
+    max-width: 14em;
+    border-radius: 5px;
 }
+
+
 .thank-you-some-card input{
     margin-bottom: -1em;
 }
@@ -76,7 +79,7 @@
    text-align: center;
 }
 .some-card-text h4{
-    margin: 1em auto;
+    margin: .5em auto;
     background-color: #fff;
     padding: 5px 10px;
     display: inline-block;
@@ -99,12 +102,22 @@
     width:70%;
 }
 .some-card-message p{
-    margin: .3em 0 0 1em;
+    margin: .3em 0 0 .5em;
 }
+/* making png white */
 .some-message-wrapper img{
     height: 2em;
     filter: invert(100%);
 }
+
+/* css for different margin on middle card */
+.thank-you-some-card:nth-child(2) .some-card-text {
+    margin-top: 6em;
+ }
+ 
+ .thank-you-some-card:nth-child(2) .some-message-wrapper {
+     margin-top: 5em;
+  }
 
 /* button at bottom */
 .thankyou-component-container button{
