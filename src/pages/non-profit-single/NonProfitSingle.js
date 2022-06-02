@@ -7,7 +7,7 @@ import Tabs from "@mui/material/Tabs";
 import "./non-profit-single.css";
 import InsideStories from "../../components/inside-stories/InsideStories";
 import { useLocation, useNavigate } from "react-router";
-import { goToTop, goToTopQuickly } from "../../lib/toTop";
+import { goToTopQuickly } from "../../lib/toTop";
 import AboutUs from "../../components/about-us/AboutUs";
 import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";

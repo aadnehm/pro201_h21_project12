@@ -2,7 +2,7 @@ import React from "react";
 import "./front-page.css";
 import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { useNavigate } from "react-router";
-import { goToTop, goToTopQuickly } from "../../lib/toTop";
+import { goToTopQuickly } from "../../lib/toTop";
 import { uppercaseFirstLetter } from "../../lib/upperCaseFirstLetter";
 
 function Communtiy() {

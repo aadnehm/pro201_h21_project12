@@ -8,7 +8,7 @@ import "./project-main-layout.css";
 import { useLocation, useNavigate } from "react-router";
 
 import TabPanel from "../../lib/TabPanel";
-import { goToTop, goToTopQuickly } from "../../lib/toTop";
+import { goToTopQuickly } from "../../lib/toTop";
 import InsideStories from "../../components/inside-stories/InsideStories";
 import { OurProjectDonators } from "../../components/Projects-OurDonators/OurDonators";
 import AboutProjects from "../../components/about-us-projects/AboutProjects";
