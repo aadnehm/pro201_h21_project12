@@ -13,6 +13,7 @@ import WhatYouGet from "../../components/what-you-get/WhatYouGet";
 import OurDonators from "../../components/our-donators/OurDonators";
 import { ProjectCardGrid } from "../../components/projects-cards/ProjectCard";
 import TabPanel from "../../lib/TabPanel";
+import { SportsRugbySharp } from "@mui/icons-material";
 
 function a11yProps(index) {
   return {
@@ -140,6 +141,7 @@ function NavTabs(props) {
             border: "none",
             background: "transparent",
             fontWeight: "600",
+            color: "rgba(0, 0, 0, 0.6)",
           }}
           onClick={() => {
             navigate("/nonprofits");

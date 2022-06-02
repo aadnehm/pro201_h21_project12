@@ -41,3 +41,8 @@
     margin: 25% 5% 20% 15%;
     text-align: left;
 }
+
+.css-9po0zl-MuiPaper-root-MuiCard-root,
+.css-6ubnp4-MuiPaper-root-MuiCard-root {
+    border-radius: 20px !important;
+}

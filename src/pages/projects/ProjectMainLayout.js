@@ -171,6 +171,7 @@ function NavTabs(props) {
             border: "none",
             background: "transparent",
             fontWeight: "600",
+            color: "rgba(0, 0, 0, 0.6)"
           }}
           onClick={() => {
             navigate(
