@@ -27,7 +27,6 @@ export default function PasswordInputWhite(props) {
         backgroundColor: "#fff",
       }}
       helperText={props.helperText}
-      fullWidth
       size="small"
       required
       label={props.label}

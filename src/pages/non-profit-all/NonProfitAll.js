@@ -64,16 +64,9 @@ export function ButtonAppBar() {
         fontFamily: "'DM sans', sans-serif",
       }}
     >
-      <Menu />
       <Toolbar className="nonProfit-search-navbar">
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-        />
+        <Menu />
         <NavbarSearch />
-
         <IconButton
           size="large"
           edge="start"

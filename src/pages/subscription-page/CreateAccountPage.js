@@ -10,15 +10,15 @@ const CreateAccountPage = () => {
     <div className="sub-page-container">
       <BackButton />
       <div className="circle">
-        <span className="circle-top-right"></span>
-        <span className="circle-bottom-left"></span>
-        <span className="circle-bottom-right"></span>
+        <span className="circle-top-right" />
+        <span className="circle-bottom-left" />
+        <span className="circle-bottom-right" />
       </div>
       <div className="stepper">
         <div className="line-stepper">
-          <div className="dot"></div>
-          <div className="active-dot"></div>
-          <span className="dot"></span>
+          <div className="dot" />
+          <div className="active-dot" />
+          <span className="dot" />
         </div>
         <div className="text-stepper">
           <div>Choose subscription</div>

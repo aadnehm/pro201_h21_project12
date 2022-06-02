@@ -48,7 +48,7 @@ function SearchResults(props) {
           <ul className={"search-results"}>
             {results.map((nonprofit) => (
               <li
-                tabindex="0"
+                tabIndex="0"
                 style={{ textStyle: "none" }}
                 onClick={() => {
                   redirectNonprofit(nonprofit.name);

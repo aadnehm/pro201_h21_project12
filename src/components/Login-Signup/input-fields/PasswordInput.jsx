@@ -23,7 +23,6 @@ export default function PasswordInput(props) {
     <TextField
       helperText={props.helperText}
       color="secondary"
-      fullWidth
       required
       label={props.label}
       variant="outlined"
