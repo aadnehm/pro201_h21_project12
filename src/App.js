@@ -21,6 +21,8 @@ import Login from "./pages/login/Login";
 import NavTabs from "./components/non-profit-tabs/NpTabs";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
+import PaymentPage from "./pages/subscription-page/PaymentPage";
+import ThankYou from "./components/Subscription/ThankYou";
 
 /* Changing default value for secondary color */
 const mainColor = createTheme({
@@ -76,6 +78,15 @@ function App() {
           <Route
             path="/subscribe"
             element={<NavbarFooter page={<Subscribe />} />}
+          />
+          {/* test route sigmund utvikling */}
+             <Route
+            path="/payment"
+            element={<NavbarFooter page={<PaymentPage />} />}
+          />
+             <Route
+            path="/thank"
+            element={<NavbarFooter page={<ThankYou/>} />}
           />
           <Route path="/login" element={<Login />} />
           <Route path="/*" element={<h1>Not found 404</h1>} />
