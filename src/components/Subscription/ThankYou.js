@@ -59,7 +59,7 @@ function SomeCard({img, project,name, sometext}){
                 <img src={process.env.PUBLIC_URL + "/img/send.png"} alt="" />
               </div>
           </div>
-          <input type="radio" />
+          <input type="radio" toggle />
            
         </div>
     )
