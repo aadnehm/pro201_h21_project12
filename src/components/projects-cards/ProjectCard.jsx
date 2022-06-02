@@ -106,7 +106,6 @@ function Pcard({ project }) {
         <p className="project-start-p">PROJECT START {project1.established}</p>
         <div>
           <p>{project1.info1}</p>
-          <p>{project1.info2}</p>
         </div>
         <div className={"button-container"}>
           <button onClick={handleClick}>Go to project</button>
