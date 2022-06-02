@@ -56,8 +56,11 @@
 
 /* kan ha flex og justify content spacebetween om det er flere ting */
 .np-card-footer {
-  font-size: 18px;
-  font-weight: bold;
   padding: 0 0 15px 15px;
   margin-top: 30px;
+}
+
+.np-card-footer p {
+  font-size: 16px;
+  font-weight: bold;
 }
