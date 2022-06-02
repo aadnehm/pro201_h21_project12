@@ -10,8 +10,6 @@ export default function ThankYou(){
   const name = location.state.name;
   const project = location.state.project;
 
-  console.log(img)
-  console.log(project)
     return <div>
     <div className="thankyou-component-container">
     <div className="thankyou-content-container">
