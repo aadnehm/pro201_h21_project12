@@ -111,6 +111,8 @@ export function Projects() {
                 state: {
                   project: selectedProject.name,
                   img: selectedNonProfit.img,
+                  img1: selectedNonProfit.img1,
+                  img2: selectedNonProfit.img2,
                   name: selectedNonProfit.name,
                 },
               });

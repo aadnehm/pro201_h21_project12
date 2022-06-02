@@ -77,6 +77,8 @@ export default function NonProfits() {
               navigate("/subscribe", {
                 state: {
                   img: selectedNonProfit.img,
+                  img1: selectedNonProfit.img1,
+                  img2: selectedNonProfit.img2,
                   name: selectedNonProfit.name,
                 },
               });
@@ -100,6 +102,7 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
+  console.log(props.data)
   const navigate = useNavigate();
   const [value, setValue] = useState(0);
 

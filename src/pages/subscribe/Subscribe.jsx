@@ -27,6 +27,8 @@ export function Subscribe() {
   //Finding img that has been send with navigate hook
   const location = useLocation();
   const img = location.state.img;
+  const img1 = location.state.img1;
+  const img2 = location.state.img2;
   const name = location.state.name;
   const project = location.state.project;
 
@@ -53,14 +55,14 @@ export function Subscribe() {
             <div className="subscribe-small-img ">
               <img
                 className="subscribe-first-small-img"
-                src={img}
+                src={img1}
                 alt="subscribe-img"
               />
             </div>
             <div className="subscribe-small-img ">
               <img
                 className="subscribe-second-small-img"
-                src={img}
+                src={img2}
                 alt="subscribe-img"
               />
             </div>
