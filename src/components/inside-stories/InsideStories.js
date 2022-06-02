@@ -102,7 +102,7 @@ export default function InsideStories({ selectedNonProfit }) {
             "/img/insidestories/african-chldren-insidestories.jpg"
           }
           alt={"image"}
-        ></img>
+        />
       </div>
       <h2 id="videos-header">Videos</h2>
       {moreEnabled ? (
@@ -182,7 +182,7 @@ export default function InsideStories({ selectedNonProfit }) {
             <button>Go to article</button>
           </h2>
         </div>
-        <img src={process.env.PUBLIC_URL + posterData[0].image}></img>
+        <img src={process.env.PUBLIC_URL + posterData[0].image} />
       </div>
       <div>
         <div>
@@ -198,7 +198,7 @@ export default function InsideStories({ selectedNonProfit }) {
                       "/img/insidestories/african-chldren-insidestories.jpg"
                     }
                     alt={"image"}
-                  ></img>
+                  />
                   <div className="playerText">
                     <h4>{article.header}</h4>
                     <p>{article.text}</p>
@@ -217,7 +217,7 @@ export default function InsideStories({ selectedNonProfit }) {
                       "/img/insidestories/african-chldren-insidestories.jpg"
                     }
                     alt={"image"}
-                  ></img>
+                  />
                   <div className="playerText">
                     <h4>{article.header}</h4>
                     <p>{article.text}</p>
@@ -240,7 +240,7 @@ export default function InsideStories({ selectedNonProfit }) {
               <button>Go to article</button>
             </h2>
           </div>
-          <img src={process.env.PUBLIC_URL + posterData[1].image}></img>
+          <img src={process.env.PUBLIC_URL + posterData[1].image} />
         </div>
       </div>
     </div>

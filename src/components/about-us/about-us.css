@@ -140,26 +140,51 @@
 
 .about-contact-wrapper {
   width: 100%;
+  font-size: 22px;
 }
 
 .contact-footer {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .about-location-wrapper div {
   margin: 3% 0;
 }
 
-.about-contactinfo-wrapper .about-header {
-  margin: 10% 0;
+.about-contact-wrapper .about-header {
+  margin: 1% 0;
 }
 
 .about-location-map {
-  height: 400px;
-  width: 700px;
+  height: 500px;
+  width: 100%;
+}
+
+.about-location-wrapper {
+  width: 60%;
+  height: 100%;
 }
 
 .about-header {
   font-weight: bold;
+}
+
+.about-contactinfo-wrapper div {
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 22px;
+}
+
+.about-contactinfo-wrapper {
+  width: 40%;
+  text-align: -webkit-left;
+}
+
+.about-contactinfo-text-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
