@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 /* MUI */
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
@@ -23,8 +23,9 @@ import FeedIcon from "@mui/icons-material/Feed";
 import "./subscribe.css";
 
 export function Subscribe() {
+  const navigate = useNavigate();
   const [amount, setAamount] = useState();
-  //Finding img that has been send with navigate hook
+  //Finding data that has been send with navigate hook
   const location = useLocation();
   const img = location.state.img;
   const img1 = location.state.img1;
@@ -76,7 +77,20 @@ export function Subscribe() {
 
             <WhatYouGetSubscribe amount={amount} />
           </div>
-          <button className={"donate-button subscribe-btn"}>
+          <button
+            className={"donate-button subscribe-btn"}
+            onClick={() => {
+              navigate("/payment", {
+                state: {
+                  project: project,
+                  img: img,
+                  img1: img1,
+                  img2: img2,
+                  name: name,
+                },
+              });
+            }}
+          >
             Go to payment
           </button>
         </div>

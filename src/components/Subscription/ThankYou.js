@@ -1,7 +1,17 @@
 import "./thank-you.css"
+import { useLocation} from "react-router-dom";
 
 export default function ThankYou(){
 
+  const location = useLocation();
+  const img = location.state.img;
+  const img1 = location.state.img1;
+  const img2 = location.state.img2;
+  const name = location.state.name;
+  const project = location.state.project;
+
+  console.log(img)
+  console.log(project)
     return <div>
     <div className="thankyou-component-container">
     <div className="thankyou-content-container">

@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 /* data */
 import { CountryData } from "./data/CountryData";
 import { subscriptionModelData } from "./data/SubscriptionModelData";
@@ -19,6 +20,15 @@ import masterCardImg from "./img/MasterCard.png";
 import vippsImg from "./img/vipps.png";
 
 export default function PaymentForm() {
+  //Finding data that has been send with navigate hook
+  const location = useLocation();
+  const img = location.state.img;
+  const img1 = location.state.img1;
+  const img2 = location.state.img2;
+  const name = location.state.name;
+  const project = location.state.project;
+  /* Navigate */
+  const navigate = useNavigate();
   /* state */
   const [subscription, setSubscription] = React.useState("");
   const handleChangePlan = (event) => {
@@ -70,246 +80,249 @@ export default function PaymentForm() {
     zip,
     saveCard,
   ];
-  console.log(data);
-
-  const handleConfirmClick = () => {
-    alert("amazing modal window popup. thank you.....");
-  };
 
   return (
-
-      <form autoComplete="off">
-        <div className="form-grid-container">
-          <Grid container>
-            {/* vipps button */}
-            <Grid item xs={12}>
-              <Button
-                className="vipps-button"
-                variant="contained"
-                size="large"
-                fullWidth
-              >
-                Pay With <img src={vippsImg} style={{ height: "2em"}} alt="" />
-              </Button>
-            </Grid>
-            {/* line and text */}
-            <Grid className="heading-with-lines" item xs={12}>
-              <div className="lines">
-                <span className="line-text">Or pay with card </span>
-              </div>
-            </Grid>
-            {/* select subscription */}
-            <Grid item xs={12}>
-              <TextField
-               color="secondary"
-               required
-                select
-                variant="outlined"
-                size="small"
-                label="Subscription"
-                value={subscription}
-                onChange={handleChangePlan}
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-              >
-                {subscriptionModelData.map((model) => (
-                  <MenuItem key={model.id} value={model.Name}>
-                    {model.Name}
-                  </MenuItem>
-                ))}
-              </TextField>
-            </Grid>
-            {/* email */}
-            <Grid item xs={12}>
-              <TextField
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-                color="secondary"
-                required
-                value={email}
-                onChange={handleEmailChange}
-                id="outlined-basic"
-                label="Email"
-                variant="outlined"
-                size="small"
-              />
-            </Grid>
-            {/* label for card information */}
-            <div className="label">
-              <label>Card information</label>
-
-              <img
-                className="pngIcon"
-                src={visaImg}
-                style={{ height: "1.2em" }}
-                alt=""
-              />
-              <img
-                className="pngIcon"
-                src={masterCardImg}
-                style={{ height: "1.2em" }}
-                alt=""
-              />
-            </div>
-            {/* card input fields */}
-            <Grid item xs={12}>
-              <TextField
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-                color="secondary"
-                required
-                id="outlined-basic"
-                placeholder="1234 1234 1234 1234"
-                variant="outlined"
-                size="small"
-                InputLabelProps={{ shrink: false }}
-                value={card}
-                onChange={handleCardChange}
-              />
-            </Grid>
-            {/* mm/yy */}
-            <Grid item xs={6}>
-              <TextField
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-                id="outlined-basic"
-                label="mm/yy"
-                variant="outlined"
-                size="small"
-                value={mmyy}
-                onChange={handleMmyy}
-                color="secondary"
-                required
-              />
-            </Grid>
-            {/* cvc */}
-            <Grid item xs={6}>
-              <TextField
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-                id="outlined-basic"
-                label="cvc"
-                variant="outlined"
-                size="small"
-                value={cvc}
-                onChange={handleCvc}
-                color="secondary"
-                required
-              />
-            </Grid>
-            {/* name on card */}
-            <Grid item xs={12}>
-              <TextField
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-                id="outlined-basic"
-                label="Name on card"
-                variant="outlined"
-                size="small"
-                value={cardName}
-                onChange={handleCardName}
-                color="secondary"
-                required
-              />
-            </Grid>
-            {/* radio save card information*/}
-            <Grid item xs={12}>
-              <div className="radio-button">
-                <FormControlLabel
-                  style={{
-                    margin: "0",
-                    height: "0.2em",
-                  }}
-                  value="true"
-                  control={<Radio />}
-                  onChange={handleSaveCard}
-                  label="Save card information"
-                  name="save-card"
-                  size="small"
-                />
-              </div>
-            </Grid>
-            {/* label for card information */}
-            <div className="label">
-              <label>Country or region</label>
-            </div>
-            {/* select country or region */}
-            <Grid item xs={12}>
-              <TextField
-                select
-                color="secondary"
-                required
-                size="small"
-                /* label={country === " " ? country : ""} */
-                value={country}
-                onChange={handleChangeCountry}
-                InputLabelProps={{ shrink: false }}
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-              >
-                {CountryData.map((country) => (
-                  <MenuItem key={country.name} value={country.name}>
-                    {country.name}
-                  </MenuItem>
-                ))}
-              </TextField>
-            </Grid>
-            {/* Zip */}
-            <Grid item xs={12}>
-              <TextField
-                InputLabelProps={{ className: "textField" }}
-                id="outlined-basic"
-                label="ZIP"
-                variant="outlined"
-                size="small"
-                value={zip}
-                color="secondary"
-                required
-                onChange={handleZip}
-                style={{
-                  margin: ".4em 0",
-                  width: "100%",
-                  backgroundColor: "#fff",
-                }}
-              />
-            </Grid>
-
-            {/* Confirm button */}
-            <Grid item xs={12}>
-              <Button
-                className="confirm-button"
-                variant="contained"
-                size="large"
-                fullWidth
-                onClick={handleConfirmClick}
-              >
-                <div>Confirm Payment</div>
-              </Button>
-            </Grid>
+    <form autoComplete="off">
+      <div className="form-grid-container">
+        <Grid container>
+          {/* vipps button */}
+          <Grid item xs={12}>
+            <Button
+              className="vipps-button"
+              variant="contained"
+              size="large"
+              fullWidth
+            >
+              Pay With <img src={vippsImg} style={{ height: "2em" }} alt="" />
+            </Button>
           </Grid>
-        </div>
-      </form>
+          {/* line and text */}
+          <Grid className="heading-with-lines" item xs={12}>
+            <div className="lines">
+              <span className="line-text">Or pay with card </span>
+            </div>
+          </Grid>
+          {/* select subscription */}
+          <Grid item xs={12}>
+            <TextField
+              color="secondary"
+              required
+              select
+              variant="outlined"
+              size="small"
+              label="Subscription"
+              value={subscription}
+              onChange={handleChangePlan}
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+            >
+              {subscriptionModelData.map((model) => (
+                <MenuItem key={model.id} value={model.Name}>
+                  {model.Name}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+          {/* email */}
+          <Grid item xs={12}>
+            <TextField
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+              color="secondary"
+              required
+              value={email}
+              onChange={handleEmailChange}
+              id="outlined-basic"
+              label="Email"
+              variant="outlined"
+              size="small"
+            />
+          </Grid>
+          {/* label for card information */}
+          <div className="label">
+            <label>Card information</label>
 
+            <img
+              className="pngIcon"
+              src={visaImg}
+              style={{ height: "1.2em" }}
+              alt=""
+            />
+            <img
+              className="pngIcon"
+              src={masterCardImg}
+              style={{ height: "1.2em" }}
+              alt=""
+            />
+          </div>
+          {/* card input fields */}
+          <Grid item xs={12}>
+            <TextField
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+              color="secondary"
+              required
+              id="outlined-basic"
+              placeholder="1234 1234 1234 1234"
+              variant="outlined"
+              size="small"
+              InputLabelProps={{ shrink: false }}
+              value={card}
+              onChange={handleCardChange}
+            />
+          </Grid>
+          {/* mm/yy */}
+          <Grid item xs={6}>
+            <TextField
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+              id="outlined-basic"
+              label="mm/yy"
+              variant="outlined"
+              size="small"
+              value={mmyy}
+              onChange={handleMmyy}
+              color="secondary"
+              required
+            />
+          </Grid>
+          {/* cvc */}
+          <Grid item xs={6}>
+            <TextField
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+              id="outlined-basic"
+              label="cvc"
+              variant="outlined"
+              size="small"
+              value={cvc}
+              onChange={handleCvc}
+              color="secondary"
+              required
+            />
+          </Grid>
+          {/* name on card */}
+          <Grid item xs={12}>
+            <TextField
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+              id="outlined-basic"
+              label="Name on card"
+              variant="outlined"
+              size="small"
+              value={cardName}
+              onChange={handleCardName}
+              color="secondary"
+              required
+            />
+          </Grid>
+          {/* radio save card information*/}
+          <Grid item xs={12}>
+            <div className="radio-button">
+              <FormControlLabel
+                style={{
+                  margin: "0",
+                  height: "0.2em",
+                }}
+                value="true"
+                control={<Radio />}
+                onChange={handleSaveCard}
+                label="Save card information"
+                name="save-card"
+                size="small"
+              />
+            </div>
+          </Grid>
+          {/* label for card information */}
+          <div className="label">
+            <label>Country or region</label>
+          </div>
+          {/* select country or region */}
+          <Grid item xs={12}>
+            <TextField
+              select
+              color="secondary"
+              required
+              size="small"
+              /* label={country === " " ? country : ""} */
+              value={country}
+              onChange={handleChangeCountry}
+              InputLabelProps={{ shrink: false }}
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+            >
+              {CountryData.map((country) => (
+                <MenuItem key={country.name} value={country.name}>
+                  {country.name}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+          {/* Zip */}
+          <Grid item xs={12}>
+            <TextField
+              InputLabelProps={{ className: "textField" }}
+              id="outlined-basic"
+              label="ZIP"
+              variant="outlined"
+              size="small"
+              value={zip}
+              color="secondary"
+              required
+              onChange={handleZip}
+              style={{
+                margin: ".4em 0",
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+            />
+          </Grid>
+
+          {/* Confirm button */}
+          <Grid item xs={12}>
+            <Button
+              className="confirm-button"
+              variant="contained"
+              size="large"
+              fullWidth
+              onClick={() => {
+                navigate("/thank", {
+                  state: {
+                    project: project,
+                    img: img,
+                    img1: img1,
+                    img2: img2,
+                    name: name,
+                  },
+                });
+              }}
+            >
+              <div>Confirm Payment</div>
+            </Button>
+          </Grid>
+        </Grid>
+      </div>
+    </form>
   );
 }
