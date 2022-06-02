@@ -66,6 +66,10 @@
   width: 30%;
 }
 
+.playerText h4 {
+  font-weight: bold;
+}
+
 .expandedPlayer span {
   margin-right: -40px;
 }
@@ -85,7 +89,7 @@
 
 .playerText {
   float: left;
-  padding: 5px 10px;
+  padding: 20px 30px;
   width: 100%;
 }
 

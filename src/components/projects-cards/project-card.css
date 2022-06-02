@@ -86,6 +86,11 @@
   font-size: 24px;
 }
 
+.button-container {
+  margin-bottom: 0px;
+  margin-top: auto;
+}
+
 /* go to project button */
 .button-container button {
   color: #fefefe;
