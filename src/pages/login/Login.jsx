@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 //CSS
 import "./login.css";
@@ -31,6 +30,7 @@ export default function Login() {
     const newData = e.target.value;
     setDataEpost(newData);
   }
+
   function childToParentPassword(e) {
     const newData = e.target.value;
     setDataPassword(newData);

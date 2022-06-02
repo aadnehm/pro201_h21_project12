@@ -4,6 +4,7 @@ import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
 import { useNavigate } from "react-router";
 import { goToTop } from "../../lib/toTop";
 import { uppercaseFirstLetter } from "../../lib/upperCaseFirstLetter";
+
 function Communtiy() {
   const img =
     "url(" + process.env.PUBLIC_URL + "/img/frontpage/frontpage-community.png)";
@@ -28,7 +29,7 @@ function Communtiy() {
             Sign up to our newsletter today, and get a weekly report on what is
             going on in our community
           </p>
-          <input type={"email"} placeholder={"Enter email adress"} />
+          <input type={"email"} placeholder={"Enter your email"} />
           <br />
           <button>Sign up now</button>
         </div>
@@ -52,6 +53,7 @@ export function FrontPage() {
     </>
   );
 }
+
 function FrontPageHeader() {
   const navigate = useNavigate();
   const img =
@@ -107,6 +109,7 @@ function NewestNonProfits() {
 
 function NewestNonProfitsCard(props) {
   const navigate = useNavigate();
+
   function redirectNonprofit(name) {
     const path = "/nonprofit/" + name.replace(/ /g, "");
     navigate(path);
@@ -250,7 +253,10 @@ function CuratedNonprofits() {
         <div className={"curated-nonprofits-text"}>
           <h1>Curated non-profits, just for you!</h1>
           <p>
-            We have a very thorough vetting process for our non-profits. You can have confidence in all the non-profits we've chosen. <br /> We also help you find the non-profits we think would fit your company's values!
+            We have a very thorough vetting process for our non-profits. You can
+            have confidence in all the non-profits we've chosen. <br /> We also
+            help you find the non-profits we think would fit your company's
+            values!
           </p>
           <button>Become a giver</button>
         </div>

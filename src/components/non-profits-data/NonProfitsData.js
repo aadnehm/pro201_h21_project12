@@ -10,88 +10,91 @@ const projectStoriesData = [
   },
 
   {
-    id: "2",    
+    id: "2",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Torstein Horgmo",
     about:
-    "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "3",    
+    id: "3",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Rick Astley",
     about:
-    "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "4",    
+    id: "4",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
     about:
-    "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "5",    
+    id: "5",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
     about:
-    "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "6",    
+    id: "6",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
     about:
-    "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "7",    
+    id: "7",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
     about:
-    "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "8",    
+    id: "8",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "9",    
+    id: "9",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 
   {
-    id: "10",    
+    id: "10",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
@@ -99,108 +102,120 @@ const projectStoriesData = [
 
 const insideStoriesData = [
   {
-    id: "1",    
+    id: "1",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 
   {
-    id: "2",    
+    id: "2",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Torstein Horgmo",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "3",    
+    id: "3",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Rick Astley",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "4",    
+    id: "4",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "5",    
+    id: "5",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "6",    
+    id: "6",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "7",    
+    id: "7",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "8",    
+    id: "8",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eaque amet harum magnam architecto, odio aliquid ut incidunt ea quas neque corrupti omnis dolorum. Asperiores ea quia nesciunt, dignissimos eaque quae necessitatibus ducimus modi distinctio earum aut rerum architecto voluptatibus tenetur sapiente sunt illum cupiditate iusto deserunt inventore optio rem! Quam omnis odit totam, maiores voluptate sunt numquam dolore eligendi sint nam pariatur exercitationem perferendis ipsa voluptates cupiditate molestias iste impedit iure itaque? Consectetur corporis est ipsum sapiente laborum, officiis quaerat omnis quidem provident ullam natus sunt distinctio explicabo eos quisquam sed. Cum tempore illum similique quisquam magnam voluptatibus voluptatem.",
   },
 
   {
-    id: "9",    
+    id: "9",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 
   {
-    id: "10",    
+    id: "10",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
 
   {
-    id: "11",    
+    id: "11",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },
   {
-    id: "12",    
+    id: "12",
     link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
     title: "Michael Stevens",
-    about:"In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
+    about:
+      "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
     longText:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sit. Architecto minus temporibus quasi, ipsum accusamus dolores tempore, omnis modi, ex placeat nemo nulla expedita optio et facilis obcaecati perspiciatis.",
   },

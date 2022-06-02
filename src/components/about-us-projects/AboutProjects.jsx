@@ -1,15 +1,13 @@
 import React from "react";
 import "./about-project.css";
 import TimeLine from "./TimeLine";
-import { goToTop } from "../../lib/toTop";
 
 export default function AboutProjects({ project }) {
-  goToTop()
   return (
     <>
       <div className="about-component-container">
-      <div className="grey-line" />
-        <h2>About {project.name}</h2>
+        <div className="grey-line" />
+        <h1>About {project.name}</h1>
         <div
           className="img-container"
           style={{

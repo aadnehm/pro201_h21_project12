@@ -1,8 +1,6 @@
 //Components
 import NonProfit from "./pages/non-profit-single/NonProfitSingle";
 
-import InsideStories from "./components/inside-stories/InsideStories";
-
 //Global CSS
 import "./App.css";
 //MUI
@@ -17,7 +15,6 @@ import {
 } from "./pages/non-profit-all/NonProfitAll";
 import { Projects } from "./pages/projects/ProjectMainLayout";
 import Login from "./pages/login/Login";
-import NavTabs from "./components/non-profit-tabs/NpTabs";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
 

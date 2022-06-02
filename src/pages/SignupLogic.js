@@ -15,6 +15,7 @@ const SignupLogic = () => {
   function handlePassword(e) {
     setPassword(e.target.value);
   }
+
   function handleEmail(e) {
     setEmail(e.target.value);
   }

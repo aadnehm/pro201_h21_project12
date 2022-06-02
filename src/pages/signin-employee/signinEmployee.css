@@ -7,11 +7,11 @@
     justify-content: space-between;
 }
 
-.right-content-signin .org-number{
+.right-content-signin .org-number {
     display: flex;
     justify-content: space-between;
 }
 
-.org-number .org-number-item{
-    width:20%;
+.org-number .org-number-item {
+    width: 20%;
 }

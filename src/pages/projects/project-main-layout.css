@@ -1,4 +1,4 @@
-.donate-button{
+.donate-button {
     background: #F69F37;
     color: #fefefe;
     border: none;
@@ -9,16 +9,16 @@
     transition: transform .2s; /* Animation */
 }
 
-.nonprofit-content{
+.nonprofit-content {
     font-family: "DM Sans", sans-serif;
     background: #fefefe;
 }
 
-.nonprofit-content header{
+.nonprofit-content header {
     color: #fefefe;
 }
 
-.nonProfit-header-content{
+.nonProfit-header-content {
     position: absolute;
     bottom: 10vh;
     left: 10%;

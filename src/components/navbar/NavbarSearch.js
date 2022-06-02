@@ -17,6 +17,7 @@ function useOutsideAlerter(ref) {
         ref.current.lastChild.style.display = "block";
       }
     }
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -80,6 +81,7 @@ export function NavbarSearch() {
   function handleSearch(value) {
     setSearch(value);
   }
+
   useEffect(() => {
     setResults([]);
     const slicedNonprofits = NonProfitsData.slice(0, 7);

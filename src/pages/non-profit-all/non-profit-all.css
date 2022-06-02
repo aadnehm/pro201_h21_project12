@@ -1,5 +1,5 @@
 /* Main div */
-.nonProfit-search-container{
+.nonProfit-search-container {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -16,9 +16,11 @@
 .nonprofit-firma-name h5:first-child {
   margin-bottom: 5px;
 }
+
 .nonprofit-firma-name h5 {
   margin-bottom: 0;
 }
+
 .appbar.on-top {
   background: transparent;
   z-index: 1;
@@ -35,7 +37,6 @@
   position: absolute;
   bottom: 10vh;
   left: 10%;
-
 }
 
 .nonProfit-search-hero-text h4 {
@@ -56,7 +57,7 @@
 .nonProfit-search-categories h3 {
   text-align: center;
   font-weight: bold;
-  color: #333;
+  color: #2b2b2b;
   font-size: 34px;
 }
 

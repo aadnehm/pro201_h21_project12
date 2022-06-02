@@ -1,41 +1,44 @@
-.donator-wrapper h1{
+.donator-wrapper h1 {
     margin-top: 3rem;
 
 }
 
-.donators-logo-wrapper{
+.donators-logo-wrapper {
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-between;
+    justify-content: space-between;
     width: 80vw;
 }
 
-.donators-logo-img{
+.donators-logo-img {
     height: 250px;
     width: 350px;
     margin-top: 100px;
 }
-.donators-logo-img img{
+
+.donators-logo-img img {
     height: 100%;
     width: 100%;
     object-fit: scale-down;
     border-radius: 15%;
 }
 
-.donators-company-name{
+.donators-company-name {
     font-size: 2em;
     margin: 1rem 0 1rem;
     text-align: center;
 }
-.donators-project-title{
+
+.donators-project-title {
     text-align: center;
 }
 
-.donators-donations{
+.donators-donations {
     font-size: 1rem;
     margin-top: 0;
     text-align: center;
 }
+
 .donators-image-wrapper {
     width: 100%;
     height: 600px;
@@ -48,7 +51,8 @@
     justify-content: center;
     display: flex;
 }
-.donators-image-text{
+
+.donators-image-text {
     width: 60%;
     min-height: 25%;
     text-align: center;

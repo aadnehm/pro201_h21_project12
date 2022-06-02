@@ -3,8 +3,8 @@
   padding-bottom: 5rem;
 }
 
-.about-component-container h2 {
-  margin: 2rem 0;
+.about-component-container h1 {
+  margin: 3rem 0;
 }
 
 .img-container {
@@ -16,6 +16,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .img-text {
   padding: 70px 30px;
   background-color: #fefefe;
@@ -23,6 +24,7 @@
   line-height: 1.8;
   border-radius: 2rem;
 }
+
 .what-we-do {
   margin: 4rem 0;
   line-height: 1.8;
@@ -32,15 +34,18 @@
   height: 70vh;
   margin-left: 0;
 }
+
 .testomonials {
   width: 38vw;
   margin-top: -5rem;
 }
+
 .companies-testemonials-grid {
   display: flex;
   grid-template-columns: 1fr 1fr;
   row-gap: 5rem;
 }
+
 .companies-testemonials-grid img {
   margin-right: 1em;
   width: 3em;
@@ -48,16 +53,20 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
 .companies-testemonials-grid .title-and-img {
   display: flex;
   align-items: center;
   text-align: center;
   width: 80%;
 }
+
 .companies-testemonials-grid p {
   margin-left: 4em;
   width: 80%;
+  font-size: 22px;
 }
+
 /* utility classes */
 .p-margin {
   margin: 1rem 0;
@@ -65,4 +74,8 @@
 
 .section-margin {
   margin-bottom: 3rem;
+}
+
+p {
+  font-size: 22px;
 }

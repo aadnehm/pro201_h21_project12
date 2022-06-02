@@ -40,7 +40,7 @@
     display: block;
     text-align: left;
     text-decoration: none;
-    color: #000;
+    color: #2b2b2b;
     margin: 0 2rem 0 2rem;
   }
 }
@@ -88,7 +88,7 @@
     display: block;
     text-align: left;
     text-decoration: none;
-    color: #000;
+    color: #2b2b2b;
     margin: 0 2rem 0 2rem;
     min-width: 110px;
   }
@@ -139,7 +139,7 @@
 
 .buttonSymbol {
   float: left;
-  color: #333;
+  color: #2b2b2b;
 }
 
 .hamburger-react {

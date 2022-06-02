@@ -56,6 +56,7 @@ function Pcard({ project }) {
     navigate(path);
   };
   const [heartFilterStyle, setHeartFilterStyle] = useState({});
+
   function changeHeartFilterStyle() {
     if (heartFilterStyle.filter === undefined) {
       setHeartFilterStyle({
