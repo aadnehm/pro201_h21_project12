@@ -2,173 +2,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 /* farger som brukes på alle deler/component i subscriptions */
 :root {
-  --grey-color: lightgray;
-  --blue-color: #5c7b89;
-  --green-color: #4ca771;
-  --blue-grey-color: #8792a2;
-  --container-color: #5c7b890f;
+    --grey-color: lightgray;
+    --blue-color: #5c7b89;
+    --green-color: #4ca771;
+    --blue-grey-color: #8792a2;
+    --container-color: #5c7b890f;
 }
 
 .sub-page-container {
-  background-color: #fefefe;
-  overflow: hidden;
-  height: 100vh;
-  font-family: "DM Sans", sans-serif;
+    background-color: #fefefe;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
 }
 
 /* back-button */
 .sub-page-container .back-button-container {
-  position: relative;
+    position: relative;
 }
 
 .sub-page-container .back-button {
-  position: absolute;
-  top: 1.5em;
-  left: 1.5em;
-  height: 2em;
-  border-radius: 50%;
-  border: 1px solid var(--blue-color);
-  padding: 0.5em;
-  display: inline;
-  filter: invert(48%) sepia(20%) saturate(467%) hue-rotate(154deg)
-    brightness(92%) contrast(98%);
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1px solid var(--blue-color);
+    padding: 0.5em;
+    display: inline;
+    filter: invert(48%) sepia(20%) saturate(467%) hue-rotate(154deg) brightness(92%) contrast(98%);
 }
 
 .sub-page-container .back-button:hover {
-  height: 2.1em;
-  opacity: 90%;
+    height: 2.1em;
+    opacity: 90%;
 }
 
 /* css stepper, sigmund custom.Enkel, men funker */
 
 /* stepper container */
 .sub-page-container .stepper {
-  width: 70vw;
-  margin: 0 auto;
+    width: 70vw;
+    margin: 0 auto;
 }
 
 /* position of text and dots in container */
 .sub-page-container .text-stepper,
 .sub-page-container .line-stepper {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 60vw;
-  margin: 1em auto;
-  z-index: 2;
-  text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60vw;
+    margin: 1em auto;
+    z-index: 2;
+    text-align: center;
 }
 
 /* creating line with after pseudo */
 .sub-page-container .line-stepper div::after {
-  position: absolute;
-  bottom: 1.1em;
-  content: "";
-  height: 0.4em;
-  width: 33%;
-  background: var(--blue-color);
-  z-index: -1;
+    position: absolute;
+    bottom: 1.1em;
+    content: "";
+    height: 0.4em;
+    width: 33%;
+    background: var(--blue-color);
+    z-index: -1;
 }
 
 /* inactive small dots */
 .sub-page-container .line-stepper .dot {
-  height: 1em;
-  width: 1em;
-  background-color: #fff;
-  border: 3px solid var(--blue-color);
-  border-radius: 50%;
-  color: #fff;
-  padding: 0;
-  margin: auto;
+    height: 1em;
+    width: 1em;
+    background-color: #fff;
+    border: 3px solid var(--blue-color);
+    border-radius: 50%;
+    color: #fff;
+    padding: 0;
+    margin: auto;
 }
 
 /* active big dot */
 .sub-page-container .line-stepper .active-dot {
-  height: 2.5em;
-  width: 2.5em;
-  background-color: var(--blue-color);
-  border: 2px solid var(--blue-color);
-  border-radius: 50%;
-  margin: auto;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: var(--blue-color);
+    border: 2px solid var(--blue-color);
+    border-radius: 50%;
+    margin: auto;
 }
 
 /* cirles in container */
 .sub-page-container .circle {
-  display: flex;
-  position: relative;
+    display: flex;
+    position: relative;
 }
 
 .sub-page-container .circle .circle-top-right {
-  position: absolute;
-  top: -8vh;
-  right: -3vw;
-  width: 17rem;
-  height: 17rem;
-  border-radius: 50%;
-  background: #3361bb;
+    position: absolute;
+    top: -8vh;
+    right: -3vw;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    background: #3361bb;
 }
 
 .sub-page-container .circle .circle-bottom-left {
-  position: absolute;
-  top: 85vh;
-  left: -10vw;
-  width: 19em;
-  height: 19em;
-  border-radius: 50%;
-  background: #5c7b89;
+    position: absolute;
+    top: 85vh;
+    left: -10vw;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    background: #5c7b89;
 }
 
 .sub-page-container .circle .circle-bottom-right {
-  position: absolute;
-  top: 92vh;
-  left: 25vw;
-  width: 70em;
-  height: 60em;
-  border-radius: 50%;
-  background: #f2ac20;
+    position: absolute;
+    top: 92vh;
+    left: 25vw;
+    width: 70em;
+    height: 60em;
+    border-radius: 50%;
+    background: #f2ac20;
 }
 
 @media screen and (max-width: 900px) {
-  .sub-page-container {
-    height: auto;
-  }
+    .sub-page-container {
+        height: auto;
+    }
 
-  .sub-page-container .circle {
-    display: none;
-  }
+    .sub-page-container .circle {
+        display: none;
+    }
 
-  .sub-page-container .stepper {
-    width: 85vw;
-    font-size: 0.9em;
-  }
+    .sub-page-container .stepper {
+        width: 85vw;
+        font-size: 0.9em;
+    }
 
-  .sub-page-container .text-stepper,
-  .sub-page-container .line-stepper {
-    width: 85vw;
-    font-size: 0.9em;
-  }
+    .sub-page-container .text-stepper,
+    .sub-page-container .line-stepper {
+        width: 85vw;
+        font-size: 0.9em;
+    }
 
-  .sub-page-container .back-button {
-    display: none;
-  }
+    .sub-page-container .back-button {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1400px) {
-  .sub-page-container .circle .circle-top-right {
-    width: 12em;
-    height: 12em;
-  }
+    .sub-page-container .circle .circle-top-right {
+        width: 12em;
+        height: 12em;
+    }
 
-  .sub-page-container .circle .circle-bottom-left {
-    width: 10em;
-    height: 10em;
-    top: 90vh;
-    left: -5em;
-  }
+    .sub-page-container .circle .circle-bottom-left {
+        width: 10em;
+        height: 10em;
+        top: 90vh;
+        left: -5em;
+    }
 
-  .sub-page-container .circle .circle-bottom-right {
-    top: 94vh;
-    width: 55em;
-    height: 45em;
-  }
+    .sub-page-container .circle .circle-bottom-right {
+        top: 94vh;
+        width: 55em;
+        height: 45em;
+    }
 }

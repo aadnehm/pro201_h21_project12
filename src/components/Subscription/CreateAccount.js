@@ -240,7 +240,6 @@ export default function CreateAccount() {
         i += 4;
       }
     }
-    console.log(newCode);
     orgCode = newCode.toUpperCase();
   };
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 /* MUI */
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
@@ -41,7 +41,6 @@ export function Subscribe() {
     .split("/")
     .slice(2)[0]
     .toLowerCase();
-  console.log(nonProfitQuery);
   const data = NonProfitsData;
   for (let i = 0; i < data.length; i++) {
     const name = data[i].name.replace(/ /g, "").toLowerCase();
@@ -69,7 +68,6 @@ export function Subscribe() {
   }
 
   let selectedProject = {};
-  console.log(location.pathname.split("/").length);
   if (location.pathname.split("/").length === 5) {
     const projectQuery = window.location.pathname
       .split("/")
@@ -81,14 +79,11 @@ export function Subscribe() {
         .replace(/ /g, "")
         .toLowerCase();
 
-      console.log(name);
-      console.log(projectQuery);
       if (name === projectQuery) {
         selectedProject = selectedNonProfit.projects[i];
         break;
       }
     }
-    console.log(selectedProject);
     selectedData = selectedProject;
 
     if (selectedProject.name === undefined) {
@@ -134,7 +129,6 @@ export function Subscribe() {
 
 function SubscribeContent(props) {
   const [amount, setAmount] = useState();
-  console.log(props);
   let img = props.selectedData.img;
   if (location.pathname.split("/").length === 5) {
     img = props.selectedData.img3;

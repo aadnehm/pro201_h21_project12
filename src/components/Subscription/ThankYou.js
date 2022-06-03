@@ -1,5 +1,4 @@
 import "./thank-you.css";
-import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 
@@ -18,9 +17,6 @@ export default function ThankYou(props) {
   const someText1 = "We support";
   const someText2 = "We donate to";
 
-  console.log(img);
-  console.log(name);
-  console.log("project:", project);
   const navigate = useNavigate();
 
   return (

@@ -13,6 +13,7 @@
   border: 1px solid var(--grey-color);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
+
 /* inner container */
 .thankyou-content-container {
   font-size: 18px;
@@ -24,9 +25,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .thankyou-content-container span {
   font-weight: bold;
 }
+
 .thankyou-content-container > * {
   margin: 1em 0;
 }
@@ -71,6 +74,7 @@
   color: #fff;
   font-size: 15px;
 }
+
 .some-company-info p:nth-child(3) {
   margin-left: 1em;
 }
@@ -79,6 +83,7 @@
   margin-top: 10em;
   text-align: center;
 }
+
 .some-card-text h4 {
   margin: 0.5em auto;
   background-color: #fff;
@@ -92,6 +97,7 @@
   align-items: center;
   flex-basis: auto;
 }
+
 .some-card-message {
   color: #8a8a8a;
   height: 2em;
@@ -101,9 +107,11 @@
   border: 2px solid #c4c4c4;
   width: 70%;
 }
+
 .some-card-message p {
   margin: 0.3em 0 0 0.5em;
 }
+
 /* making png white */
 .some-message-wrapper img {
   height: 2em;
@@ -125,6 +133,7 @@
   width: 1.5em;
   height: 1.5em;
 }
+
 /* button at bottom */
 .thankyou-content-container button {
   width: 15em;

@@ -22,7 +22,6 @@ import vippsImg from "./img/vipps.png";
 export default function PaymentForm(props) {
   //Finding data that has been send with navigate hook
   const location = useLocation();
-  console.log(props.selectedData);
   const img = props.selectedData.img;
   const img1 = props.selectedData.img1;
   const img2 = props.selectedData.img2;

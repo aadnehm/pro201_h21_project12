@@ -63,7 +63,9 @@ function WhatYouGet() {
             <Grid item xs={6}>
               <CardMedia
                 sx={{ flex: "1 0 auto" }}
-                style={{ height: "100%" }}
+                style={{
+                  height: "100%",
+                }}
                 component="img"
                 image={
                   process.env.PUBLIC_URL + "/img/social-media/WYGTopBanner.png"
@@ -77,7 +79,7 @@ function WhatYouGet() {
       <div className="wyg-box">
         <h2>Instagram</h2>
         <Grid container spacing={12}>
-          <Grid item lg={2}></Grid>
+          <Grid item lg={2} />
           <Grid item xs={12} lg={3}>
             <img
               src={
@@ -85,7 +87,7 @@ function WhatYouGet() {
               }
               alt="instagram story"
               style={{ width: "90%" }}
-            ></img>
+            />
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
@@ -94,7 +96,7 @@ function WhatYouGet() {
               }
               alt="instagram story"
               style={{ width: "90%" }}
-            ></img>
+            />
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
@@ -103,12 +105,12 @@ function WhatYouGet() {
               }
               alt="instagram story"
               style={{ width: "90%" }}
-            ></img>
+            />
           </Grid>
           <MDBCollapse show={showInstagramElement}>
             <div className="wyg-collapse-content">
               <Grid container spacing={12} style={{ marginTop: "0.1%" }}>
-                <Grid item lg={2}></Grid>
+                <Grid item lg={2} />
                 <Grid item xs={12} lg={3}>
                   <img
                     src={
@@ -117,7 +119,7 @@ function WhatYouGet() {
                     }
                     alt="instagram story"
                     style={{ width: "90%" }}
-                  ></img>
+                  />
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
@@ -127,7 +129,7 @@ function WhatYouGet() {
                     }
                     alt="instagram story"
                     style={{ width: "90%" }}
-                  ></img>
+                  />
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
@@ -137,7 +139,7 @@ function WhatYouGet() {
                     }
                     alt="instagram story"
                     style={{ width: "90%" }}
-                  ></img>
+                  />
                 </Grid>
               </Grid>
             </div>
@@ -171,7 +173,7 @@ function WhatYouGet() {
               }
               alt="LinkedIn story"
               style={{ width: "100%" }}
-            ></img>
+            />
           </Grid>
           <Grid item xs={12} lg={4}>
             <img
@@ -180,7 +182,7 @@ function WhatYouGet() {
               }
               alt="LinkedIn story"
               style={{ width: "100%" }}
-            ></img>
+            />
           </Grid>
           <Grid item xs={12} lg={4}>
             <img
@@ -189,7 +191,7 @@ function WhatYouGet() {
               }
               alt="LinkedIn story"
               style={{ width: "100%" }}
-            ></img>
+            />
           </Grid>
         </Grid>
         <MDBCollapse show={showLinkedInElement} style={{ marginTop: "2%" }}>
@@ -201,7 +203,7 @@ function WhatYouGet() {
                 }
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
-              ></img>
+              />
             </Grid>
             <Grid item xs={12} lg={4}>
               <img
@@ -210,7 +212,7 @@ function WhatYouGet() {
                 }
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
-              ></img>
+              />
             </Grid>
             <Grid item xs={12} lg={4}>
               <img
@@ -219,7 +221,7 @@ function WhatYouGet() {
                 }
                 alt="LinkedIn story"
                 style={{ width: "100%" }}
-              ></img>
+              />
             </Grid>
           </Grid>
         </MDBCollapse>
@@ -236,7 +238,7 @@ function WhatYouGet() {
       <div className="wyg-box">
         <h2>Snapchat</h2>
         <Grid container spacing={12}>
-          <Grid item lg={2}></Grid>
+          <Grid item lg={2} />
           <Grid item xs={12} lg={3}>
             <img
               src={
@@ -244,7 +246,7 @@ function WhatYouGet() {
               }
               alt="snapchat story"
               style={{ width: "90%" }}
-            ></img>
+            />
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
@@ -253,7 +255,7 @@ function WhatYouGet() {
               }
               alt="snapchat story"
               style={{ width: "90%" }}
-            ></img>
+            />
           </Grid>
           <Grid item xs={12} lg={3}>
             <img
@@ -262,12 +264,12 @@ function WhatYouGet() {
               }
               alt="snapchat story"
               style={{ width: "90%" }}
-            ></img>
+            />
           </Grid>
           <MDBCollapse show={showSnapchatElement}>
             <div className="wyg-collapse-content">
               <Grid container spacing={12} style={{ marginTop: "0.1%" }}>
-                <Grid item lg={2}></Grid>
+                <Grid item lg={2} />
                 <Grid item xs={12} lg={3}>
                   <img
                     src={
@@ -276,7 +278,7 @@ function WhatYouGet() {
                     }
                     alt="snapchat story"
                     style={{ width: "90%" }}
-                  ></img>
+                  />
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
@@ -286,7 +288,7 @@ function WhatYouGet() {
                     }
                     alt="snapchat story"
                     style={{ width: "90%" }}
-                  ></img>
+                  />
                 </Grid>
                 <Grid item xs={12} lg={3}>
                   <img
@@ -296,7 +298,7 @@ function WhatYouGet() {
                     }
                     alt="snapchat story"
                     style={{ width: "90%" }}
-                  ></img>
+                  />
                 </Grid>
               </Grid>
             </div>

@@ -107,7 +107,6 @@ export function Projects() {
           <button
             className={"donate-button"}
             onClick={() => {
-              console.log(projectQuery);
               navigate(
                 "/nonprofit/" +
                   nonProfitQuery +

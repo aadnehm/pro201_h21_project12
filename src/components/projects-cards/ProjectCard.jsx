@@ -109,10 +109,16 @@ function Pcard({ project }) {
         </div>
         <div className={"button-container"}>
           <button onClick={handleClick}>Go to project</button>
-          <button>Donate</button>
+          <button
+            onClick={() => {
+              navigate(location.pathname + "/subscribe");
+            }}
+          >
+            Donate
+          </button>
         </div>
       </div>
-      <span className="split-line"></span>
+      <span className="split-line" />
     </div>
   );
 }

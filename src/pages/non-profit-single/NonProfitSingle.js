@@ -101,7 +101,6 @@ const goToTabs = () => {
 };
 
 function NavTabs(props) {
-  console.log(props.data);
   const navigate = useNavigate();
   const [value, setValue] = useState(0);
 
