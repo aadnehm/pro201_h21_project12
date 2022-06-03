@@ -89,7 +89,7 @@ export default function PaymentForm(props) {
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
               color="secondary"
               required
@@ -119,23 +119,26 @@ export default function PaymentForm(props) {
             />
           </div>
           {/* card input fields */}
+
           <Grid item xs={12}>
-            <TextField
-              style={{
-                margin: ".4em 0",
-                width: "100%",
-                backgroundColor: "#fefefe",
-              }}
-              color="secondary"
-              required
-              id="outlined-basic"
-              placeholder="1234 1234 1234 1234"
-              variant="outlined"
-              size="small"
-              InputLabelProps={{ shrink: false }}
-              value={card}
-              onChange={handleCardChange}
-            />
+            <div className={"display-none"}>
+              <TextField
+                style={{
+                  margin: ".4em 0",
+                  width: "100%",
+                  backgroundColor: "#fefefe",
+                }}
+                color="secondary"
+                required
+                id="outlined-basic"
+                placeholder="1234 1234 1234 1234"
+                variant="outlined"
+                size="small"
+                InputLabelProps={{ shrink: false }}
+                value={card}
+                onChange={handleCardChange}
+              />
+            </div>
           </Grid>
           {/* mm/yy */}
           <Grid item xs={6}>
@@ -214,26 +217,28 @@ export default function PaymentForm(props) {
           </div>
           {/* select country or region */}
           <Grid item xs={12}>
-            <TextField
-              select
-              color="secondary"
-              required
-              size="small"
-              value={country}
-              onChange={handleChangeCountry}
-              InputLabelProps={{ shrink: false }}
-              style={{
-                margin: ".4em 0",
-                width: "100%",
-                backgroundColor: "#fefefe",
-              }}
-            >
-              {CountryData.map((country) => (
-                <MenuItem key={country.name} value={country.name}>
-                  {country.name}
-                </MenuItem>
-              ))}
-            </TextField>
+            <div className={"display-none"}>
+              <TextField
+                select
+                color="secondary"
+                required
+                size="small"
+                value={country}
+                onChange={handleChangeCountry}
+                InputLabelProps={{ shrink: false }}
+                style={{
+                  margin: ".4em 0",
+                  width: "100%",
+                  backgroundColor: "#fefefe",
+                }}
+              >
+                {CountryData.map((country) => (
+                  <MenuItem key={country.name} value={country.name}>
+                    {country.name}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
           </Grid>
           {/* Zip */}
           <Grid item xs={12}>

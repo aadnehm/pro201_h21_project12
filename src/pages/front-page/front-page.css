@@ -114,6 +114,10 @@
   margin: 10px 0 10px 0;
 }
 
+.data-card p {
+  max-width: 23vw;
+}
+
 .data-card p:first-of-type {
   font-weight: bold;
   font-size: 22px;

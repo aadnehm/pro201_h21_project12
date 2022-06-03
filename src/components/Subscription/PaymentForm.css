@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 .form-grid-container {
-  background-color: #f3f5f6;
+  background-color: #fefefe;
   max-width: 55em;
   padding: 2em 10em;
   font-family: "DM Sans", sans-serif;
@@ -30,7 +30,7 @@
 
 .line-text {
   font-size: 1em;
-  background-color: #f3f5f6;
+  background-color: #fefefe;
   padding: 0 10px;
   margin-top: 3em;
 }
@@ -57,4 +57,7 @@
 .form-grid-container .confirm-button:hover {
   background-color: #2b2b2b;
   opacity: 0.8;
+}
+.display-none .MuiOutlinedInput-notchedOutline legend {
+  display: none;
 }

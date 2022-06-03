@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <div className="footer-middle-left">
             <div className="list-wrapper">
-              <div className="link-wrapper header-text">Businesses</div>
+              <div className="header-text">Businesses</div>
               <div className="link-wrapper">
                 <a href="/signup">Sign up</a>
               </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
           <div className="footer-middle-right">
             <div className="list-wrapper">
-              <div className="link-wrapper header-text">Non Profits</div>
+              <div className="header-text">Non Profits</div>
               <div className="link-wrapper">
                 <a href="/signup">Sign up</a>
               </div>

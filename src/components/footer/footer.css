@@ -21,6 +21,11 @@
   text-decoration: none;
   color: #2b2b2b;
 }
+.footer a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #2b2b2b;
+}
 
 .link-wrapper {
   transition: transform 0.1s ease-in-out;
@@ -28,6 +33,7 @@
 
 .link-wrapper:hover {
   transform: scale(1.05);
+  color: #2b2b2b;
 }
 
 .footer-left {

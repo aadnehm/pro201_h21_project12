@@ -325,7 +325,7 @@ const testemonials = [
 const dummyProjects = [
   {
     name: "Project Nepal",
-    established: "30.0.2012",
+    established: "30.01.2012",
     info1:
       "Girls in Nepal live in a critical situation where they are at risk of physical, mental and sexual exploitation. Many of the girls are orphans and are cared for by other family members who have difficulty earning a living. Education gives girls in Nepal a second chance and they are better protected from getting married off or being trafficked. " +
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque.",
@@ -843,49 +843,49 @@ export const images = [
     img: "/img/companies/company-accenture.png",
     name: "Accenture",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 2400,-",
   },
   {
     img: "/img/companies/company-aw.png",
     name: "AW Academy",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 1050,-",
   },
   {
     img: "/img/companies/company-col.png",
     name: "Columbus",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 4060,-",
   },
   {
     img: "/img/companies/company-db.png",
     name: "Danske Bank",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 3600,-",
   },
   {
     img: "/img/companies/company-dnb.png",
     name: "DNB",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 4300,-",
   },
   {
     img: "/img/companies/company-f5.png",
     name: "F5",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 5430,-",
   },
   {
     img: "/img/companies/company-foodora.png",
     name: "Foodora",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 7540,-",
   },
   {
     img: "/img/companies/company-av.png",
     name: "Avinor",
     project: "Project Nepal",
-    donations: 1000,
+    donations: "Total donations: 1320,-",
   },
 ];
 

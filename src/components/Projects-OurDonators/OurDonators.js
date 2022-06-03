@@ -42,9 +42,7 @@ function DonatorCard({ img, company, donations }) {
           <img src={img} alt="logo-donators" />
         </div>
         <div className="donators-company-name">{company}</div>
-        <div className="donators-donations">
-          Total contributions: {donations} ,-
-        </div>
+        <div className="donators-donations">{donations}</div>
       </div>
     </>
   );
