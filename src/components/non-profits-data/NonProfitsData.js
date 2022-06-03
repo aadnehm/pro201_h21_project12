@@ -61,7 +61,7 @@ const projectStoriesData = [
 
   {
     id: "7",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -103,7 +103,7 @@ const projectStoriesData = [
 const insideStoriesData = [
   {
     id: "1",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=JIiaV-g-op0",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -113,7 +113,7 @@ const insideStoriesData = [
 
   {
     id: "2",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=PfT3M6bqZ0g",
     title: "Torstein Horgmo",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -123,7 +123,7 @@ const insideStoriesData = [
 
   {
     id: "3",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=M9gopSGhmuE",
     title: "Rick Astley",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -133,7 +133,7 @@ const insideStoriesData = [
 
   {
     id: "4",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=wKppWdnB-p0",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -143,7 +143,7 @@ const insideStoriesData = [
 
   {
     id: "5",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -153,7 +153,7 @@ const insideStoriesData = [
 
   {
     id: "6",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=MChIlJhpnNE",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -163,7 +163,7 @@ const insideStoriesData = [
 
   {
     id: "7",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=bdBG5VO01e0",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -173,7 +173,7 @@ const insideStoriesData = [
 
   {
     id: "8",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=cp3IH8ZNviQ",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -183,7 +183,7 @@ const insideStoriesData = [
 
   {
     id: "9",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=lL6uB1z95gA",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -193,7 +193,7 @@ const insideStoriesData = [
 
   {
     id: "10",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=oJLqyuxm96k",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
@@ -203,7 +203,7 @@ const insideStoriesData = [
 
   {
     id: "11",
-    link: "https://www.youtube.com/watch?v=EHh5_6vcCoo",
+    link: "https://www.youtube.com/watch?v=txlsYsNwCkE",
     title: "Michael Stevens",
     about:
       "In this video, you can see the impact we've made for the people in Africa. The video takes you deep into the action, and you get to meet people whose lives have been changed.",
