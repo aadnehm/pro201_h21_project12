@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
-import { TextField } from "@mui/material";
+import { IconButton, TextField } from "@mui/material";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DatePicker from "@mui/lab/DatePicker";
@@ -25,6 +25,9 @@ import ThankYou from "../../components/Subscription/ThankYou";
 import PaymentPage from "../subscription-page/PaymentPage";
 import { goToTopQuickly } from "../../lib/toTop";
 import NonProfitsData from "../../components/non-profits-data/NonProfitsData";
+import BackButton from "../../components/Subscription/backButton";
+import { useNavigate } from "react-router";
+import ArrowIcon from "../../components/Subscription/img/arrow.png";
 
 export function Subscribe() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -34,7 +37,7 @@ export function Subscribe() {
   let selectedData;
   //Finding data that has been send with navigate hook
   const location = useLocation();
-
+  const navigate = useNavigate();
   useEffect(() => {}, [location]);
   let selectedNonProfit = {};
   const nonProfitQuery = window.location.pathname
@@ -107,11 +110,51 @@ export function Subscribe() {
     <div className="subscribe-page-container">
       <SubscribeStepper activeStep={activeStep} setActiveStep={setActiveStep} />
       <div className="subscribe-content-border">
+        <div
+          style={{
+            position: "absolute",
+            marginTop: "10px",
+            marginLeft: "10px",
+          }}
+        >
+          {activeStep >= 1 && (
+            <IconButton
+              onClick={() => {
+                setActiveStep(activeStep - 1);
+              }}
+              style={{ margin: "25px" }}
+            >
+              <img
+                src={ArrowIcon}
+                className="back-button"
+                alt="back"
+                height="30px"
+              />
+            </IconButton>
+          )}
+          {activeStep === 0 && (
+            <IconButton
+              onClick={() => {
+                navigate(-1);
+              }}
+              style={{ margin: "25px" }}
+            >
+              <img
+                src={ArrowIcon}
+                className="back-button"
+                alt="back"
+                height="30px"
+              />
+            </IconButton>
+          )}
+        </div>
+
         <div className="subscribe-content">
           {activeStep === 0 && (
             <SubscribeContent
               setActiveStep={setActiveStep}
               selectedData={selectedData}
+              selectedNonprofit={selectedNonProfit}
             />
           )}
           {activeStep === 1 && (
@@ -136,7 +179,7 @@ function SubscribeContent(props) {
   const img1 = props.selectedData.img1;
   const img2 = props.selectedData.img2;
   const name = props.selectedData.name;
-  const project = props.selectedData.project;
+  const projectName = props.selectedNonprofit.name;
 
   return (
     <>
@@ -145,10 +188,10 @@ function SubscribeContent(props) {
       <div className="subscribe-hero-images">
         <div className="subscribe-big-img">
           <img src={img} alt="subscribe-img" />
-          {project ? (
+          {props.selectedData.img3 ? (
             <div>
               <h6 className="subscription-choosen-text">
-                {name} - {project && project}
+                {projectName} - {props.selectedData.name}
               </h6>
             </div>
           ) : (
@@ -189,15 +232,7 @@ function SubscribeContent(props) {
 
 function SubscribeStepper(props) {
   const { activeStep, setActiveStep } = props;
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
+  useNavigate();
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper
@@ -214,10 +249,10 @@ function SubscribeStepper(props) {
             color: "secondary.main", // circle color (ACTIVE)
           },
           "& .MuiStepLabel-label.Mui-active.MuiStepLabel-alternativeLabel": {
-            color: "black", // Just text label (ACTIVE)
+            color: "{#2b2b2b}", // Just text label (ACTIVE)
           },
           "& .MuiStepLabel-root .Mui-active .MuiStepIcon-text": {
-            fill: "white", // circle's number (ACTIVE)
+            fill: "#fefefe", // circle's number (ACTIVE)
           },
         }}
       >
@@ -231,15 +266,6 @@ function SubscribeStepper(props) {
           <StepLabel>Finish</StepLabel>
         </Step>
       </Stepper>
-      {activeStep >= 1 && (
-        <Button
-          color="inherit"
-          disabled={activeStep === 0}
-          onClick={handleBack}
-        >
-          Back
-        </Button>
-      )}
     </Box>
   );
 }

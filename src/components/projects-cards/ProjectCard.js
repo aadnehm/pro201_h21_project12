@@ -111,7 +111,12 @@ function Pcard({ project }) {
           <button onClick={handleClick}>Go to project</button>
           <button
             onClick={() => {
-              navigate(location.pathname + "/subscribe");
+              const path =
+                window.location.pathname +
+                "/" +
+                project.name.replace(/ /g, "").toLowerCase() +
+                "/subscribe";
+              navigate(path);
             }}
           >
             Donate

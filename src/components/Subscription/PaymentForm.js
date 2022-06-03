@@ -21,12 +21,6 @@ import vippsImg from "./img/vipps.png";
 
 export default function PaymentForm(props) {
   //Finding data that has been send with navigate hook
-  const location = useLocation();
-  const img = props.selectedData.img;
-  const img1 = props.selectedData.img1;
-  const img2 = props.selectedData.img2;
-  const name = props.selectedData.name;
-  const project = props.selectedData.project;
   /* Navigate */
   const navigate = useNavigate();
   /* state */
@@ -68,19 +62,6 @@ export default function PaymentForm(props) {
     setZip(event.target.value);
   };
 
-  /* state-variabler for å sjekke at form virker */
-  const data = [
-    subscription,
-    email,
-    card,
-    mmyy,
-    cvc,
-    cardName,
-    country,
-    zip,
-    saveCard,
-  ];
-
   return (
     <form autoComplete="off">
       <div className="form-grid-container">
@@ -101,30 +82,6 @@ export default function PaymentForm(props) {
             <div className="lines">
               <span className="line-text">Or pay with card </span>
             </div>
-          </Grid>
-          {/* select subscription */}
-          <Grid item xs={12}>
-            <TextField
-              color="secondary"
-              required
-              select
-              variant="outlined"
-              size="small"
-              label="Subscription"
-              value={subscription}
-              onChange={handleChangePlan}
-              style={{
-                margin: ".4em 0",
-                width: "100%",
-                backgroundColor: "#fff",
-              }}
-            >
-              {subscriptionModelData.map((model) => (
-                <MenuItem key={model.id} value={model.Name}>
-                  {model.Name}
-                </MenuItem>
-              ))}
-            </TextField>
           </Grid>
           {/* email */}
           <Grid item xs={12}>
@@ -167,7 +124,7 @@ export default function PaymentForm(props) {
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
               color="secondary"
               required
@@ -186,7 +143,7 @@ export default function PaymentForm(props) {
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
               id="outlined-basic"
               label="mm/yy"
@@ -204,7 +161,7 @@ export default function PaymentForm(props) {
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
               id="outlined-basic"
               label="cvc"
@@ -222,7 +179,7 @@ export default function PaymentForm(props) {
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
               id="outlined-basic"
               label="Name on card"
@@ -262,14 +219,13 @@ export default function PaymentForm(props) {
               color="secondary"
               required
               size="small"
-              /* label={country === " " ? country : ""} */
               value={country}
               onChange={handleChangeCountry}
               InputLabelProps={{ shrink: false }}
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
             >
               {CountryData.map((country) => (
@@ -294,7 +250,7 @@ export default function PaymentForm(props) {
               style={{
                 margin: ".4em 0",
                 width: "100%",
-                backgroundColor: "#fff",
+                backgroundColor: "#fefefe",
               }}
             />
           </Grid>

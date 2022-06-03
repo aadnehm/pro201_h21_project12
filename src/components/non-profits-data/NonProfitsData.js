@@ -337,9 +337,9 @@ const dummyProjects = [
     imgText:
       "- The 'e-lab' is the best I know! It's fun to learn here. I have become better at reading and learning Somali letters",
     whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+      "Schooling gives children the opportunity for development. Education gives children knowledge, protection and an important hope for the future. With the help of supporters like you, children at four schools in Garowe, Somalia, have gained access to digital teaching aids.",
     whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+      "The purpose is to improve children's reading, writing and arithmetic skills through the use of new technology. The exciting apps are fun for the children and at the same time manage to motivate them to stay in school. This also applies to the most vulnerable children. The schools are located in districts where many of the residents have fled war and conflict elsewhere in the country.",
     testemonials: testemonials,
     img1: "/img/projects/project-nepal/1.png",
     img2: "/img/projects/project-nepal/2.png",
@@ -364,9 +364,9 @@ const dummyProjects = [
     imgText:
       "- Water Supply Kongo provides fresh water to thousands of families in Kongo. Water means life and life means Rick Astley",
     whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+      "Schooling gives children the opportunity for development. Education gives children knowledge, protection and an important hope for the future. With the help of supporters like you, children at four schools in Garowe, Somalia, have gained access to digital teaching aids.",
     whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+      "The purpose is to improve children's reading, writing and arithmetic skills through the use of new technology. The exciting apps are fun for the children and at the same time manage to motivate them to stay in school. This also applies to the most vulnerable children. The schools are located in districts where many of the residents have fled war and conflict elsewhere in the country.",
     testemonials: testemonials,
     img1: "/img/projects/project-back-to-school/1.png",
     img2: "/img/projects/project-back-to-school/2.png",
@@ -390,13 +390,12 @@ const dummyProjects = [
     img1: "/img/projects/project-nepal/1.png",
     img2: "/img/projects/project-nepal/2.png",
     img3: "/img/projects/project-nepal/3.png",
-    //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat.",
     imgText:
       "- Summer Youth Camps is the best I know! It's great to be here. I many new friends",
     whatWeDo1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+      "Schooling gives children the opportunity for development. Education gives children knowledge, protection and an important hope for the future. With the help of supporters like you, children at four schools in Garowe, Somalia, have gained access to digital teaching aids.",
     whatWeDo2:
-      "Pellentesque dui dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ante eget elit volutpat, quis venenatis diam volutpat. Fusce sit amet dignissim risus, quis ultricies urna. Etiam est neque, ullamcorper scelerisque vehicula vitae, ornare eget neque. Duis",
+      "The purpose is to improve children's reading, writing and arithmetic skills through the use of new technology. The exciting apps are fun for the children and at the same time manage to motivate them to stay in school. This also applies to the most vulnerable children. The schools are located in districts where many of the residents have fled war and conflict elsewhere in the country.",
     testemonials: testemonials,
     insideStories: insideStoriesData,
     projectStories: projectStoriesData,

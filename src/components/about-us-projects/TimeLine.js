@@ -27,7 +27,7 @@ export default function TimeLine() {
               <img
                 className="img-left"
                 src={
-                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde2.png"
                 }
                 alt="bilde"
               />
@@ -44,7 +44,7 @@ export default function TimeLine() {
               <img
                 className="img-left"
                 src={
-                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde3.png"
                 }
                 alt="bilde"
               />
@@ -58,7 +58,7 @@ export default function TimeLine() {
               <img
                 className="img-left"
                 src={
-                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde4.png"
                 }
                 alt="bilde"
               />
@@ -75,7 +75,7 @@ export default function TimeLine() {
               <img
                 className="img-left"
                 src={
-                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde5.png"
                 }
                 alt="bilde"
               />
@@ -89,7 +89,7 @@ export default function TimeLine() {
               <img
                 className="img-left"
                 src={
-                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde1.png"
+                  process.env.PUBLIC_URL + "/img/non-profits/eksempelbilde6.png"
                 }
                 alt="bilde"
               />
@@ -98,7 +98,7 @@ export default function TimeLine() {
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div className="bottom-swing"></div>
+          <div className="bottom-swing" />
         </div>
       </div>
     </div>
