@@ -15,7 +15,6 @@ import {
 } from "./pages/non-profit-all/NonProfitAll";
 import { Subscribe } from "./pages/subscribe/Subscribe";
 import { Projects } from "./pages/projects/ProjectMainLayout";
-import Login from "./pages/login/Login";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router";
 
@@ -76,7 +75,6 @@ function App() {
             path="/nonprofit/:nonprofit/:project/subscribe"
             element={<NavbarFooter page={<Subscribe />} />}
           />
-          <Route path="/login" element={<Login />} />
           <Route path="/*" element={<h1>Not found 404</h1>} />
         </Routes>
       </div>

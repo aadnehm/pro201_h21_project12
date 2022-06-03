@@ -1,66 +1,66 @@
 .np-cards-container {
-    margin: 2rem auto;
-    max-width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    column-gap: 120px;
-    row-gap: 70px;
-    font-family: "DM Sans", sans-serif;
+  margin: 2rem auto;
+  max-width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 120px;
+  row-gap: 70px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .np-card {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    background: #fefefe;
-    border-radius: 3%;
-    transition: transform 0.2s; /* Animation */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  background: #fefefe;
+  border-radius: 3%;
+  transition: transform 0.2s; /* Animation */
 }
 
 .np-card:hover {
-    transform: scale(1.03);
-    cursor: pointer;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 /* sentrerer bilde */
 .np-card img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 240px;
-    border-radius: 10px 10px 0 0;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 240px;
+  border-radius: 10px 10px 0 0;
 }
 
 .np-card-content {
-    line-height: 2.5;
-    font-size: 22px;
-    padding: 15px;
+  line-height: 2.5;
+  font-size: 22px;
+  padding: 15px;
 }
 
 .np-card-content > span {
-    margin: 0;
-    text-transform: uppercase;
-    color: #2b2b2b;
-    font-size: 22px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  font-size: 22px;
 }
 
 .np-card-content > p:first-of-type {
-    margin: 0;
-    color: #2b2b2b;
-    font-size: 0.8em;
-    line-height: 1.5;
+  margin: 0;
+  color: #2b2b2b;
+  font-size: 0.8em;
+  line-height: 1.5;
 }
 
 .np-card-content > h4 {
-    margin-top: 0;
-    font-weight: bold;
+  margin-top: 0;
+  font-weight: bold;
 }
 
 /* kan ha flex og justify content spacebetween om det er flere ting */
 .np-card-footer {
-    padding: 0 0 15px 15px;
-    margin-top: 30px;
+  padding: 0 0 15px 15px;
+  margin-top: 30px;
 }
 
 .np-card-footer p {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }

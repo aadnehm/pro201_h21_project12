@@ -1,82 +1,82 @@
 .about-component-container {
-    background-color: #fefefe;
-    padding-bottom: 5rem;
+  background-color: #fefefe;
+  padding-bottom: 5rem;
 }
 
 .about-component-container h1 {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .img-container {
-    margin-top: 4rem;
-    border-radius: 10px;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  margin-top: 4rem;
+  border-radius: 10px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .img-text {
-    padding: 70px 30px;
-    background-color: #fefefe;
-    width: 30vw;
-    line-height: 1.8;
-    border-radius: 2rem;
+  padding: 70px 30px;
+  background-color: #fefefe;
+  width: 30vw;
+  line-height: 1.8;
+  border-radius: 2rem;
 }
 
 .what-we-do {
-    margin: 4rem 0 6rem 0;
-    line-height: 1.8;
+  margin: 4rem 0 6rem 0;
+  line-height: 1.8;
 }
 
 .timeline-wrapper {
-    height: 70vh;
-    margin-left: 0;
+  height: 70vh;
+  margin-left: 0;
 }
 
 .testomonials {
-    width: 38vw;
-    margin-top: 1rem;
+  width: 38vw;
+  margin-top: 1rem;
 }
 
 .companies-testemonials-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .companies-testemonials-grid img {
-    margin-right: 1em;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    object-fit: cover;
+  margin-right: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .companies-testemonials-grid p {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 /* utility classes */
 .p-margin {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .section-margin {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 p {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .testemonials-content {
-    display: flex;
-    margin-bottom: 4em;
+  display: flex;
+  margin-bottom: 4em;
 }
 
 .testemonials-content .testemonial-text {
-    width: 30vw;
-    margin-top: 0.6em;
+  width: 30vw;
+  margin-top: 0.6em;
 }

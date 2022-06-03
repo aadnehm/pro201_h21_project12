@@ -1,31 +1,30 @@
 .grey-line {
-    background: lightgray;
-    height: 2px;
-    width: 80vw;
-    margin: 30px auto auto auto;
+  background: lightgray;
+  height: 2px;
+  width: 80vw;
+  margin: 30px auto auto auto;
 }
 
 .donate-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .nonprofit-content {
-    font-family: "DM Sans", sans-serif;
-    background-color: #fefefe;
+  font-family: "DM Sans", sans-serif;
+  background-color: #fefefe;
 }
 
 .nonprofit-content h1 {
-    font-size: 44px;
-    font-weight: bold;
+  font-size: 44px;
+  font-weight: bold;
 }
 
-
 .nonprofit-content header {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 .nonProfit-header-content {
-    position: absolute;
-    bottom: 10vh;
-    left: 10%;
+  position: absolute;
+  bottom: 10vh;
+  left: 10%;
 }

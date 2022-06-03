@@ -8,7 +8,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import { NavbarSearch } from "../../components/navbar/NavbarSearch";
-import NavTabs from "../../components/non-profit-tabs/NpTabs.jsx";
+import NavTabs from "../../components/non-profit-tabs/NpTabs";
 import { useNavigate } from "react-router";
 
 export function NonProfitAll() {

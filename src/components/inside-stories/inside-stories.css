@@ -1,258 +1,258 @@
 .inside-stories h1 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .iframes-div {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    row-gap: 5rem;
-    margin: 2rem 0 5rem 0;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  row-gap: 5rem;
+  margin: 2rem 0 5rem 0;
+  justify-content: space-between;
 }
 
 .articles-div {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    margin: 2rem 0 5rem 0;
-    justify-content: space-between;
-    row-gap: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin: 2rem 0 5rem 0;
+  justify-content: space-between;
+  row-gap: 5rem;
 }
 
 .article-div {
-    width: 21vw;
-    height: fit-content;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-    grid-column-start: auto;
-    transition: transform 0.2s;
+  width: 21vw;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  grid-column-start: auto;
+  transition: transform 0.2s;
 }
 
 .article-image {
-    width: 21vw;
-    border-radius: 20px 20px 0 0;
+  width: 21vw;
+  border-radius: 20px 20px 0 0;
 }
 
 .expandedPlayer {
-    border-radius: 20px;
-    display: flex;
-    background-color: #fefefe;
-    margin: 8% auto;
-    border: 1px solid #888;
-    width: 80% !important;
-    height: 80% !important;
+  border-radius: 20px;
+  display: flex;
+  background-color: #fefefe;
+  margin: 8% auto;
+  border: 1px solid #888;
+  width: 80% !important;
+  height: 80% !important;
 }
 
 .close:hover,
 .close:focus {
-    color: #2b2b2b;
-    text-decoration: none;
-    cursor: pointer;
+  color: #2b2b2b;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .expandedPlayer .player {
-    width: 70% !important;
-    height: 100% !important;
-    margin-right: 20px;
+  width: 70% !important;
+  height: 100% !important;
+  margin-right: 20px;
 }
 
 .expandedPlayer iframe {
-    border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 .expandedPlayer .playerText {
-    margin-top: 10px;
-    width: 30%;
+  margin-top: 10px;
+  width: 30%;
 }
 
 .playerText h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .expandedPlayer span {
-    margin-right: -40px;
+  margin-right: -40px;
 }
 
 .longText {
-    display: none;
+  display: none;
 }
 
 .expandedPlayer .longText {
-    display: block;
+  display: block;
 }
 
 .react-player {
-    height: 250px !important;
-    width: 21vw !important;
+  height: 250px !important;
+  width: 21vw !important;
 }
 
 .playerText {
-    float: left;
-    padding: 20px 30px;
-    width: 100%;
+  float: left;
+  padding: 20px 30px;
+  width: 100%;
 }
 
 .modal-div {
-    display: block;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 iframe {
-    border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .story-div {
-    width: fit-content;
-    border-radius: 20px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    grid-column-start: auto;
-    transition: transform 0.2s;
+  width: fit-content;
+  border-radius: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  grid-column-start: auto;
+  transition: transform 0.2s;
 }
 
 .other-story-div {
-    display: none;
-    width: fit-content;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-    grid-column-start: auto;
+  display: none;
+  width: fit-content;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  grid-column-start: auto;
 }
 
 .show-all {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .show-all button {
-    background: #2b2b2b;
-    color: #fefefe;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 15px 40px;
-    font-weight: 500;
-    transition: transform 0.2s;
-    margin-bottom: 5rem;
+  background: #2b2b2b;
+  color: #fefefe;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 40px;
+  font-weight: 500;
+  transition: transform 0.2s;
+  margin-bottom: 5rem;
 }
 
 .show-all button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .story-div:hover,
 .article-div:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+  cursor: pointer;
+  transform: scale(1.03);
 }
 
 .inside-stories h1 {
-    margin: 3rem 0 5rem;
+  margin: 3rem 0 5rem;
 }
 
 .story-div h4,
 .story-div p {
-    padding: 10px 10px 0 0;
+  padding: 10px 10px 0 0;
 }
 
 .posterDiv {
-    border: 0 solid #fff;
-    border-radius: 20px;
-    background-color: #2b2b2b;
-    margin-bottom: 5rem;
-    display: flex;
+  border: 0 solid #fff;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  margin-bottom: 5rem;
+  display: flex;
 }
 
 .posterDiv h2 {
-    font-size: 42px;
-    font-weight: bold;
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .posterDiv2 {
-    border: 0 solid #fff;
-    border-radius: 20px;
-    background-color: #2b2b2b;
-    margin-bottom: 5rem;
-    display: flex;
+  border: 0 solid #fff;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  margin-bottom: 5rem;
+  display: flex;
 }
 
 .posterDiv2 h2 {
-    font-size: 42px;
-    font-weight: bold;
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .posterDiv3 {
-    border: 0 solid #fff;
-    border-radius: 20px;
-    background-color: #fefefe;
-    margin-bottom: 5rem;
-    display: flex;
+  border: 0 solid #fff;
+  border-radius: 20px;
+  background-color: #fefefe;
+  margin-bottom: 5rem;
+  display: flex;
 }
 
 .posterDiv2 button {
-    background: #fefefe;
-    color: #2b2b2b;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 15px 40px;
-    font-weight: 500;
-    transition: transform 0.2s;
+  background: #fefefe;
+  color: #2b2b2b;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 40px;
+  font-weight: 500;
+  transition: transform 0.2s;
 }
 
 .posterDiv2 button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .posterDiv3 h2 {
-    color: #2b2b2b;
-    font-size: 42px;
-    font-weight: bold;
+  color: #2b2b2b;
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .posterDiv3 button {
-    background: #2b2b2b;
-    color: #fefefe;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 15px 40px;
-    font-weight: 500;
-    transition: transform 0.2s; /* Animation */
+  background: #2b2b2b;
+  color: #fefefe;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 40px;
+  font-weight: 500;
+  transition: transform 0.2s; /* Animation */
 }
 
 .posterDiv3 button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .posterDiv2 button {
-    padding: 10px;
+  padding: 10px;
 }
 
 .posterDiv img {
-    border-radius: 0 20px 20px 0;
-    width: 110%;
+  border-radius: 0 20px 20px 0;
+  width: 110%;
 }
 
 .posterDiv2 img {
-    border-radius: 0 20px 20px 0;
-    width: 110%;
+  border-radius: 0 20px 20px 0;
+  width: 110%;
 }
 
 .posterParagraphDiv {
-    color: #fff;
-    display: flex;
-    justify-content: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .posterParagraphDiv h2 {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
